@@ -86,7 +86,6 @@ function fullpageFigures() {
 
 window.onload = function() {
   moveIllustrationSource();
-  addRunningElements();
   fullpageFigures();
 };
 
