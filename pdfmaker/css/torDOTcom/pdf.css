@@ -1340,7 +1340,7 @@ span[data-type="footnote"] {
 }
 
 ::footnote-marker {
-    content: counter(footnote)"\\2003";
+    content: counter(footnote)"\2003";
     font-family: "ArnoPro";
     font-weight: 600;
 }
@@ -1351,7 +1351,7 @@ p.endnotetext {
 }
 
 p.endnotetext:before {
-	content: counter(endnotes)"\\2003";
+	content: counter(endnotes)"\2003";
 	font-family: "ArnoPro";
     font-weight: 600;
 }
