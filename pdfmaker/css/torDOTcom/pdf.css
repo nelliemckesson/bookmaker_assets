@@ -1077,12 +1077,14 @@ div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphversepepi
 section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphversefmepiv {
 	margin-left: 16pt;
 	text-indent: -16pt;
+	page-break-inside: auto;
 }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphnon-versecepi,
 div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphnon-versepepi,
 section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphnon-versefmepi {
 	margin-left: 0;
+	page-break-inside: auto;
 }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphSourceceps, 
