@@ -1419,6 +1419,10 @@ sub { top: 0.1em; }
 
 .spanaccentcharactersacc {}
 
+.nobreak {
+	page-break-before: avoid;
+}
+
 .bookmakerkeeptogetherkt {
 	/*font-stretch: -0.1pt;*/
 	white-space: pre;
