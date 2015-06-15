@@ -1089,6 +1089,7 @@ div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphSourcepep
 section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphSourcefmeps {
 	text-align: right;
 	font-weight: 600;
+	page-break-before: avoid;
 }
 
 [class*="ChapOpeningText"] .spansmallcapscharacterssc:first-child {
