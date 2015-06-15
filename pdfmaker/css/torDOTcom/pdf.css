@@ -619,6 +619,7 @@ p[class*="SpaceAfter"] {
 blockquote {
 	margin-top: 16pt;
 	margin-bottom: 16pt;
+	page-break-inside: auto;
 }
 
 /* frontmatter */
@@ -1426,6 +1427,7 @@ sub { top: 0.1em; }
 .bookmakerkeeptogetherkt {
 	/*font-stretch: -0.1pt;*/
 	white-space: pre;
+	page-break-inside: avoid;
 }
 
 .bookmakerforcepagebreakbr {
