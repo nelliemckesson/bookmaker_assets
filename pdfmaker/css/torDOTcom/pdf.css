@@ -1343,6 +1343,10 @@ span[data-type="footnote"] {
 	footnote-style-position: inside;
 }
 
+span[data-type="footnote"] > span {
+	display: block;
+}
+
 ::footnote-marker {
     content: counter(footnote)"\2003";
     font-family: "ArnoPro";
