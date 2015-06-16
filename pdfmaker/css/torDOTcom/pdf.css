@@ -1347,6 +1347,10 @@ span[data-type="footnote"] > span {
 	display: block;
 }
 
+span[data-type="footnote"] > span:first-of-type {
+	display: inline;
+}
+
 ::footnote-marker {
     content: counter(footnote)"\2003";
     font-family: "ArnoPro";
