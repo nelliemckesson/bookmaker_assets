@@ -1199,10 +1199,12 @@ span[data-type="footnote"] {
 
 span[data-type="footnote"] > span {
 	display: block;
+	text-indent: 12pt;
 }
 
 span[data-type="footnote"] > span:first-of-type {
 	display: inline;
+	text-indent: 0;
 }
 
 ::footnote-marker {
