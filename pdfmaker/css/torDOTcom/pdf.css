@@ -65,6 +65,13 @@
 
 @font-face {
 	font-family: "ArnoPro-SmText";
+	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-ItalicSmText.otf');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ArnoPro-SmText";
 	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-BoldSmText.otf');
 	font-style: normal;
 	font-weight: bold;
