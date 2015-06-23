@@ -151,7 +151,7 @@
 	size: 5in 8in;
 	margin: 0.72in 0.75in 0.66in 0.75in;
 	padding: 34pt 0 0.36in 0;
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/tor_fullpage.png"); /* for testing */
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/testing/tor_fullpage.png"); /* for testing */
 	/*background-image: url("/Users/nellie.mckesson/git/bookmaker_pdfmaker/css/torDOTcom/tor.png");*/
 	background-position: top left;
 	background-size: 100% 100%;
@@ -163,7 +163,7 @@
 	@footnotes {
 		font-family: "ArnoPro-SmText", serif;
 		font-size: 9pt;
-		background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/titlepage-rule.jpg");
+		background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
 		background-position: 0 0in;
 		background-size: 60pt auto;
 		background-repeat: no-repeat;
@@ -622,7 +622,7 @@ h1 + .TitlepageSeriesTitleser {
 section[data-type="titlepage"] p.TitlepageAuthorNameau {
 	font-size: 16pt;
 	padding-top: 40pt;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/titlepage-rule.jpg');
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
 	background-size: 60pt auto;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -641,7 +641,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 
 section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
 	content: " ";
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/logo.jpg");
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/logo.jpg");
 	background-position: center bottom;
 	background-size: 0.58in auto;
 	background-repeat: no-repeat;
@@ -1138,7 +1138,7 @@ p.SpaceBreak-1-Linels1 {
 	content: " ";
 	font-size: 16pt;
 	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/titlepage-rule.jpg');
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
 	background-size: 60pt auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1166,7 +1166,7 @@ p.ChapOrnamentALTcorn2 {
 	content: " ";
 	font-size: 16pt;
 	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/titlepage-rule.jpg');
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
 	background-size: 60pt auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1183,7 +1183,7 @@ p.SpaceBreakwithOrnamentorn {
 	content: " ";
 	font-size: 16pt;
 	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/orn.jpg');
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
 	background-size: 19pt auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1198,7 +1198,7 @@ p.SpaceBreakwithALTOrnamentorn2 {
 	content: " ";
 	font-size: 16pt;
 	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/orn.jpg');
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
 	background-size: 19pt auto;
 	background-position: center;
 	background-repeat: no-repeat;
