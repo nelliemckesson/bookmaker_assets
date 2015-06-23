@@ -151,7 +151,7 @@
 	size: 5in 8in;
 	margin: 0.72in 0.75in 0.66in 0.75in;
 	padding: 34pt 0 0.36in 0;
-	/*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/tor_fullpage.png"); /* for testing */
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/tor_fullpage.png"); /* for testing */
 	/*background-image: url("/Users/nellie.mckesson/git/bookmaker_pdfmaker/css/torDOTcom/tor.png");*/
 	background-position: top left;
 	background-size: 100% 100%;
@@ -411,7 +411,7 @@ p {
 	text-align: justify;
 	text-align-last: left;
 	margin: 0;
-	widows: 2;
+	widows: 1;
 	orphans: 1;
 	hyphens: auto;
 	hyphenate-lines: 3;
@@ -1129,14 +1129,24 @@ p.SpaceBreak,
 p.SpaceBreak-1-Linels1, 
 p.SpaceBreak-2-Linels2, 
 p.SpaceBreak-3-Linels3 {
-	content: " ";
 	text-indent: 0;
 }
 
 p.SpaceBreak, 
 p.SpaceBreak-1-Linels1 {
-	height: 16pt;
+	text-indent: 0;
 	content: " ";
+	font-size: 16pt;
+	text-align: center;
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/titlepage-rule.jpg');
+	background-size: 60pt auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 14pt;
+	margin-bottom: 7pt;
+	padding: 3pt 0pt 8pt 0pt;
+	width: 100%;
+	height: 16pt;
 }
 
 p.SpaceBreak-2-Linels2 {
@@ -1168,7 +1178,21 @@ p.ChapOrnamentALTcorn2 {
 }
 
 p.SpaceBreakOrnamentorn,
-p.SpaceBreakwithOrnamentorn, 
+p.SpaceBreakwithOrnamentorn {
+	text-indent: 0;
+	content: " ";
+	font-size: 16pt;
+	text-align: center;
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/orn.jpg');
+	background-size: 19pt auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0pt;
+	padding: 24pt 0pt 8pt 0pt;
+	width: 100%;
+	height: 16pt;
+}
+
 p.SpaceBreakwithALTOrnamentorn2 {
 	text-indent: 0;
 	content: " ";
