@@ -1159,6 +1159,11 @@ p.SpaceBreak-3-Linels3 {
 	content: " ";
 }
 
+blockquote + p.SpaceBreak, 
+blockquote + p.SpaceBreak-1-Linels1 {
+	margin-top: -2pt;
+}
+
 p.PartOrnamentporn, 
 p.ChapOrnamentcorn, 
 p.ChapOrnamentALTcorn2 {
