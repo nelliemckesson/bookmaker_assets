@@ -1478,6 +1478,10 @@ NOTES SECTION
 --------------------------------------------------
 */
 
+div[data-type="footnotes"] {
+  margin-top: 1em;
+}
+
 [class^="FootnoteText"], 
 p[data-type="footnote"], 
 [class^="endnotetext"] {
