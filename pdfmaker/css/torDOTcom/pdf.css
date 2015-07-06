@@ -954,6 +954,8 @@ section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphSour
 	text-align: right;
 	font-weight: 600;
 	page-break-before: avoid;
+	widows: 2;
+	orphans: 2;
 }
 
 [class*="ChapOpeningText"] .spansmallcapscharacterssc:first-child {
