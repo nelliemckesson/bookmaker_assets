@@ -149,9 +149,10 @@
 
 @page {
 	size: 5in 8in;
-	margin: 0.72in 0.75in 0.66in 0.75in;
-	padding: 34pt 0 0.36in 0;
-	/*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/testing/tor_fullpage.png"); /* for testing */
+	margin-top: 0.72in;
+	margin-bottom: 0.88in;
+	padding: 18pt 0 0.36in 0;
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/testing/tor_fullpage.png"); /* for testing */
 	/*background-image: url("/Users/nellie.mckesson/git/bookmaker_pdfmaker/css/torDOTcom/tor.png");*/
 	background-position: top left;
 	background-size: 100% 100%;
@@ -170,6 +171,16 @@
 		padding-top: 0.127in;
 		margin-top: 0.38in;
     }
+}
+
+@page :left {
+	margin-left: 0.625in;
+	margin-right: 0.875in;
+}
+
+@page :right {
+	margin-left: 0.875in;
+	margin-right: 0.625in;
 }
 
 @page chapter {
