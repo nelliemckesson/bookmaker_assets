@@ -834,7 +834,7 @@ nav[data-type="toc"] li.PartTitlept a:before {
 
 section[data-type="preface"] {
 	page: chapter;
-	page-break-before: always;
+	page-break-before: right;
 	prince-page-group: start;
 }
 
@@ -869,13 +869,9 @@ section[data-type="preface"] p.FMSubheadfmsh {
 
 section[data-type="chapter"] {
 	page: chapter;
-	page-break-before: always;
+	page-break-before: right;
 	prince-page-group: start;
 	counter-reset: footnote;
-}
-
-body section[data-type="chapter"]:first-of-type {
-	page-break-before: right;
 }
 
 section[data-type="chapter"] h1.ChapNumbercn, 
@@ -921,7 +917,7 @@ h1.ChapTitlect[data-autolabel="yes"]:before {
 }
 
 section[data-type="appendix"] {
-	page-break-before: always;
+	page-break-before: right;
 	counter-reset: footnote;
 }
 
