@@ -874,6 +874,10 @@ section[data-type="chapter"] {
 	counter-reset: footnote;
 }
 
+section[data-type="chapter"]:first-of-type {
+	page-break-before: right;
+}
+
 section[data-type="chapter"] h1.ChapNumbercn, 
 p.ChapNumberNonprintingcnp {
 	font-size: 12pt;
@@ -919,6 +923,10 @@ h1.ChapTitlect[data-autolabel="yes"]:before {
 section[data-type="appendix"] {
 	page-break-before: always;
 	counter-reset: footnote;
+}
+
+section[data-type="appendix"]:first-of-type {
+	page-break-before: right;
 }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"], 
