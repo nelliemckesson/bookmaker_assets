@@ -506,7 +506,6 @@ section.adcard {
 
 section[data-type="halftitlepage"], 
 section[data-type="titlepage"], 
-section[data-type="preface"], 
 section.adcard {
 	page-break-before: right;
 }
@@ -835,7 +834,7 @@ nav[data-type="toc"] li.PartTitlept a:before {
 
 section[data-type="preface"] {
 	page: chapter;
-	page-break-before: right;
+	page-break-before: always;
 	prince-page-group: start;
 }
 
@@ -870,7 +869,7 @@ section[data-type="preface"] p.FMSubheadfmsh {
 
 section[data-type="chapter"] {
 	page: chapter;
-	page-break-before: right;
+	page-break-before: always;
 	prince-page-group: start;
 	counter-reset: footnote;
 }
