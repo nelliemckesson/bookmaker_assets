@@ -872,6 +872,7 @@ section[data-type="chapter"] {
 	page-break-before: always;
 	prince-page-group: start;
 	counter-reset: footnote;
+	display: block;
 }
 
 section[data-type="chapter"]:first-of-type {
