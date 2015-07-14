@@ -896,6 +896,10 @@ SPACE BREAKS
   content: "\2756"; /* U+2756 "black diamond minus white" */
   }
 
+[class^="BookmakerPageBreakbr"] {
+  page-break-after: always;
+}
+
 /*
 --------------------------------------------------
 EXTRACTS

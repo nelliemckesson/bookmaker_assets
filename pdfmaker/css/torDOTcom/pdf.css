@@ -980,6 +980,8 @@ section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphSour
 	font-size: 14pt;
 	font-style: italic;
 	text-align: center;
+	margin-top: 32pt;
+	margin-bottom: 16pt;
 }
 
 div[data-type="part"] {
