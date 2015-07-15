@@ -882,7 +882,7 @@ SPACE BREAKS
 [class^="SpaceBreak-1-Line"],
 [class^="SpaceBreak-2-Line"],
 [class^="SpaceBreak-3-Line"] {
-  content: " ";
+  content: "*";
   }
 [class^="SpaceBreakwithOrnament"],
 [class^="SpaceBreakwithALTOrnament"] {
