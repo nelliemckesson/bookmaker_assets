@@ -1,0 +1,46 @@
+{
+	"files": [
+		{
+		"filename": "minitoc.html",
+		"locations" : [
+			{
+				"name": "part",
+				"sequence": "1",
+				"priority": "1"
+			},
+			{
+				"name": "chapter",
+				"sequence": "1",
+				"priority": "2"
+			}
+		]
+		},
+		{
+		"filename": "test.html",
+		"locations" : [
+			{
+				"name": "dedication",
+				"priority": "1"
+			},
+			{
+				"name": "preface",
+				"priority": "2"
+			}
+		]
+		}
+	],
+	"projects": [
+		{
+			"name": "test_final",
+			"addons": "minitoc.html,test.html"
+		},
+		{
+			"name": "torDOTcom_final",
+			"addons": "minitoc.html,test.html"
+		},
+		{
+			"name": "torDOTcom_firstpass",
+			"addons": "test.html"
+		}
+	]
+}
