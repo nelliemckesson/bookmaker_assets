@@ -1,30 +1,65 @@
 {
 	"files": [
 		{
-		"filename": "minitoc.html",
+		"filename": "mini_toc.html",
 		"locations" : [
 			{
-				"name": "part",
-				"sequence": "1",
+				"name": "drm-notice",
 				"priority": "1"
 			},
 			{
+				"name": "toc",
+				"priority": "2"
+			},			
+			{
+				"name": "dedication",
+				"priority": "3"
+			},
+			{
+				"name": "epigraph",
+				"priority": "4"
+			},
+			{
+				"name": "frontmatter",
+				"priority": "5"
+			},
+			{
+				"name": "preface",
+				"priority": "6"
+			},
+			{
 				"name": "chapter",
-				"sequence": "1",
+				"priority": "7"
+			}
+		]
+		},
+		{
+		"filename": "torDOTcombackad.html",
+		"locations" : [
+			{
+				"name": "copyrightpage",
+				"priority": "1"
+			},
+			{
+				"name": "endofbook",
 				"priority": "2"
 			}
 		]
 		},
 		{
-		"filename": "test.html",
+		"filename": "newsletter.html",
 		"locations" : [
 			{
-				"name": "dedication",
+				"name": "torDOTcombackad",
 				"priority": "1"
 			},
 			{
-				"name": "preface",
+				"name": "copyrightpage",
 				"priority": "2"
+			},
+			{
+				"name": "endofbook",
+				"priority": "3"
 			}
 		]
 		}
@@ -32,11 +67,11 @@
 	"projects": [
 		{
 			"name": "test_final",
-			"addons": "minitoc.html,test.html"
+			"addons": "mini_toc.html,test.html"
 		},
 		{
 			"name": "torDOTcom_final",
-			"addons": "minitoc.html,test.html"
+			"addons": "mini_toc.html,test.html"
 		},
 		{
 			"name": "torDOTcom_firstpass",
