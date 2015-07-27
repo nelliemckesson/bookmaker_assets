@@ -1,0 +1,82 @@
+{
+	"sections" : [
+		{
+		"name": "cover",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "titlepage",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "section",
+		},
+		{
+		"name": "drm-notice",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "toc",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "nav",
+		},
+		{
+		"name": "dedication",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "section",
+		},
+		{
+		"name": "epigraph",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "frontmatter",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "section",
+		},
+		{
+		"name": "preface",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "chapter",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "backmatter",
+		"datatype": "appendix",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "abouttheauthor",
+		"datatype": "colophon",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "copyrightpage",
+		"datatype": "colophon",
+		"class": "",
+		"containertype": "",
+		},
+		{
+		"name": "endofbook",
+		"datatype": "colophon",
+		"class": "",
+		"containertype": "",
+		}
+	]
+}
