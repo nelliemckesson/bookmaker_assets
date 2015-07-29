@@ -96,7 +96,7 @@
 		},
 		{
 			"name": "torDOTcom_firstpass",
-			"addons": "drmfreenotice.html,torDOTcombackad.html"
+			"addons": "mini_toc.html,drmfreenotice.html,torDOTcombackad.html,newsletter.html"
 		}
 	]
 }
