@@ -1,0 +1,70 @@
+{
+	"sections" : [
+		{
+		"name": "cover",
+		"datatype": "cover",
+		"class": "",
+		"containertype": "figure"
+		},
+		{
+		"name": "titlepage",
+		"datatype": "titlepage",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "toc",
+		"datatype": "toc",
+		"class": "",
+		"containertype": "nav"
+		},
+		{
+		"name": "dedication",
+		"datatype": "dedication",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "preface",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "part",
+		"datatype": "part",
+		"class": "",
+		"containertype": "div"
+		},
+		{
+		"name": "chapter",
+		"datatype": "chapter",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "backmatter",
+		"datatype": "appendix",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "abouttheauthor",
+		"datatype": "appendix",
+		"class": "abouttheauthor",
+		"containertype": "section"
+		},
+		{
+		"name": "copyrightpage",
+		"datatype": "copyright-page",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "endofbook",
+		"datatype": "",
+		"class": "",
+		"containertype": "body"
+		}
+	]
+}
