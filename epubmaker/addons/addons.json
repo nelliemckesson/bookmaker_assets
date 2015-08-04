@@ -88,15 +88,15 @@
 	"projects": [
 		{
 			"name": "test_final",
-			"addons": "mini_toc.html,drmfreenotice.html,newsletter.html,torDOTcombackad.html"
+			"addons": "mini_toc.html,drmfreenotice.html,torDOTcombackad.html,newsletter.html"
 		},
 		{
 			"name": "torDOTcom_final",
-			"addons": "mini_toc.html,drmfreenotice.html,newsletter.html,torDOTcombackad.html"
+			"addons": "mini_toc.html,drmfreenotice.html,torDOTcombackad.html,newsletter.html"
 		},
 		{
 			"name": "torDOTcom_firstpass",
-			"addons": "mini_toc.html,drmfreenotice.html,newsletter.html,torDOTcombackad.html"
+			"addons": "mini_toc.html,drmfreenotice.html,torDOTcombackad.html,newsletter.html"
 		}
 	]
 }
