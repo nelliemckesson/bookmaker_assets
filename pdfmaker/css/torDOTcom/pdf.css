@@ -1144,7 +1144,8 @@ section[data-type="appendix"] h1 + figure img {
 }
 
 p[class*="SpaceAfter"] + p[class*="Extract"], 
-p[class*="SpaceAround"] + p[class*="Extract"] {
+p[class*="SpaceAround"] + p[class*="Extract"], 
+p[class*="Extract-NoIndent"] {
 	text-indent: 0;
 }
 
