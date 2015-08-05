@@ -505,9 +505,12 @@ section.adcard {
 }
 
 section[data-type="halftitlepage"], 
-section[data-type="titlepage"], 
-section.adcard {
+section[data-type="titlepage"] {
 	page-break-before: right;
+}
+
+section.adcard {
+	page-break-before: always;
 }
 
 section[data-type="halftitlepage"], 
