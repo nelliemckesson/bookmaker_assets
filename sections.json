@@ -1,6 +1,12 @@
 {
 	"sections" : [
 		{
+		"name": "startofbook",
+		"datatype": "body",
+		"class": "",
+		"containertype": ""
+		},
+		{
 		"name": "cover",
 		"datatype": "cover",
 		"class": "",
@@ -13,15 +19,33 @@
 		"containertype": "section"
 		},
 		{
+		"name": "drm",
+		"datatype": "preface",
+		"class": "drm",
+		"containertype": "section"
+		},
+		{
 		"name": "toc",
 		"datatype": "toc",
 		"class": "",
 		"containertype": "nav"
 		},
 		{
+		"name": "minitoc",
+		"datatype": "preface",
+		"class": "minitoc",
+		"containertype": "section"
+		},
+		{
 		"name": "dedication",
 		"datatype": "dedication",
 		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "adcard",
+		"datatype": "preface",
+		"class": "adcard",
 		"containertype": "section"
 		},
 		{
@@ -50,8 +74,14 @@
 		},
 		{
 		"name": "abouttheauthor",
-		"datatype": "appendix",
+		"datatype": "",
 		"class": "abouttheauthor",
+		"containertype": "section"
+		},
+		{
+		"name": "newsletter",
+		"datatype": "colophon",
+		"class": "newsletter",
 		"containertype": "section"
 		},
 		{

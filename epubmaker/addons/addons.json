@@ -4,28 +4,19 @@
 		"filename": "mini_toc.html",
 		"locations" : [
 			{
-				"name": "toc",
-				"sequence": "1"
+				"name": "titlepage",
+				"sequence": "1",
+				"order": "after"
 			},			
 			{
-				"name": "dedication",
-				"sequence": "1"
+				"name": "cover",
+				"sequence": "1",
+				"order": "after"
 			},
 			{
-				"name": "epigraph",
-				"sequence": "1"
-			},
-			{
-				"name": "preface",
-				"sequence": "1"
-			},
-			{
-				"name": "part",
-				"sequence": "1"
-			},
-			{
-				"name": "chapter",
-				"sequence": "1"
+				"name": "startofbook",
+				"sequence": "1",
+				"order": "after"
 			}
 		]
 		},
@@ -33,28 +24,24 @@
 		"filename": "drmfreenotice.html",
 		"locations" : [
 			{
-				"name": "toc",
-				"sequence": "1"
+				"name": "minitoc",
+				"sequence": "1",
+				"order": "after"
+			},
+			{
+				"name": "titlepage",
+				"sequence": "1",
+				"order": "after"
 			},			
 			{
-				"name": "dedication",
-				"sequence": "1"
+				"name": "cover",
+				"sequence": "1",
+				"order": "after"
 			},
 			{
-				"name": "epigraph",
-				"sequence": "1"
-			},
-			{
-				"name": "preface",
-				"sequence": "1"
-			},
-			{
-				"name": "part",
-				"sequence": "1"
-			},
-			{
-				"name": "chapter",
-				"sequence": "1"
+				"name": "startofbook",
+				"sequence": "1",
+				"order": "after"
 			}
 		]
 		},
