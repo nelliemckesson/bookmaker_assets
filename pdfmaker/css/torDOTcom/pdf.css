@@ -505,9 +505,12 @@ section.adcard {
 }
 
 section[data-type="halftitlepage"], 
-section[data-type="titlepage"], 
-section.adcard {
+section[data-type="titlepage"] {
 	page-break-before: right;
+}
+
+section[data-type="preface"].adcard {
+	page-break-before: always;
 }
 
 section[data-type="halftitlepage"], 
@@ -651,7 +654,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 
 section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
 	content: " ";
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/logo.jpg");
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/logo.jpg");
 	background-position: center bottom;
 	background-size: 0.58in auto;
 	background-repeat: no-repeat;
@@ -1144,7 +1147,8 @@ section[data-type="appendix"] h1 + figure img {
 }
 
 p[class*="SpaceAfter"] + p[class*="Extract"], 
-p[class*="SpaceAround"] + p[class*="Extract"] {
+p[class*="SpaceAround"] + p[class*="Extract"], 
+p[class*="Extract-NoIndent"] {
 	text-indent: 0;
 }
 
