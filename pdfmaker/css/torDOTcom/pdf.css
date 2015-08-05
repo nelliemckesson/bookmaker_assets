@@ -1270,6 +1270,8 @@ span[data-type="footnote"] > span:first-of-type {
 	text-indent: 0;
 }
 
+::footnote-call { content: counter(footnote, symbols('*', '†', '‡', '§')); }
+
 ::footnote-marker {
     content: counter(footnote, symbols('*', '†', '‡', '§')) "\2003";
     font-family: "ArnoPro";
