@@ -672,6 +672,21 @@ TITLE PAGE
   margin: 1em 0;
   }
 
+/* for kindle eink */
+.TitlepageAuthorNameau,
+.TitlepageContributorNamecon,
+.TitlepageTranslatorNametran,
+.TitlepageSeriesTitleser,
+.TitlepageReadingLinerl,
+.TitlepageImprintLineimp,
+.TitlepagePublisherNamepub,
+.TitlepageCitiescit,
+.TitlepageLogoHolder {
+  text-indent: 0;
+  text-align: center;
+  margin: 1em 0;
+  }
+
 section[data-type="titlepage"] {
   text-align: center;
 }
@@ -1163,6 +1178,11 @@ EXTRACTS
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   text-transform: uppercase;
   }
+
+/* for kindle */
+blockquote p:first-child {
+  margin-left: 0;
+}
 
 /*
 --------------------------------------------------
