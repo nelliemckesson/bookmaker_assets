@@ -893,6 +893,10 @@ p.ChapNumberNonprintingcnp + p {
 	margin-top: 16pt;
 }
 
+.ChapTitleNonprintingctnp + * {
+	margin-top: 80pt;
+}
+
 section[data-type="chapter"] h1.ChapTitlect {
 	font-size: 16pt;
 	line-height: 24pt;
