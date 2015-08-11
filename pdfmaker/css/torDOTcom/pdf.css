@@ -1059,6 +1059,10 @@ blockquote p:first-child {
 	text-indent: 0;
 }
 
+.Extract-VerseorPoetryextv {
+	text-indent: 0;
+}
+
 p.IllustrationSourceis {
 	font-family: "MinionPro", serif;
 	font-size: 7pt;
