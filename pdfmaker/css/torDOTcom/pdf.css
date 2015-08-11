@@ -1184,6 +1184,18 @@ p.SpaceBreak-1-Linels1 {
 	height: 16pt;
 }
 
+p.SpaceBreak-PrintOnlypo {
+	text-indent: 0;
+	content: " ";
+	font-size: 16pt;
+	text-align: center;
+	margin-top: 14pt;
+	margin-bottom: 7pt;
+	padding: 3pt 0pt 8pt 0pt;
+	width: 100%;
+	height: 16pt;
+}
+
 p.SpaceBreak-2-Linels2 {
 	height: 32pt;
 	content: " ";
