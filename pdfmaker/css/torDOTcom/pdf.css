@@ -893,7 +893,7 @@ p.ChapNumberNonprintingcnp + p {
 	margin-top: 16pt;
 }
 
-.ChapTitleNonprintingctnp + * {
+h1.ChapTitleNonprintingctnp + * {
 	margin-top: 80pt;
 }
 
