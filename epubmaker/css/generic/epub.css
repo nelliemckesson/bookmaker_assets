@@ -1119,6 +1119,10 @@ SPACE BREAKS
   page-break-after: always;
 }
 
+p.SpaceBreak-PrintOnlypo {
+  display: none;
+}
+
 /*
 --------------------------------------------------
 EXTRACTS
