@@ -152,7 +152,7 @@
 	margin-top: 0.72in;
 	margin-bottom: 0.88in;
 	padding: 18pt 0 0.36in 0;
-	/*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/testing/tor_fullpage.png"); /* for testing */
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/testing/tor_fullpage.png"); /* for testing */
 	/*background-image: url("/Users/nellie.mckesson/git/bookmaker_pdfmaker/css/torDOTcom/tor.png");*/
 	background-position: top left;
 	background-size: 100% 100%;
@@ -1188,11 +1188,6 @@ p.SpaceBreak-PrintOnlypo {
 	text-indent: 0;
 	content: " ";
 	font-size: 16pt;
-	/*text-align: center;
-	margin-top: 14pt;
-	margin-bottom: 7pt;
-	padding: 3pt 0pt 8pt 0pt;
-	width: 100%;*/
 	height: 16pt;
 }
 
