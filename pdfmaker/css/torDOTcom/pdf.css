@@ -585,7 +585,7 @@ p.AdCardSubheadacsh {
 }
 
 p.AdCardListofTitlesacl {
-	font-style: italic;
+	/*font-style: italic;*/
 	text-align: center;
 	text-indent: 0;
 }
