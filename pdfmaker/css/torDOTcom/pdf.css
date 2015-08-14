@@ -425,6 +425,8 @@ p {
 	widows: 1;
 	orphans: 1;
 	hyphens: auto;
+	prince-hyphenate-after: 3;
+	prince-hyphenate-before: 3;
 	hyphenate-lines: 3;
 }
 
