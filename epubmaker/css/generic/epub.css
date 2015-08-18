@@ -1119,6 +1119,10 @@ SPACE BREAKS
   page-break-after: always;
 }
 
+p.SpaceBreak-PrintOnlypo {
+  display: none;
+}
+
 /*
 --------------------------------------------------
 EXTRACTS
@@ -1147,6 +1151,29 @@ EXTRACTS
 .Extract-ScheduleofEventssch {
   font-style: italic;
   text-indent: 0;
+}
+
+.Extractext em,
+.Extract-Newspapernews em,
+.Extract-Diaryextd em,
+.Extract-Transcripttrans em,
+.Extract-NoIndentext1 em,
+.Extract-BulletListextbl em,
+.Extract-NumListextnl em,
+.ExtractHeadexth em,
+.Extract-VerseorPoetryextv em,
+.Extract-Noteextn em,
+.Extract-NoteHeadextnh em,
+.Extract-Headlineexthl em,
+.Extract-Emailextem em,
+.Extract-EmailHeadingemh em,
+.Extract-Websiteextws em,
+.Extract-SongLyricextsl em,
+.Extract-BusinessCardextbc em,
+.Extract-Telegramtel em,
+.Extract-Inscriptionins em,
+.Extract-ScheduleofEventssch em {
+  font-style: normal;
 }
 
 *[class^="Extract"],
