@@ -4,32 +4,44 @@
 		"filename": "mini_toc.html",
 		"locations" : [
 			{
-				"name": "drm-notice",
-				"priority": "1"
-			},
-			{
-				"name": "toc",
-				"priority": "2"
+				"name": "titlepage",
+				"sequence": "1",
+				"order": "after"
 			},			
 			{
-				"name": "dedication",
-				"priority": "3"
+				"name": "cover",
+				"sequence": "1",
+				"order": "after"
 			},
 			{
-				"name": "epigraph",
-				"priority": "4"
+				"name": "startofbook",
+				"sequence": "1",
+				"order": "after"
+			}
+		]
+		},
+		{
+		"filename": "drmfreenotice.html",
+		"locations" : [
+			{
+				"name": "minitoc",
+				"sequence": "1",
+				"order": "after"
 			},
 			{
-				"name": "frontmatter",
-				"priority": "5"
+				"name": "titlepage",
+				"sequence": "1",
+				"order": "after"
+			},			
+			{
+				"name": "cover",
+				"sequence": "1",
+				"order": "after"
 			},
 			{
-				"name": "preface",
-				"priority": "6"
-			},
-			{
-				"name": "chapter",
-				"priority": "7"
+				"name": "startofbook",
+				"sequence": "1",
+				"order": "after"
 			}
 		]
 		},
@@ -38,11 +50,11 @@
 		"locations" : [
 			{
 				"name": "copyrightpage",
-				"priority": "1"
+				"sequence": "1"
 			},
 			{
 				"name": "endofbook",
-				"priority": "2"
+				"sequence": "1"
 			}
 		]
 		},
@@ -50,16 +62,12 @@
 		"filename": "newsletter.html",
 		"locations" : [
 			{
-				"name": "torDOTcombackad",
-				"priority": "1"
-			},
-			{
 				"name": "copyrightpage",
-				"priority": "2"
+				"sequence": "1"
 			},
 			{
 				"name": "endofbook",
-				"priority": "3"
+				"sequence": "1"
 			}
 		]
 		}
@@ -67,15 +75,15 @@
 	"projects": [
 		{
 			"name": "test_final",
-			"addons": "mini_toc.html,test.html"
+			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
 		},
 		{
 			"name": "torDOTcom_final",
-			"addons": "mini_toc.html,test.html"
+			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
 		},
 		{
 			"name": "torDOTcom_firstpass",
-			"addons": "test.html"
+			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
 		}
 	]
 }

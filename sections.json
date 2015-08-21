@@ -1,0 +1,100 @@
+{
+	"sections" : [
+		{
+		"name": "startofbook",
+		"datatype": "body",
+		"class": "",
+		"containertype": ""
+		},
+		{
+		"name": "cover",
+		"datatype": "cover",
+		"class": "",
+		"containertype": "figure"
+		},
+		{
+		"name": "titlepage",
+		"datatype": "titlepage",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "drm",
+		"datatype": "preface",
+		"class": "drm",
+		"containertype": "section"
+		},
+		{
+		"name": "toc",
+		"datatype": "toc",
+		"class": "",
+		"containertype": "nav"
+		},
+		{
+		"name": "minitoc",
+		"datatype": "preface",
+		"class": "minitoc",
+		"containertype": "section"
+		},
+		{
+		"name": "dedication",
+		"datatype": "dedication",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "adcard",
+		"datatype": "preface",
+		"class": "adcard",
+		"containertype": "section"
+		},
+		{
+		"name": "preface",
+		"datatype": "preface",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "part",
+		"datatype": "part",
+		"class": "",
+		"containertype": "div"
+		},
+		{
+		"name": "chapter",
+		"datatype": "chapter",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "backmatter",
+		"datatype": "appendix",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "abouttheauthor",
+		"datatype": "",
+		"class": "abouttheauthor",
+		"containertype": "section"
+		},
+		{
+		"name": "newsletter",
+		"datatype": "colophon",
+		"class": "newsletter",
+		"containertype": "section"
+		},
+		{
+		"name": "copyrightpage",
+		"datatype": "copyright-page",
+		"class": "",
+		"containertype": "section"
+		},
+		{
+		"name": "endofbook",
+		"datatype": "",
+		"class": "",
+		"containertype": "body"
+		}
+	]
+}
