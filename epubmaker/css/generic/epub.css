@@ -653,6 +653,11 @@ AD CARD
   text-align: center;
   }
 
+.AdCardListofTitlesacl {
+  text-indent: 0;
+  text-align: center;
+  }
+
 /*
 --------------------------------------------------
 TITLE PAGE
@@ -708,6 +713,15 @@ COPYRIGHT PAGE
   text-indent: 0;
   }
 *[class^="CopyrightTextdoublespace"] {
+  margin: 1em 0;
+  }
+
+.CopyrightTextsinglespacecrtx,
+.CopyrightTextdoublespacecrtxd {
+  font-size: .75em;
+  text-indent: 0;
+  }
+.CopyrightTextdoublespacecrtxd {
   margin: 1em 0;
   }
 
