@@ -49,6 +49,12 @@
 		"containertype": "section"
 		},
 		{
+		"name": "frontsales",
+		"datatype": "preface",
+		"class": "frontsales",
+		"containertype": "section"
+		},
+		{
 		"name": "preface",
 		"datatype": "preface",
 		"class": "",
