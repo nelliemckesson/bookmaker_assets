@@ -74,16 +74,20 @@
 	],
 	"projects": [
 		{
-			"name": "test_final",
-			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
-		},
-		{
 			"name": "torDOTcom_final",
 			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
 		},
 		{
 			"name": "torDOTcom_firstpass",
-			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
+			"addons": "drmfreenotice.html,torDOTcombackad.html"
+		},
+		{
+			"name": "SMP_final",
+			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html"
+		},
+		{
+			"name": "SMP_egalley",
+			"addons": "drmfreenotice.html"
 		}
 	]
 }
