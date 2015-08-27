@@ -1186,20 +1186,50 @@ p.SpaceBreak-3-Linels3 {
 }
 
 p.SpaceBreak, 
-p.SpaceBreak-1-Linels1 {
+p.SpaceBreak-1-Linels1, 
+p.PartOrnamentporn, 
+p.ChapOrnamentcorn, 
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
 	text-indent: 0;
 	content: " ";
 	font-size: 16pt;
 	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
-	background-size: 60pt auto;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-top: 14pt;
+	margin-top: 0pt;
 	margin-bottom: 7pt;
-	padding: 3pt 0pt 8pt 0pt;
+	padding: 18pt 0pt 7pt 0pt;
 	width: 100%;
 	height: 16pt;
+}
+
+p.SpaceBreak, 
+p.SpaceBreak-1-Linels1 {
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+	background-size: 60pt auto;
+}
+
+p.PartOrnamentporn, 
+p.ChapOrnamentcorn, 
+p.ChapOrnamentALTcorn2 {
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+	background-size: 60pt auto;
+}
+
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn {
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
+	background-size: 20.5pt auto;
+	padding: 25pt 0pt 0pt 0pt;
+}
+
+p.SpaceBreakwithALTOrnamentorn2 {
+	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn-bull.jpg');
+	background-size: 21.6pt auto;
+	padding: 25pt 0pt 0pt 0pt;
 }
 
 p.SpaceBreak-PrintOnlypo {
@@ -1219,58 +1249,14 @@ p.SpaceBreak-3-Linels3 {
 	content: " ";
 }
 
-blockquote + p.SpaceBreak, 
-blockquote + p.SpaceBreak-1-Linels1 {
-	margin-top: -2pt;
-}
-
-p.PartOrnamentporn, 
-p.ChapOrnamentcorn, 
-p.ChapOrnamentALTcorn2 {
-	text-indent: 0;
-	content: " ";
-	font-size: 16pt;
-	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
-	background-size: 60pt auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-top: 14pt;
-	margin-bottom: 7pt;
-	padding: 3pt 0pt 8pt 0pt;
-	width: 100%;
-	height: 16pt;
-}
-
-p.SpaceBreakOrnamentorn,
-p.SpaceBreakwithOrnamentorn {
-	text-indent: 0;
-	content: " ";
-	font-size: 16pt;
-	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
-	background-size: 20.5pt auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-bottom: 0pt;
-	padding: 24pt 0pt 8pt 0pt;
-	width: 100%;
-	height: 16pt;
-}
-
-p.SpaceBreakwithALTOrnamentorn2 {
-	text-indent: 0;
-	content: " ";
-	font-size: 16pt;
-	text-align: center;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn-bull.jpg');
-	background-size: 21.6pt auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-bottom: 0pt;
-	padding: 24pt 0pt 8pt 0pt;
-	width: 100%;
-	height: 16pt;
+p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote, 
+p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote {
+	margin-top: 0pt;
 }
 
 p.PageBreakpb {
