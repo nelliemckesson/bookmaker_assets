@@ -21,6 +21,26 @@
 		]
 		},
 		{
+		"filename": "mini_toc_plus_newsletter.html",
+		"locations" : [
+			{
+				"name": "titlepage",
+				"sequence": "1",
+				"order": "after"
+			},			
+			{
+				"name": "cover",
+				"sequence": "1",
+				"order": "after"
+			},
+			{
+				"name": "startofbook",
+				"sequence": "1",
+				"order": "after"
+			}
+		]
+		},
+		{
 		"filename": "drmfreenotice.html",
 		"locations" : [
 			{
