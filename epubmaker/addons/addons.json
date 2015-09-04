@@ -83,7 +83,7 @@
 		},
 		{
 			"name": "SMP_final",
-			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html"
+			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		},
 		{
 			"name": "SMP_egalley",

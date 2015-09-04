@@ -1884,3 +1884,7 @@ h1.ChapTitleNonprintingctnp {
 *[class*="Nonprinting"] {
   display: none;
 }
+
+.Nonprinting {
+  display: none;
+}
