@@ -1124,8 +1124,8 @@ figure.fullpage {
 	float: top unless-fit;
 	box-sizing: border-box;
 	width: 5.25in;
-	margin-top: 0;
-	margin-left: -0.875in;
+	margin-top: 0.25in;
+	margin-left: -1in;
 	overflow: visible;
 	height: 5.3in;
 }
