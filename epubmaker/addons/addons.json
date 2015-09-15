@@ -108,6 +108,10 @@
 		{
 			"name": "SMP_egalley",
 			"addons": "drmfreenotice.html"
+		},
+		{
+			"name": "SMP_firstpass",
+			"addons": "drmfreenotice.html"
 		}
 	]
 }
