@@ -1031,10 +1031,21 @@ div[data-type="part"]:first-of-type {
 div[data-type="part"] h1 {
 	font-weight: normal;
 	font-size: 22pt;
+	letter-spacing: 1pt;
 	text-transform: uppercase;
 	line-height: 28pt;
 	text-align: center;
 	margin-top: 8pt;
+}
+
+div[data-type="part"] h1.PartNumberpn {
+	font-size: 18pt;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+div[data-type="part"] h1.PartNumberpn + div.runfoot + div.runheadright + div.runheadleft + h1.PartTitlept {
+	margin-top: 0;
 }
 
 p.Text-StandardALTatx, 
