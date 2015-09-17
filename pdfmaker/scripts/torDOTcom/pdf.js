@@ -1,10 +1,10 @@
-function getAllElementsWithAttribute(attribute)
+function getAllElementsWithAttribute(tag, attribute, value)
 {
   var matchingElements = [];
-  var allSections = document.getElementsByTagName('section');
+  var allSections = document.getElementsByTagName(tag);
   for (var i = 0, n = allSections.length; i < n; i++)
   {
-    if (allSections[i].getAttribute(attribute) == 'copyright-page')
+    if (allSections[i].getAttribute(attribute) == value)
     {
       // Element exists with attribute. Add to array.
       matchingElements.push(allSections[i]);
@@ -16,7 +16,7 @@ function getAllElementsWithAttribute(attribute)
 function moveIllustrationSource()
 {
 var illoSources = document.getElementsByClassName("IllustrationSourceis");
-var copyright = getAllElementsWithAttribute("data-type")[0];
+var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
 for (var j = 0; illoSources.length > j; j++) {
 	var figID = illoSources[j].parentNode.getAttribute('id');
 	var figLink = illoSources[j].childNodes[0];
@@ -30,13 +30,13 @@ for (var j = 0; illoSources.length > j; j++) {
 function addRunningElements() {
   var allParas = document.getElementsByTagName('p');
   for (var q = 0; allParas.length > q; q++) {
-    var bookTitle = document.getElementsByName("title")[0];
+    var bookTitle = getAllElementsWithAttribute("meta","name","title")[0];
     var rightText = bookTitle.getAttribute("content");
     var runHeadRight = document.createElement("div");
     runHeadRight.setAttribute("class", "runheadright");
     var textnode = document.createTextNode(rightText);
     runHeadRight.appendChild(textnode);
-    var bookAuthor = document.getElementsByName("author")[0];
+    var bookAuthor = getAllElementsWithAttribute("meta","name","author")[0];
     var leftText = bookAuthor.getAttribute("content");
     var runHeadLeft = document.createElement("div");
     runHeadLeft.setAttribute("class", "runheadleft");
