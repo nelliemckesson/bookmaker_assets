@@ -41,7 +41,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   }
@@ -107,11 +106,17 @@ pre {
   }
 
 em {
+  font-size: inherit;
   font-style: italic;
 }
 
 strong { 
+ font-size: inherit;
  font-weight: bold;
+ }
+
+span, a { 
+ font-size: inherit;
  }
 
 /*
@@ -1574,7 +1579,17 @@ ILLUSTRATIONS
   text-align: center;
   }
 
+.Illustrationholderill {
+  background: #eee;
+  margin-top: 1em;
+  text-align: center;
+  }
+
 h1 + *[class^="Illustrationholder"] {
+  background-color: transparent;
+  }
+
+h1 + .Illustrationholderill {
   background-color: transparent;
   }
 
@@ -1586,19 +1601,53 @@ h1 + *[class^="Illustrationholder"] {
   font-style: italic;
   padding: 1em 0;
   }
+
+.Captioncap {
+  color: #666;
+  text-indent: 0;
+  text-align: center;
+  font-size: .875em;
+  font-style: italic;
+  padding: 1em 0;
+  }
+
 *[class^="IllustrationSource"] {
-  text-align: right;
+  font-size: 0.8em;
+  text-align: center;
   font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
   letter-spacing: .1em;
   margin: 0;
   }
+
+.IllustrationSourceis {
+  font-size: 0.8em;
+  text-align: center;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 0;
+  }
+
 *[class^="Illustrationholder"]+p,
 *[class^="IllustrationSource"]+p {
   margin-top: 1em;
   }
+
+.Illustrationholderill+p,
+.IllustrationSourceis+p {
+  margin-top: 1em;
+  }
+
 *[class^="Illustrationholder"]+*[class^="IllustrationSource"] {
   margin-top: 0;
   }
+
+.Illustrationholderill+.IllustrationSourceis {
+  margin-top: 0;
+  }
+
+section.abouttheauthor figure.Illustrationholderill img {
+  max-height: 50%;
+}
 
 /*
 --------------------------------------------------
