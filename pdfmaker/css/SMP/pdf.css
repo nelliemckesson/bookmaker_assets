@@ -1151,9 +1151,11 @@ figure.fullpage {
 	box-sizing: border-box;
 	width: 5.25in;
 	margin-top: 0.25in;
-	margin-left: -1in;
+	margin-bottom: 0pt;
+	margin-inside: -1in;
+	margin-outside: -0.75in;
 	overflow: visible;
-	height: 5.3in;
+	height: 5.4in;
 }
 
 h1 + figure {
