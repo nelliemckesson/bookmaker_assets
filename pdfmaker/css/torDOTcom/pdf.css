@@ -920,7 +920,7 @@ section[data-type="chapter"] h1.ChapTitlect {
 }
 
 h1.ChapTitlect[data-autolabel="yes"]:before {
-	content: "Chapter " counter(chapternumber);
+	content: attr(data-labeltext);
 	display: block;
 	font-size: 12pt;
 	line-height: 16pt;
