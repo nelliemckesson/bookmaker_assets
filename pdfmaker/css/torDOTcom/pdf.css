@@ -996,7 +996,7 @@ p.FMEpigraphSourcefmeps em {
 	break-inside: avoid;
 }
 
-[class*="ChapOpeningText"] .spansmallcapscharacterssc:first-child {
+[class*="ChapOpeningText"] .chapopener {
 	font-weight: 600;
 	letter-spacing: 0.1pt;
 }

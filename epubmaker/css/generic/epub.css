@@ -228,6 +228,10 @@ a,
 *[class^="DesignNote"] {
   }
 
+.chapopener {
+  text-transform: uppercase;
+}
+
 /*
 --------------------------------------------------
 HEADINGS
