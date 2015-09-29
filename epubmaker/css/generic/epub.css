@@ -1653,6 +1653,10 @@ section.abouttheauthor figure.Illustrationholderill img {
   max-height: 50%;
 }
 
+img.titlepage {
+  width: 100%;
+}
+
 /*
 --------------------------------------------------
 RECIPES
