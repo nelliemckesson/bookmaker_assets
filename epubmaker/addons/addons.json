@@ -90,12 +90,25 @@
 				"sequence": "1"
 			}
 		]
+		},
+		{
+		"filename": "newsletter_torDOTcom.html",
+		"locations" : [
+			{
+				"name": "copyrightpage",
+				"sequence": "1"
+			},
+			{
+				"name": "endofbook",
+				"sequence": "1"
+			}
+		]
 		}
 	],
 	"projects": [
 		{
 			"name": "torDOTcom_final",
-			"addons": "drmfreenotice.html,mini_toc.html,newsletter.html,torDOTcombackad.html"
+			"addons": "drmfreenotice.html,mini_toc.html,newsletter_torDOTcom.html,torDOTcombackad.html"
 		},
 		{
 			"name": "torDOTcom_firstpass",
