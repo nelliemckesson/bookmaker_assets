@@ -879,6 +879,10 @@ blockquote[data-type="epigraph"] {
   margin-bottom: 1em;
   }
 
+.ChapEpigraphSourceceps {
+  text-align: right;
+}
+
 /*
 --------------------------------------------------
 CONTENTS PAGE
