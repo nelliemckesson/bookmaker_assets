@@ -726,8 +726,8 @@ section[data-type="dedication"] blockquote[data-type="epigraph"] {
 	margin-right: 0;
 }
 
-section[data-type="dedication"] p[class*="Epigraphverse"], 
-section[data-type="dedication"] p[class*="Epigraphnon-verse"] {
+section[data-type="dedication"] p[class*="Epigraph-verse"], 
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
 	font-family: "ArnoPro-SmText", serif;
 	font-style: normal;
 	font-size: 10pt;
@@ -737,7 +737,7 @@ section[data-type="dedication"] p[class*="Epigraphnon-verse"] {
 	text-indent: -16pt;
 }
 
-section[data-type="dedication"] p[class*="Epigraphnon-verse"] {
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
 	margin-left: 36pt;
 	text-indent: 0;
 }
@@ -965,17 +965,17 @@ section[data-type="preface"] > blockquote[data-type="epigraph"] p {
 	text-align: left;
 }
 
-section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphversecepiv, 
-div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphversepepiv, 
-section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphversefmepiv {
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraph-versecepiv, 
+div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraph-versepepiv, 
+section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraph-versefmepiv {
 	margin-left: 16pt;
 	text-indent: -16pt;
 	page-break-inside: auto;
 }
 
-section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphnon-versecepi,
-div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphnon-versepepi,
-section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphnon-versefmepi {
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraph-non-versecepi,
+div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraph-non-versepepi,
+section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraph-non-versefmepi {
 	margin-left: 0;
 	page-break-inside: auto;
 }
