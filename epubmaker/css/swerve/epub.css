@@ -1,0 +1,1958 @@
+/*
+
+Since, at the time of this writing, Macmillan's
+Word > ePub conversion tool can't yet convert all
+styles to semantically appropriate elements, the
+CSS here targets almost every existing style by
+name. Styles with shared attributes are grouped
+together as much as possible (e.g. styles that are
+meant to resolve to specific heading levels,
+"space before" and "space after" styles, etc), and
+are otherwise grouped by the categories defined in
+the Word template.
+
+Please note that the Lists section probably has
+the greatest potential for confusion, and it may
+need to be updated as the conversion tool is
+updated. See the comments at the top of that
+section for more information.
+
+--------------------------------------------------
+RESET
+--------------------------------------------------
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body {
+  line-height: 1em;
+  }
+ol, ul {
+  list-style: none;
+  }
+blockquote, q {
+  quotes: none;
+  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+
+/*
+--------------------------------------------------
+BASE STYLES
+--------------------------------------------------
+*/
+
+body {
+  font: normal normal normal 100%/1.5em Georgia,"Times New Roman",Times,serif;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
+  }
+p {
+  line-height: 1.40em;
+  font-size: 100%;
+  margin-bottom: 0.00em;
+  margin-top: 0.00em;
+  margin-right: 0.00em;
+  margin-left: 0.00em;
+  text-align: justify;
+  font-weight: normal;
+  font-style: normal;
+}
+p+p {
+  text-indent: 1.5em;
+  }
+blockquote {
+  margin: 1em 1.5em;
+  font-style: italic;
+  }
+aside,
+.box {
+  padding: 1.5em;
+  border: 2px solid #ccc;
+  margin: 1em 0;
+  }
+.box {
+  background: #eee;
+  }
+img {
+  max-width: 100%;
+  max-height: 100%;
+  }
+pre {
+  margin: 1em 0;
+  white-space: pre-wrap;
+  }
+
+em {
+  font-size: inherit;
+  font-style: italic;
+}
+
+strong { 
+ font-size: inherit;
+ font-weight: bold;
+ }
+
+span, a { 
+ font-size: inherit;
+ }
+
+/*
+--------------------------
+NO INDENT
+--------------------------
+*/
+
+h1+p, *[class^="Head-Level-1"]+p,
+h2+p, *[class^="Head-Level-2"]+p,
+h3+p, *[class^="Head-Level-3"]+p,
+h4+p, *[class^="Head-Level-4"]+p,
+h5+p, *[class^="Head-Level-5"]+p,
+h6+p, *[class^="Head-Level-6"]+p,
+*[class="NoIndent"],
+*[class*="No-Indent"] {
+  text-indent: 0;
+  }
+
+.Text-StdNo-Indenttx1,
+.ChapOpeningTextNo-Indentcotx1 {
+  text-indent: 0;
+  }
+
+/*
+--------------------------
+SPACE BEFORE
+--------------------------
+*/
+
+*[class*="SpaceBefore"] {
+  margin-top: 1em;
+  }
+
+/*
+--------------------------
+SPACE AROUND
+--------------------------
+*/
+
+*[class*="SpaceAround"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+
+/*
+--------------------------
+SPACE AFTER
+--------------------------
+*/
+
+*[class*="SpaceAfter"] {
+  margin-bottom: 1em;
+  }
+
+/*
+--------------------------------------------------
+INLINE ELEMENTS
+--------------------------------------------------
+*/
+
+*[class^="spanitaliccharacters"],
+*[class^="spansmcapital"] {
+  font-style: italic;
+  }
+*[class^="spanboldfacecharacters"],
+*[class^="spanboldital"],
+*[class^="spansmcapbold"] {
+  font-weight: bold;
+  }
+*[class^="spansmallcapscharacters"],
+*[class^="spansmcapbold"] {
+  font-variant: small-caps; /* font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .08em;
+  }
+*[class^="spanunderscorecharacters"] {
+  text-decoration: underline;
+  }
+sup,
+*[class^="spansuperscriptcharacters"] {
+  vertical-align: super;
+  font-size: smaller;
+  }
+sub,
+*[class^="spansubscriptcharacters"] {
+  vertical-align: sub;
+  font-size: smaller;
+  }
+*[class^="spankeyphrase"] {
+  }
+*[class^="spansymbols"] {
+  }
+*[class^="spanaccentcharacters"] {
+  }
+*[class^="spanpreservecharacters"] {
+  white-space: pre-wrap;
+  }
+a,
+*[class^="spanhyperlink"] {
+  color: #c00;
+  text-decoration: underline;
+  }
+*[class^="spancross-reference"] {
+  }
+*[class^="spanmaterialtocome"] {
+  }
+*[class^="spancarryquery"] {
+  }
+*[class^="DesignNote"] {
+  }
+
+.spanstrikethroughcharactersstr {
+  text-decoration: line-through;
+}
+
+.chapopener {
+  text-transform: uppercase;
+}
+
+/*
+--------------------------------------------------
+HEADINGS
+--------------------------------------------------
+COMBINATIONS
+--------------------------
+*/
+
+h1+h2, h1+h3, h1+h4, h1+h5, h1+h6,
+h2+h3, h2+h4, h2+h5, h2+h6,
+h3+h4, h3+h5, h3+h6,
+h4+h5, h4+h6,
+h5+h6,
+*[class*="Head-Level-"]+*[class*="Head-Level-"],
+*[class*="FMLevel-"]+*[class*="FMLevel-"],
+*[class*="PoemLevel-"]+*[class*="PoemLevel-"],
+*[class^="RecipeHead"]+*[class^="RecipeSubhead"],
+*[class*="RecipeLevel-"]+*[class*="RecipeLevel-"],
+*[class^="Sub-RecipeHead"]+*[class^="Sub-RecipeSubhead"],
+*[class*="Sub-RecipeLevel-"]+*[class*="Sub-RecipeLevel-"],
+*[class^="BoxHead"]:first-child,
+*[class^="BoxHead-Level-1"]:first-child,
+*[class^="BoxHead-Level-2"]:first-child,
+*[class^="BoxHead-Level-3"]:first-child,
+*[class^="BoxHead-Level-4"]:first-child,
+*[class^="BoxHead-Level-5"]:first-child,
+*[class^="SidebarHead"]:first-child,
+*[class^="SidebarHead-Level-1"]:first-child,
+*[class^="SidebarHead-Level-2"]:first-child,
+*[class^="SidebarHead-Level-3"]:first-child,
+*[class^="SidebarHead-Level-4"]:first-child,
+*[class^="SidebarHead-Level-5"]:first-child,
+*[class^="BoxHead"]+*[class^="BoxSubhead"],
+*[class^="BoxHead"]+*[class*="BoxHead-Level-"],
+*[class*="BoxHead-Level-"]+*[class*="BoxHead-Level-"],
+*[class^="SidebarHead"]+*[class^="SidebarSubhead"],
+*[class^="SidebarHead"]+*[class*="SidebarHead-Level-"],
+*[class*="SidebarHead-Level-"]+*[class*="SidebarHead-Level-"],
+*[class^="TableNumber"]+*[class^="TableHead"],
+*[class^="ChartNumber"]+*[class^="ChartHead"],
+*[class^="ChartHead"]:first-child,
+*[class^="ChartHead"]+*[class^="ChartSubhead"],
+*[class^="ChartHead"]+*[class*="ChartLevel-"],
+*[class*="ChartLevel-"]+*[class*="ChartLevel-"],
+*[class^="TableHead"]+*[class^="TableSubhead"],
+*[class^="FigureNumber"]+*[class^="FigureHead"],
+*[class^="FigureHead"]+*[class^="FigureSubhead"],
+*[class^="FigureHead"]+*[class*="FigureLevel-"],
+*[class*="FigureLevel-"]+*[class*="FigureLevel-"],
+*[class*="AppendixLevel-"]+*[class*="AppendixLevel-"],
+*[class*="NoteLevel-"]+*[class*="NoteLevel-"],
+*[class*="BiblioLevel-"]+*[class*="BiblioLevel-"],
+*[class*="BOBAdLevel-"]+*[class*="BOBAdLevel-"] {
+  margin-top: 0;
+  }
+
+/*
+--------------------------
+H1
+--------------------------
+*/
+
+h1, .Head-Level-1h1 {
+  text-indent: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: .66666666666667em 0;
+  }
+
+*[class*="Level-1Subhead"],
+*[class^="FrontSalesTitle"],
+*[class^="AdCardMainHead"],
+*[class^="HalftitleBookTitle"],
+*[class^="TitlepageBookTitle"],
+*[class^="TOCFrontmatterHead"],
+*[class^="TOCPartTitle"],
+*[class^="TOCChapterTitle"],
+*[class^="TOCLevel-1ChapterHead"],
+*[class^="FMHead"],
+*[class^="FMTitle"],
+*[class^="FMHeadALT"],
+*[class^="PartNumber"],
+*[class^="PartTitle"],
+*[class^="ChapNumber"],
+*[class^="ChapTitle"],
+*[class^="VolumeNumber"],
+*[class^="VolumeTitle"],
+*[class^="CollectionBookNumber"],
+*[class^="CollectionBookTitle"],
+*[class^="Head-Level-1"],
+*[class^="BoxHead-Level-1"],
+*[class^="SidebarHead-Level-1"],
+*[class^="TableNumber"],
+*[class^="ChartNumber"],
+*[class^="FigureNumber"],
+*[class^="BMHead"],
+*[class^="BMTitle"],
+*[class^="BMHeadALT"],
+*[class^="AppendixHead"],
+*[class^="BOBAdTitle"] {
+  text-indent: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: .66666666666667em 0;
+  }
+*[class^="TOCFrontmatterHead"],
+*[class^="TOCBackmatterHead"],
+*[class^="TOCPartNumber"],
+*[class^="TOCChapterNumber"],
+*[class^="PartNumber"],
+*[class^="ChapNumber"],
+*[class^="VolumeNumber"],
+*[class^="CollectionBookNumber"],
+*[class^="TableNumber"],
+*[class^="ChartNumber"],
+*[class^="FigureNumber"] {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: .5em;
+  margin-top: 0;
+  }
+.TOCFrontmatterHeadcfmh,
+.TOCBackmatterHeadcbmh,
+.TOCPartNumbercpn,
+.TOCChapterNumberccn,
+.PartNumberpn,
+.ChapNumbercn,
+.VolumeNumbervoln,
+.CollectionBookNumberbkn,
+.TableNumbertn,
+.ChartNumbercrn,
+.FigureNumberfgn {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: .5em;
+  margin-top: 0;
+  }
+*[class^="TOCPartNumber"],
+*[class^="TOCFrontmatterHead"],
+*[class^="TOCBackmatterHead"],
+*[class^="PartNumber"],
+*[class^="VolumeNumber"],
+*[class^="CollectionBookNumber"] {
+  background: #999;
+  }
+*[class^="ChapNumber"] {
+  margin-top: 3.00em;
+  }
+.ChapNumbercn {
+  margin-top: 3.00em;
+  }
+*[class^="TableNumber"],
+*[class^="ChartNumber"],
+*[class^="FigureNumber"] {
+  color: #999;
+  margin-top: 1em;
+  margin-bottom: 0;
+  }
+*[class^="FrontSalesTitle"],
+*[class^="AdCardMainHead"],
+*[class^="HalftitleBookTitle"],
+*[class^="TitlepageBookTitle"],
+*[class^="PartTitle"],
+*[class^="ChapTitle"],
+*[class^="VolumeTitle"],
+*[class^="CollectionBookTitle"] {
+  text-align: center;
+  }
+
+.FrontSalesTitlefst,
+.AdCardMainHeadacmh,
+.HalftitleBookTitlehtit,
+.TitlepageBookTitletit,
+.PartTitlept,
+.ChapTitlect,
+.VolumeTitlevolt,
+.CollectionBookTitlebkt {
+  text-align: center;
+  }
+
+/*
+--------------------------
+H2
+--------------------------
+*/
+
+h2 {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+.PartSubtitlepst,
+.ChapSubtitlecst {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+*[class*="Level-2Subhead"],
+*[class^="FrontSalesSubtitle"],
+*[class^="AdCardSubhead"],
+*[class^="TitlepageBookSubtitle"],
+*[class^="FMSubhead"],
+*[class^="TOCChapterSubtitle"],
+*[class^="PartSubtitle"],
+*[class^="ChapSubtitle"],
+*[class^="Head-Level-2"],
+*[class^="BoxHead-Level-2"],
+*[class^="SidebarHead-Level-2"],
+*[class^="BMSubhead"],
+*[class^="AppendixSubhead"],
+*[class^="IndexInternalSubhead"],
+*[class^="BOBAdSubtitle"] {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+.FrontSalesSubtitlefsst,
+.AdCardSubheadacsh,
+.TitlepageBookSubtitlestit,
+.PartSubtitlepst,
+.ChapSubtitlecst {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+*[class^="FrontSalesSubtitle"],
+*[class^="AdCardSubhead"],
+*[class^="TitlepageBookSubtitle"],
+*[class^="PartSubtitle"],
+*[class^="ChapSubtitle"] {
+  text-align: center;
+  margin-bottom: 1em;
+  }
+
+.FrontSalesSubtitlefsst,
+.AdCardSubheadacsh,
+.TitlepageBookSubtitlestit,
+.PartSubtitlepst,
+.ChapSubtitlecst {
+  text-align: center;
+  margin-bottom: 1em;
+  }
+
+.PartSubtitlepst,
+.ChapSubtitlecst {
+  text-align: center;
+  margin-bottom: 1em;
+  }
+
+*[class^="PartSubtitle"]:after,
+*[class^="ChapSubtitle"]:after {
+  display: block;
+  width: 25%;
+  margin: 1em auto;
+  border-top: 1px solid #000;
+  content: "";
+  }
+
+.PartSubtitlepst:after,
+.ChapSubtitlecst:after {
+  display: block;
+  width: 25%;
+  margin: 1em auto;
+  border-top: 1px solid #000;
+  content: "";
+  }
+
+/*
+--------------------------
+H3
+--------------------------
+*/
+
+h3 {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+*[class*="Level-3Subhead"],
+*[class^="FrontSalesQuoteHead"],
+*[class^="PartContentsMainHead"],
+*[class^="Head-Level-3"],
+*[class^="IngredientsHead"],
+*[class^="Sub-RecipeIngredientsHead"],
+*[class^="Menu"],
+*[class^="RecipeVarHead"],
+*[class^="RecipeNoteHead"],
+*[class^="Extract-NoteHead"],
+*[class^="BoxHead-Level-3"],
+*[class^="SidebarHead-Level-3"],
+*[class^="GlossaryTerm"],
+*[class^="BOBAdQuoteHead"] {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+/*
+--------------------------
+H4
+--------------------------
+*/
+
+h4 {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  margin: 1em 0 0 0;
+  }
+
+*[class*="Level-4Subhead"],
+*[class^="PartContentsHead"],
+*[class^="Head-Level-4"],
+*[class^="BoxHead-Level-4"],
+*[class^="SidebarHead-Level-4"] {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  margin: 1em 0 0 0;
+  }
+
+/*
+--------------------------
+H5
+--------------------------
+*/
+
+h5 {
+  text-indent: 0;
+  font-style: italic;
+  margin: 1em 0 0 0;
+  }
+
+*[class*="Level-5Subhead"],
+*[class^="Head-Level-5"],
+*[class^="ExtractHead"],
+*[class^="PoemTitle"],
+*[class^="RecipeHead"],
+*[class^="Sub-RecipeHead"],
+*[class^="BoxHead"],
+*[class^="BoxHead-Level-5"],
+*[class^="SidebarHead"],
+*[class^="SidebarHead-Level-5"],
+*[class^="ChartHead"],
+*[class^="FigureHead"],
+*[class^="TableHead"] {
+  text-indent: 0;
+  font-style: italic;
+  margin: 1em 0 0 0;
+  }
+*[class^="ExtractHead"],
+*[class^="PoemTitle"],
+*[class^="RecipeHead"],
+*[class^="Sub-RecipeHead"],
+*[class^="BoxHead"],
+*[class^="SidebarHead"],
+*[class^="ChartHead"],
+*[class^="TableHead"],
+*[class^="FigureHead"] {
+  font-size: 1em;
+  background: #ccc;
+  }
+
+/*
+--------------------------
+H6
+--------------------------
+*/
+
+h6 {
+  text-indent: 0;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 1em 0 0 0;
+  }
+
+*[class^="Head-Level-6"],
+*[class^="PoemSubtitle"],
+*[class^="PoemNumericSubhead"],
+*[class^="RecipeSubhead"],
+*[class^="Sub-RecipeSubhead"],
+*[class^="BoxSubhead"],
+*[class^="SidebarSubhead"],
+*[class^="TableSubhead"],
+*[class^="ChartSubhead"],
+*[class^="FigureSubhead"] {
+  text-indent: 0;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 1em 0 0 0;
+  }
+*[class^="PoemSubtitle"],
+*[class^="RecipeSubhead"],
+*[class^="Sub-RecipeSubhead"],
+*[class^="BoxSubhead"],
+*[class^="SidebarSubhead"],
+*[class^="TableSubhead"],
+*[class^="ChartSubhead"],
+*[class^="FigureSubhead"] {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1em;
+  }
+
+/*
+--------------------------------------------------
+FRONT SALES
+--------------------------------------------------
+*/
+
+*[class^="FrontSalesText"],
+*[class^="FrontSalesTextNoIndent"] {
+  }
+*[class^="FrontSalesQuote"],
+*[class^="FrontSalesQuoteNoIndent"] {
+  font-style: italic;
+  }
+
+/*
+--------------------------------------------------
+AD CARD
+--------------------------------------------------
+*/
+
+*[class^="AdCardListofTitle"] {
+  text-indent: 0;
+  text-align: center;
+  }
+
+.AdCardListofTitlesacl {
+  text-indent: 0;
+  text-align: center;
+  }
+
+/*
+--------------------------------------------------
+TITLE PAGE
+--------------------------------------------------
+*/
+
+*[class^="TitlepageAuthorName"],
+*[class^="TitlepageContributorName"],
+*[class^="TitlepageTranslatorName"],
+*[class^="TitlepageSeriesTitle"],
+*[class^="TitlepageReadingLine"],
+*[class^="TitlepageImprintLine"],
+*[class^="TitlepagePublisherName"],
+*[class^="TitlepageCities"] {
+  text-indent: 0;
+  text-align: center;
+  margin: 1em 0;
+  }
+
+/* for kindle eink */
+.TitlepageAuthorNameau,
+.TitlepageContributorNamecon,
+.TitlepageTranslatorNametran,
+.TitlepageSeriesTitleser,
+.TitlepageReadingLinerl,
+.TitlepageImprintLineimp,
+.TitlepagePublisherNamepub,
+.TitlepageCitiescit,
+.TitlepageLogoHolder {
+  text-indent: 0;
+  text-align: center;
+  margin: 1em 0;
+  }
+
+section[data-type="titlepage"] {
+  text-align: center;
+}
+
+section[data-type="titlepage"] img {
+  text-align: center;
+  width: auto;
+}
+
+/*
+--------------------------------------------------
+COPYRIGHT PAGE
+--------------------------------------------------
+*/
+
+*[class^="CopyrightTextsinglespace"],
+*[class^="CopyrightTextdoublespace"] {
+  font-size: .75em;
+  text-indent: 0;
+  }
+*[class^="CopyrightTextdoublespace"] {
+  margin: 1em 0;
+  }
+
+.CopyrightTextsinglespacecrtx,
+.CopyrightTextdoublespacecrtxd {
+  font-size: .75em;
+  text-indent: 0;
+  }
+.CopyrightTextdoublespacecrtxd {
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+DEDICATION PAGE
+--------------------------------------------------
+*/
+
+.Dedicationded, 
+.DedicationAuthordedau {
+  text-indent: 0;
+  text-align: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-style: italic;
+  }
+
+*[class^="Dedication"],
+*[class^="DedicationAuthor"] {
+  text-indent: 0;
+  text-align: center;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  }
+*[class^="Dedicationd"] {
+  font-style: italic;
+  }
+*[class^="DedicationAuthor"] {
+  margin-top: 1em;
+  }
+
+.DedicationAuthordedau {
+  margin-top: 1em;
+  }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"] {
+  page-break-before: always;
+  margin-top: 2em;
+  }
+
+*[class^="Dedication"] + p[class*="Epigraph"] {
+  page-break-before: always;
+  margin-top: 2em;
+  }
+
+/*
+--------------------------------------------------
+EPIGRAPH PAGE (AND OTHER EPIGRAPHS)
+--------------------------------------------------
+*/
+
+blockquote[data-type="epigraph"] {
+  margin: 2em 1.5em;
+  }
+*[class^="Epigraph-non-verse"],
+*[class^="Epigraph-verse"],
+*[class^="FMEpigraphnon-verse"],
+*[class^="FMEpigraph-verse"],
+*[class^="PartEpigraph-non-verse"],
+*[class^="PartEpigraph-verse"],
+*[class^="ChapEpigraph-non-verse"],
+*[class^="ChapEpigraph-verse"],
+*[class^="EpigraphinText-non-verse"],
+*[class^="EpigraphinText-verse"],
+*[class^="PoemEpigraph-non-verse"],
+*[class^="PoemEpigraph-verse"],
+*[class^="BoxEpigraph-non-verse"],
+*[class^="BoxEpigraph-verse"],
+*[class^="SidebarEpigraph-non-verse"],
+*[class^="SidebarEpigraph-verse"] {
+  font-style: italic;
+  }
+
+.Epigraph-non-verseepi,
+.Epigraph-verseepiv,
+.FMEpigraph-non-versefmepi,
+.FMEpigraph-versefmepiv,
+.PartEpigraph-non-versepepi,
+.PartEpigraph-versepepiv,
+.ChapEpigraph-non-versecepi,
+.ChapEpigraph-versecepiv,
+.EpigraphinText-non-versetepi,
+.EpigraphinText-versetepiv,
+.PoemEpigraph-non-versevepi,
+.PoemEpigraph-versevepiv,
+.BoxEpigraph-non-versebepi,
+.BoxEpigraph-versebepiv,
+.SidebarEpigraph-non-versesbepi,
+.SidebarEpigraph-versesbepiv {
+  font-style: italic;
+  }
+
+*[class^="EpigraphSource"],
+*[class^="FMEpigraphSource"],
+*[class^="PartEpigraphSource"],
+*[class^="ChapEpigraphSource"],
+*[class^="EpigraphinText-Source"],
+*[class^="PoemEpigraphSource"],
+*[class^="BoxEpigraphSource"],
+*[class^="SidebarEpigraphSource"],
+*[class^="FrontSalesQuoteSource"],
+*[class^="BOBAdQuoteSource"] {
+  text-indent: 0;
+  font-style: normal;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin-bottom: 1em;
+  }
+
+.EpigraphSourceeps,
+.FMEpigraphSourcefmeps,
+.PartEpigraphSourcepeps,
+.ChapEpigraphSourceceps,
+.EpigraphinText-Sourceteps,
+.PoemEpigraphSourceveps,
+.BoxEpigraphSourcebeps,
+.SidebarEpigraphSourcesbeps,
+.FrontSalesQuoteSourcefsqs,
+.BOBAdQuoteSourcebobqs {
+  text-indent: 0;
+  font-style: normal;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin-bottom: 1em;
+  }
+
+.ChapEpigraphSourceceps {
+  text-align: right;
+}
+
+/*
+--------------------------------------------------
+CONTENTS PAGE
+--------------------------------------------------
+*/
+
+*[class^="TOCAuthor"],
+*[class^="TOCPartNumber"],
+*[class^="TOCPartTitle"],
+*[class^="TOCChapterNumber"],
+*[class^="TOCChapterTitle"],
+*[class^="TOCChapterSubtitle"],
+*[class^="TOCLevel-1ChapterHead"],
+*[class^="TOCBackmatterHead"],
+*[class^="TOCPageNumber"] {
+  list-style: none;
+  text-indent: 0;
+  text-align: center;
+  }
+*[class^="TOCAuthor"] {
+  font-style: italic;
+  margin: 1em 0;
+  }
+*[class^="TOCPartNumber"],
+*[class^="TOCChapterNumber"] {
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+*[class^="TOCFrontmatterHead"],
+*[class^="TOCPartTitle"],
+*[class^="TOCChapterTitle"],
+*[class^="TOCLevel-1ChapterHead"],
+*[class^="TOCBackmatterHead"],
+*[class^="TOCPartNumber"],
+*[class^="TOCChapterNumber"],
+*[class^="TOCChapterSubtitle"],
+*[class^="TOCAuthor"],
+*[class^="TOCPageNumber"] {
+  display: none;
+  }
+
+/*
+--------------------------------------------------
+OTHER FRONTMATTER
+--------------------------------------------------
+*/
+
+*[class^="FMTitle"],
+*[class^="FMAuthorName"],
+*[class^="FMAuthorSignature"],
+*[class^="FMDramatisPersonae"] {
+  text-indent: 0;
+  margin: 1em 0;
+  }
+*[class^="FMHead"],
+*[class^="FMTitle"],
+*[class^="FMSubhead"],
+*[class^="FMAuthorName"],
+*[class^="FMHeadALT"] {
+  text-align: center;
+  }
+*[class^="FMHeadALT"],
+*[class^="FMTextALT"],
+*[class^="FMTextNo-IndentALT"] {
+  font-family: Helvetica,Arial,sans-serif;
+  }
+*[class^="FMAuthorSignature"] {
+  font-style: italic;
+  }
+*[class^="FMDramatisPersonae"] {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+
+/*
+--------------------------------------------------
+PART OPENERS
+--------------------------------------------------
+*/
+
+*[class^="PartOrnament"],
+*[class^="PartOrnamentALT"],
+*[class^="PartContentsMainHead"],
+*[class^="PartContentsHead"] {
+  text-indent: 0;
+  text-align: center;
+  margin: 1em 0;
+  }
+*[class^="PartOrnament"]:before,
+*[class^="PartOrnamentALT"]:before {
+  display: block;
+  font-size: 1.125em;
+  }
+*[class^="PartOrnament"]:before {
+  content: "\2766"; /* U+2766 "floral heart" */
+  }
+*[class^="PartOrnamentALT"]:before {
+  content: "\2756"; /* U+2756 "black diamond minus white" */
+  }
+
+/*
+--------------------------------------------------
+CHAPTER OPENERS
+--------------------------------------------------
+*/
+
+.ChapAuthorca,
+.Dateline-Chapterdl {
+  text-align: center;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+*[class^="ChapAuthor"],
+*[class^="Dateline-Chapter"],
+*[class^="ChapOrnament"],
+*[class^="ChapOrnamentALT"] {
+  text-align: center;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+*[class^="ChapOrnament"],:before,
+*[class^="ChapOrnamentALT"]:before {
+  display: block;
+  font-size: 1.125em;
+  }
+*[class^="ChapOrnament"]:before {
+  content: "\2766"; /* U+2766 "floral heart" */
+  }
+*[class^="ChapOrnamentALT"]:before {
+  content: "\2756"; /* U+2756 "black diamond minus white" */
+  }
+
+
+/*
+--------------------------------------------------
+TEXT
+--------------------------------------------------
+*/
+
+*[class^="Text-ComputerType"],
+*[class^="Text-ComputerTypeNo-Indent"] {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
+*[class^="Text-StandardALT"],
+*[class^="Text-StdNo-IndentALT"] {
+  font-family: Helvetica,Arial,sans-serif;
+  }
+
+/*
+--------------------------------------------------
+DISPLAY TEXT
+--------------------------------------------------
+*/
+
+*[class^="InitialCap"] {
+  }
+*[class^="DisplayPhrase"] {
+  clear: both;
+  color: #999;
+  font-size: 1.125em;
+  font-style: italic;
+  text-indent: 0;
+  text-align: center;
+  padding: .5em;
+  background: #eee;
+  margin: 1em 0;
+  }
+*[class^="Storydateline"],
+*[class^="Storylocationline"] {
+  text-indent: 0;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+SPACE BREAKS
+--------------------------------------------------
+*/
+
+.SpaceBreak,
+.SectionBreaksbr,
+.SpaceBreakwithOrnamentorn,
+.SpaceBreakwithALTOrnamentorn2,
+.PartStartpts,
+.PartEndpte,
+.PageBreakpb,
+.SpaceBreak-1-Linels1,
+.SpaceBreak-2-Linels2,
+.SpaceBreak-3-Linels3 {
+  text-indent: 0;
+  text-align: center;
+  }
+
+*[class^="SpaceBreak"],
+*[class^="SectionBreak"],
+*[class^="SpaceBreakwithOrnament"],
+*[class^="SpaceBreakwithALTOrnament"],
+*[class^="PartStart"],
+*[class^="PartEnd"],
+*[class^="PageBreak"],
+*[class^="SpaceBreak-1-Line"],
+*[class^="SpaceBreak-2-Line"],
+*[class^="SpaceBreak-3-Line"] {
+  text-indent: 0;
+  text-align: center;
+  }
+*[class^="SpaceBreak"],
+*[class^="SectionBreak"],
+*[class^="SpaceBreakwithOrnament"],
+*[class^="SpaceBreakwithALTOrnament"],
+*[class^="SpaceBreak-1-Line"] {
+  margin: 1em 0;
+  }
+
+.SpaceBreak,
+.SectionBreaksbr,
+.SpaceBreakwithOrnamentorn,
+.SpaceBreakwithALTOrnamentorn2,
+.SpaceBreak-1-Linels1 {
+  margin: 1em 0 2em 0;
+  }
+
+*[class^="SpaceBreak-2-Line"] {
+  margin: 1em 0 2em 0;
+  }
+
+.SpaceBreak-2-Linels2 {
+  margin: 1em 0 2em 0;
+  }
+
+*[class^="SpaceBreak-3-Line"] {
+  margin: 1em 0 3em 0;
+  }
+
+.SpaceBreak-3-Linels3 {
+  margin: 1em 0 3em 0;
+  }
+
+*[class^="Dateline-Text"] {
+  text-indent: 0;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 1em 0;
+  }
+
+*[class^="SpaceBreakwithOrnament"],
+*[class^="SpaceBreakwithALTOrnament"] {
+  display: block;
+  font-size: 1.125em;
+  }
+
+.SpaceBreakwithOrnamentorn, 
+.SpaceBreakwithALTOrnamentorn2 {
+  display: block;
+  font-size: 1.125em;
+  }
+
+*[class^="SpaceBreakwithOrnament"] {
+  content: "\2766"; /* U+2766 "floral heart" */
+  }
+
+.SpaceBreakwithOrnamentorn {
+  content: "\2766"; /* U+2766 "floral heart" */
+  }
+
+*[class^="SpaceBreakwithALTOrnament"] {
+  content: "\2756"; /* U+2756 "black diamond minus white" */
+  }
+
+.SpaceBreakwithALTOrnamentorn2 {
+  content: "\2756"; /* U+2756 "black diamond minus white" */
+  }
+
+*[class^="BookmakerPageBreak"] {
+  page-break-after: always;
+}
+
+.BookmakerPageBreakbr {
+  page-break-after: always;
+}
+
+p.SpaceBreak-PrintOnlypo {
+  display: none;
+}
+
+/*
+--------------------------------------------------
+EXTRACTS
+--------------------------------------------------
+*/
+
+.Extractext,
+.Extract-Newspapernews,
+.Extract-Diaryextd,
+.Extract-Transcripttrans,
+.Extract-NoIndentext1,
+.Extract-BulletListextbl,
+.Extract-NumListextnl,
+.ExtractHeadexth,
+.Extract-VerseorPoetryextv,
+.Extract-Noteextn,
+.Extract-NoteHeadextnh,
+.Extract-Headlineexthl,
+.Extract-Emailextem,
+.Extract-EmailHeadingemh,
+.Extract-Websiteextws,
+.Extract-SongLyricextsl,
+.Extract-BusinessCardextbc,
+.Extract-Telegramtel,
+.Extract-Inscriptionins,
+.Extract-ScheduleofEventssch {
+  font-style: italic;
+  text-indent: 0;
+}
+
+.Extractext em,
+.Extract-Newspapernews em,
+.Extract-Diaryextd em,
+.Extract-Transcripttrans em,
+.Extract-NoIndentext1 em,
+.Extract-BulletListextbl em,
+.Extract-NumListextnl em,
+.ExtractHeadexth em,
+.Extract-VerseorPoetryextv em,
+.Extract-Noteextn em,
+.Extract-NoteHeadextnh em,
+.Extract-Headlineexthl em,
+.Extract-Emailextem em,
+.Extract-EmailHeadingemh em,
+.Extract-Websiteextws em,
+.Extract-SongLyricextsl em,
+.Extract-BusinessCardextbc em,
+.Extract-Telegramtel em,
+.Extract-Inscriptionins em,
+.Extract-ScheduleofEventssch em {
+  font-style: normal;
+}
+
+*[class^="Extract"],
+*[class*="Extract"] {
+  font-style: italic;
+  text-indent: 0;
+  }
+
+.Extract-Headlineexthl,
+.Extract-EmailHeadingemh {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+
+*[class^="Extract-Headline"],
+*[class^="Extract-EmailHeading"] {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+
+.Extract-Telegramtel {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  text-transform: uppercase;
+  }
+
+*[class^="Extract-Telegram"] {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  text-transform: uppercase;
+  }
+
+/* for kindle */
+blockquote p:first-child {
+  margin-left: 0;
+}
+
+/*
+--------------------------------------------------
+LETTERS
+--------------------------------------------------
+*/
+
+*[class^="LetterExtHeadnote"] {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+*[class^="LetterExtHeadnote"]+p,
+*[class^="LetterExtAddress"],
+*[class^="LetterExtSalutation"],
+*[class^="LetterExtClosing"],
+*[class^="LetterExtSignature"],
+*[class^="LetterExtPostscript"] {
+  text-indent: 0;
+  }
+*[class^="LetterExtDateline"] {
+  margin: 1em 0;
+  }
+p+*[class^="LetterExtSalutation"],
+*[class^="LetterExtClosing"],
+*[class^="LetterExtSignature"],
+*[class^="LetterExtPostscript"] {
+  margin-top: 1em;
+  }
+*[class^="LetterExtClosing"]+*[class^="LetterExtSignature"] {
+  margin-top: 0;
+  }
+
+/*
+--------------------------------------------------
+SCREENPLAY
+--------------------------------------------------
+*/
+*[class*="Screenplay"] {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  font-style: normal;
+  text-indent: 0;
+  }
+*[class^="ScreenplayDramatisPersonae"],
+*[class^="ScreenplayHead"],
+*[class^="ScreenplaySubhead"],
+*[class^="ScreenplaySpeaker"] {
+  text-transform: uppercase;
+  }
+*[class^="ScreenplayHead"],
+*[class^="ScreenplaySubhead"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+*[class^="ScreenplaySpeaker"] {
+  text-align: center;
+  margin-top: 1em;
+  }
+*[class^="ScreenplaySpeaker"],
+*[class^="ScreenplayText"],
+*[class^="ScreenplayTextNo-Indent"] {
+  margin-left: 3em;
+  margin-right: 3em;
+  }
+*[class^="ScreenplayStageDirection"] {
+  font-style: italic;
+  margin: 1em 0;
+  }
+*[class^="ScreenplayText"] {
+  text-indent: 1.5em;
+  }
+
+/*
+--------------------------------------------------
+POETRY
+--------------------------------------------------
+*/
+
+*[class^="PoemTitle"]+*[class^="PoemSubtitle"] {
+  margin-top: 0;
+  }
+*[class^="PoemDedication"] {
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  }
+*[class^="VerseText"],
+*[class^="Epigraph-verse"],
+*[class^="FMEpigraph-verse"],
+*[class^="PartEpigraph-verse"],
+*[class^="ChapEpigraph-verse"],
+*[class^="Extract-VerseorPoetry"],
+*[class^="Extract-SongLyric"],
+*[class^="EpigraphinText-verse"],
+*[class^="PoemEpigraph-verse"],
+*[class^="BoxEpigraph-verse"],
+*[class^="BoxExtract-Verse"],
+*[class^="SidebarEpigraph-verse"],
+*[class^="SidebarExtract-Verse"],
+*[class^="Example-Verse"] {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+  }
+
+.VerseTextvtx,
+.Epigraph-verseepiv,
+.FMEpigraph-versefmepiv,
+.PartEpigraph-versepepiv,
+.ChapEpigraph-versecepiv,
+.Extract-VerseorPoetryextv,
+.Extract-SongLyricextsl,
+.EpigraphinText-versetepiv,
+.PoemEpigraph-versevepiv,
+.BoxEpigraph-versebepiv,
+.BoxExtract-Versebextv,
+.SidebarEpigraph-versesbepiv,
+.SidebarExtract-Versesbextv,
+.Example-Versevexa {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+  }
+
+*[class^="VerseRun-inText"] {
+  text-indent: 0;
+  margin-left: 1.5em;
+  }
+*[class^="PoemDateline"],
+*[class^="PoemDedication"] {
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+LISTS
+--------------------------------------------------
+All list styles are included here. Since some
+classes convert as p elements rather than li, they
+need to be explicitly told to behave like list
+items. Here is an example of the markup and the
+basic CSS that would apply to it:
+
+<p class="BulletListItem">foo</p>
+
+[class^="BulletListItem"] {
+  display: list-item;
+  list-style: disc outside;
+  }
+
+Other styles are already converting semantically,
+but they still include a p element, like so:
+
+<ul>
+  <li class="BulletListItem">
+    <p class="BulletListItem">foo</p>
+  </li>
+</ul>
+
+So, in this case, all the rules of
+".BulletListItem" will be applied to both the li
+and the p, which means there will be multiple
+bullets for each list item. This is why styles
+that are converting this way are commented out –
+so that the list style will be applied to the li
+but not the p. As the conversion tool is updated
+to accommodate more of the list styles below,
+their class names will each need to be commented
+out (or deleted) to avoid the problem of redundant
+list markers.
+
+Note also that ordered lists include the numbers
+in the text, which is why they have a
+list-style-type of "none".
+
+*/
+
+*[class^="ListHead"] {
+  font-weight: bold;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+ul,
+ol {
+  margin: 1em 0;
+  }
+li,
+/*
+[class^="ListNum"],
+[class^="ListNumSubentry"],
+*/
+*[class^="ListAlpha"],
+/*
+*[class^="ListAlphaSubentry"],
+*[class^="ListBullet"],
+*[class^="ListBulletSubentry"],
+*[class^="ListUnnum"],
+*[class^="ListUnnumSubentry"],
+*/
+*[class^="NumberedParagraph"],
+*[class^="BulletedParagraph"],
+/*
+*[class^="Extract-NumList"],
+*[class^="Extract-BulletList"],
+*/
+*[class^="IngredientsList"],
+*[class^="Sub-RecipeIngredientsList"]
+/*
+*[class^="BoxListNumb"],
+*[class^="BoxListBullet"],
+*[class^="BoxListUnnum"],
+*[class^="SidebarListNum"],
+*[class^="SidebarListBullet"],
+*[class^="SidebarListUnnum"],
+*[class^="AppendixListNum"],
+*[class^="AppendixListUnnum"],
+*[class^="AppendixListBullet"]
+*/ {
+  display: list-item;
+  list-style-position: outside;
+  margin-left: 1.5em;
+  text-indent: 0;
+  }
+li ul,
+li ol {
+  margin: 0;
+  }
+ul li,
+/*
+*[class^="ListBullet"],
+*[class^="ListUnnum"],
+*/
+*[class^="BulletedParagraph"],
+/*
+*[class^="Extract-BulletList"],
+*/
+*[class^="IngredientsList"],
+*[class^="Sub-RecipeIngredientsList"]
+/*
+*[class^="BoxListBullet"],
+*[class^="BoxListUnnum"],
+*[class^="SidebarListBullet"],
+*[class^="SidebarListUnnum"],
+*[class^="AppendixListUnnum"],
+*[class^="AppendixListBullet"]
+*/ {
+  list-style-type: disc;
+  }
+li ul li,
+*[class^="ListBulletSubentry"],
+*[class^="ListUnnumSubentry"] {
+  list-style-type: square;
+  }
+ol li,
+/*
+*[class^="ListNum"],
+*[class^="ListNumSubentry"],
+*/
+*[class^="ListAlpha"],
+/*
+*[class^="ListAlphaSubentry"],
+*/
+*[class^="NumberedParagraph"]
+/*
+*[class^="Extract-NumList"],
+*[class^="BoxListNum"],
+*[class^="SidebarListNum"],
+*[class^="AppendixListNum"]
+*/ {
+/*list-style-type: decimal;*/
+  list-style-type: none;
+  }
+li ol li
+/*
+*[class^="ListNumSubentry"],
+*[class^="ListAlphaSubentry"],
+*/ {
+  border-bottom: none;
+  }
+/*
+*[class^="ListNumSubentry"] {
+  list-style-type: lower-roman;
+  }
+*[class^="ListAlpha"] {
+  list-style-type: upper-alpha;
+  }
+li[class^="ListAlphaSubentry"] {
+  list-style-type: lower-alpha;
+  }
+*/
+li[class^="Checklist"],
+li[class^="ChecklistSubentry"] {
+  list-style-type: none;
+  text-indent: 0;
+  margin-left: 1.5em;
+  }
+li[class^="Checklist"]:before,
+li[class^="ChecklistSubentry"]:before {
+  display: block;
+  width: 1.5em;
+  float: left;
+  margin-left: -1.5em;
+  text-align: center;
+  content: "\2713"; /* U+2713 "check mark" */
+  }
+*[class^="ColumnHead"] {
+  font-weight: bold;
+  text-indent: 0;
+  }
+
+/*
+*[class^="RecipeProcedure"],
+*[class^="RecipeProceduresNoIndent"],
+*[class^="Sub-RecipeProcedures"],
+*[class^="Sub-RecipeProceduresNoIndent"],
+*[class^="Definition-Numbered"]
+*/
+
+/*
+--------------------------------------------------
+ILLUSTRATIONS
+--------------------------------------------------
+*/
+
+*[class^="Illustrationholder"] {
+  margin-top: 1em;
+  text-align: center;
+  }
+
+.Illustrationholderill {
+  margin-top: 1em;
+  text-align: center;
+  }
+
+h1 + *[class^="Illustrationholder"] {
+  background-color: transparent;
+  }
+
+h1 + .Illustrationholderill {
+  background-color: transparent;
+  }
+
+*[class^="Caption"] {
+  color: #666;
+  text-indent: 0;
+  text-align: center;
+  font-size: .875em;
+  font-style: italic;
+  padding: 1em 0;
+  }
+
+.Captioncap {
+  color: #666;
+  text-indent: 0;
+  text-align: center;
+  font-size: .875em;
+  font-style: italic;
+  padding: 1em 0;
+  }
+
+*[class^="IllustrationSource"] {
+  font-size: 0.8em;
+  text-align: center;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 0;
+  }
+
+.IllustrationSourceis {
+  font-size: 0.8em;
+  text-align: center;
+  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  letter-spacing: .1em;
+  margin: 0;
+  }
+
+*[class^="Illustrationholder"]+p,
+*[class^="IllustrationSource"]+p {
+  margin-top: 1em;
+  }
+
+.Illustrationholderill+p,
+.IllustrationSourceis+p {
+  margin-top: 1em;
+  }
+
+*[class^="Illustrationholder"]+*[class^="IllustrationSource"] {
+  margin-top: 0;
+  }
+
+.Illustrationholderill+.IllustrationSourceis {
+  margin-top: 0;
+  }
+
+section.abouttheauthor figure.Illustrationholderill img {
+  max-height: 50%;
+}
+
+img.titlepage {
+  width: 100%;
+}
+
+/*
+--------------------------------------------------
+RECIPES
+--------------------------------------------------
+*/
+
+*[class^="Menu"],
+*[class^="ChapterContent"] {
+  }
+*[class^="RecipeHeadnote"],
+*[class^="Sub-RecipeHeadnote"] {
+  font-style: italic;
+  text-indent: 0;
+  }
+*[class^="RecipeTime"],
+*[class^="RecipeYield"],
+*[class^="Sub-RecipeYield"],
+*[class^="RecipeNutritionInfo"],
+*[class^="RecipeGarnish"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-indent: 0;
+  }
+*[class^="RecipeVarHead"],
+*[class^="RecipeVarText"],
+*[class^="RecipeVarTextNo-Indent"],
+*[class^="RecipeNoteHead"],
+*[class^="RecipeNoteText"],
+*[class^="RecipeNoteTextNo-Indent"] {
+  font-style: italic;
+  }
+*[class^="Sub-RecipeHead"],
+*[class^="Sub-RecipeSubhead"],
+*[class^="Sub-RecipeLevel-2Subhead"],
+*[class^="Sub-RecipeLevel-3Subhead"],
+*[class^="Sub-RecipeLevel-4Subhead"],
+*[class^="Sub-RecipeLevel-5Subhead"],
+*[class^="Sub-RecipeHeadnote"],
+*[class^="Sub-RecipeIngredientsHead"],
+*[class^="Sub-RecipeIngredientsList"],
+*[class^="Sub-RecipeProcedures"],
+*[class^="Sub-RecipeProceduresNoIndent"],
+*[class^="Sub-RecipeYields"] {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  }
+*[class^="Sub-RecipeLevel-1Subhead"] {
+  margin-left: 1em;
+  margin-right: 1em;
+  }
+*[class^="Sub-RecipeIngredientsList"],
+*[class^="Sub-RecipeProcedures"],
+*[class^="Sub-RecipeProceduresNoIndent"] {
+  margin-left: 3em;
+  }
+
+/*
+--------------------------------------------------
+BOXES AND SIDEBARS
+--------------------------------------------------
+*/
+
+*[class^="TOCPartNumber"],
+*[class^="TOCChapterNumber"],
+*[class^="RecipeHead"],
+*[class^="Sub-RecipeHead"],
+*[class^="RecipeSubhead"],
+*[class^="Sub-RecipeSubhead"],
+*[class^="BoxHead"],
+*[class^="BoxSubhead"],
+*[class^="SidebarHead"],
+*[class^="ExtractHead"],
+*[class^="PoemTitle"],
+*[class^="SidebarSubhead"],
+*[class^="PoemSubtitle"],
+*[class^="TableHead"],
+*[class^="TableSubhead"],
+*[class^="ChartHead"],
+*[class^="ChartSubhead"],
+*[class^="FigureHead"],
+*[class^="FigureSubhead"] {
+  text-align: center;
+  padding: .5em 0;
+  }
+*[class^="BoxHead"]+p,
+*[class^="SidebarHead"]+p,
+*[class^="ExtractHead"]+p,
+*[class^="PoemTitle"]+p {
+  margin-top: 1em;
+  }
+*[class^="BoxSourceNote"],
+*[class^="BoxFootnote"],
+*[class^="SidebarSourceNote"],
+*[class^="SidebarFootnote"] {
+  font-size: .75em;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+*[class^="BoxExtract"],
+*[class^="BoxExtract-Verse"],
+*[class^="SidebarExtract"],
+*[class^="SidebarExtract-Verse"] {
+  }
+
+/*
+--------------------------------------------------
+TABLES, CHARTS, and FIGURES
+--------------------------------------------------
+*/
+
+table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+  }
+th,
+td {
+  padding: .5em;
+  border: 1px solid #ccc;
+  }
+*[class^="TableColumnHead"],
+*[class^="TableSourceNote"],
+*[class^="TableFootnote"],
+*[class^="ChartColumnHead"],
+*[class^="ChartLabel"],
+*[class^="ChartSourceNote"],
+*[class^="ChartFootnote"],
+*[class^="FigureColumnHead"],
+*[class^="FigureLabel"],
+*[class^="FigureSourceNote"],
+*[class^="FigureFootnote"] {
+  text-indent: 0;
+  }
+*[class^="TableColumnHead"],
+*[class^="ChartColumnHead"],
+*[class^="FigureColumnHead"] {
+  font-weight: bold;
+  }
+*[class^="TableSourceNote"],
+*[class^="TableFootnote"],
+*[class^="ChartSourceNote"],
+*[class^="ChartFootnote"],
+*[class^="FigureSourceNote"],
+*[class^="FigureFootnote"] {
+  font-size: .75em;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+GENERAL BACKMATTER HEADS
+--------------------------------------------------
+*/
+
+*[class^="BMHead"],
+*[class^="BMTitle"],
+*[class^="BMSubhead"],
+*[class^="BMHeadALT"] {
+  text-align: center;
+  }
+*[class^="BMHeadALT"],
+*[class^="BMTextALT"],
+*[class^="BMTextALTNo-Indent"] {
+  font-family: Helvetica,Arial,sans-serif;
+  }
+
+/*
+--------------------------------------------------
+APPENDICES
+--------------------------------------------------
+*/
+
+*[class^="AppendixHead"],
+*[class^="AppendixSubhead"] {
+  text-align: center;
+  }
+*[class^="AppendixSourceNote"],
+*[class^="AppendixFootnote"] {
+  font-size: .75em;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+GLOSSARY and DICTIONARY-STYLE ENTRIES
+--------------------------------------------------
+*/
+
+*[class^="Example"],
+*[class^="Example-Verse"],
+*[class^="Exampleeg"],
+*[class^="Exampleindialogform"] {
+  font-style: italic;
+  }
+*[class^="GlossaryText"],
+*[class^="Entry"],
+*[class^="Definition"],
+*[class^="DefinitionSource"],
+*[class^="Example"],
+*[class^="References"],
+*[class^="Exampleeg"],
+*[class^="Exampleindialogform"] {
+  text-indent: 0;
+  }
+*[class^="DefinitionSource"] {
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+ADDRESSES
+--------------------------------------------------
+*/
+
+*[class^="Address"] {
+  text-indent: 0;
+  }
+
+/*
+--------------------------------------------------
+NOTES SECTION
+--------------------------------------------------
+*/
+
+div[data-type="footnotes"] {
+  margin-top: 1em;
+}
+
+p[data-type="footnote"] {
+  font-size: .75em;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+*[class^="FootnoteText"],
+*[class^="endnotetext"] {
+  font-size: .75em;
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+BIBLIOGRAPHY
+--------------------------------------------------
+*/
+
+*[class^="BibliographyText"] {
+  text-indent: 0;
+  margin: 1em 0;
+  }
+
+/*
+--------------------------------------------------
+INDEX
+--------------------------------------------------
+*/
+
+*[class^="IndexEntry"],
+*[class^="IndexSubentry"],
+*[class^="IndexSub-subentry"] {
+  text-indent: 0;
+  }
+*[class^="IndexSubentry"] {
+  margin-left: 1.5em;
+  }
+*[class^="IndexSub-subentry"] {
+  margin-left: 3em;
+  }
+
+/*
+--------------------------------------------------
+Nonprinting elements
+--------------------------------------------------
+*/
+
+h1.ChapTitleNonprintingctnp {
+  display: none;
+}
+
+*[class*="Nonprinting"] {
+  display: none;
+}
+
+.Nonprinting {
+  display: none;
+}
