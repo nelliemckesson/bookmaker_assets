@@ -228,6 +228,10 @@ a,
 *[class^="DesignNote"] {
   }
 
+.spanstrikethroughcharactersstr {
+  text-decoration: line-through;
+}
+
 .chapopener {
   text-transform: uppercase;
 }
