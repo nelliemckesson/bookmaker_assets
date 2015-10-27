@@ -873,7 +873,7 @@ h1.AboutAuthorTextHeadatah {
 	text-align: center;
 }
 
-section[data-type="preface"] p.FMSubheadfmsh {
+section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
 	font-size: 14pt;
 	line-height: 16pt;
 	font-style: italic;
