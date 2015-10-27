@@ -115,6 +115,10 @@
 			"addons": "drmfreenotice.html,torDOTcombackad.html"
 		},
 		{
+			"name": "swerve_egalley",
+			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
+		},
+		{
 			"name": "SMP_final",
 			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		},

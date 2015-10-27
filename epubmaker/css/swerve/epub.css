@@ -75,7 +75,9 @@ BASE STYLES
 */
 
 body {
-  font: normal normal normal 100%/1.5em Georgia,"Times New Roman",Times,serif;
+  font-style: normal; 
+  font-weight: normal;
+  font-family: Georgia,"Times New Roman",Times,serif;
   text-align: left;
   color: #000;
   background-color: #fff;
