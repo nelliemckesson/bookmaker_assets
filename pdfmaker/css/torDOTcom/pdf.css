@@ -1185,6 +1185,11 @@ section[data-type="appendix"] h1 + figure img {
 	max-height: 2in;
 }
 
+.TeaserOpeningTexttotx, .TeaserOpeningTextNo-Indenttotx1 {
+  text-align: center;
+  text-indent: 0;
+}
+
 p[class*="SpaceAfter"] + p[class*="Extract"], 
 p[class*="SpaceAround"] + p[class*="Extract"], 
 p[class*="Extract-NoIndent"] {
