@@ -1019,7 +1019,11 @@ CHAPTER OPENERS
 *[class^="ChapOrnamentALT"]:before {
   content: "\2756"; /* U+2756 "black diamond minus white" */
   }
-
+.TeaserOpeningTexttotx, .TeaserOpeningTextNo-Indenttotx1 {
+  text-align: center;
+  text-indent: 0;
+  font-size: 1.2em;
+}
 
 /*
 --------------------------------------------------

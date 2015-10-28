@@ -41,7 +41,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
+  /*font: inherit;*/
   vertical-align: baseline;
   }
 /* HTML5 display-role reset for older browsers */
@@ -50,7 +50,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
   }
 body {
-  line-height: 1em;
   }
 ol, ul {
   list-style: none;
@@ -77,10 +76,7 @@ BASE STYLES
 body {
   font-style: normal; 
   font-weight: normal;
-  font-family: Georgia,"Times New Roman",Times,serif;
   text-align: left;
-  color: #000;
-  background-color: #fff;
   }
 p {
   line-height: 1.40em;
@@ -202,7 +198,8 @@ INLINE ELEMENTS
   }
 *[class^="spansmallcapscharacters"],
 *[class^="spansmcapbold"] {
-  font-variant: small-caps; /* font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .08em;
   }
 *[class^="spanunderscorecharacters"] {
@@ -230,7 +227,7 @@ sub,
 a,
 *[class^="spanhyperlink"] {
   color: #c00;
-  text-decoration: underline;
+  text-decoration: none;
   }
 *[class^="spancross-reference"] {
   }
@@ -396,13 +393,12 @@ h1, .Head-Level-1h1 {
 *[class^="PartNumber"],
 *[class^="VolumeNumber"],
 *[class^="CollectionBookNumber"] {
-  background: #999;
   }
-*[class^="ChapNumber"] {
-  margin-top: 3.00em;
+*[class^="ChapTitle"] {
+  margin-bottom: 3.00em;
   }
-.ChapNumbercn {
-  margin-top: 3.00em;
+.ChapTitlect {
+  margin-bottom: 3.00em;
   }
 *[class^="TableNumber"],
 *[class^="ChartNumber"],
@@ -447,15 +443,6 @@ h2 {
   margin: 1em 0 0 0;
   }
 
-.PartSubtitlepst,
-.ChapSubtitlecst {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
 *[class*="Level-2Subhead"],
 *[class^="FrontSalesSubtitle"],
 *[class^="AdCardSubhead"],
@@ -487,7 +474,8 @@ h2 {
   text-transform: uppercase;
   letter-spacing: .075em;
   font-weight: bold;
-  margin: 1em 0 0 0;
+  margin: 1em 0 1em 0;
+  text-align: center;
   }
 
 *[class^="FrontSalesSubtitle"],
@@ -499,37 +487,10 @@ h2 {
   margin-bottom: 1em;
   }
 
-.FrontSalesSubtitlefsst,
-.AdCardSubheadacsh,
-.TitlepageBookSubtitlestit,
 .PartSubtitlepst,
 .ChapSubtitlecst {
   text-align: center;
   margin-bottom: 1em;
-  }
-
-.PartSubtitlepst,
-.ChapSubtitlecst {
-  text-align: center;
-  margin-bottom: 1em;
-  }
-
-*[class^="PartSubtitle"]:after,
-*[class^="ChapSubtitle"]:after {
-  display: block;
-  width: 25%;
-  margin: 1em auto;
-  border-top: 1px solid #000;
-  content: "";
-  }
-
-.PartSubtitlepst:after,
-.ChapSubtitlecst:after {
-  display: block;
-  width: 25%;
-  margin: 1em auto;
-  border-top: 1px solid #000;
-  content: "";
   }
 
 /*
@@ -637,7 +598,8 @@ H6
 
 h6 {
   text-indent: 0;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
   }
@@ -653,7 +615,8 @@ h6 {
 *[class^="ChartSubhead"],
 *[class^="FigureSubhead"] {
   text-indent: 0;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
   }
@@ -868,7 +831,8 @@ blockquote[data-type="epigraph"] {
 *[class^="BOBAdQuoteSource"] {
   text-indent: 0;
   font-style: normal;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
   }
@@ -885,7 +849,8 @@ blockquote[data-type="epigraph"] {
 .BOBAdQuoteSourcebobqs {
   text-indent: 0;
   font-style: normal;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
   }
@@ -1026,7 +991,11 @@ CHAPTER OPENERS
 *[class^="ChapOrnamentALT"]:before {
   content: "\2756"; /* U+2756 "black diamond minus white" */
   }
-
+.TeaserOpeningTexttotx, .TeaserOpeningTextNo-Indenttotx1 {
+  text-align: center;
+  text-indent: 0;
+  font-size: 1.2em;
+}
 
 /*
 --------------------------------------------------
@@ -1631,7 +1600,8 @@ h1 + .Illustrationholderill {
 *[class^="IllustrationSource"] {
   font-size: 0.8em;
   text-align: center;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
   }
@@ -1639,7 +1609,8 @@ h1 + .Illustrationholderill {
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
   }
