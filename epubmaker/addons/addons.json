@@ -123,6 +123,14 @@
 			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		},
 		{
+			"name": "swerve_final",
+			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
+		},
+		{
+			"name": "swerve_pod",
+			"addons": "drmfreenotice.html,mini_toc_plus_newsletter.html,newsletter.html"
+		},
+		{
 			"name": "SMP_egalley",
 			"addons": "drmfreenotice.html"
 		},
