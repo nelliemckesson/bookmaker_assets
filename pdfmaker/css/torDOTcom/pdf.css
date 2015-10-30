@@ -1025,7 +1025,6 @@ div[data-type="part"] h1 {
 
 div[data-type="part"] h1.PartNumberpn {
 	font-size: 18pt;
-	/*font-variant: small-caps;*/
 	text-transform: lowercase;
 	font-variant: prince-opentype(smcp, onum);
 }
