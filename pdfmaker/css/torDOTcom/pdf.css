@@ -1089,7 +1089,19 @@ blockquote p:first-child {
 }
 
 .Extract-VerseorPoetryextv {
-	text-indent: 0;
+	font-style: italic;
+	text-indent: -16pt;
+	margin-left: 16pt;
+	text-align: left;
+}
+
+*[class~="Dateline"] {
+	font-size: 10pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 36pt;
+	margin-bottom: 12pt;
+	text-align: left;
 }
 
 p.IllustrationSourceis {
