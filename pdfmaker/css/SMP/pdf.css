@@ -1348,7 +1348,7 @@ span[data-type="footnote"] > span:first-of-type {
 	counter-increment: endnotes;
 }
 
-.endnotetext:before {
+.endnotetext p:first-of-type:before {
 	content: counter(endnotes)"\2003";
 	font-family: "ArnoPro";
     font-weight: 600;
