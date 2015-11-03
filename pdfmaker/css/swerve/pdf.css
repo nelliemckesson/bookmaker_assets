@@ -1337,6 +1337,7 @@ span[data-type="footnote"] > span:first-of-type {
 	content: counter(endnotes)"\2003";
 	font-family: "ArnoPro";
     font-weight: 600;
+    display: inline-block;
 }
 
 /* character styles */
