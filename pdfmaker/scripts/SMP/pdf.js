@@ -30,17 +30,15 @@ for (var j = 0; illoSources.length > j; j++) {
 function addRunningElements() {
   var allParas = document.getElementsByTagName('p');
   for (var q = 0; allParas.length > q; q++) {
-    var bookTitle = getAllElementsWithAttribute("meta","name","title")[0];
-    var rightText = bookTitle.getAttribute("content");
+    var bookTitle = BKMKRINSERTBKTITLE;
     var runHeadRight = document.createElement("div");
     runHeadRight.setAttribute("class", "runheadright");
-    var textnode = document.createTextNode(rightText);
+    var textnode = document.createTextNode(bookTitle);
     runHeadRight.appendChild(textnode);
-    var bookAuthor = getAllElementsWithAttribute("meta","name","author")[0];
-    var leftText = bookAuthor.getAttribute("content");
+    var bookAuthor = BKMKRINSERTBKAUTHOR;
     var runHeadLeft = document.createElement("div");
     runHeadLeft.setAttribute("class", "runheadleft");
-    var textnode = document.createTextNode(leftText);
+    var textnode = document.createTextNode(bookAuthor);
     runHeadLeft.appendChild(textnode);
     var runFoot = document.createElement("div");
     var runFootSpan = document.createElement("span");
