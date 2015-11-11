@@ -1123,21 +1123,21 @@ SPACE BREAKS
   font-size: 1.125em;
   }
 
-*[class^="SpaceBreakwithOrnament"] {
-  content: "\2766"; /* U+2766 "floral heart" */
+/**[class^="SpaceBreakwithOrnament"] {
+  content: "\2766"; /* U+2766 "floral heart"
   }
 
 .SpaceBreakwithOrnamentorn {
-  content: "\2766"; /* U+2766 "floral heart" */
+  content: "\2766"; /* U+2766 "floral heart"
   }
 
 *[class^="SpaceBreakwithALTOrnament"] {
-  content: "\2756"; /* U+2756 "black diamond minus white" */
+  content: "\2756"; /* U+2756 "black diamond minus white"
   }
 
 .SpaceBreakwithALTOrnamentorn2 {
-  content: "\2756"; /* U+2756 "black diamond minus white" */
-  }
+  content: "\2756"; /* U+2756 "black diamond minus white"
+  }*/
 
 *[class^="BookmakerPageBreak"] {
   page-break-after: always;
