@@ -661,7 +661,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 
 section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
 	content: " ";
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerimg/logo.jpg");
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/swerve/logo.jpg");
 	background-position: center bottom;
 	background-size: 2in auto;
 	background-repeat: no-repeat;
