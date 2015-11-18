@@ -184,7 +184,7 @@
 	bleed: 0.125in;
 	@footnotes {
 		font-family: "Gotham", sans-serif;
-		font-size: 7pt;
+		font-size: 7.5pt;
 		background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
 		background-position: 0 0in;
 		background-size: 60pt auto;
@@ -209,7 +209,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 7pt;
+		font-size: 7.5pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -262,7 +262,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 7pt;
+		font-size: 7.5pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -322,7 +322,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 7pt;
+		font-size: 7.5pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -456,7 +456,7 @@ div.runheadleft {
 	font-family: "Gotham", sans-serif;
 	text-align: center;
 	font-style: italic;
-	font-size: 7pt;
+	font-size: 7.5pt;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -467,7 +467,7 @@ div.runheadright {
 	font-family: "Gotham", sans-serif;
 	text-align: center;
 	font-style: italic;
-	font-size: 7pt;
+	font-size: 7.5pt;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -1128,7 +1128,7 @@ p[class*="Dateline"] {
 
 p.IllustrationSourceis {
 	font-family: "MinionPro", serif;
-	font-size: 7pt;
+	font-size: 7.5pt;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 27pt;
@@ -1142,7 +1142,7 @@ p.IllustrationSourceis a {
 }
 
 section[data-type="copyright-page"] p.IllustrationSourceis {
-	font-size: 7pt;
+	font-size: 7.5pt;
 	margin-top: 0;
 	margin-bottom: 0;
 	float: bottom;
@@ -1320,7 +1320,7 @@ p.PageBreakpb {
 span[data-type="footnote"], 
 .endnotetext {
 	font-family: "Gotham", sans-serif;
-	font-size: 7pt;
+	font-size: 7.5pt;
 	line-height: 12pt;
 	text-indent: 0;
 	margin-left: 0;
