@@ -187,8 +187,9 @@
 	@top-center {
 		font-family: "ArnoPro-Caption", serif;
 		text-align: center;
-		font-style: italic;
-		font-size: 8.5pt;
+		font-style: normal;
+		font-size: 8pt;
+		text-transform: uppercase;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -240,8 +241,9 @@
 		content: normal;
 		font-family: "ArnoPro-Caption", serif;
 		text-align: center;
-		font-style: italic;
-		font-size: 8.5pt;
+		font-style: normal;
+		font-size: 8pt;
+		text-transform: uppercase;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -300,8 +302,9 @@
 		content: normal;
 		font-family: "ArnoPro-Caption", serif;
 		text-align: center;
-		font-style: italic;
-		font-size: 8.5pt;
+		font-style: normal;
+		font-size: 8pt;
+		text-transform: uppercase;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -434,8 +437,9 @@ div.runheadleft {
 	flow: static(runheadleft); 
 	font-family: "ArnoPro-Caption", serif;
 	text-align: center;
-	font-style: italic;
-	font-size: 8.5pt;
+	font-style: normal;
+	font-size: 8pt;
+	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -445,8 +449,9 @@ div.runheadright {
 	flow: static(runheadright);
 	font-family: "ArnoPro-Caption", serif;
 	text-align: center;
-	font-style: italic;
-	font-size: 8.5pt;
+	font-style: normal;
+	font-size: 8pt;
+	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -866,7 +871,7 @@ h1.BMHeadbmh,
 h1.AboutAuthorTextHeadatah {
 	font-size: 16pt;
 	line-height: 16pt;
-	font-weight: bold;
+	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 48pt;
 	padding: 0;
@@ -893,7 +898,7 @@ section[data-type="chapter"] h1.ChapNumbercn,
 p.ChapNumberNonprintingcnp {
 	font-size: 12pt;
 	line-height: 16pt;
-	font-weight: 600;
+	font-weight: normal;
 	text-align: center;
 	margin-top: 20pt;
 	margin-bottom: 7pt;
@@ -924,7 +929,7 @@ h1.ChapTitlect[data-autolabel="yes"]:before {
 	display: block;
 	font-size: 12pt;
 	line-height: 16pt;
-	font-weight: 600;
+	font-weight: normal;
 	text-align: center;
 	margin-top: 16pt;
 	margin-bottom: 11pt;
