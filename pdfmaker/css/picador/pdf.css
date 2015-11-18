@@ -642,10 +642,10 @@ h1 + .TitlepageSeriesTitleser {
 section[data-type="titlepage"] p.TitlepageAuthorNameau {
 	font-size: 16pt;
 	padding-top: 40pt;
-	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+	/*background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
 	background-size: 60pt auto;
 	background-position: top;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	margin-top: 24pt;
 	margin-bottom: 32pt;
 	text-indent: 0;
