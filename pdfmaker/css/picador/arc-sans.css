@@ -43,6 +43,27 @@
 }
 
 @font-face {
+	font-family: "ArnoPro";
+	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-Regular.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ArnoPro";
+	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-Bold.otf');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "ArnoPro";
+	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-Italic.otf');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
 	font-family: "ArnoPro-SmText";
 	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/ArnoPro-SmText.otf');
 	font-style: normal;
@@ -163,7 +184,7 @@
 	bleed: 0.125in;
 	@footnotes {
 		font-family: "Gotham", sans-serif;
-		font-size: 9pt;
+		font-size: 7pt;
 		background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
 		background-position: 0 0in;
 		background-size: 60pt auto;
@@ -188,7 +209,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 8.5pt;
+		font-size: 7pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -199,7 +220,7 @@
 		/*content: counter(page);*/
 		content: flow(runfoot);
 		text-align: center;
-		font-size: 9pt;
+		font-size: 7.5pt;
 		vertical-align: top;
 	}
 }
@@ -241,7 +262,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 8.5pt;
+		font-size: 7pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -252,7 +273,7 @@
 		font-variant: prince-opentype(onum);
 		content: counter(page);
 		text-align: center;
-		font-size: 9pt;
+		font-size: 7.5pt;
 		vertical-align: top;
 	}
 }
@@ -301,7 +322,7 @@
 		font-family: "Gotham", sans-serif;
 		text-align: center;
 		font-style: italic;
-		font-size: 8.5pt;
+		font-size: 7pt;
 		vertical-align: bottom;
 		padding: 0;
 		margin: 0;
@@ -312,7 +333,7 @@
 		font-variant: prince-opentype(onum);
 		content: counter(page);
 		text-align: center;
-		font-size: 9pt;
+		font-size: 7.5pt;
 		vertical-align: top;
 	}
 }
@@ -416,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	font-size: 12pt;
+	font-size: 9pt;
 	line-height: 16pt;
 	text-indent: 16pt;
 	text-align: justify;
@@ -435,7 +456,7 @@ div.runheadleft {
 	font-family: "Gotham", sans-serif;
 	text-align: center;
 	font-style: italic;
-	font-size: 8.5pt;
+	font-size: 7pt;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -446,7 +467,7 @@ div.runheadright {
 	font-family: "Gotham", sans-serif;
 	text-align: center;
 	font-style: italic;
-	font-size: 8.5pt;
+	font-size: 7pt;
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
@@ -457,7 +478,7 @@ div.runfoot {
 	font-family: "Gotham", sans-serif;
 	font-variant: prince-opentype(onum);
 	text-align: center;
-	font-size: 9pt;
+	font-size: 7.5pt;
 	text-indent: 0;
 }
 
@@ -467,7 +488,7 @@ div.runfoot span {
 	font-family: "Gotham", sans-serif;
 	font-variant: prince-opentype(onum);
 	text-align: center;
-	font-size: 9pt;
+	font-size: 7.5pt;
 	text-indent: 0;
 }
 
@@ -529,8 +550,8 @@ section[data-type="copyright-page"] {
 
 
 .FrontSalesTitlefst {
-	font-size: 16pt;
-	font-weight: bold;
+	font-size: 13pt;
+	font-weight: 600;
 	text-align: center;
 	margin-bottom: 16pt;
 }
@@ -548,8 +569,8 @@ p.FrontSalesQuotefsq:first-of-type {
 
 .FrontSalesQuoteSourcefsqs {
 	font-family: "Gotham", sans-serif;
-	font-weight: bold;
-	font-size: 10.5pt;
+	font-weight: 600;
+	font-size: 9pt;
 	text-align: right;
 	margin-bottom: 16pt;
 }
@@ -560,7 +581,7 @@ p.FrontSalesQuotefsq:first-of-type {
 
 section[data-type="halftitlepage"] > h1, 
 p.HalftitleBookTitlehtit {
-	font-size: 18pt;
+	font-size: 15pt;
 	font-weight: normal;
 	line-height: 16pt;
 	margin-top: 16pt;
@@ -574,7 +595,7 @@ section.adcard {
 p.AdCardMainHeadacmh {
 	text-transform: lowercase;
 	font-variant: small-caps;
-	font-size: 14pt;
+	font-size: 11.5pt;
 	margin-top: 16pt;
 	margin-bottom: 16pt;
 	text-align: center;
@@ -597,7 +618,7 @@ section[data-type="titlepage"] > h1 {
 	font-family: "Gotham", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 25pt;
+	font-size: 20pt;
 	line-height: 28pt;
 	text-transform: uppercase;
 	text-align: center;
@@ -623,7 +644,7 @@ h1 + .TitlepageSeriesTitleser {
 .TitlepageBookSubtitlestit, 
 .TitlepageSeriesTitleser {
 	font-weight: normal;
-	font-size: 16pt;
+	font-size: 13pt;
 	line-height: 24pt;
 	font-style: italic;
 	text-align: center;
@@ -640,7 +661,7 @@ h1 + .TitlepageSeriesTitleser {
 }
 
 section[data-type="titlepage"] p.TitlepageAuthorNameau {
-	font-size: 16pt;
+	font-size: 13pt;
 	padding-top: 40pt;
 	background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
 	background-size: 60pt auto;
@@ -691,7 +712,7 @@ section[data-type="copyright-page"] p:first-child {
 
 section[data-type="copyright-page"] p {
 	font-family: "Gotham", sans-serif;
-	font-size: 10pt;
+	font-size: 8pt;
 	text-align: center;
 	text-indent: 0;
 }
@@ -730,7 +751,7 @@ section[data-type="dedication"] p[class*="Epigraph-verse"],
 section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
 	font-family: "Gotham", sans-serif;
 	font-style: normal;
-	font-size: 10pt;
+	font-size: 8pt;
 	text-align: left;
 	margin-left: 52pt;
 	margin-right: 36pt;
@@ -745,7 +766,7 @@ section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
 section[data-type="dedication"] p[class*="EpigraphSource"] {
 	font-family: "Gotham", sans-serif;
 	font-weight: 600;
-	font-size: 10pt;
+	font-size: 8pt;
 	font-style: normal;
 	text-align: right;
 	margin-left: 36pt;
@@ -762,8 +783,8 @@ nav[data-type="toc"] {
 }
 
 nav[data-type="toc"] h1 {
-	font-weight: bold;
-	font-size: 16pt;
+	font-weight: 600;
+	font-size: 13pt;
 	line-height: 16pt;
 	margin-top: 0;
 	text-align: center;
@@ -774,7 +795,7 @@ nav[data-type="toc"] ol {
 }
 
 nav[data-type="toc"] li {
-	font-size: 11pt;
+	font-size: 9pt;
 	line-height: 16pt;
 	margin-bottom: 16pt;
 	margin-left: 0;
@@ -864,9 +885,9 @@ section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
 h1.BMHeadbmh, 
 h1.AboutAuthorTextHeadatah {
-	font-size: 16pt;
+	font-size: 13pt;
 	line-height: 16pt;
-	font-weight: bold;
+	font-weight: 600;
 	margin-top: 0;
 	margin-bottom: 48pt;
 	padding: 0;
@@ -874,7 +895,7 @@ h1.AboutAuthorTextHeadatah {
 }
 
 section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
-	font-size: 14pt;
+	font-size: 11pt;
 	line-height: 16pt;
 	font-style: italic;
 	margin-top: -45pt;
@@ -891,7 +912,7 @@ section[data-type="chapter"] {
 
 section[data-type="chapter"] h1.ChapNumbercn, 
 p.ChapNumberNonprintingcnp {
-	font-size: 12pt;
+	font-size: 9pt;
 	line-height: 16pt;
 	font-weight: 600;
 	text-align: center;
@@ -910,7 +931,7 @@ h1.ChapTitleNonprintingctnp + * {
 }
 
 section[data-type="chapter"] h1.ChapTitlect {
-	font-size: 16pt;
+	font-size: 12pt;
 	line-height: 24pt;
 	font-weight: normal;
 	text-align: center;
@@ -922,7 +943,7 @@ section[data-type="chapter"] h1.ChapTitlect {
 h1.ChapTitlect[data-autolabel="yes"]:before {
 	content: attr(data-labeltext);
 	display: block;
-	font-size: 12pt;
+	font-size: 9pt;
 	line-height: 16pt;
 	font-weight: 600;
 	text-align: center;
@@ -960,7 +981,7 @@ section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
 div[data-type="part"] > blockquote[data-type="epigraph"] p, 
 section[data-type="preface"] > blockquote[data-type="epigraph"] p {
 	font-family: "Gotham", sans-serif;
-	font-size: 10pt;
+	font-size: 8pt;
 	line-height: 16pt;
 	text-align: left;
 }
@@ -1002,7 +1023,7 @@ p.FMEpigraphSourcefmeps em {
 }
 
 .Head-Level-1h1 {
-	font-size: 14pt;
+	font-size: 11pt;
 	font-style: italic;
 	text-align: center;
 	margin-top: 32pt;
@@ -1015,7 +1036,7 @@ div[data-type="part"] {
 
 div[data-type="part"] h1 {
 	font-weight: normal;
-	font-size: 22pt;
+	font-size: 19pt;
 	letter-spacing: 1pt;
 	text-transform: uppercase;
 	line-height: 28pt;
@@ -1024,7 +1045,7 @@ div[data-type="part"] h1 {
 }
 
 div[data-type="part"] h1.PartNumberpn {
-	font-size: 18pt;
+	font-size: 15pt;
 	text-transform: lowercase;
 	font-variant: prince-opentype(smcp, onum);
 }
@@ -1035,8 +1056,8 @@ div[data-type="part"] h1.PartNumberpn + div.runfoot + div.runheadright + div.run
 
 p.Text-StandardALTatx, 
 p.Text-StdNo-IndentALTatx1 {
-	font-family: "AromaNo2LTPro", sans-serif;
-	font-size: 9.75pt;
+	font-family: "ArnoPro", serif;
+	font-size: 12pt;
 }
 
 p.Text-ComputerTypecom, 
@@ -1053,12 +1074,12 @@ pre.poetry {
 
 pre.poetry p, pre.poetry p:first-of-type {
 	text-indent: -16pt;
-	font-size: 10.5pt;
+	font-size: 8pt;
 }
 
 p[class*="Extract"] {
 	font-family: "Gotham", sans-serif;
-	font-size: 10.5pt;
+	font-size: 8pt;
 }
 
 blockquote {
@@ -1075,9 +1096,9 @@ blockquote p:first-child {
 }
 
 .ExtractHeadexth, .Extract-Headlineexthl {
-	font-size: 12pt;
+	font-size: 9pt;
 	line-height: 16pt;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 16pt;
@@ -1097,7 +1118,7 @@ blockquote p:first-child {
 
 p[class*="Dateline"] {
 	text-indent: 0;
-	font-size: 10pt;
+	font-size: 8pt;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-top: 36pt;
@@ -1164,8 +1185,8 @@ h1 + figure {
 }
 
 figcaption {
-	font-family: "AromaNo2LTPro", sans-serif;
-	font-size: 8.5pt;
+	font-family: "ArnoPro", serif;
+	font-size: 10.5pt;
 	line-height: 16pt;
 	text-align: left;
 }
@@ -1226,7 +1247,7 @@ p.SpaceBreakwithOrnamentorn,
 p.SpaceBreakwithALTOrnamentorn2 {
 	text-indent: 0;
 	content: " ";
-	font-size: 16pt;
+	font-size: 13pt;
 	text-align: center;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1266,7 +1287,7 @@ p.SpaceBreakwithALTOrnamentorn2 {
 p.SpaceBreak-PrintOnlypo {
 	text-indent: 0;
 	content: " ";
-	font-size: 16pt;
+	font-size: 13pt;
 	height: 16pt;
 }
 
@@ -1299,7 +1320,7 @@ p.PageBreakpb {
 span[data-type="footnote"], 
 .endnotetext {
 	font-family: "Gotham", sans-serif;
-	font-size: 9pt;
+	font-size: 7pt;
 	line-height: 12pt;
 	text-indent: 0;
 	margin-left: 0;
@@ -1374,7 +1395,7 @@ span[data-type="footnote"] > span:first-of-type {
 }
 
 sup, sub {
-	font-size: 6pt;
+	font-size: 5pt;
     vertical-align: top;
     position: relative;
     top: -0.6em;
@@ -1383,14 +1404,14 @@ sup, sub {
 sub { top: 0.1em; }
 
 .spansuperscriptcharacterssup {
-	font-size: 6pt;
+	font-size: 5pt;
 	vertical-align: top;
     position: relative;
     top: -0.6em;
 }
 
 .spansubscriptcharacterssub {
-	font-size: 6pt;
+	font-size: 5pt;
 	vertical-align: top;
     position: relative;
     top: 0.1em;
