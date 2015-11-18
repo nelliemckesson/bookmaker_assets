@@ -1,0 +1,21 @@
+@page {
+	size: 4.5in 7.125in;
+	margin-bottom: 0.5in;
+	padding-bottom: 0.25in;
+}
+
+@page :left {
+	margin-right: 0.75in;
+}
+
+@page :right {
+	margin-left: 0.75in;
+}
+
+p {
+	font-size: 8pt;
+}
+
+section[data-type="copyright-page"] p {
+	font-size: 7pt;
+}
