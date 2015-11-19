@@ -525,7 +525,8 @@ section[data-type="halftitlepage"],
 section[data-type="titlepage"], 
 section[data-type="copyright-page"], 
 section[data-type="dedication"],
-nav[data-type="toc"] {
+nav[data-type="toc"], 
+section.abouttheauthor {
 	page: front;
 }
 
