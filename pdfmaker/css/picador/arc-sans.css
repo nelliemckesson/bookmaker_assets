@@ -42,7 +42,7 @@
 	font-weight: 100;
 }
 
-@page {
+/*@page {
 	@footnotes {
 		font-family: "Gotham", sans-serif;
 		font-size: 7.5pt;
@@ -80,7 +80,7 @@
 		font-family: "Gotham", sans-serif;
 		font-size: 7.5pt;
 	}
-}
+}*/
 
 body {
 	font-family: "Gotham", sans-serif;
@@ -90,7 +90,7 @@ p {
 	font-size: 9pt;
 }
 
-div.runheadleft { 
+/*div.runheadleft { 
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
 }
@@ -108,7 +108,7 @@ div.runfoot {
 div.runfoot span { 
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
-}
+}*/
 
 .FrontSalesTitlefst {
 	font-weight: 600;
