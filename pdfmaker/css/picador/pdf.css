@@ -525,8 +525,7 @@ section[data-type="halftitlepage"],
 section[data-type="titlepage"], 
 section[data-type="copyright-page"], 
 section[data-type="dedication"],
-nav[data-type="toc"], 
-section.abouttheauthor {
+nav[data-type="toc"] {
 	page: front;
 }
 
@@ -537,9 +536,9 @@ section[data-type="copyright-page"] {
 
 .FrontSalesTitlefst {
 	font-size: 16pt;
-	font-weight: bold;
+	font-weight: normal;
 	text-align: center;
-	margin-bottom: 8pt;
+	margin-bottom: 0pt;
 }
 
 .FrontSalesQuoteNoIndentfsq1  {
@@ -858,6 +857,10 @@ section[data-type="preface"] {
 	page: chapter;
 	page-break-before: right;
 	prince-page-group: start;
+}
+
+section.abouttheauthor {
+	page: front;
 }
 
 section.adcard {
