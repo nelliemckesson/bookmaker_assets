@@ -252,7 +252,7 @@
 		content: normal;
 		font-family: "ArnoPro-Caption", serif;
 		font-variant: prince-opentype(onum);
-		content: counter(page);
+		content: counter(page, lower-roman);
 		text-align: center;
 		font-size: 9pt;
 		vertical-align: top;
@@ -512,7 +512,8 @@ section.adcard {
 }
 
 section[data-type="halftitlepage"], 
-section[data-type="titlepage"] {
+section[data-type="titlepage"],
+section[data-type="dedication"] {
 	page-break-before: right;
 }
 
@@ -696,7 +697,8 @@ section[data-type="copyright-page"] p:first-child {
 
 section[data-type="copyright-page"] p {
 	font-family: "ArnoPro-SmText", serif;
-	font-size: 10pt;
+	font-size: 9pt;
+	line-height: 13pt;
 	text-align: center;
 	text-indent: 0;
 }
@@ -885,6 +887,16 @@ section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
 	margin-top: -45pt;
 	text-align: center;
 	margin-bottom: 30pt;
+}
+
+section[data-type="preface"] + section[data-type="chapter"], 
+section[data-type="foreword"] + section[data-type="chapter"], 
+section[data-type="titlepage"] + section[data-type="chapter"], 
+section[data-type="halftitlepage"] + section[data-type="chapter"], 
+section[data-type="copyright-page"] + section[data-type="chapter"], 
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"] {
+	counter-reset: page 1 footnote;
 }
 
 section[data-type="chapter"] {
@@ -1193,13 +1205,13 @@ img[src*="fullpage"] {
 	top: -1.4in;
 }
 
-section[data-type="appendix"] h1 + figure {
+section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
 	margin-top: -32pt;
 	margin-bottom: 27pt;
 	max-height: 2in;
 }
 
-section[data-type="appendix"] h1 + figure img {
+section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
 	max-height: 2in;
 }
 

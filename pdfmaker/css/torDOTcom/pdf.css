@@ -1188,13 +1188,13 @@ img[src*="fullpage"] {
 	top: -1.4in;
 }
 
-section[data-type="appendix"] h1 + figure {
+section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
 	margin-top: -32pt;
 	margin-bottom: 27pt;
 	max-height: 2in;
 }
 
-section[data-type="appendix"] h1 + figure img {
+section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
 	max-height: 2in;
 }
 
