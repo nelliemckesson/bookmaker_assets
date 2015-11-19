@@ -862,7 +862,7 @@ section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
 	margin-bottom: 30pt;
 }
 
-h1.FrontSalesTitlefst {
+section[data-type="preface"] h1.FrontSalesTitlefst {
 	font-size: 16pt;
 	font-weight: normal;
 	text-align: center;
