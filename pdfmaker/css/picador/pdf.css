@@ -732,6 +732,10 @@ p[class*="EpigraphSource"] em {
 	break-inside: avoid;
 }
 
+.texttoc {
+	display: none;
+}
+
 nav[data-type="toc"] {
 	page-break-before: right;
 	page-break-after: always;

@@ -1929,3 +1929,7 @@ h1.ChapTitleNonprintingctnp {
 .Nonprinting {
   display: none;
 }
+
+.texttoc {
+  display: none;
+}
