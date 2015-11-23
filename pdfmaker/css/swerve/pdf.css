@@ -756,6 +756,10 @@ p[class*="EpigraphSource"] em {
 	break-inside: avoid;
 }
 
+.texttoc {
+	display: none;
+}
+
 nav[data-type="toc"] {
 	page-break-before: right;
 	page-break-after: always;
@@ -873,7 +877,7 @@ h1.AboutAuthorTextHeadatah {
 	text-align: center;
 }
 
-section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
+section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst, p.BMSubheadbmsh {
 	font-size: 14pt;
 	line-height: 16pt;
 	font-style: italic;

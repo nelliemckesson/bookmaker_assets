@@ -184,7 +184,7 @@ h1.AboutAuthorTextHeadatah {
 	font-weight: 600;
 }
 
-section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
+section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst, p.BMSubheadbmsh {
 	font-size: 11pt;
 }
 

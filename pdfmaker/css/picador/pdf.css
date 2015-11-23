@@ -857,7 +857,7 @@ h1.AboutAuthorTextHeadatah {
 	text-align: center;
 }
 
-section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst {
+section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst, p.BMSubheadbmsh {
 	font-size: 14pt;
 	line-height: 16pt;
 	font-style: italic;
@@ -1029,6 +1029,14 @@ p.FMEpigraphSourcefmeps em {
 .Head-Level-1h1 {
 	font-size: 14pt;
 	font-style: italic;
+	text-align: center;
+	margin-top: 32pt;
+	margin-bottom: 16pt;
+}
+
+.Head-Level-2h2 {
+	font-size: 12pt;
+	font-variant: small-caps;
 	text-align: center;
 	margin-top: 32pt;
 	margin-bottom: 16pt;
