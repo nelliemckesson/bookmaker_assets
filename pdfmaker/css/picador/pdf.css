@@ -864,6 +864,7 @@ section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst, p.BMSubheadbmsh
 	margin-top: -45pt;
 	text-align: center;
 	margin-bottom: 30pt;
+	page-break-after: avoid;
 }
 
 section[data-type="preface"] h1.FrontSalesTitlefst {
@@ -964,6 +965,7 @@ section[data-type="appendix"] {
 	page-break-before: right;
 	counter-reset: footnote;
 	page: chapter;
+	prince-page-group: start;
 }
 
 section[data-type="appendix"]:first-of-type {
@@ -1033,6 +1035,7 @@ p.FMEpigraphSourcefmeps em {
 	text-align: center;
 	margin-top: 32pt;
 	margin-bottom: 16pt;
+	page-break-after: avoid;
 }
 
 .Head-Level-2h2 {
@@ -1041,6 +1044,7 @@ p.FMEpigraphSourcefmeps em {
 	text-align: center;
 	margin-top: 32pt;
 	margin-bottom: 16pt;
+	page-break-after: avoid;
 }
 
 div[data-type="part"] {
