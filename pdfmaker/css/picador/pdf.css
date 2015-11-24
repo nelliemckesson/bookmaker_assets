@@ -1049,6 +1049,16 @@ p.FMEpigraphSourcefmeps em {
 	page-break-after: avoid;
 }
 
+.Head-Level-3h3 {
+	text-indent: 0;
+	font-size: 12pt;
+	font-style: italic;
+	text-align: center;
+	margin-top: 32pt;
+	margin-bottom: 16pt;
+	page-break-after: avoid;
+}
+
 div[data-type="part"] {
 	page-break-before: right;
 }

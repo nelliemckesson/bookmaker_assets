@@ -224,6 +224,14 @@ section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphSour
 	font-size: 11pt;
 }
 
+.Head-Level-2h2 {
+	font-size: 9pt;
+}
+
+.Head-Level-3h3 {
+	font-size: 9pt;
+}
+
 div[data-type="part"] h1 {
 	font-size: 19pt;
 }
