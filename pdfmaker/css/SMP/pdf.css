@@ -952,6 +952,7 @@ h1.ChapTitlect[data-autolabel="yes"]:before {
 section[data-type="appendix"] {
 	page-break-before: right;
 	counter-reset: footnote;
+	page: chapter;
 }
 
 section[data-type="appendix"]:first-of-type {
