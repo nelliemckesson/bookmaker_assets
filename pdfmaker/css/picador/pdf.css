@@ -1030,6 +1030,7 @@ p.FMEpigraphSourcefmeps em {
 }
 
 .Head-Level-1h1 {
+	text-indent: 0;
 	font-size: 14pt;
 	font-style: italic;
 	text-align: center;
@@ -1039,6 +1040,7 @@ p.FMEpigraphSourcefmeps em {
 }
 
 .Head-Level-2h2 {
+	text-indent: 0;
 	font-size: 12pt;
 	font-variant: small-caps;
 	text-align: center;
