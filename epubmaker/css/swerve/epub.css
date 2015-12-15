@@ -191,13 +191,30 @@ INLINE ELEMENTS
 *[class^="spansmcapital"] {
   font-style: italic;
   }
+.spanitaliccharactersital,
+.spansmcapitalscital {
+  font-style: italic;
+  }
 *[class^="spanboldfacecharacters"],
 *[class^="spanboldital"],
 *[class^="spansmcapbold"] {
   font-weight: bold;
   }
+.spanboldfacecharacters,
+.spanbolditalbem,
+.spansmcapboldscbold {
+  font-weight: bold;
+  }
 *[class^="spansmallcapscharacters"],
-*[class^="spansmcapbold"] {
+*[class^="spansmcapbold"],
+*[class^="spansmcapital"] {
+  font-size: .75em; 
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  }
+.spansmallcapscharacterssc,
+.spansmcapboldscbold,
+.spansmcapitalscital {
   font-size: .75em; 
   text-transform: uppercase;
   letter-spacing: .08em;
@@ -205,13 +222,26 @@ INLINE ELEMENTS
 *[class^="spanunderscorecharacters"] {
   text-decoration: underline;
   }
+.spanunderscorecharactersus {
+  text-decoration: underline;
+  }
 sup,
 *[class^="spansuperscriptcharacters"] {
   vertical-align: super;
   font-size: smaller;
   }
+sup,
+.spansuperscriptcharacterssup {
+  vertical-align: super;
+  font-size: smaller;
+  }
 sub,
 *[class^="spansubscriptcharacters"] {
+  vertical-align: sub;
+  font-size: smaller;
+  }
+sub,
+.spansuperscriptcharacterssub {
   vertical-align: sub;
   font-size: smaller;
   }
@@ -228,6 +258,11 @@ a,
 *[class^="spanhyperlink"] {
   color: #c00;
   text-decoration: none;
+  }
+a,
+.spanhyperlinkurl {
+  color: #c00;
+  text-decoration: underline;
   }
 *[class^="spancross-reference"] {
   }
