@@ -1098,6 +1098,7 @@ p.FMEpigraphSourcefmeps em {
 	text-indent: 0;
 	font-size: 12pt;
 	font-variant: small-caps;
+	text-transform: lowercase;
 	text-align: center;
 	margin-top: 32pt;
 	margin-bottom: 16pt;
@@ -1452,16 +1453,19 @@ span[data-type="footnote"] > span:first-of-type {
 
 .spansmallcapscharacterssc {
 	font-variant: small-caps;
+	text-transform: lowercase;
 }
 
 .spansmcapitalscital {
 	font-variant: small-caps;
 	font-style: italic;
+	text-transform: lowercase;
 }
 
 .spansmcapboldscbold {
 	font-variant: small-caps;
 	font-weight: bold;
+	text-transform: lowercase;
 }
 
 .spanboldfacecharactersbf {
