@@ -199,17 +199,15 @@ INLINE ELEMENTS
 *[class^="spansmallcapscharacters"],
 *[class^="spansmcapbold"],
 *[class^="spansmcapital"] {
-/*  font-size: .75em; 
-  text-transform: uppercase;*/
-  font-variant: small-caps;
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .08em;
   }
 .spansmallcapscharacterssc,
 .spansmcapboldscbold,
 .spansmcapitalscital {
-/*  font-size: .75em; 
-  text-transform: uppercase;*/
-  font-variant: small-caps;
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .08em;
   }
 *[class^="spanunderscorecharacters"] {
