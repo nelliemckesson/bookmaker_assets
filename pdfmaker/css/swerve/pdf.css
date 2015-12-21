@@ -749,10 +749,11 @@ section[data-type="copyright-page"] p {
 	font-size: 10pt;
 	text-align: center;
 	text-indent: 0;
+	line-height: 14pt;
 }
 
 .CopyrightTextdoublespacecrtxd {
-	margin-bottom: 16pt;
+	margin-bottom: 14pt;
 }
 
 section[data-type="dedication"] {
