@@ -716,7 +716,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 
 section[data-type="titlepage"] p.TitlepageCitiescit:after {
 	content: " ";
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/SMP/logo.jpg");
+	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
 	background-position: center bottom;
 	background-size: 0.2in auto;
 	background-repeat: no-repeat;
