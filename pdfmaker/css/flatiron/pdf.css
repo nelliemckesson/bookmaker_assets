@@ -708,6 +708,7 @@ section[data-type="titlepage"] p.TitlepageAuthorNameau {
 }
 
 section[data-type="titlepage"] p.TitlepageImprintLineimp {
+	content: " ";
 	float: bottom;
 	text-align: center;
 	text-indent: 0;
