@@ -389,10 +389,11 @@
 
 @page fronttitlepage:first {
 	padding-bottom: 0.6in;
+	margin-bottom: 0.88in;
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
-  background-size: 0.2in auto;
+  background-size: 0.5in auto;
 	@top-center {
 		content: normal;
 	}
