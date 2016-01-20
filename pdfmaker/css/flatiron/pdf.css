@@ -348,70 +348,6 @@
 	}
 }
 
-@page fronttitlepage {
-	@top-center {
-		content: normal;
-		font-family: "ArnoPro-Caption", serif;
-		text-align: center;
-		font-style: italic;
-		font-size: 8.5pt;
-		vertical-align: bottom;
-		padding: 0;
-		margin: 0;
-	}
-	@bottom-center {
-		content: normal;
-		font-family: "ArnoPro-Caption", serif;
-		font-variant: prince-opentype(onum);
-		text-align: center;
-		font-size: 9pt;
-		vertical-align: top;
-	}
-}
-
-@page fronttitlepage:left {
-	@top-center {
-		content: normal;
-	}
-	@bottom-center {
-		content: normal;
-	}
-}
-
-@page fronttitlepage:right {
-	@top-center {
-		content: normal;
-	}
-	@bottom-center {
-		content: normal;
-	}
-}
-
-@page fronttitlepage:first {
-	padding-bottom: 0.6in;
-	margin-bottom: 0.88in;
-	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
-	background-repeat: no-repeat;
-	background-position: center bottom;
-  background-size: 0.5in auto;
-	@top-center {
-		content: normal;
-	}
-	@bottom-center {
-		content: normal;
-	}
-}
-
-@page fronttitlepage:blank {
-	margin-top: 2.16in;
-	@top-center {
-		content: normal;
-	}
-	@bottom-center {
-		content: normal;
-	}
-}
-
 @page copyright {
 	margin-bottom: 0.25in;
 	@top-center {
@@ -634,15 +570,11 @@ section[data-type="preface"].adcard {
 }
 
 section[data-type="halftitlepage"], 
+section[data-type="titlepage"], 
 section[data-type="copyright-page"], 
 section[data-type="dedication"],
 nav[data-type="toc"] {
 	page: front;
-}
-
-section[data-type="titlepage"] {
-	page: fronttitlepage;
-	prince-page-group: start;
 }
 
 section[data-type="copyright-page"] {
@@ -781,17 +713,18 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 	text-indent: 0;
 }
 
-/*section[data-type="titlepage"] p.TitlepageImprintLineimp:after {
+section[data-type="titlepage"]:last-child:after {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
 	background-position: center bottom;
-	background-size: 0.2in auto;
+	background-size: 0.5in auto;
 	background-repeat: no-repeat;
 	display: block;
+	float: bottom;
 	width: 100%;
 	height: 0.2in;
 	text-align: center;
-}*/
+}
 
 .TitlepageCitiescit, .TitlepagePublisherNamepub, .TitlepageImprintLineimp {
 	font-family: "ArnoPro-SmText", serif;
