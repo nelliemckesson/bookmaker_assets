@@ -713,7 +713,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 	text-indent: 0;
 }
 
-section[data-type="titlepage"]:last-child:after {
+section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
 	background-position: center bottom;
