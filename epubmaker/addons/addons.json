@@ -160,6 +160,10 @@
 			"addons": "drmnotice.html"
 		},
 		{
+			"name": "flatiron_RBM",
+			"addons": "drmnotice.html"
+		},
+		{
 			"name": "SMP_firstpass",
 			"addons": "drmnotice.html"
 		}
