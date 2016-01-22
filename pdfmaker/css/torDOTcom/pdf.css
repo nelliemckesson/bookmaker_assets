@@ -1194,11 +1194,7 @@ p[class*="Dateline"] {
 	text-align: left;
 }
 
-p[class*="Dateline"] + p[class*="Dateline"] {
-	margin-top: 0pt;
-}
-
-p.Dateline-Chapterdl + p.Dateline-Chapterdl {
+p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadeft + p[class*="Dateline"] {
 	margin-top: 0pt;
 }
 
