@@ -1198,6 +1198,10 @@ p[class*="Dateline"] + p[class*="Dateline"] {
 	margin-top: 0;
 }
 
+p.Dateline-Chapterdl + p.Dateline-Chapterdl {
+	margin-top: 0;
+}
+
 p.IllustrationSourceis {
 	font-family: "MinionPro", serif;
 	font-size: 7pt;
