@@ -1194,6 +1194,10 @@ p[class*="Dateline"] {
 	text-align: left;
 }
 
+p[class*="Dateline"] + p[class*="Dateline"] {
+	margin-top: 0;
+}
+
 p.IllustrationSourceis {
 	font-family: "MinionPro", serif;
 	font-size: 7pt;
