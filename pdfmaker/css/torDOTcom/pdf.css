@@ -1195,11 +1195,11 @@ p[class*="Dateline"] {
 }
 
 p[class*="Dateline"] + p[class*="Dateline"] {
-	margin-top: 0;
+	margin-top: 0pt;
 }
 
 p.Dateline-Chapterdl + p.Dateline-Chapterdl {
-	margin-top: 0;
+	margin-top: 0pt;
 }
 
 p.IllustrationSourceis {
