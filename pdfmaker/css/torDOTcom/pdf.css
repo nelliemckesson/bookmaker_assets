@@ -1194,7 +1194,7 @@ p[class*="Dateline"] {
 	text-align: left;
 }
 
-p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadeft + p[class*="Dateline"] {
+p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
 	margin-top: 0pt;
 }
 
