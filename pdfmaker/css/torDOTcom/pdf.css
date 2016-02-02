@@ -1186,6 +1186,18 @@ blockquote p:first-child {
 	text-align: left;
 }
 
+p[class*="ExtractSource"] {
+	text-align: right;
+	font-weight: 600;
+	/*page-break-before: avoid;*/
+	widows: 2;
+	orphans: 2;
+}
+
+p[class*="ExtractSource"] em {
+	break-inside: avoid;
+}
+
 p[class*="Dateline"] {
 	text-indent: 0;
 	font-size: 10pt;
