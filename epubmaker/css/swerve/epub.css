@@ -855,6 +855,7 @@ blockquote[data-type="epigraph"] {
   }
 
 *[class^="EpigraphSource"],
+*[class^="ExtractSource"],
 *[class^="FMEpigraphSource"],
 *[class^="PartEpigraphSource"],
 *[class^="ChapEpigraphSource"],
@@ -873,6 +874,7 @@ blockquote[data-type="epigraph"] {
   }
 
 .EpigraphSourceeps,
+.ExtractSourceexts,
 .FMEpigraphSourcefmeps,
 .PartEpigraphSourcepeps,
 .ChapEpigraphSourceceps,
