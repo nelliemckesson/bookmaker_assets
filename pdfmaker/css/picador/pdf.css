@@ -691,18 +691,19 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 	text-indent: 0;
 }
 
-/*section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
+section[data-type="titlepage"] p.TitlepageLogologo {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/torDOTcom/logo.jpg");
 	background-position: center bottom;
 	background-size: 0.58in auto;
 	background-repeat: no-repeat;
 	display: block;
+	float: bottom;
 	width: 100%;
 	height: 0.5in;
 	text-align: center;
 	margin-bottom: 0.2in;
-}*/
+}
 
 .TitlepageCitiescit, .TitlepagePublisherNamepub, .TitlepageImprintLineimp {
 	font-family: "ArnoPro-SmText", serif;

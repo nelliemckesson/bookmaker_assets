@@ -710,7 +710,8 @@ TITLE PAGE
 *[class^="TitlepageReadingLine"],
 *[class^="TitlepageImprintLine"],
 *[class^="TitlepagePublisherName"],
-*[class^="TitlepageCities"] {
+*[class^="TitlepageCities"],
+*[class^="TitlepageLogo"]  {
   text-indent: 0;
   text-align: center;
   margin: 1em 0;
@@ -725,7 +726,7 @@ TITLE PAGE
 .TitlepageImprintLineimp,
 .TitlepagePublisherNamepub,
 .TitlepageCitiescit,
-.TitlepageLogoHolder {
+.TitlepageLogologo {
   text-indent: 0;
   text-align: center;
   margin: 1em 0;
