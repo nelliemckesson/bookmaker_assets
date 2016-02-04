@@ -710,13 +710,12 @@ section[data-type="titlepage"] p.TitlepageAuthorNameau {
 }
 
 section[data-type="titlepage"] p.TitlepageImprintLineimp {
-	content: " ";
 	float: bottom;
 	text-align: center;
 	text-indent: 0;
 }
 
-section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
+section[data-type="titlepage"] p.TitlepageLogologo {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
 	background-position: center center;

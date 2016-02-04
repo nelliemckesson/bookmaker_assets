@@ -691,7 +691,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 	text-indent: 0;
 }
 
-/*section[data-type="titlepage"] p.TitlepageImprintLineimp:before {
+section[data-type="titlepage"] p.TitlepageLogologo {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/torDOTcom/logo.jpg");
 	background-position: center bottom;
@@ -702,7 +702,7 @@ section[data-type="titlepage"] p.TitlepageImprintLineimp {
 	height: 0.5in;
 	text-align: center;
 	margin-bottom: 0.2in;
-}*/
+}
 
 .TitlepageCitiescit, .TitlepagePublisherNamepub, .TitlepageImprintLineimp {
 	font-family: "ArnoPro-SmText", serif;
