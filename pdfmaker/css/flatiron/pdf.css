@@ -908,7 +908,7 @@ nav[data-type="toc"] li.PartTitlept a:after {
 }
 
 section[data-type="preface"] {
-	page: chapter;
+	page: front;
 	page-break-before: right;
 	prince-page-group: start;
 }

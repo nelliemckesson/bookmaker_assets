@@ -910,7 +910,7 @@ nav[data-type="toc"] li.PartTitlept a:before {
 }
 
 section[data-type="preface"] {
-	page: chapter;
+	page: front;
 	page-break-before: right;
 	prince-page-group: start;
 }
