@@ -720,7 +720,7 @@ section[data-type="titlepage"] p.TitlepageLogologo {
 	content: " ";
 	background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/griffin/logo.jpg");
 	background-position: center bottom;
-	background-size: 0.58in auto;
+	background-size: 1in auto;
 	background-repeat: no-repeat;
 	display: block;
 	float: bottom;
