@@ -6,7 +6,7 @@
   }
 }
 
-section[data-type="titlepage"] p.TitlepageLogologo {
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/flatiron/logo.jpg");
   background-position: center center;
   background-size: auto 0.65in;
