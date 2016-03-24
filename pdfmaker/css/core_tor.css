@@ -937,13 +937,18 @@ h1[class*="AboutAuthorTextHeadatah"] {
 }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"] {
-	font-size: 14pt;
-	line-height: 16pt;
-	font-style: italic;
+  text-indent: 0;
+  font-size: 14pt;
+  line-height: 16pt;
+  font-style: italic;
+  margin-top: 32pt;
+  text-align: center;
+  margin-bottom: 30pt;
+  page-break-after: avoid;
+}
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
 	margin-top: -45pt;
-	text-align: center;
-	margin-bottom: 30pt;
-	page-break-after: avoid;
 }
 
 section[data-type="chapter"] {
@@ -1008,6 +1013,10 @@ section[data-type="appendix"] {
 
 section[data-type="appendix"]:first-of-type {
 	page-break-before: right;
+}
+
+*[class*="BibliographyTextbibtx"] {
+  text-indent: 0;
 }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"], 
