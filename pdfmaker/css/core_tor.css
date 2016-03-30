@@ -351,6 +351,7 @@
 
 @page copyright {
 	margin-bottom: 0.25in;
+	padding-bottom: 0;
 	@top-center {
 		content: normal;
 		font-family: "ArnoPro-Caption", serif;
