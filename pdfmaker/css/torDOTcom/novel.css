@@ -740,6 +740,16 @@ section[data-type="chapter"] {
   prince-page-group: start;
   counter-reset: footnote; }
 
+section[data-type="preface"] + section[data-type="chapter"],
+section[data-type="foreword"] + section[data-type="chapter"],
+section[data-type="titlepage"] + section[data-type="chapter"],
+section[data-type="halftitlepage"] + section[data-type="chapter"],
+section[data-type="copyright-page"] + section[data-type="chapter"],
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"],
+div[data-type="part"] + section[data-type="chapter"] {
+  page-break-before: right; }
+
 section[data-type="chapter"] h1[class*="ChapNumbercn"],
 *[class*="ChapNumberNonprintingcnp"] {
   font-size: 11.75pt;
@@ -760,7 +770,7 @@ h1[class*="ChapTitleNonprintingctnp"] + * {
 section[data-type="chapter"] h1[class*="ChapTitlect"] {
   font-size: 16pt;
   line-height: 15.5pt;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 31pt;
   text-align: center;
   margin-bottom: 5pt;
@@ -1081,7 +1091,7 @@ p.SpaceBreakwithALTOrnamentorn2 {
   background-repeat: no-repeat;
   margin-top: 0pt;
   margin-bottom: 0;
-  padding: 15.5pt 0pt 0 0pt;
+  padding: 31pt 0pt 0 0pt;
   width: 100%;
   height: 15.5pt; }
 
@@ -1278,9 +1288,11 @@ div.runheadright {
   font-variant: prince-opentype(onum); }
 
 div.runheadleft::before {
-  content: counter(page) " • "; }
+  content: counter(page) " • ";
+  font-style: normal; }
 
 div.runheadright::after {
-  content: " • " counter(page); }
+  content: " • " counter(page);
+  font-style: normal; }
 
 /*# sourceMappingURL=novel.css.map */
