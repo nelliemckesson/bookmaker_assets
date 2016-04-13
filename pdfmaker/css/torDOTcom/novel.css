@@ -464,6 +464,7 @@ section.adcard {
 *[class*="AdCardMainHeadacmh"] {
   text-transform: lowercase;
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   font-size: 14pt;
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
@@ -552,6 +553,7 @@ section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
 *[class*="TitlepageCitiescit"], *[class*="TitlepagePublisherNamepub"], *[class*="TitlepageImprintLineimp"] {
   font-family: "ArnoPro-SmText", serif;
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   font-style: normal;
   font-weight: normal;
   text-transform: lowercase;
@@ -871,6 +873,7 @@ blockquote + *[class*="ChapOpeningText"] {
   text-indent: 0;
   font-size: 11.75pt;
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   text-transform: lowercase;
   text-align: center;
   margin-top: 31pt;
@@ -1194,15 +1197,18 @@ span[data-type="footnote"] > span:first-of-type {
 /* character styles */
 .spansmallcapscharacterssc {
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   text-transform: lowercase; }
 
 .spansmcapitalscital {
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   font-style: italic;
   text-transform: lowercase; }
 
 .spansmcapboldscbold {
   font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
   font-weight: bold;
   text-transform: lowercase; }
 
