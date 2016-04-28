@@ -1245,6 +1245,19 @@ EXTRACTS
 .Extract-Inscriptionins,
 .Extract-ScheduleofEventssch {
   font-style: italic;
+}
+
+.Extract-NoIndentext1,
+.Extract-BulletListextbl,
+.Extract-NumListextnl,
+.ExtractHeadexth,
+.Extract-VerseorPoetryextv,
+.Extract-NoteHeadextnh,
+.Extract-Headlineexthl,
+.Extract-EmailHeadingemh,
+.Extract-SongLyricextsl,
+.Extract-BusinessCardextbc,
+.Extract-ScheduleofEventssch {
   text-indent: 0;
 }
 
