@@ -1287,7 +1287,6 @@ EXTRACTS
 *[class^="Extract"],
 *[class*="Extract"] {
   font-style: italic;
-  text-indent: 0;
   }
 
 .Extract-Headlineexthl,
