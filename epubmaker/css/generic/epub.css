@@ -80,7 +80,8 @@ body {
   color: #000;
   background-color: #fff;
   }
-p+p {
+p+p, 
+p.Text-Standardtx {
   text-indent: 1.5em;
   }
 blockquote {

@@ -89,7 +89,8 @@ p {
   font-weight: normal;
   font-style: normal;
 }
-p+p {
+p+p, 
+p.Text-Standardtx {
   text-indent: 1.5em;
   }
 blockquote {
