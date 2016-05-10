@@ -387,6 +387,12 @@ h1, .Head-Level-1h1 {
   line-height: 1.25em;
   margin: .66666666666667em 0;
   }
+.BOBAdTitlebobt {
+  text-indent: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: .66666666666667em 0;
+  }
 *[class^="TOCFrontmatterHead"],
 *[class^="TOCBackmatterHead"],
 *[class^="TOCPartNumber"],
@@ -501,6 +507,14 @@ h2 {
   margin: 1em 0 0 0;
   }
 
+.BOBAdSubtitlebobst {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
 .FrontSalesSubtitlefsst,
 .AdCardSubheadacsh,
 .TitlepageBookSubtitlestit,
@@ -555,6 +569,12 @@ h3 {
 *[class^="SidebarHead-Level-3"],
 *[class^="GlossaryTerm"],
 *[class^="BOBAdQuoteHead"] {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+.BOBAdQuoteHeadbobqh {
   text-indent: 0;
   font-weight: bold;
   margin: 1em 0 0 0;
