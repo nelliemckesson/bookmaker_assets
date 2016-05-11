@@ -378,6 +378,12 @@ h1, .Head-Level-1h1 {
   line-height: 1.25em;
   margin: .66666666666667em 0;
   }
+.BOBAdTitlebobt {
+  text-indent: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: .66666666666667em 0;
+  }
 *[class^="TOCFrontmatterHead"],
 *[class^="TOCBackmatterHead"],
 *[class^="TOCPartNumber"],
@@ -396,20 +402,39 @@ h1, .Head-Level-1h1 {
   padding: .5em;
   margin-top: 0;
   }
+
+.TOCFrontmatterHeadcfmh,
+.TOCBackmatterHeadcbmh,
+.TOCPartNumbercpn,
+.TOCChapterNumberccn,
+.PartNumberpn,
+.ChapNumbercn,
+.VolumeNumbervoln,
+.CollectionBookNumberbkn,
+.TableNumbertn,
+.ChartNumbercrn,
+.FigureNumberfgn {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: .5em;
+  margin-top: 0;
+  }
 *[class^="TOCPartNumber"],
 *[class^="TOCFrontmatterHead"],
 *[class^="TOCBackmatterHead"],
 *[class^="PartNumber"],
 *[class^="VolumeNumber"],
 *[class^="CollectionBookNumber"] {
-  background: #999;
+  /*background: #999;*/
   }
 *[class^="TOCChapterNumber"],
 *[class^="ChapNumber"],
 *[class^="TableNumber"],
 *[class^="ChartNumber"],
 *[class^="FigureNumber"] {
-  background: #eee;
+  /*background: #eee;*/
 /*  margin-top: 3em; */
   }
 *[class^="TableNumber"],
@@ -441,26 +466,18 @@ h1, .Head-Level-1h1 {
   text-align: center;
   }
 
-*[class^="PartTitle"]:after,
-*[class^="ChapTitle"]:after,
-*[class^="VolumeTitle"]:after,
-*[class^="CollectionBookTitle"]:after {
-  display: block;
-  width: 50%;
-  margin: .66666666666667em auto;
-  border-top: 1px solid #000;
-  content: "";
+*[class^="PartTitle"],
+*[class^="ChapTitle"],
+*[class^="VolumeTitle"],
+*[class^="CollectionBookTitle"] {
+  margin-bottom: 3.00em;
   }
 
-.PartTitlept:after,
-.ChapTitlect:after,
-.VolumeTitlevolt:after,
-.CollectionBookTitlebkt:after {
-  display: block;
-  width: 50%;
-  margin: .66666666666667em auto;
-  border-top: 1px solid #000;
-  content: "";
+.PartTitlept,
+.ChapTitlect,
+.VolumeTitlevolt,
+.CollectionBookTitlebkt {
+  margin-bottom: 3.00em;
   }
 
 /*
@@ -512,7 +529,8 @@ h2 {
 .AdCardSubheadacsh,
 .TitlepageBookSubtitlestit,
 .PartSubtitlepst,
-.ChapSubtitlecst {
+.ChapSubtitlecst,
+.BOBAdSubtitlebobst {
   text-indent: 0;
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -534,8 +552,12 @@ h2 {
 .TitlepageBookSubtitlestit,
 .PartSubtitlepst,
 .ChapSubtitlecst {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  font-weight: bold;
+  margin: 1em 0 1em 0;
   text-align: center;
-  margin-bottom: 1em;
   }
 
 .PartSubtitlepst,
@@ -544,22 +566,16 @@ h2 {
   margin-bottom: 1em;
   }
 
-*[class^="PartSubtitle"]:after,
-*[class^="ChapSubtitle"]:after {
-  display: block;
-  width: 25%;
-  margin: 1em auto;
-  border-top: 1px solid #000;
-  content: "";
+*[class^="PartSubtitle"],
+*[class^="ChapSubtitle"] {
+  text-align: center;
+  margin-bottom: 1.00em;
   }
 
 .PartSubtitlepst:after,
 .ChapSubtitlecst:after {
-  display: block;
-  width: 25%;
-  margin: 1em auto;
-  border-top: 1px solid #000;
-  content: "";
+  text-align: center;
+  margin-bottom: 1.00em;
   }
 
 /*
@@ -588,6 +604,12 @@ h3 {
 *[class^="SidebarHead-Level-3"],
 *[class^="GlossaryTerm"],
 *[class^="BOBAdQuoteHead"] {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+  }
+
+.BOBAdQuoteHeadbobqh {
   text-indent: 0;
   font-weight: bold;
   margin: 1em 0 0 0;
@@ -667,7 +689,8 @@ H6
 
 h6 {
   text-indent: 0;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
   }
@@ -683,7 +706,8 @@ h6 {
 *[class^="ChartSubhead"],
 *[class^="FigureSubhead"] {
   text-indent: 0;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
   }
@@ -900,7 +924,8 @@ blockquote[data-type="epigraph"] {
 *[class^="BOBAdQuoteSource"] {
   text-indent: 0;
   font-style: normal;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
   }
@@ -918,7 +943,8 @@ blockquote[data-type="epigraph"] {
 .BOBAdQuoteSourcebobqs {
   text-indent: 0;
   font-style: normal;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
   }
@@ -1680,7 +1706,8 @@ h1 + .Illustrationholderill {
 *[class^="IllustrationSource"] {
   font-size: 0.8em;
   text-align: center;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
   }
@@ -1688,7 +1715,8 @@ h1 + .Illustrationholderill {
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
-  font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
+  font-size: .75em; 
+  text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
   }
