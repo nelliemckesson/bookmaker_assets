@@ -378,12 +378,6 @@ h1, .Head-Level-1h1 {
   line-height: 1.25em;
   margin: .66666666666667em 0;
   }
-.BOBAdTitlebobt {
-  text-indent: 0;
-  font-size: 1.5em;
-  line-height: 1.25em;
-  margin: .66666666666667em 0;
-  }
 *[class^="TOCFrontmatterHead"],
 *[class^="TOCBackmatterHead"],
 *[class^="TOCPartNumber"],
@@ -1932,6 +1926,23 @@ APPENDICES
 
 /*
 --------------------------------------------------
+BOB ADS
+--------------------------------------------------
+*/
+
+.BOBAdTitlebobt, 
+.BOBAdSubtitlebobst, 
+.BOBAdLevel-1Subheadbobh1,
+.BOBAdLevel-2Subheadbobh2,
+.BOBAdLevel-3Subheadbobh3,
+.BOBAdLevel-4Subheadbobh4,
+.BOBAdLevel-5Subheadbobh5 {
+  text-align: center;
+  text-indent: 0;
+  }
+
+/*
+--------------------------------------------------
 GLOSSARY and DICTIONARY-STYLE ENTRIES
 --------------------------------------------------
 */
@@ -2017,6 +2028,17 @@ INDEX
 *[class^="IndexSub-subentry"] {
   margin-left: 3em;
   }
+
+/*
+--------------------------------------------------
+Misc
+--------------------------------------------------
+*/
+
+.EBKLinkSourceLa {
+  text-indent: 0;
+  text-align: center;
+}
 
 /*
 --------------------------------------------------
