@@ -1572,12 +1572,15 @@ p.BookmakerPageBreakbr,
 
 .left {
   text-align: left;
+  text-indent: 0;
 }
 
 .center {
   text-align: center;
+  text-indent: 0;
 }
 
 .right {
   text-align: right;
+  text-indent: 0;
 }
