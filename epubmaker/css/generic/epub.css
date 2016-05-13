@@ -1941,6 +1941,12 @@ BOB ADS
   text-indent: 0;
   }
 
+.BOBAdLevel-1Subheadbobh1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
 /*
 --------------------------------------------------
 GLOSSARY and DICTIONARY-STYLE ENTRIES
@@ -2038,6 +2044,18 @@ Misc
 .EBKLinkSourceLa {
   text-indent: 0;
   text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 /*
