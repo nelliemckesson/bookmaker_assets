@@ -85,6 +85,12 @@
 		"containertype": "section"
 		},
 		{
+		"name": "bobad",
+		"datatype": "",
+		"class": "bobad",
+		"containertype": "section"
+		},
+		{
 		"name": "newsletter",
 		"datatype": "colophon",
 		"class": "newsletter",
