@@ -75,8 +75,12 @@ BASE STYLES
 */
 
 body {
-  font: normal normal normal 100%/1.5em Georgia,"Times New Roman",Times,serif;
-  text-align: left;
+  font-size: medium;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 2em;
+  font-family: Georgia,"Times New Roman",Times,serif;
   color: #000;
   background-color: #fff;
   }
@@ -179,6 +183,10 @@ INLINE ELEMENTS
 --------------------------------------------------
 */
 
+a {
+text-decoration: none;
+}
+
 *[class^="spanitaliccharacters"],
 *[class^="spansmcapital"] {
   font-style: italic;
@@ -245,16 +253,6 @@ sub,
   }
 *[class^="spanpreservecharacters"] {
   white-space: pre-wrap;
-  }
-a,
-*[class^="spanhyperlink"] {
-  color: #c00;
-  text-decoration: underline;
-  }
-a,
-.spanhyperlinkurl {
-  color: #c00;
-  text-decoration: underline;
   }
 *[class^="spancross-reference"] {
   }
