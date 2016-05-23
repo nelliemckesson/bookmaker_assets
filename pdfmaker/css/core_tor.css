@@ -1165,7 +1165,7 @@ pre.poetry p, pre.poetry p:first-of-type {
 	font-size: 10.5pt;
 }
 
-p[class*="Extract"] {
+p[class*="Extract"],p[class*="LetterExt"] {
 	font-family: "ArnoPro-SmText", serif;
 	font-size: 10.5pt;
 }
@@ -1214,6 +1214,27 @@ p[class*="ExtractSource"] {
 
 p[class*="ExtractSource"] em {
 	break-inside: avoid;
+}
+
+p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
+	font-style: italic;
+}
+
+p.LetterExtSalutationlsa {
+	font-style: italic;
+	text-indent: 0;
+	margin-top: 16pt;
+	margin-bottom: 16pt;
+}
+
+p.LetterExtDatelineldl {
+	font-weight: 600;
+	font-size: 10pt;
+	text-indent: 0;
+	text-align: center;
+	margin-top: 16pt;
+	margin-bottom: 16pt;
+	hyphens: none;	
 }
 
 p[class*="Dateline"] {
