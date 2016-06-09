@@ -148,6 +148,10 @@
 			"addons": "drmnotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		},
 		{
+			"name": "bookmaker_final",
+			"addons": "drmnotice.html,mini_toc_plus_newsletter.html,newsletter.html"
+		},
+		{
 			"name": "swerve_final",
 			"addons": "drmnotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		},
@@ -157,6 +161,14 @@
 		},
 		{
 			"name": "SMP_egalley",
+			"addons": "drmnotice.html"
+		},
+		{
+			"name": "bookmaker_galley",
+			"addons": "drmnotice.html"
+		},
+		{
+			"name": "bookmaker_egalley",
 			"addons": "drmnotice.html"
 		},
 		{
