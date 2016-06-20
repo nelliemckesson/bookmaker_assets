@@ -790,7 +790,7 @@ h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   font-weight: 600;
   text-align: center;
   margin-top: 16pt;
-  margin-bottom: 11pt;
+  margin-bottom: 16pt;
   text-indent: 0; }
 
 section[data-type="chapter"] h1[class*="ChapTitlect"] + p {
@@ -1316,11 +1316,7 @@ p.BookmakerPageBreakbr,
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
 
-@page {
-  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
-  background-position: top left;
-  background-size: auto 16pt;
-  background-repeat: repeat-y; }
+/*@import "../_modules/gridlines.scss";*/
 @page part {
   @top-center {
     vertical-align: bottom; } }
@@ -1331,4 +1327,4 @@ p.BookmakerPageBreakbr,
   @top-center {
     vertical-align: bottom; } }
 
-/*# sourceMappingURL=novella.css.map */
+/*# sourceMappingURL=pdf.css.map */
