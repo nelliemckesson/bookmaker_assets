@@ -741,7 +741,7 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="
 
 section[data-type="chapter"] {
   page: chapter;
-  page-break-before: always;
+  page-break-before: right;
   prince-page-group: start;
   counter-reset: footnote; }
 
