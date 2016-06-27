@@ -588,44 +588,6 @@ section[data-type="dedication"] p {
   font-style: italic;
   text-indent: 0; }
 
-section[data-type="dedication"] p:first-child {
-  margin-top: 16pt; }
-
-section[data-type="dedication"] blockquote[data-type="epigraph"],
-.Dedicationded + p[class*="Epigraph"] {
-  page-break-before: always;
-  margin-top: 32pt; }
-
-section[data-type="dedication"] blockquote[data-type="epigraph"] {
-  margin-left: 0;
-  margin-right: 0; }
-
-section[data-type="dedication"] p[class*="Epigraph-verse"],
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
-  font-family: "ArnoPro-SmText", serif;
-  font-style: normal;
-  font-size: 10pt;
-  text-align: left;
-  margin-left: 52pt;
-  margin-right: 36pt;
-  text-indent: -12pt; }
-
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
-  margin-left: 36pt;
-  text-indent: 0; }
-
-section[data-type="dedication"] p[class*="EpigraphSource"] {
-  font-family: "ArnoPro-SmText", serif;
-  font-weight: 600;
-  font-size: 10pt;
-  font-style: normal;
-  text-align: right;
-  margin-left: 36pt;
-  margin-right: 36pt; }
-
-p[class*="EpigraphSource"] em {
-  break-inside: avoid; }
-
 .texttoc {
   display: none; }
 
@@ -811,51 +773,6 @@ section[data-type="appendix"]:first-of-type {
 *[class*="BibliographyTextbibtx"] {
   text-indent: 0; }
 
-section[data-type="chapter"] > blockquote[data-type="epigraph"],
-div[data-type="part"] > blockquote[data-type="epigraph"],
-section[data-type="preface"] > blockquote[data-type="epigraph"] {
-  margin-left: 36pt;
-  margin-right: 36pt;
-  margin-bottom: 48pt; }
-
-h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
-  margin-top: 32pt; }
-
-section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
-div[data-type="part"] > blockquote[data-type="epigraph"] p,
-section[data-type="preface"] > blockquote[data-type="epigraph"] p {
-  font-family: "ArnoPro-SmText";
-  font-size: 10pt;
-  line-height: 16pt;
-  text-align: left; }
-
-section[data-type="chapter"] > blockquote[data-type="epigraph"] *[class*="ChapEpigraph-versecepiv"],
-div[data-type="part"] > blockquote[data-type="epigraph"] *[class*="PartEpigraph-versepepiv"],
-section[data-type="preface"] > blockquote[data-type="epigraph"] *[class*="FMEpigraph-versefmepiv"] {
-  margin-left: 16pt;
-  text-indent: -16pt;
-  page-break-inside: auto; }
-
-section[data-type="chapter"] > blockquote[data-type="epigraph"] *[class*="ChapEpigraph-non-versecepi"],
-div[data-type="part"] > blockquote[data-type="epigraph"] *[class*="PartEpigraph-non-versepepi"],
-section[data-type="preface"] > blockquote[data-type="epigraph"] *[class*="FMEpigraph-non-versefmepi"] {
-  margin-left: 0;
-  page-break-inside: auto; }
-
-section[data-type="chapter"] > blockquote[data-type="epigraph"] *[class*="ChapEpigraphSourceceps"],
-div[data-type="part"] > blockquote[data-type="epigraph"] *[class*="PartEpigraphSourcepeps"],
-section[data-type="preface"] > blockquote[data-type="epigraph"] *[class*="FMEpigraphSourcefmeps"] {
-  text-align: right;
-  font-weight: 600;
-  /*page-break-before: avoid;*/
-  widows: 2;
-  orphans: 2; }
-
-*[class*="ChapEpigraphSourceceps"] em,
-*[class*="PartEpigraphSourcepeps"] em,
-*[class*="FMEpigraphSourcefmeps"] em {
-  break-inside: avoid; }
-
 blockquote + *[class*="ChapOpeningText"] {
   /*margin-top: $gridheight * 3;*/ }
 
@@ -944,6 +861,103 @@ blockquote {
 
 blockquote p:first-child {
   text-indent: 0; }
+
+section[data-type="dedication"] p:first-child {
+  margin-top: 16pt; }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+.Dedicationded + p[class*="Epigraph"] {
+  page-break-before: always;
+  margin-top: 32pt; }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"] {
+  margin-left: 0;
+  margin-right: 0; }
+
+section[data-type="dedication"] p[class*="Epigraph-verse"],
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+  font-family: "ArnoPro-SmText", serif;
+  font-style: normal;
+  font-size: 10pt;
+  text-align: left;
+  margin-left: 52pt;
+  margin-right: 36pt;
+  text-indent: -12pt; }
+
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+  margin-left: 36pt;
+  text-indent: 0; }
+
+section[data-type="dedication"] p[class*="EpigraphSource"] {
+  font-family: "ArnoPro-SmText", serif;
+  font-weight: 600;
+  font-size: 10pt;
+  font-style: normal;
+  text-align: right;
+  margin-left: 36pt;
+  margin-right: 36pt; }
+
+p[class*="EpigraphSource"] em {
+  break-inside: avoid; }
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"],
+div[data-type="part"] > blockquote[data-type="epigraph"],
+section[data-type="preface"] > blockquote[data-type="epigraph"] {
+  margin-left: 36pt;
+  margin-right: 36pt;
+  margin-bottom: 48pt; }
+
+blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
+blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
+  margin-top: -48pt; }
+
+h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
+  margin-top: 32pt; }
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
+div[data-type="part"] > blockquote[data-type="epigraph"] p,
+section[data-type="preface"] > blockquote[data-type="epigraph"] p {
+  font-family: "ArnoPro-SmText";
+  font-size: 10pt;
+  line-height: 16pt;
+  text-align: left; }
+
+p.ChapEpigraph-versecepiv,
+p.PartEpigraph-versepepiv,
+p.FMEpigraph-versefmepiv {
+  margin-left: 16pt;
+  text-indent: -16pt;
+  page-break-inside: auto; }
+
+blockquote p.ChapEpigraph-versecepiv:first-child,
+blockquote p.PartEpigraph-versepepiv:first-child,
+blockquote p.FMEpigraph-versefmepiv:first-child {
+  text-indent: -16pt; }
+
+p.ChapEpigraph-non-versecepi,
+p.PartEpigraph-non-versepepi,
+p.FMEpigraph-non-versefmepi {
+  margin-left: 0;
+  page-break-inside: auto; }
+
+p.ChapEpigraphSourceceps,
+p.PartEpigraphSourcepeps,
+p.FMEpigraphSourcefmeps {
+  text-align: right;
+  font-weight: 600;
+  /*page-break-before: avoid;*/
+  widows: 2;
+  orphans: 2; }
+
+p.ChapEpigraphSourceceps,
+p.PartEpigraphSourcepeps,
+p.FMEpigraphSourcefmeps {
+  margin-top: 16pt; }
+
+*[class*="ChapEpigraphSourceceps"] em,
+*[class*="PartEpigraphSourcepeps"] em,
+*[class*="FMEpigraphSourcefmeps"] em {
+  break-inside: avoid; }
 
 *[class*="ExtractHeadexth"] {
   page-break-after: avoid; }
@@ -1190,6 +1204,7 @@ p.SpaceBreak-3-Linels3 {
   height: 48pt;
   content: " "; }
 
+p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
@@ -1257,6 +1272,13 @@ span[data-type="footnote"] > span:first-of-type {
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
   font-weight: bold;
+  text-transform: lowercase; }
+
+.spansmcapbolditalscbi {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-weight: bold;
+  font-style: italic;
   text-transform: lowercase; }
 
 .spanboldfacecharactersbf {
@@ -1327,4 +1349,4 @@ p.BookmakerPageBreakbr,
   @top-center {
     vertical-align: bottom; } }
 
-/*# sourceMappingURL=pdf.css.map */
+/*# sourceMappingURL=core_tor.css.map */

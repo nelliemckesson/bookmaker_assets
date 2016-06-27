@@ -188,33 +188,39 @@ text-decoration: none;
 }
 
 *[class^="spanitaliccharacters"],
-*[class^="spansmcapital"] {
+*[class^="spansmcapital"],
+*[class^="spansmcapboldital"] {
   font-style: italic;
   }
 .spanitaliccharactersital,
-.spansmcapitalscital {
+.spansmcapitalscital,
+.spansmcapbolditalscbi {
   font-style: italic;
   }
 *[class^="spanboldfacecharacters"],
 *[class^="spanboldital"],
-*[class^="spansmcapbold"] {
+*[class^="spansmcapbold"],
+*[class^="spansmcapboldital"] {
   font-weight: bold;
   }
 .spanboldfacecharacters,
 .spanbolditalbem,
-.spansmcapboldscbold {
+.spansmcapboldscbold,
+.spansmcapbolditalscbi {
   font-weight: bold;
   }
 *[class^="spansmallcapscharacters"],
 *[class^="spansmcapbold"],
-*[class^="spansmcapital"] {
+*[class^="spansmcapital"],
+*[class^="spansmcapboldital"] {
   font-size: .75em; 
   text-transform: uppercase;
   letter-spacing: .08em;
   }
 .spansmallcapscharacterssc,
 .spansmcapboldscbold,
-.spansmcapitalscital {
+.spansmcapitalscital,
+.spansmcapbolditalscbi {
   font-size: .75em; 
   text-transform: uppercase;
   letter-spacing: .08em;
