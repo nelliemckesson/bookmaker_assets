@@ -1,5 +1,5 @@
 @mixin runhead {
-  font-family: "ArnoPro-Caption", serif;
+  font-family: $familyrunhead;
   text-align: center;
   font-style: italic;
   font-size: $sizerunhead;
@@ -21,7 +21,7 @@
   prince-mark-length: 0in;
   bleed: 0.125in;
   @footnotes {
-    font-family: "ArnoPro-SmText", serif;
+    font-family: $familyfootnote;
     font-size: $sizefootnote;
     background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
     background-position: 0 0in;
@@ -1203,14 +1203,15 @@ figure {
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;
-  width: 5.25in;
+  width: $pagewidth + ($bleedwidth * 2);
   margin-top: 0.55in;
   margin-bottom: 0;
-  margin-inside: -0.81in;
-  margin-outside: 0;
+  text-align: inside;
+  text-align-last: inside;
+  margin-inside: -1in;
+  margin-outside: -0.75in;
   overflow: visible;
-  height: 5.4in;
-}
+  height: 5.4in; }
 
 h1 + figure {
   min-height: 21pt;
@@ -1239,10 +1240,9 @@ img {
 
 img[src*="fullpage"] {
   display: block;
-  width: 5.25in;
-  position: relative;
-  top: -1.4in;
-}
+  width: $pagewidth + ($bleedwidth * 2);
+  height: $pageheight + ($bleedheight * 2);
+  margin-top: -1.65in; }
 
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -($gridheight * 2);

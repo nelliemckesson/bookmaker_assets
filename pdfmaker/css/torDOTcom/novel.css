@@ -1091,8 +1091,10 @@ figure.fullpage {
   width: 5.25in;
   margin-top: 0.55in;
   margin-bottom: 0;
-  margin-inside: -0.81in;
-  margin-outside: 0;
+  text-align: inside;
+  text-align-last: inside;
+  margin-inside: -1in;
+  margin-outside: -0.75in;
   overflow: visible;
   height: 5.4in; }
 
@@ -1120,8 +1122,8 @@ img {
 img[src*="fullpage"] {
   display: block;
   width: 5.25in;
-  position: relative;
-  top: -1.4in; }
+  height: 8.25in;
+  margin-top: -1.65in; }
 
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -31pt;
@@ -1362,5 +1364,13 @@ div.runheadleft::before {
 div.runheadright::after {
   content: " • " counter(page);
   font-style: normal; }
+
+figure.fullpage {
+  margin-top: 0.55in;
+  margin-inside: -0.81in;
+  margin-outside: -0.69in; }
+
+img[src*="fullpage"] {
+  margin-top: -1.4in; }
 
 /*# sourceMappingURL=novel.css.map */
