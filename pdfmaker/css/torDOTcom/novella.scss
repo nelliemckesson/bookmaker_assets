@@ -8,6 +8,10 @@ $smaller: 8.5pt; //sizecode sizecaption
 
 $gridheight: 16pt;
 
+$pagewidth: 5in;
+$pageheight: 8in;
+$bleedwidth: 0.125in;
+$bleedheight: 0.125in;
 $margintop: 52pt;
 $marginbottom: 64pt;
 $padding: 18pt 0 16pt 0;
@@ -69,6 +73,10 @@ $prmargintop: 16pt;
 
 $spacebreakheight: $gridheight;
 
+$familyrunhead: "ArnoPro-Caption", serif;
+$familybody: "ArnoPro", serif;
+$familyfootnote: "ArnoPro-SmText", serif;
+
 /*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
 $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts";
 
@@ -100,3 +108,11 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
     vertical-align: bottom;
   }
 }
+
+figure.fullpage {
+  margin-top: 0.55in;
+  margin-inside: -1in;
+  margin-outside: -0.75in; }
+
+img[src*="fullpage"] {;
+  margin-top: -1.65in; }
