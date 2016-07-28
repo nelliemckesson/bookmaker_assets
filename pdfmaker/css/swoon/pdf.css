@@ -1,6 +1,6 @@
 @import url('../core_tor.css');
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/swoon/logo.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/swoon/logo.jpg");
   background-size: 1in auto;
 }
