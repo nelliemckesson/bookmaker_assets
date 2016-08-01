@@ -2,5 +2,8 @@
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/fsg/logo.jpg");
-  background-size: 1in auto;
+  background-position: center center;
+  background-size: auto .65in;
+  height: .7in;
+  margin-bottom: auto;
 }
