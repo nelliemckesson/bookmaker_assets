@@ -25,6 +25,11 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
+@font-face {
+  font-family: "noto";
+  src: url('NotoSansSymbols-Regular.ttf');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,7 +85,7 @@ body {
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 2em;
-  font-family: Georgia,"Times New Roman",Times,serif;
+  font-family: Georgia,"Times New Roman",Times,serif,"noto",arial,Verdana,sans-serif;
   color: #000;
   background-color: #fff;
   }
