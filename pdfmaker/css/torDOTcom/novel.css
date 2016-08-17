@@ -106,6 +106,9 @@
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/TimesNewRomanPSMT.ttf");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: "Noto";
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
 @page {
   size: 5in 8in;
   margin-top: 46.5pt;
@@ -319,7 +322,7 @@
   @bottom-center {
     content: normal; } }
 body {
-  font-family: "ArnoPro", serif;
+  font-family: "ArnoPro", serif, "Noto";
   counter-reset: endnotes chapternumber; }
 
 section, p, div, h1, h2, h3, h4, h5, h6 {
@@ -344,7 +347,7 @@ p {
 
 div.runheadleft {
   flow: static(runheadleft);
-  font-family: "ArnoPro-Caption", serif;
+  font-family: "ArnoPro-Caption", serif, "Noto";
   text-align: center;
   font-style: italic;
   font-size: 8.5pt;
@@ -354,7 +357,7 @@ div.runheadleft {
 
 div.runheadright {
   flow: static(runheadright);
-  font-family: "ArnoPro-Caption", serif;
+  font-family: "ArnoPro-Caption", serif, "Noto";
   text-align: center;
   font-style: italic;
   font-size: 8.5pt;
@@ -364,7 +367,7 @@ div.runheadright {
 
 div.runfoot {
   flow: static(runfoot);
-  font-family: "ArnoPro-Caption", serif;
+  font-family: "ArnoPro-Caption", serif, "Noto";
   font-variant: prince-opentype(onum);
   text-align: center;
   font-size: 9pt;
@@ -375,7 +378,7 @@ div.runfoot {
 div.runfoot span {
   display: block;
   content: counter(page);
-  font-family: "ArnoPro-Caption", serif;
+  font-family: "ArnoPro-Caption", serif, "Noto";
   font-variant: prince-opentype(onum);
   text-align: center;
   font-size: 9pt;
@@ -442,7 +445,7 @@ section[data-type="copyright-page"] {
   text-align: left; }
 
 *[class*="FrontSalesQuoteSourcefsqs"] {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: bold;
   font-size: 10.5pt;
   text-align: right;
@@ -482,7 +485,7 @@ section.adcard {
   text-indent: 0; }
 
 section[data-type="titlepage"] > h1 {
-  font-family: "ArnoPro-BoldSubhead", serif;
+  font-family: "ArnoPro-BoldSubhead", serif, "Noto";
   font-weight: normal;
   font-style: normal;
   font-size: 25pt;
@@ -552,7 +555,7 @@ section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   margin-bottom: 0.2in; }
 
 *[class*="TitlepageCitiescit"], *[class*="TitlepagePublisherNamepub"], *[class*="TitlepageImprintLineimp"] {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
   font-style: normal;
@@ -568,7 +571,7 @@ section[data-type="copyright-page"] p:first-child {
   margin-top: 15.5pt; }
 
 section[data-type="copyright-page"] p {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 10pt;
   text-align: center;
   text-indent: 0;
@@ -832,16 +835,16 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
 
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {
-  font-family: "AromaNo2LTPro", sans-serif;
+  font-family: "AromaNo2LTPro", sans-serif, "Noto";
   font-size: 9.75pt; }
 
 *[class*="Text-ComputerTypecom"],
 *[class*="Text-ComputerTypeNo-Indentcom1"] {
-  font-family: "SourceCodePro", monospace;
+  font-family: "SourceCodePro", monospace, "Noto";
   font-size: 8.5pt; }
 
 pre.poetry {
-  font-family: "ArnoPro", serif;
+  font-family: "ArnoPro", serif, "Noto";
   margin: 15.5pt 52pt 15.5pt 36pt;
   white-space: pre-wrap; }
 
@@ -850,7 +853,7 @@ pre.poetry p, pre.poetry p:first-of-type {
   font-size: 10.5pt; }
 
 p[class*="Extract"] {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 10.5pt; }
 
 blockquote {
@@ -874,7 +877,7 @@ section[data-type="dedication"] blockquote[data-type="epigraph"] {
 
 section[data-type="dedication"] p[class*="Epigraph-verse"],
 section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-style: normal;
   font-size: 10pt;
   text-align: left;
@@ -887,7 +890,7 @@ section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
   text-indent: 0; }
 
 section[data-type="dedication"] p[class*="EpigraphSource"] {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: 600;
   font-size: 10pt;
   font-style: normal;
@@ -915,7 +918,7 @@ h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
 section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
 div[data-type="part"] > blockquote[data-type="epigraph"] p,
 section[data-type="preface"] > blockquote[data-type="epigraph"] p {
-  font-family: "ArnoPro-SmText";
+  font-family: "ArnoPro-SmText", "Noto";
   font-size: 10pt;
   line-height: 15.5pt;
   text-align: left; }
@@ -1053,7 +1056,7 @@ ul li {
 
 /* FIGURES*/
 *[class*="IllustrationSourceis"] {
-  font-family: "MinionPro", serif;
+  font-family: "MinionPro", serif, "Noto";
   font-size: 7pt;
   text-align: center;
   margin-top: 0;
@@ -1105,7 +1108,7 @@ h1 + figure {
   vertical-align: center; }
 
 figcaption {
-  font-family: "AromaNo2LTPro", sans-serif;
+  font-family: "AromaNo2LTPro", sans-serif, "Noto";
   font-size: 8.5pt;
   line-height: 15.5pt;
   text-align: left; }
@@ -1220,7 +1223,7 @@ p.PageBreakpb {
 /* footnotes */
 span[data-type="footnote"],
 .endnotetext {
-  font-family: "ArnoPro-SmText", serif;
+  font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 9pt;
   line-height: 11.75pt;
   text-indent: 0;
@@ -1243,7 +1246,7 @@ span[data-type="footnote"] > span:first-of-type {
 
 ::footnote-marker {
   content: counter(footnote,symbols("*", "†", "‡", "§")) " ";
-  font-family: "ArnoPro";
+  font-family: "ArnoPro", "Noto";
   font-weight: 600; }
 
 *[class*="endnotetext"] {
@@ -1252,7 +1255,7 @@ span[data-type="footnote"] > span:first-of-type {
 
 *[class*="endnotetext"] p:first-of-type:before {
   content: counter(endnotes) " ";
-  font-family: "ArnoPro";
+  font-family: "ArnoPro", "Noto";
   font-weight: 600;
   display: inline-block; }
 
@@ -1314,9 +1317,6 @@ sub {
   vertical-align: top;
   position: relative;
   top: 0.1em; }
-
-*[class*="spansymbolssym"] {
-  font-family: inherit; }
 
 *[class*="spanstrikethroughcharactersstr"] {
   text-decoration: line-through; }
