@@ -1318,9 +1318,6 @@ sub {
   position: relative;
   top: 0.1em; }
 
-*[class*="spansymbolssym"] {
-  font-family: inherit; }
-
 *[class*="spanstrikethroughcharactersstr"] {
   text-decoration: line-through; }
 
