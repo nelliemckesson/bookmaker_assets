@@ -2,5 +2,8 @@
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/roaringbrook/logo.jpg");
-  background-size: 1in auto;
+  background-size: auto 0.35in;
+  height: 0.36in;
+  background-position: center center;
+  margin-bottom: auto;
 }

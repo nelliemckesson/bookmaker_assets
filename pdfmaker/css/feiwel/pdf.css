@@ -2,7 +2,7 @@
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/feiwel/logo.jpg");
-  background-size: auto .75in;
-  height: .80in;
+  background-size: auto 0.75in;
+  height: 0.80in;
   background-position: center center;
 }
