@@ -1618,7 +1618,14 @@ ol li,
 */ {
 /*list-style-type: decimal;*/
   list-style-type: none;
+  margin-top: 0.5em;
   }
+
+.NumberedParagraphsnp {
+  list-style-type: none;
+  margin-top: 0.5em;
+}
+
 li ol li
 /*
 *[class^="ListNumSubentry"],
