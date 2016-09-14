@@ -7,7 +7,7 @@
 }
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/SMP/logo.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/SMP/logo.jpg");
   background-size: 0.2in auto;
   height: 0.2in;
   margin-bottom: auto;
