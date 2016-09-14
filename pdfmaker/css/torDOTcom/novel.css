@@ -108,7 +108,9 @@
   font-weight: normal; }
 @font-face {
   font-family: "Noto";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
 @page {
   size: 5in 8in;
   margin-top: 46.5pt;
@@ -543,7 +545,7 @@ section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   content: " ";
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/torDOTcom/logo.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/torDOTcom/logo.jpg");
   background-position: center bottom;
   background-size: 0.58in auto;
   background-repeat: no-repeat;

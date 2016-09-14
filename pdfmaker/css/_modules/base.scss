@@ -555,7 +555,7 @@ section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
   content: " ";
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/torDOTcom/logo.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/torDOTcom/logo.jpg");  
   background-position: center bottom;
   background-size: $logowidth $logoheight;
   background-repeat: no-repeat;

@@ -110,7 +110,9 @@
   font-weight: normal; }
 @font-face {
   font-family: "Noto";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
 @page {
   size: 5in 8in;
   margin-top: 52pt;
