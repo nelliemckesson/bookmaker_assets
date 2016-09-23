@@ -2,33 +2,28 @@
 /* LOCAL VARIABLES */
 @font-face {
   font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/MinionPro-It.otf");
-  /*src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-It.otf");
-  */font-style: italic;
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-It.otf");
+  font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/MinionPro-Regular.otf");
-  /*src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Regular.otf");
-  */font-style: normal;
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Regular.otf");
+  font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/MinionPro-Semibold.otf");
-  /*src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Semibold.otf");
-  */font-style: normal;
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Semibold.otf");
+  font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/MinionPro-SemiboldIt.otf");
-  /*src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldIt.otf");
-  */font-style: italic;
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldIt.otf");
+  font-style: italic;
   font-weight: 600; } 
 @font-face {
   font-family: "MinionPro-Display";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/MinionPro-SemiboldDisp.otf");
-  /*src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldDisp.otf");
-  */font-style: normal;
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldDisp.otf");
+  font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "SourceCodePro";
@@ -40,7 +35,7 @@
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }  
-/*re top margin and top padding, I think the margin is supposed to go dwn to where the bottom of the run head is, and the padding does the rest*/
+
 @page {
   size: 6.125in 9.25in;
   margin-top: 45pt;
@@ -65,66 +60,114 @@
   margin-left: 63pt;
   margin-right: 63pt; }    
 
-/* turn on grid! */
-@page {
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/grid.jpg");
-  background-position: top left;
-  /*background-position: 0in, 0in;
-  */background-size: auto 15pt;
-  background-repeat: repeat-y;
-    border-style: solid;
-  border-color: red;
-  border-width: 0.5pt;
-}
-/* HERE GOES part, chapter, front, copyeight, and fullbleed definitions:  for each we have a left, right, first and blank; */
-@page chapter {
-  @top-center {
+@page chapter:left {
+  @top-left {
     font-family: "MinionPro";
-    text-align: center;
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
-    padding: 31pt 0 0 0;
-    margin: 0; }
-  @bottom-center {
-    font-family: "MinionPro";
-    font-variant: prince-opentype(onum);
-    content: counter(page);
-    content: flow(runfoot);
-    text-align: center;
-    font-size: 9pt;
-    vertical-align: top; } }
-@page chapter:left {
-  @top-center {
-    /*content: string(author);*/
-    content: flow(runheadleft); } }
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: left;
+    content: counter(page) " • " string(title); } }    
 @page chapter:right {
-  @top-center {
-    /*content: string(title);*/
-    content: flow(runheadright); } }
+  @top-right {
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: right;
+    content: string(chapter) " • " counter(page); } }    
 @page chapter:first {
-  @top-center {
-    content: normal; } }
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
 @page chapter:blank {
-  margin-top: 2.16in;
-  @top-center {
-    content: normal; }
-  @bottom-center {
-    content: normal; } }
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
 
-/*div.runheadleft {
-  font-variant: prince-opentype(onum); }
+@page fullbleed {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page fullbleed:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page fullbleed:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }  
 
-div.runheadright {
-  font-variant: prince-opentype(onum); }
-*/
-div.runheadleft::before {
-  content: counter(page) " • ";
-  font-style: normal; }
+@page front:left {
+  @top-left {
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: left;
+    content: counter(page, lower-roman) " • " string(front); } }
+@page front:right {
+  @top-right {
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: right;
+    content: string(front) " • " counter(page, lower-roman); } }
+@page front:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page front:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
 
-div.runheadright::after {
-  content: " • " counter(page);
-  font-style: normal; }
+@page back:left {
+  @top-left {
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: left;
+    content: counter(page) " • " string(title); } }
+@page back:right {
+  @top-right {
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0; 
+    text-align: right;
+    content: string(chapter) " • " counter(page); } }
+@page back:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page back:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
 
 body {
   font-family: "MinionPro";
@@ -153,8 +196,6 @@ p {
   prince-hyphenate-before: 3;
   hyphenate-lines: 2;
 }
-
-/*skipping div from torcss for now!*/
 
 p:first-of-type, 
 p[class^="SpaceBreak"] + p, 
@@ -186,22 +227,21 @@ section.adcard {
   page-break-after: always; }
 
 section[data-type="halftitlepage"],
-section[data-type="titlepage"] {
+section[data-type="titlepage"],
+section[data-type="preface"] {
   page-break-before: right; }
 
 section[data-type="dedication"],
 section[data-type="preface"].adcard {
   page-break-before: always; }
 
-section[data-type="halftitlepage"],
-section[data-type="titlepage"],
-section[data-type="copyright-page"],
-section[data-type="dedication"],
-nav[data-type="toc"] {
-  page: front; }
+section[data-type="preface"]:not(.adcard), nav[data-type="toc"] {
+  page: front; 
+  prince-page-group: start; }
 
-section[data-type="copyright-page"] {
-  page: copyright; }
+section[data-type="preface"] h1,
+nav[data-type="toc"] h1 {
+  string-set: front content(); }  
 
 *[class*="FrontSalesTitlefst"] {
   font-size: 15pt;
@@ -264,6 +304,13 @@ section[data-type="preface"] [class*="AdCardMainHeadacmh"] {
   line-height: 16pt;
   margin-top: 8pt; }
 
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/logo.jpg");
+  background-size: auto 0.5in;
+  height: 0.55in;
+  background-position: center center;
+  margin-bottom: auto; }
+
 section[data-type="titlepage"] > h1 {
   padding-left: 39pt;
   padding-right: 39pt;
@@ -273,7 +320,7 @@ section[data-type="titlepage"] > h1 {
   line-height: 32pt;
   text-align: center;
   margin-bottom: 0;
-  string-set: title content(); }   /*<--  how doe this work? */
+  string-set: title content(); }
 
 section[data-type="titlepage"] > h1:first-child {
   margin-top: 70pt; }                 
@@ -307,9 +354,8 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
 *[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
   padding-top: 14pt;
   margin-top: 11pt;
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/titlepage-rule.jpg");
-  /*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
-  */background-size: 80.4pt auto;
+  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-size: 80.4pt auto;
   background-position: top;
   background-repeat: no-repeat; }
 
@@ -343,9 +389,9 @@ section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
   text-indent: 0; }
 
 section[data-type="copyright-page"] p:first-child {
-  /*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/holt/logo.jpg");*/
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/HoltLogo30K.png");
-  background-position: center top;
+  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/holt/HoltLogo30K.png");
+  /*background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
+  */background-position: center top;
   background-size: 25pt auto;
   background-repeat: no-repeat; 
   padding-top: 45pt; }
@@ -422,6 +468,10 @@ nav[data-type="toc"] li a:after {
   content: target-counter(attr(href), page);
   float: right; }
 
+nav[data-type="toc"] li.FMHeadfmh a:after {
+  content: target-counter(attr(href), page, lower-roman);
+  float: right; }  
+
 nav[data-type="toc"] li.PartNumberpn,
 nav[data-type="toc"] li.PartTitlept {
   margin-bottom: 8.44pt;
@@ -437,17 +487,6 @@ nav[data-type="toc"] li.PartNumberpn a:after,
 nav[data-type="toc"] li.PartTitlept a:after {
   content: normal;
   display: inline; }
-
-section[data-type="preface"] {
-  page: chapter;
-  page-break-before: right;
-  prince-page-group: start; }
-
-section.adcard {
-  page: front; }
-
-section.frontsales {
-  page: front; }
 
 section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
@@ -499,6 +538,9 @@ section[data-type="chapter"] {
   prince-page-group: start;
   counter-reset: footnote; }
 
+section[data-type="chapter"] ~ section[data-type="chapter"], {
+   counter-reset: none }
+
 h1[class*="ChapTitle"]:first-child, 
 h1[class*="ChapNumber"]:first-child {
   margin-top: 70pt; 
@@ -508,13 +550,25 @@ h1[class*="ChapNumber"]:first-child {
 h1[class*="ChapTitle"]:not(:first-child) {
   margin-top: 0; }   
 
-section[data-type="preface"] + section[data-type="chapter"],
-section[data-type="foreword"] + section[data-type="chapter"],
-section[data-type="titlepage"] + section[data-type="chapter"],
-section[data-type="halftitlepage"] + section[data-type="chapter"],
-section[data-type="copyright-page"] + section[data-type="chapter"],
+section[data-type="preface"] + section[data-type="chapter"], 
+section[data-type="foreword"] + section[data-type="chapter"], 
+section[data-type="titlepage"] + section[data-type="chapter"], 
+section[data-type="halftitlepage"] + section[data-type="chapter"], 
+section[data-type="copyright-page"] + section[data-type="chapter"], 
 section[data-type="dedication"] + section[data-type="chapter"],
-nav[data-type="toc"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"] {
+  counter-reset: page 1 footnote;
+  page-break-before: right; }
+
+section[data-type="preface"] + div[data-type="part"], 
+section[data-type="foreword"] + div[data-type="part"], 
+section[data-type="titlepage"] + div[data-type="part"], 
+section[data-type="halftitlepage"] + div[data-type="part"], 
+section[data-type="copyright-page"] + div[data-type="part"], 
+section[data-type="dedication"] + div[data-type="part"],
+nav[data-type="toc"] + div[data-type="part"] {
+  counter-reset: page 1; }
+
 div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right; }
 
@@ -528,6 +582,10 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"] {
   margin-bottom: 10pt;
   text-indent: 0; }
 
+section[data-type="chapter"] h1[class*="ChapTitleNonprintingctnp"] {
+  counter-increment: chapternumber; 
+  string-set: chapter content(); }
+
 /*chapter title!*/
 section[data-type="chapter"] h1[class*="ChapTitlect"] {
   font-size: 15pt;
@@ -537,7 +595,8 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   padding-left: 39pt;
   padding-right: 39pt;
   margin-bottom: 9pt;
-  counter-increment: chapternumber; }
+  counter-increment: chapternumber; 
+  string-set: chapter content(); }
 
 h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
@@ -559,7 +618,7 @@ p[class*="ChapOpeningText"] {
 section[data-type="appendix"] {
   page-break-before: right;
   counter-reset: footnote;
-  page: chapter;
+  page: back;
   prince-page-group: start; }
 
 section[data-type="appendix"]:first-of-type {
@@ -605,9 +664,7 @@ div[data-type="part"] {
   font-weight: normal;  
   padding-left: 39pt;
   padding-right: 39pt;  
-  counter-reset: footnote;
-  page: part;
-  prince-page-group: start; }
+  counter-reset: footnote; }
 
 div[data-type="part"] h1[class*="PartNumberpn"] {
   font-size: 11.2pt;
@@ -617,9 +674,8 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
   text-transform: capitalize;
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum); 
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/fonts /to upload/titlepage-rule.jpg");
-  /*background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
-  */background-size: 45.75pt auto;
+  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-size: 45.75pt auto;
   background-position: bottom;
   background-repeat: no-repeat; } 
 
@@ -832,27 +888,28 @@ section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a:before {
 
 figure {
   page-break-inside: avoid;
-  margin-top: 27pt;
-  margin-bottom: 31pt;
+  margin-top: 26pt;
+  margin-bottom: 30pt;
   text-align: center;
   float: top unless-fit; }
 
 figure.fullpage {
+  page: fullbleed;
   float: top unless-fit;
   box-sizing: border-box;
-  width: 5.25in;
-  margin-top: 0.55in;
+  width: 6.375in;
+  margin-top: 0;
   margin-bottom: 0;
   text-align: inside;
   text-align-last: inside;
-  margin-inside: -72pt; /*-1in*/
-  margin-outside: -72pt;  /*was -0.75in, is now std margin + bleed*/
+  margin-inside: -72pt; 
+  margin-outside: -72pt;  /* 1in : was -0.75in, is now std margin + bleed*/
   overflow: visible;
   height: 5.4in; }
 
 img {
   max-width: 100%;
-  prince-image-resolution: auto, 72dpi;
+  prince-image-resolution: auto, 300dpi;
   text-align: center; }
 
 /*#4 !!!*/
@@ -860,16 +917,15 @@ img[src*="fullpage"] {
   display: block;
   width: 6.375in;
   height: 9.5in;
-  max-width: none;
-  margin-top: -108.6pt; }/*9 (bleed) + 15 (pdding) + margin-top (45_) + figure.fullpage top: */
+  margin-top: -69pt; }/*9 (bleed) + 15 (pdding) + margin-top (45_) */
 
 /* suppressing, for now */
 figure.fullpage figcaption {
   display: none; }
 
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
-  margin-top: -31pt;
-  margin-bottom: 27pt;
+  margin-top: -30pt;
+  margin-bottom: 26pt;
   max-height: 2in; }
 
 section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
@@ -1071,3 +1127,56 @@ p.BookmakerPageBreakbr,
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
 
+/*debug overrides for local runs; + turn on grid!
+*/
+@page {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
+  background-position: top left;
+  background-size: auto 15pt;
+  background-repeat: repeat-y;
+  border-style: solid;
+  border-color: red;
+  border-width: 0.5pt; }
+
+@font-face {
+  font-family: "MinionPro";
+  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-It.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-Semibold.otf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-SemiboldIt.otf");
+  font-style: italic;
+  font-weight: 600; } 
+@font-face {
+  font-family: "MinionPro-Display";
+  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-SemiboldDisp.otf");
+  font-style: normal;
+  font-weight: 600; }
+
+*[class="TitlepageBookTitletit"] + *[class*="TitlepageBookSubtitlestit"], 
+*[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
+  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/titlepage-rule.jpg");
+}  
+
+section[data-type="copyright-page"] p:first-child {
+  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/HoltLogo30K.png");
+}
+
+div[data-type="part"] h1[class*="PartNumberpn"] {
+  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/titlepage-rule.jpg");
+} 
+
+/*grid local in case I need it: 
+background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/grid.jpg");
+*/
