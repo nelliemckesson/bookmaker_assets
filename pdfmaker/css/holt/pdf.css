@@ -301,6 +301,7 @@ section[data-type="preface"] [class*="AdCardMainHeadacmh"] {
 *[class*="AdCardListofTitlesacl"] {
   text-align: center;
   text-indent: 0;
+  font-style: italic;
   line-height: 16pt;
   margin-top: 8pt; }
 
@@ -500,7 +501,7 @@ h1[class*="BMHeadbmh"] {
   text-align: center; }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"],
-*[class*="ChapSubtitlecst"], section h1.AboutAuthorTextHeadatah {
+*[class*="ChapSubtitlecst"], section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
   text-indent: 0;
   font-size: 13pt;
   line-height: 16pt;
@@ -514,7 +515,7 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"],
   padding-left: 53pt;
   padding-right: 53pt; }
 
-section h1.AboutAuthorTextHeadatah {
+section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
   line-height: 18pt;
   margin-top: 68pt;
   margin-bottom: 18pt; }    
@@ -526,8 +527,13 @@ p[class*="AboutAuthorText"] {
 
 h1 + p[class*="AboutAuthorText"],
 figure + p[class*="AboutAuthorText"],
-p.AboutAuthorTextNo-Indentatatx1 {
+p.AboutAuthorTextNo-Indentatatx1,
+p.IllustrationSourceis + p[class*="AboutAuthorText"] {
   text-indent: 0; }
+
+figure + p[class*="AboutAuthorText"],
+p.IllustrationSourceis + p[class*="AboutAuthorText"] {
+  margin-top: -22pt }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type {
   margin-top: -130.65pt; } 
@@ -707,7 +713,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
 
 /*not present in meryl's design*/
 pre.poetry {
-  font-family: "ArnoPro", serif;
+  font-family: "MinionPro", serif;
   margin: 15pt 51pt 15pt 35pt;
   white-space: pre-wrap; }
 
@@ -752,12 +758,10 @@ blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.ru
 p[class*="Epigraph"] {
   font-style: italic;
   text-align: left;
-  border: 1pt solid red;
   text-indent: 0; }
 
 p[class*="Epigraph-verse"], p.EpigraphinText-versetepiv {
-  margin-left: 12pt;
-  border: 1pt solid green;  
+  margin-left: 12pt; 
   text-indent: -12pt; }
 
 p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
@@ -765,7 +769,6 @@ p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
   font-size: 10.5pt;
   line-height: 13pt;
   text-align: right;
-  border: 1pt solid blue;
   padding-left: 20%;
   widows: 2;
   orphans: 2; }
@@ -924,8 +927,8 @@ figure.fullpage figcaption {
   display: none; }
 
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
-  margin-top: -30pt;
-  margin-bottom: 26pt;
+  margin-top: -3pt;
+  margin-bottom: 15pt;
   max-height: 2in; }
 
 section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
