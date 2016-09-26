@@ -1452,6 +1452,12 @@ POETRY
   text-indent: -1.5em;
   }
 
+blockquote *[class*="-verse"]:first-child,
+blockquote *[class*="Verse"]:first-child,
+blockquote *[class^="Extract-SongLyric"]:first-child {
+  margin-left: 1.5em;
+}
+
 .VerseTextvtx,
 .Epigraph-verseepiv,
 .FMEpigraph-versefmepiv,
