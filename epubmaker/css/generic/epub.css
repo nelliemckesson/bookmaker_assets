@@ -89,7 +89,7 @@ body {
   color: #000;
   background-color: #fff;
   }
-p+p, 
+p+p,
 p.Text-Standardtx {
   text-indent: 1.5em;
   }
@@ -120,12 +120,12 @@ em {
   font-style: italic;
 }
 
-strong { 
+strong {
  font-size: inherit;
  font-weight: bold;
  }
 
-span, a { 
+span, a {
  font-size: inherit;
  }
 
@@ -218,7 +218,7 @@ text-decoration: none;
 *[class^="spansmcapbold"],
 *[class^="spansmcapital"],
 *[class^="spansmcapboldital"] {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -226,7 +226,7 @@ text-decoration: none;
 .spansmcapboldscbold,
 .spansmcapitalscital,
 .spansmcapbolditalscbi {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -692,7 +692,7 @@ H6
 
 h6 {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -709,7 +709,7 @@ h6 {
 *[class^="ChartSubhead"],
 *[class^="FigureSubhead"] {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -830,7 +830,7 @@ DEDICATION PAGE
 --------------------------------------------------
 */
 
-.Dedicationded, 
+.Dedicationded,
 .DedicationAuthordedau {
   text-indent: 0;
   text-align: center;
@@ -927,7 +927,7 @@ blockquote[data-type="epigraph"] {
 *[class^="BOBAdQuoteSource"] {
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -946,7 +946,7 @@ blockquote[data-type="epigraph"] {
 .BOBAdQuoteSourcebobqs {
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -1215,7 +1215,7 @@ SPACE BREAKS
   font-size: 1.125em;
   }
 
-.SpaceBreakwithOrnamentorn, 
+.SpaceBreakwithOrnamentorn,
 .SpaceBreakwithALTOrnamentorn2 {
   display: block;
   font-size: 1.125em;
@@ -1451,6 +1451,12 @@ POETRY
   margin-left: 1.5em;
   text-indent: -1.5em;
   }
+
+blockquote *[class*="-verse"]:first-child,
+blockquote *[class*="Verse"]:first-child,
+blockquote *[class^="Extract-SongLyric"]:first-child {
+  margin-left: 1.5em;
+}
 
 .VerseTextvtx,
 .Epigraph-verseepiv,
@@ -1717,7 +1723,7 @@ h1 + .Illustrationholderill {
 *[class^="IllustrationSource"] {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -1726,7 +1732,7 @@ h1 + .Illustrationholderill {
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -1947,8 +1953,8 @@ BOB ADS
 --------------------------------------------------
 */
 
-.BOBAdTitlebobt, 
-.BOBAdSubtitlebobst, 
+.BOBAdTitlebobt,
+.BOBAdSubtitlebobst,
 .BOBAdLevel-1Subheadbobh1,
 .BOBAdLevel-2Subheadbobh2,
 .BOBAdLevel-3Subheadbobh3,
