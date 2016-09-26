@@ -108,9 +108,7 @@
   font-weight: normal; }
 @font-face {
   font-family: "Noto";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf");
-  font-style: normal;
-  font-weight: normal; }
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
 @page {
   size: 5in 8in;
   margin-top: 46.5pt;
@@ -982,6 +980,9 @@ p.FMEpigraphSourcefmeps {
   text-indent: -12pt;
   margin-left: 15.5pt;
   text-align: left; }
+
+[class*="Extract-VerseorPoetryextv"]:first-child {
+  text-indent: -12pt; }
 
 p[class*="ExtractSource"] {
   text-align: right;

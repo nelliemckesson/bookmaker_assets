@@ -1071,6 +1071,10 @@ p.FMEpigraphSourcefmeps {
   text-align: left;
 }
 
+[class*="Extract-VerseorPoetryextv"]:first-child {
+text-indent: -12pt;
+}
+
 p[class*="ExtractSource"] {
   text-align: right;
   font-weight: 600;
