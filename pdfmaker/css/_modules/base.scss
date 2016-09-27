@@ -521,6 +521,10 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
   line-height: $gridheight * 1.5;
   font-style: italic;
   text-align: center;
+
+  em {
+    font-style: normal;
+  }
 }
 
 *[class*="TitlepageBookSubtitlestit"]:first-child, 
@@ -606,6 +610,10 @@ section[data-type="dedication"] p {
   text-align: center;
   font-style: italic;
   text-indent: 0;
+
+  em {
+    font-style: normal;
+  }
 }
 
 .texttoc {
@@ -738,6 +746,10 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   text-align: center;
   margin-bottom: $gridheight * 1.875;
   page-break-after: avoid;
+
+  em {
+    font-style: normal;
+  }
 }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
@@ -844,7 +856,11 @@ blockquote + *[class*="ChapOpeningText"] {
   text-align: center;
   margin-top: $gridheight * 2;
   margin-bottom: $gridheight;
-    page-break-after: avoid;
+  page-break-after: avoid;
+
+  em {
+    font-style: normal;
+  }
 }
 
 *[class*="Head-Level-2h2"] {
@@ -867,6 +883,10 @@ blockquote + *[class*="ChapOpeningText"] {
   margin-top: $gridheight * 2;
   margin-bottom: $gridheight;
   page-break-after: avoid;
+
+  em {
+    font-style: normal;
+  }
 }
 
 div[data-type="part"] {
@@ -1069,6 +1089,10 @@ p.FMEpigraphSourcefmeps {
   text-indent: -$textindent;
   margin-left: $gridheight;
   text-align: left;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p[class*="ExtractSource"] {
@@ -1080,6 +1104,10 @@ p[class*="ExtractSource"] {
 
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   font-style: italic;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p.LetterExtSalutationlsa {
@@ -1087,6 +1115,10 @@ p.LetterExtSalutationlsa {
   text-indent: 0;
   margin-top: $gridheight;
   margin-bottom: $gridheight;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p.LetterExtAddressladd, 
@@ -1094,18 +1126,30 @@ p.LetterExtGeneralextl,
 p.LetterExtPostscriptlps {
   font-style: italic;
   text-indent: 0;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p.LetterExtClosinglcl {
   font-style: italic;
   text-indent: 0;
   margin-top: $gridheight;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p.LetterExtSignaturelsig {
   font-style: italic;
   text-indent: 0;
   margin-bottom: $gridheight;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p[class*="ExtractSource"] em {
