@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* TO COMPILE: $ sass novel.scss novel.css */
 /* LOCAL VARIABLES */
 /*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
 @font-face {
@@ -514,6 +515,9 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
   line-height: 23.25pt;
   font-style: italic;
   text-align: center; }
+  *[class*="TitlepageBookSubtitlestit"] em,
+  *[class*="TitlepageSeriesTitleser"] em {
+    font-style: normal; }
 
 *[class*="TitlepageBookSubtitlestit"]:first-child,
 *[class*="TitlepageSeriesTitleser"]:first-child {
@@ -588,6 +592,8 @@ section[data-type="dedication"] p {
   text-align: center;
   font-style: italic;
   text-indent: 0; }
+  section[data-type="dedication"] p em {
+    font-style: normal; }
 
 .texttoc {
   display: none; }
@@ -698,6 +704,8 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   text-align: center;
   margin-bottom: 29.0625pt;
   page-break-after: avoid; }
+  section[data-type="preface"] *[class*="FMSubheadfmsh"] em, *[class*="ChapSubtitlecst"] em, *[class*="BMSubheadbmsh"] em {
+    font-style: normal; }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
   margin-top: -45pt; }
@@ -789,6 +797,8 @@ blockquote + *[class*="ChapOpeningText"] {
   margin-top: 31pt;
   margin-bottom: 15.5pt;
   page-break-after: avoid; }
+  *[class*="Head-Level-1h1"] em {
+    font-style: normal; }
 
 *[class*="Head-Level-2h2"] {
   text-indent: 0;
@@ -809,6 +819,8 @@ blockquote + *[class*="ChapOpeningText"] {
   margin-top: 31pt;
   margin-bottom: 15.5pt;
   page-break-after: avoid; }
+  *[class*="Head-Level-3h3"] em {
+    font-style: normal; }
 
 div[data-type="part"] {
   page-break-before: right;
@@ -980,6 +992,8 @@ p.FMEpigraphSourcefmeps {
   text-indent: -12pt;
   margin-left: 15.5pt;
   text-align: left; }
+  *[class*="Extract-VerseorPoetryextv"] em {
+    font-style: normal; }
 
 [class*="Extract-VerseorPoetryextv"]:first-child {
   text-indent: -12pt; }
@@ -992,28 +1006,40 @@ p[class*="ExtractSource"] {
 
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   font-style: italic; }
+  p.LetterExtBodyTextltx em, p.LetterExtBodyTextNo-Indentltx1 em {
+    font-style: normal; }
 
 p.LetterExtSalutationlsa {
   font-style: italic;
   text-indent: 0;
   margin-top: 15.5pt;
   margin-bottom: 15.5pt; }
+  p.LetterExtSalutationlsa em {
+    font-style: normal; }
 
 p.LetterExtAddressladd,
 p.LetterExtGeneralextl,
 p.LetterExtPostscriptlps {
   font-style: italic;
   text-indent: 0; }
+  p.LetterExtAddressladd em,
+  p.LetterExtGeneralextl em,
+  p.LetterExtPostscriptlps em {
+    font-style: normal; }
 
 p.LetterExtClosinglcl {
   font-style: italic;
   text-indent: 0;
   margin-top: 15.5pt; }
+  p.LetterExtClosinglcl em {
+    font-style: normal; }
 
 p.LetterExtSignaturelsig {
   font-style: italic;
   text-indent: 0;
   margin-bottom: 15.5pt; }
+  p.LetterExtSignaturelsig em {
+    font-style: normal; }
 
 p[class*="ExtractSource"] em {
   break-inside: avoid; }
