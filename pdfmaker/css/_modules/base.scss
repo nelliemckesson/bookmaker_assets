@@ -1066,6 +1066,11 @@ p.FMEpigraphSourcefmeps {
   break-inside: avoid;
 }
 
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-verse"], 
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-non-verse"] {
+  margin-top: $gridheight * 2;
+}
+
 *[class*="ExtractHeadexth"] {
   page-break-after: avoid;
 }
