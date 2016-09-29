@@ -974,6 +974,10 @@ p.FMEpigraphSourcefmeps {
 *[class*="FMEpigraphSourcefmeps"] em {
   break-inside: avoid; }
 
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-verse"],
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-non-verse"] {
+  margin-top: 32pt; }
+
 *[class*="ExtractHeadexth"] {
   page-break-after: avoid; }
 
@@ -996,6 +1000,9 @@ p.FMEpigraphSourcefmeps {
   text-align: left; }
   *[class*="Extract-VerseorPoetryextv"] em {
     font-style: normal; }
+
+[class*="Extract-VerseorPoetryextv"]:first-child {
+  text-indent: -12pt; }
 
 p[class*="ExtractSource"] {
   text-align: right;
@@ -1384,4 +1391,4 @@ figure.fullpage {
 img[src*="fullpage"] {
   margin-top: -1.65in; }
 
-/*# sourceMappingURL=pdf.css.map */
+/*# sourceMappingURL=core_tor.css.map */
