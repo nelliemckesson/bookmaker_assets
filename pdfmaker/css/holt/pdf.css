@@ -1217,7 +1217,7 @@ p.BookmakerPageBreakbr,
   letter-spacing: 0.2pt; }
 
 /*debug overrides for local runs; + turn on grid!
-*/
+*//*
 @page {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
   background-position: top left;
