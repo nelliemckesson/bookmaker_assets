@@ -62,24 +62,24 @@
 
 @page chapter:left {
   @top-left {
+    content: flow(runheadleft);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: left;
-    content: counter(page) " • " string(title); } }    
+    text-align: left; } }    
 @page chapter:right {
   @top-right {
+    content: flow(runheadright);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: right;
-    content: string(chapter) " • " counter(page); } }    
+    text-align: right; } }    
 @page chapter:first {
   @top-right {
   content: normal; }
@@ -109,24 +109,24 @@
 
 @page front:left {
   @top-left {
+    content: flow(frontrunheadleft);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: left;
-    content: counter(page, lower-roman) " • " string(front); } }
+    text-align: left; } }
 @page front:right {
   @top-right {
+    content: flow(frontrunheadright);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: right;
-    content: string(front) " • " counter(page, lower-roman); } }
+    text-align: right; } }
 @page front:first {
   @top-right {
   content: normal; }
@@ -139,25 +139,25 @@
   content: normal; } }
 
 @page back:left {
-  @top-left {
+  @top-left {     
+    content: flow(backrunheadleft);   
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: left;
-    content: counter(page) " • " string(title); } }
+    text-align: left; } }
 @page back:right {
   @top-right {
+    content: flow(runheadright);    
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
     margin: 0; 
-    text-align: right;
-    content: string(chapter) " • " counter(page); } }
+    text-align: right; } }
 @page back:first {
   @top-right {
   content: normal; }
@@ -196,6 +196,95 @@ p {
   prince-hyphenate-before: 3;
   hyphenate-lines: 2;
 }
+
+/*run heads (in combination with holt.js)*/
+div.frontrunheadleft {
+  flow: static(frontrunheadleft);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+div.frontrunheadright {
+  flow: static(frontrunheadright);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+div.runheadleft {
+  flow: static(runheadleft);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+div.runheadright {
+  flow: static(runheadright);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+div.backrunheadleft {
+  flow: static(backrunheadleft);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }  
+
+div.frontrunheadleft span {
+  display: block;
+  content: counter(page, lower-roman) " • " string(section);
+  font-family: "MinionPro";
+  font-variant: prince-opentype(onum);
+  font-style: italic;
+  font-size: 9pt;
+  text-indent: 0; }
+div.frontrunheadright span {
+  display: block;
+  content: string(section) " • " counter(page, lower-roman);
+  font-family: "MinionPro";
+  font-variant: prince-opentype(onum);
+  font-style: italic;
+  font-size: 9pt;
+  text-indent: 0; }
+div.runheadleft span {
+  display: block;
+  font-family: "MinionPro";
+  font-variant: prince-opentype(onum);
+  font-style: italic;
+  font-size: 9pt;
+  text-indent: 0; }
+div.runheadleft span:before {
+  content: counter(page) " • "; }
+div.runheadright span {
+  display: block;
+  content: string(section) " • " counter(page);
+  font-family: "MinionPro";
+  font-variant: prince-opentype(onum);
+  font-style: italic;
+  font-size: 9pt;
+  text-indent: 0; }
+div.backrunheadleft span {
+  display: block;
+  content: counter(page) " • " string(section);
+  font-family: "MinionPro";
+  font-variant: prince-opentype(onum);
+  font-style: italic;
+  font-size: 9pt;
+  text-indent: 0; }  
 
 p:first-of-type, 
 p[class^="SpaceBreak"] + p, 
@@ -241,7 +330,7 @@ section[data-type="preface"]:not(.adcard), nav[data-type="toc"] {
 
 section[data-type="preface"] h1,
 nav[data-type="toc"] h1 {
-  string-set: front content(); }  
+  string-set: section content(); }  
 
 *[class*="FrontSalesTitlefst"] {
   font-size: 15pt;
@@ -369,8 +458,7 @@ section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
   line-height: 48pt;
   margin-top: 108pt;
   text-indent: 0;
-  text-align: center;
-  string-set: author content(); }
+  text-align: center; }
 
 section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
   float: bottom;
@@ -578,7 +666,6 @@ nav[data-type="toc"] + div[data-type="part"] {
 div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right; }
 
-/*chapter number or non-printing chapter number*/
 section[data-type="chapter"] h1[class*="ChapNumbercn"] {
   font-size: 20pt;
   padding-top: 3pt;
@@ -590,7 +677,7 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"] {
 
 section[data-type="chapter"] h1[class*="ChapTitleNonprintingctnp"] {
   counter-increment: chapternumber; 
-  string-set: chapter content(); }
+  string-set: section content(); }
 
 /*chapter title!*/
 section[data-type="chapter"] h1[class*="ChapTitlect"] {
@@ -602,7 +689,7 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   padding-right: 39pt;
   margin-bottom: 9pt;
   counter-increment: chapternumber; 
-  string-set: chapter content(); }
+  string-set: section content(); }
 
 h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
@@ -626,6 +713,9 @@ section[data-type="appendix"] {
   counter-reset: footnote;
   page: back;
   prince-page-group: start; }
+
+section[data-type="appendix"] h1[class*="BMHead"] {
+  string-set: section content(); }  
 
 section[data-type="appendix"]:first-of-type {
   page-break-before: right; }
@@ -696,22 +786,19 @@ div[data-type="part"] *[class*="PartNumberSubtitlepst"] {
   line-height: 17pt;
   margin-top: 0; } 
 
-div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
+div[data-type="part"] h1[class*="PartNumberpn"] + div[class*="runheadright"] + div[class*="runheadleft"] + h1[class*="PartTitlept"] {
   margin-top: 0; }
 
-/*not present in meryl's design*/
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {
   font-family: "AromaNo2LTPro"
   font-size: 9.75pt; }
 
-/*not present in meryl's design*/
 *[class*="Text-ComputerTypecom"],
 *[class*="Text-ComputerTypeNo-Indentcom1"] {
   font-family: "SourceCodePro", monospace;
   font-size: 8.5pt; }
 
-/*not present in meryl's design*/
 pre.poetry {
   font-family: "MinionPro", serif;
   margin: 15pt 51pt 15pt 35pt;
@@ -752,7 +839,7 @@ section[data-type="preface"] > blockquote[data-type="epigraph"] {
   margin-bottom: 45pt; }
 
 blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
-blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
+blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote[data-type="epigraph"] {
   margin-top: -45pt; }
 
 p[class*="Epigraph"] {
@@ -839,7 +926,7 @@ p[class*="Dateline"] {
   margin-bottom: 15pt;
   text-align: left; }
 
-p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
+p[class*="Dateline"] + div[class*="runheadright"] + div[class*="runheadleft"] + p[class*="Dateline"] {
   margin-top: -15pt; }
 
 p.LetterExtDatelineldl {
@@ -887,8 +974,6 @@ section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a {
 section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a:before {
   content: "Page " target-counter(attr(href), page) " "; }
 
-/*full page figures, here we go:;*/
-
 figure {
   page-break-inside: avoid;
   margin-top: 26pt;
@@ -897,7 +982,6 @@ figure {
   float: top unless-fit; }
 
 figure.fullpage {
-  page: fullbleed;
   float: top unless-fit;
   box-sizing: border-box;
   width: 6.375in;
@@ -906,21 +990,20 @@ figure.fullpage {
   text-align: inside;
   text-align-last: inside;
   margin-inside: -72pt; 
-  margin-outside: -72pt;  /* 1in : was -0.75in, is now std margin + bleed*/
+  margin-outside: -72pt;  /*std margin + bleed*/
   overflow: visible;
-  height: 5.4in; }
+  height: 7.5in; }
 
 img {
   max-width: 100%;
   prince-image-resolution: auto, 300dpi;
   text-align: center; }
 
-/*#4 !!!*/
 img[src*="fullpage"] {
   display: block;
   width: 6.375in;
   height: 9.5in;
-  margin-top: -69pt; }/*9 (bleed) + 15 (pdding) + margin-top (45_) */
+  margin-top: -69pt; }/*bleed + padding + margin-top*/
 
 /* suppressing, for now */
 figure.fullpage figcaption {
@@ -1008,15 +1091,14 @@ p.SpaceBreak-3-Linels3 {
   height: 45pt;
   content: " "; }
 
-/*what is this - is this necessary?  does this even apply with all the divs?*/  
-p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote {
+p[class*="SpaceBreak"] + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreak + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.PartOrnamentporn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.ChapOrnamentcorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.ChapOrnamentALTcorn2 + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakOrnamentorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakwithOrnamentorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakwithALTOrnamentorn2 + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote {
   margin-top: 0pt; }
 
 p.PageBreakpb {
