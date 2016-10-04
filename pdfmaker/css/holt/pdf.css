@@ -623,9 +623,8 @@ p.AboutAuthorTextNo-Indentatatx1,
 p.IllustrationSourceis + p[class*="AboutAuthorText"] {
   text-indent: 0; }
 
-figure + p[class*="AboutAuthorText"],
-p.IllustrationSourceis + p[class*="AboutAuthorText"] {
-  margin-top: -22pt }
+section h1.AboutAuthorTextHeadatah + figure + p, section.abouttheauthor h1 + figure + p {
+  margin-top: 22pt; }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type {
   margin-top: -130.65pt; } 

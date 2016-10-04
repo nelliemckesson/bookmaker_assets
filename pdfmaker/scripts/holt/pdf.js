@@ -78,7 +78,7 @@ function addRunningElements() {
       var backRunHeadLeftSpan = document.createElement("span");
       backRunHeadLeft.setAttribute("class", "backrunheadleft");
       backRunHeadLeft.appendChild(backRunHeadLeftSpan);
-      backRunHeadLeft.parentNode.insertBefore(backRunHeadLeft, thisParent.nextSibling);
+      thisParent.parentNode.insertBefore(backRunHeadLeft, thisParent.nextSibling);
     };
   };
 };
