@@ -246,20 +246,24 @@ div.backrunheadleft {
 
 div.frontrunheadleft span {
   display: block;
-  content: counter(page, lower-roman) " • " string(section);
+  /*content: counter(page, lower-roman) " • " string(section);*/
   font-family: "MinionPro";
   font-variant: prince-opentype(onum);
   font-style: italic;
   font-size: 9pt;
   text-indent: 0; }
+div.frontrunheadleft span:before {
+  content: counter(page, lower-roman) " • "; }  
 div.frontrunheadright span {
   display: block;
-  content: string(section) " • " counter(page, lower-roman);
+  /*content: string(section) " • " counter(page, lower-roman);*/
   font-family: "MinionPro";
   font-variant: prince-opentype(onum);
   font-style: italic;
   font-size: 9pt;
   text-indent: 0; }
+div.runheadleft span:after {
+  content: " • " counter(page, lower-roman); }  
 div.runheadleft span {
   display: block;
   font-family: "MinionPro";
@@ -271,20 +275,24 @@ div.runheadleft span:before {
   content: counter(page) " • "; }
 div.runheadright span {
   display: block;
-  content: string(section) " • " counter(page);
   font-family: "MinionPro";
   font-variant: prince-opentype(onum);
   font-style: italic;
   font-size: 9pt;
   text-indent: 0; }
+div.runheadright span:after {
+  content: " • " counter(page); }  
 div.backrunheadleft span {
   display: block;
-  content: counter(page) " • " string(section);
+  /*content: counter(page) " • " string(section);*/
   font-family: "MinionPro";
   font-variant: prince-opentype(onum);
   font-style: italic;
   font-size: 9pt;
   text-indent: 0; }  
+div.backrunheadleft span:before {
+  content: counter(page) " • "; }  
+
 
 p:first-of-type, 
 p[class^="SpaceBreak"] + p, 
@@ -481,10 +489,12 @@ section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
   text-align: center;
   text-indent: 0; }
 
-section[data-type="copyright-page"] p:first-child {
+
+section[data-type="copyright-page"] p:first-of-type {
+  /*background-image: url("../../images/holt/HoltLogo30K.png");*/
   background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/holt/HoltLogo30K.png");
-  /*background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
-  */background-position: center top;
+  /*background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");*/
+  background-position: center top;
   background-size: 25pt auto;
   background-repeat: no-repeat; 
   padding-top: 45pt; }
@@ -642,7 +652,8 @@ h1[class*="ChapTitle"]:first-child,
 h1[class*="ChapNumber"]:first-child {
   margin-top: 70pt; 
   padding-bottom: 0;
-  margin-bottom: 0; }  
+  margin-bottom: 0; 
+  border: 1pt solid red;}  
 
 h1[class*="ChapTitle"]:not(:first-child) {
   margin-top: 0; }   
