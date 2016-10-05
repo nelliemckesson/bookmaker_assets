@@ -55,7 +55,7 @@ function addRunningElements() {
       var frontRunHeadLeftSpan = document.createElement("span");
       frontRunHeadLeft.setAttribute("class", "frontrunheadleft");
       frontRunHeadLeft.appendChild(frontRunHeadLeftSpan);
-    frontRunHeadLeftSpan.textContent=sectionHead;
+      frontRunHeadLeftSpan.textContent=sectionHead;
       thisParent.parentNode.insertBefore(frontRunHeadLeft, thisParent.nextSibling);
     };
     if (sectionType == "chapter") {
@@ -166,9 +166,9 @@ function fullpageFigures() {
 };
 
 window.onload = function() {
-  //moveIllustrationSource();
+  moveIllustrationSource();
   addRunningElements();
-  //fullpageFigures();
+  fullpageFigures();
 };
 
 // exclude author photo
