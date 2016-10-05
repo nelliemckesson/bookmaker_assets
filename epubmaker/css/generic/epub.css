@@ -1126,20 +1126,20 @@ TEXT
 .Text-ComputerTypeNo-Indentcom1 {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   }
-.Text-StandardALTtx,
-.Text-StdNo-IndentALTtx1 {
+.Text-StandardALTatx,
+.Text-StdNo-IndentALTatx1 {
   font-family: Helvetica,Arial,sans-serif;
   }
 
-.Text-StandardALTtx,
-.Text-StdNo-IndentALTtx1 {
+.Text-StandardALTatx,
+.Text-StdNo-IndentALTatx1 {
   margin-top: 1em;
   }
 
-.Text-StandardALTtx + .Text-StandardALTtx,
-.Text-StandardALTtx + .Text-StdNo-IndentALTtx1, 
-.Text-StdNo-IndentALTtx1 + .Text-StandardALTtx,
-.Text-StdNo-IndentALTtx1 + .Text-StdNo-IndentALTtx1 {
+.Text-StandardALTatx + .Text-StandardALTatx,
+.Text-StandardALTatx + .Text-StdNo-IndentALTatx1, 
+.Text-StdNo-IndentALTatx1 + .Text-StandardALTatx,
+.Text-StdNo-IndentALTatx1 + .Text-StdNo-IndentALTatx1 {
   margin-top: 0;
   }
 
