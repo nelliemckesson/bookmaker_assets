@@ -262,7 +262,7 @@ div.frontrunheadright span {
   font-style: italic;
   font-size: 9pt;
   text-indent: 0; }
-div.runheadleft span:after {
+div.frontrunheadright span:after {
   content: " • " counter(page, lower-roman); }  
 div.runheadleft span {
   display: block;
