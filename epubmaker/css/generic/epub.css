@@ -1063,7 +1063,9 @@ CHAPTER OPENERS
 */
 
 .ChapAuthorca,
-.Dateline-Chapterdl {
+.Dateline-Chapterdl, 
+.ChapOrnamentcorn,
+.ChapOrnamentALTcorn2 {
   text-align: center;
   text-indent: 0;
   margin: 1em 0;
@@ -1077,15 +1079,26 @@ CHAPTER OPENERS
   text-indent: 0;
   margin: 1em 0;
   }
-*[class^="ChapOrnament"],:before,
+*[class^="ChapOrnament"]:before,
 *[class^="ChapOrnamentALT"]:before {
   display: block;
   font-size: 1.125em;
+  }
+.ChapOrnamentcorn:before,
+.ChapOrnamentALTcorn2:before {
+  display: block;
+  font-size: 1.125em;
+  }
+.ChapOrnamentcorn:before {
+  content: "\2766"; /* U+2766 "floral heart" */
   }
 *[class^="ChapOrnament"]:before {
   content: "\2766"; /* U+2766 "floral heart" */
   }
 *[class^="ChapOrnamentALT"]:before {
+  content: "\2756"; /* U+2756 "black diamond minus white" */
+  }
+.ChapOrnamentALTcorn2:before {
   content: "\2756"; /* U+2756 "black diamond minus white" */
   }
 .TeaserOpeningTexttotx, .TeaserOpeningTextNo-Indenttotx1 {
@@ -1108,6 +1121,26 @@ TEXT
 *[class^="Text-StandardALT"],
 *[class^="Text-StdNo-IndentALT"] {
   font-family: Helvetica,Arial,sans-serif;
+  }
+.Text-ComputerTypecom,
+.Text-ComputerTypeNo-Indentcom1 {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
+.Text-StandardALTtx,
+.Text-StdNo-IndentALTtx1 {
+  font-family: Helvetica,Arial,sans-serif;
+  }
+
+.Text-StandardALTtx,
+.Text-StdNo-IndentALTtx1 {
+  margin-top: 1em;
+  }
+
+.Text-StandardALTtx + .Text-StandardALTtx,
+.Text-StandardALTtx + .Text-StdNo-IndentALTtx1, 
+.Text-StdNo-IndentALTtx1 + .Text-StandardALTtx,
+.Text-StdNo-IndentALTtx1 + .Text-StdNo-IndentALTtx1 {
+  margin-top: 0;
   }
 
 /*
