@@ -62,7 +62,7 @@
 
 @page chapter:left {
   @top-left {
-    content: flow(runheadleft);
+    content: counter(page) " • " string(title);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
@@ -109,7 +109,7 @@
 
 @page front:left {
   @top-left {
-    content: flow(frontrunheadleft);
+    content: flow(runheadleft);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
@@ -119,7 +119,7 @@
     text-align: left; } }
 @page front:right {
   @top-right {
-    content: flow(frontrunheadright);
+    content: flow(runheadright);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
@@ -140,7 +140,7 @@
 
 @page back:left {
   @top-left {     
-    content: flow(backrunheadleft);   
+    content: flow(runheadleft);   
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
@@ -198,33 +198,6 @@ p {
 }
 
 /*run heads (in combination with holt.js)*/
-div.frontrunheadleft {
-  flow: static(frontrunheadleft);
-  font-family: "MinionPro";
-  font-style: italic;
-  font-size: 9pt;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  text-indent: 0; }
-div.frontrunheadright {
-  flow: static(frontrunheadright);
-  font-family: "MinionPro";
-  font-style: italic;
-  font-size: 9pt;
-  text-align: right;
-  padding: 0;
-  margin: 0;
-  text-indent: 0; }
-div.runheadleft {
-  flow: static(runheadleft);
-  font-family: "MinionPro";
-  font-style: italic;
-  font-size: 9pt;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-  text-indent: 0; }
 div.runheadright {
   flow: static(runheadright);
   font-family: "MinionPro";
@@ -233,9 +206,9 @@ div.runheadright {
   text-align: right;
   padding: 0;
   margin: 0;
-  text-indent: 0; }
-div.backrunheadleft {
-  flow: static(backrunheadleft);
+  text-indent: 0; }  
+div.runheadleft {
+  flow: static(runheadleft);
   font-family: "MinionPro";
   font-style: italic;
   font-size: 9pt;
@@ -244,54 +217,20 @@ div.backrunheadleft {
   margin: 0;
   text-indent: 0; }  
 
-div.frontrunheadleft span {
-  display: block;
-  /*content: counter(page, lower-roman) " • " string(section);*/
-  font-family: "MinionPro";
-  font-variant: prince-opentype(onum);
-  font-style: italic;
-  font-size: 9pt;
-  text-indent: 0; }
-div.frontrunheadleft span:before {
-  content: counter(page, lower-roman) " • "; }  
-div.frontrunheadright span {
-  display: block;
-  /*content: string(section) " • " counter(page, lower-roman);*/
-  font-family: "MinionPro";
-  font-variant: prince-opentype(onum);
-  font-style: italic;
-  font-size: 9pt;
-  text-indent: 0; }
-div.frontrunheadright span:after {
-  content: " • " counter(page, lower-roman); }  
-div.runheadleft span {
-  display: block;
-  font-family: "MinionPro";
-  font-variant: prince-opentype(onum);
-  font-style: italic;
-  font-size: 9pt;
-  text-indent: 0; }
-div.runheadleft span:before {
-  content: counter(page) " • "; }
-div.runheadright span {
-  display: block;
-  font-family: "MinionPro";
-  font-variant: prince-opentype(onum);
-  font-style: italic;
-  font-size: 9pt;
-  text-indent: 0; }
-div.runheadright span:after {
-  content: " • " counter(page); }  
-div.backrunheadleft span {
-  display: block;
-  /*content: counter(page) " • " string(section);*/
-  font-family: "MinionPro";
-  font-variant: prince-opentype(onum);
-  font-style: italic;
-  font-size: 9pt;
-  text-indent: 0; }  
-div.backrunheadleft span:before {
-  content: counter(page) " • "; }  
+section[data-type="preface"] div.runheadright:after,
+nav[data-type="toc"] div.runheadright:after {
+content: " • " counter(page, lower-roman); }
+
+section[data-type="preface"] div.runheadleft:before,
+nav[data-type="toc"] div.runheadleft:before {
+content: counter(page, lower-roman) " • "; }
+
+section[data-type="chapter"] div.runheadright:after, 
+section[data-type="appendix"] div.runheadright:after {
+content: " • " counter(page); }
+
+section[data-type="appendix"] div.runheadleft:before {
+content: counter(page) " • "; }
 
 
 p:first-of-type, 
