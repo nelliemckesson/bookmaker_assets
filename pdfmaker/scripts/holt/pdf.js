@@ -56,14 +56,14 @@ function addRunningElements() {
       };
     };  
 
-    var runHeadRight = document.createElement("div");
-    runHeadRight.setAttribute("class", "runheadright")
-    runHeadRight.textContent=sectionHead;
-    thisParent.parentNode.insertBefore(runHeadRight, thisParent.nextSibling);
     var runHeadLeft = document.createElement("div");
     runHeadLeft.setAttribute("class", "runheadleft")
     runHeadLeft.textContent=sectionHead;
+    var runHeadRight = document.createElement("div");
+    runHeadRight.setAttribute("class", "runheadright")
+    runHeadRight.textContent=sectionHead;
     thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+    thisParent.parentNode.insertBefore(runHeadRight, thisParent.nextSibling);
   };
 };
 

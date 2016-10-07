@@ -62,7 +62,7 @@
 
 @page chapter:left {
   @top-left {
-    content: counter(page) " • " string(title);
+    content: flow(runheadleft);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
@@ -217,19 +217,22 @@ div.runheadleft {
   margin: 0;
   text-indent: 0; }  
 
-section[data-type="preface"] div.runheadright:after,
-nav[data-type="toc"] div.runheadright:after {
+section[data-type="preface"] p + div.runheadright:after,
+nav[data-type="toc"] p + div.runheadright:after {
 content: " • " counter(page, lower-roman); }
 
-section[data-type="preface"] div.runheadleft:before,
-nav[data-type="toc"] div.runheadleft:before {
+section[data-type="preface"] p + div.runheadright + div.runheadleft:before,
+nav[data-type="toc"] p + div.runheadright + div.runheadleft:before {
 content: counter(page, lower-roman) " • "; }
 
-section[data-type="chapter"] div.runheadright:after, 
-section[data-type="appendix"] div.runheadright:after {
+section[data-type="chapter"] p + div.runheadright:after, 
+section[data-type="appendix"] p + div.runheadright:after {
 content: " • " counter(page); }
 
-section[data-type="appendix"] div.runheadleft:before {
+section[data-type="chapter"] p + div.runheadright + div.runheadleft:before {
+content: counter(page) " • " string(title); }
+
+section[data-type="appendix"] p + div.runheadright + div.runheadleft:before {
 content: counter(page) " • "; }
 
 
@@ -809,6 +812,7 @@ p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
   line-height: 13pt;
   text-align: right;
   padding-left: 20%;
+  margin: 4pt;
   widows: 2;
   orphans: 2; }
 
@@ -1169,57 +1173,3 @@ p.BookmakerPageBreakbr,
 
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
-
-/*debug overrides for local runs; + turn on grid!
-*//*
-@page {
-  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
-  background-position: top left;
-  background-size: auto 15pt;
-  background-repeat: repeat-y;
-  border-style: solid;
-  border-color: red;
-  border-width: 0.5pt; }
-
-@font-face {
-  font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-It.otf");
-  font-style: italic;
-  font-weight: normal; }
-@font-face {
-  font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-Regular.otf");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
-  font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-Semibold.otf");
-  font-style: normal;
-  font-weight: 600; }
-@font-face {
-  font-family: "MinionPro";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-SemiboldIt.otf");
-  font-style: italic;
-  font-weight: 600; } 
-@font-face {
-  font-family: "MinionPro-Display";
-  src: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/MinionPro-SemiboldDisp.otf");
-  font-style: normal;
-  font-weight: 600; }
-
-*[class="TitlepageBookTitletit"] + *[class*="TitlepageBookSubtitlestit"], 
-*[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/titlepage-rule.jpg");
-}  
-
-section[data-type="copyright-page"] p:first-child {
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/HoltLogo30K.png");
-}
-
-div[data-type="part"] h1[class*="PartNumberpn"] {
-  background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/titlepage-rule.jpg");
-} 
-
-/*grid local in case I need it: 
-background-image: url("/Users/matthew.retzer/Documents/programming_projects/1608_7_scss/local_resources/grid.jpg");
-*/
