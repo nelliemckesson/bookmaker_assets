@@ -39,24 +39,41 @@ function addRunningElements() {
       i++;
     };
     var sectionType = section.getAttribute('data-type')
-    if (sectionType == "preface" || sectionType == "toc") {
-      if (section.querySelector('h1:first-of-type') != null) {
-        var sectionHead = section.querySelector('h1:first-of-type').textContent;
+    //USING "querySelector" 
+    // if (sectionType == "preface" || sectionType == "toc") {
+    //   if (section.querySelector('h1:first-of-type') != null) {
+    //     var sectionHead = section.querySelector('h1:first-of-type').textContent;
+    //   };
+    // };  
+    // if (sectionType == "chapter") {
+    //   if (section.querySelector('h1.ChapTitlect') != null) {
+    //     var sectionHead = section.querySelector('h1.ChapTitlect').textContent;
+    //   } else if (section.querySelector('h1.ChapTitleNonprintingctnp') != null) {
+    //     var sectionHead = section.querySelector('h1.ChapTitleNonprintingctnp').textContent;
+    //   };
+    //   if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
+    //     sectionHead = "Chapter " + sectionHead;
+    //   };
+    // };  
+    // if (sectionType == 'appendix') {
+    //   if (section.querySelector('h1[class*="BMHead"]') != null) {
+    //     var sectionHead = section.querySelector('h1[class*="BMHead"]').textContent;
+    //   };
+    // };  
+
+    if (sectionType == "preface" || sectionType == "toc" || sectionType == 'apppendix') {
+      if (section.getElementsByTagName('h1')[0] != null) {
+        var sectionHead = section.getElementsByTagName('h1')[0].textContent;
       };
     };  
     if (sectionType == "chapter") {
-      if (section.querySelector('h1.ChapTitlect') != null) {
-        var sectionHead = section.querySelector('h1.ChapTitlect').textContent;
-      } else if (section.querySelector('h1.ChapTitleNonprintingctnp') != null) {
-        var sectionHead = section.querySelector('h1.ChapTitleNonprintingctnp').textContent;
+      if (section.getElementsByClassName('ChapTitlect')[0] != null) {
+        var sectionHead = section.getElementsByClassName('ChapTitlect')[0].textContent;
+      } else if (section.getElementsByClassName('ChapTitleNonprintingctnp')[0] != null) {
+        var sectionHead = section.getElementsByClassName('ChapTitleNonprintingctnp')[0].textContent;
       };
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Chapter " + sectionHead;
-      };
-    };  
-    if (sectionType == 'appendix') {
-      if (section.querySelector('h1[class*="BMHead"]') != null) {
-        var sectionHead = section.querySelector('h1[class*="BMHead"]').textContent;
       };
     };  
 
