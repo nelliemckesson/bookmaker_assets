@@ -591,8 +591,7 @@ h1[class*="ChapTitle"]:first-child,
 h1[class*="ChapNumber"]:first-child {
   margin-top: 70pt; 
   padding-bottom: 0;
-  margin-bottom: 0; 
-  border: 1pt solid red;}  
+  margin-bottom: 0; }  
 
 h1[class*="ChapTitle"]:not(:first-child) {
   margin-top: 0; }   
