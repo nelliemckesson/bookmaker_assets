@@ -39,12 +39,17 @@ function addRunningElements() {
       i++;
     };
 
-    var sectionType = section.getAttribute('data-type')
+    var sectionType = section.getAttribute('data-type');
     if (sectionType == "preface" || sectionType == "toc" || sectionType == 'appendix') {
       if (section.getElementsByTagName('h1')[0] != null) {
         var sectionHead = section.getElementsByTagName('h1')[0].textContent;
       };
+      var runHeadLeft = document.createElement("div");
+      runHeadLeft.setAttribute("class", "runheadleft");
+      runHeadLeft.textContent=sectionHead;
+      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);      
     };  
+
     if (sectionType == "chapter") {
       if (section.getElementsByClassName('ChapTitlect')[0] != null) {
         var sectionHead = section.getElementsByClassName('ChapTitlect')[0].textContent;
@@ -54,15 +59,16 @@ function addRunningElements() {
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Chapter " + sectionHead;
       };
+      var textnode = document.createTextNode(" ");
+      var runHeadLeft = document.createElement("div");
+      runHeadLeft.setAttribute("class", "runheadleft");
+      runHeadLeft.appendChild(textnode);
+      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);  
     };  
 
-    var runHeadLeft = document.createElement("div");
-    runHeadLeft.setAttribute("class", "runheadleft")
-    runHeadLeft.textContent=sectionHead;
     var runHeadRight = document.createElement("div");
-    runHeadRight.setAttribute("class", "runheadright")
+    runHeadRight.setAttribute("class", "runheadright");
     runHeadRight.textContent=sectionHead;
-    thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
     thisParent.parentNode.insertBefore(runHeadRight, thisParent.nextSibling);
   };
 };

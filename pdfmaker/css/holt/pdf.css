@@ -431,11 +431,8 @@ section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
   text-align: center;
   text-indent: 0; }
 
-
 section[data-type="copyright-page"] p:first-of-type {
-  /*background-image: url("../../images/holt/HoltLogo30K.png");*/
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/holt/HoltLogo30K.png");
-  /*background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");*/
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
   background-position: center top;
   background-size: 25pt auto;
   background-repeat: no-repeat; 
@@ -579,7 +576,7 @@ section h1.AboutAuthorTextHeadatah + figure + p, section.abouttheauthor h1 + fig
   margin-top: 22pt; }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type {
-  margin-top: -130.65pt; } 
+  margin-top: -125pt; } 
 
 section[data-type="chapter"] {
   page: chapter;
@@ -587,7 +584,7 @@ section[data-type="chapter"] {
   prince-page-group: start;
   counter-reset: footnote; }
 
-section[data-type="chapter"] ~ section[data-type="chapter"], {
+section[data-type="chapter"] ~ section[data-type="chapter"] {
    counter-reset: none }
 
 h1[class*="ChapTitle"]:first-child, 
@@ -657,7 +654,7 @@ h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   margin-bottom: 10pt;
   text-indent: 0; }
 
-[class*="Nonprinting"] {
+*[class*="Nonprinting"] {
   display: none; }
 
 p[class*="ChapOpeningText"] {
