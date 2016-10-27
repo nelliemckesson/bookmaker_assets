@@ -1,0 +1,8 @@
+/* To be added for any style that include a NoIndent or No-Indent modifier*/
+
+.spansmcapitalscital {
+  font-style: italic;
+  font-size: .75em; 
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}

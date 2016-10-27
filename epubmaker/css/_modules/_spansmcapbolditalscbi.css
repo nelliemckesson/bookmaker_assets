@@ -1,0 +1,9 @@
+/* To be added for any style that include a NoIndent or No-Indent modifier*/
+
+.spansmcapbolditalscbi {
+  font-style: italic;
+  font-weight: bold;
+  font-size: .75em; 
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}

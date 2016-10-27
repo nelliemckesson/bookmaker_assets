@@ -1,0 +1,6 @@
+/* To be added for any style that include a NoIndent or No-Indent modifier*/
+
+.spansuperscriptcharacterssup {
+  vertical-align: super;
+  font-size: smaller;
+}
