@@ -846,22 +846,28 @@ DEDICATION PAGE
   margin-left: 1.5em;
   margin-right: 1.5em;
   }
+.Dedicationded {
+  font-style: italic;
+}
 *[class^="Dedicationd"] {
   font-style: italic;
+  }
+.DedicationAuthordedau {
+  margin-top: 1em;
   }
 *[class^="DedicationAuthor"] {
   margin-top: 1em;
   }
-
-.DedicationAuthordedau {
-  margin-top: 1em;
-  }
-
 section[data-type="dedication"] blockquote[data-type="epigraph"] {
   page-break-before: always;
   margin-top: 2em;
   }
 
+.Dedicationded + p[class*="Epigraph"],
+.DedicationAuthordedau + p[class*="Epigraph"] {
+  page-break-before: always;
+  margin-top: 2em;
+  }
 *[class^="Dedication"] + p[class*="Epigraph"] {
   page-break-before: always;
   margin-top: 2em;
@@ -876,6 +882,7 @@ EPIGRAPH PAGE (AND OTHER EPIGRAPHS)
 blockquote[data-type="epigraph"] {
   margin: 2em 1.5em;
   }
+
 *[class^="Epigraph-non-verse"],
 *[class^="Epigraph-verse"],
 *[class^="FMEpigraphnon-verse"],
@@ -925,6 +932,7 @@ blockquote[data-type="epigraph"] {
 *[class^="SidebarEpigraphSource"],
 *[class^="FrontSalesQuoteSource"],
 *[class^="BOBAdQuoteSource"] {
+  text-align: right;
   text-indent: 0;
   font-style: normal;
   font-size: .75em; 
@@ -944,6 +952,7 @@ blockquote[data-type="epigraph"] {
 .SidebarEpigraphSourcesbeps,
 .FrontSalesQuoteSourcefsqs,
 .BOBAdQuoteSourcebobqs {
+  text-align: right;
   text-indent: 0;
   font-style: normal;
   font-size: .75em; 
@@ -1389,9 +1398,21 @@ LETTERS
 --------------------------------------------------
 */
 
+.LetterExtHeadnotehn {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
 *[class^="LetterExtHeadnote"] {
   text-transform: uppercase;
   letter-spacing: .075em;
+  }
+.LetterExtHeadnotehn+p,
+.LetterExtAddressladd,
+.LetterExtSalutationlsa,
+.LetterExtClosinglcl,
+.LetterExtSignaturelsig,
+.LetterExtPostscriptlps {
+  text-indent: 0;
   }
 *[class^="LetterExtHeadnote"]+p,
 *[class^="LetterExtAddress"],
@@ -1401,14 +1422,26 @@ LETTERS
 *[class^="LetterExtPostscript"] {
   text-indent: 0;
   }
+.LetterExtDatelineldl {
+  margin: 1em 0;
+  }
 *[class^="LetterExtDateline"] {
   margin: 1em 0;
+  }
+p+.LetterExtSalutationlsa,
+.LetterExtClosinglcl,
+.LetterExtSignaturelsig,
+.LetterExtPostscriptlps {
+  margin-top: 1em;
   }
 p+*[class^="LetterExtSalutation"],
 *[class^="LetterExtClosing"],
 *[class^="LetterExtSignature"],
 *[class^="LetterExtPostscript"] {
   margin-top: 1em;
+  }
+.LetterExtClosinglcl+.LetterExtSignaturelsig {
+  margin-top: 0;
   }
 *[class^="LetterExtClosing"]+*[class^="LetterExtSignature"] {
   margin-top: 0;
@@ -1419,10 +1452,28 @@ p+*[class^="LetterExtSalutation"],
 SCREENPLAY
 --------------------------------------------------
 */
+.ScreenplayDramatisPersonaedp,
+.ScreenplayHeadsph,
+.ScreenplaySubheadspsh,
+.ScreenplaySpeakers,
+.ScreenplayTextsptx,
+.ScreenplayTextNo-Indentsptx1,
+.ScreenplayStageDirectionsd,
+.ScreenplayExtractsp {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  font-style: normal;
+  text-indent: 0;
+  }
 *[class*="Screenplay"] {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   font-style: normal;
   text-indent: 0;
+  }
+.ScreenplayDramatisPersonaedp,
+.ScreenplayHeadsph,
+.ScreenplaySubheadspsh,
+.ScreenplaySpeakers {
+  text-transform: uppercase;
   }
 *[class^="ScreenplayDramatisPersonae"],
 *[class^="ScreenplayHead"],
@@ -1430,14 +1481,29 @@ SCREENPLAY
 *[class^="ScreenplaySpeaker"] {
   text-transform: uppercase;
   }
+.ScreenplayHeadsph,
+.ScreenplaySubheadspsh {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
 *[class^="ScreenplayHead"],
 *[class^="ScreenplaySubhead"] {
   margin-top: 1em;
   margin-bottom: 1em;
   }
+.ScreenplaySpeakers {
+  text-align: center;
+  margin-top: 1em;
+  }
 *[class^="ScreenplaySpeaker"] {
   text-align: center;
   margin-top: 1em;
+  }
+.ScreenplaySpeakers,
+.ScreenplayTextsptx,
+.ScreenplayTextNo-Indentsptx1 {
+  margin-left: 3em;
+  margin-right: 3em;
   }
 *[class^="ScreenplaySpeaker"],
 *[class^="ScreenplayText"],
@@ -1445,9 +1511,16 @@ SCREENPLAY
   margin-left: 3em;
   margin-right: 3em;
   }
+.ScreenplayStageDirectionsd {
+  font-style: italic;
+  margin: 1em 0;
+  }
 *[class^="ScreenplayStageDirection"] {
   font-style: italic;
   margin: 1em 0;
+  }
+.ScreenplayTextsptx {
+  text-indent: 1.5em;
   }
 *[class^="ScreenplayText"] {
   text-indent: 1.5em;
@@ -1458,15 +1531,40 @@ SCREENPLAY
 POETRY
 --------------------------------------------------
 */
-
+.PoemTitlevt+.PoemSubtitlevst {
+  margin-top: 0;
+  }
 *[class^="PoemTitle"]+*[class^="PoemSubtitle"] {
   margin-top: 0;
+  }
+.PoemDedicationvded {
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: 0;
   }
 *[class^="PoemDedication"] {
   font-style: italic;
   font-variant: normal;
   text-transform: none;
   letter-spacing: 0;
+  }
+.VerseTextvtx,
+.Epigraph-verseepiv,
+.FMEpigraph-versefmepiv,
+.PartEpigraph-versepepiv,
+.ChapEpigraph-versecepiv,
+.Extract-VerseorPoetryextv,
+.Extract-SongLyricextsl,
+.EpigraphinText-versetepiv,
+.PoemEpigraph-versevepiv,
+.BoxEpigraph-versebepiv,
+.BoxExtract-Versebextv,
+.SidebarEpigraph-versesbepiv,
+.SidebarExtract-Versesbextv,
+.Example-Versevexa {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
   }
 *[class^="VerseText"],
 *[class^="Epigraph-verse"],
@@ -1485,34 +1583,41 @@ POETRY
   margin-left: 1.5em;
   text-indent: -1.5em;
   }
-
+blockquote .VerseTextvtx:first-child,
+blockquote .Epigraph-verseepiv:first-child,
+blockquote .FMEpigraph-versefmepiv:first-child,
+blockquote .PartEpigraph-versepepiv:first-child,
+blockquote .ChapEpigraph-versecepiv:first-child,
+blockquote .Extract-VerseorPoetryextv:first-child,
+blockquote .Extract-SongLyricextsl:first-child,
+blockquote .EpigraphinText-versetepiv:first-child,
+blockquote .PoemEpigraph-versevepiv:first-child,
+blockquote .BoxEpigraph-versebepiv:first-child,
+blockquote .BoxExtract-Versebextv:first-child,
+blockquote .SidebarEpigraph-versesbepiv:first-child,
+blockquote .SidebarExtract-Versesbextv:first-child,
+blockquote .Example-Versevexa:first-child {
+  margin-left: 1.5em;
+  }
 blockquote *[class*="-verse"]:first-child,
 blockquote *[class*="Verse"]:first-child,
 blockquote *[class^="Extract-SongLyric"]:first-child {
   margin-left: 1.5em;
 }
 
-.VerseTextvtx,
-.Epigraph-verseepiv,
-.FMEpigraph-versefmepiv,
-.PartEpigraph-versepepiv,
-.ChapEpigraph-versecepiv,
-.Extract-VerseorPoetryextv,
-.Extract-SongLyricextsl,
-.EpigraphinText-versetepiv,
-.PoemEpigraph-versevepiv,
-.BoxEpigraph-versebepiv,
-.BoxExtract-Versebextv,
-.SidebarEpigraph-versesbepiv,
-.SidebarExtract-Versesbextv,
-.Example-Versevexa {
+.VerseRun-inTextvrtx,
+.VerseRun-inTextNo-Indentvrtx1 {
+  text-indent: 0;
   margin-left: 1.5em;
-  text-indent: -1.5em;
   }
-
 *[class^="VerseRun-inText"] {
   text-indent: 0;
   margin-left: 1.5em;
+  }
+.PoemDatelinevdl,
+.PoemDedicationvded {
+  text-indent: 0;
+  margin: 1em 0;
   }
 *[class^="PoemDateline"],
 *[class^="PoemDedication"] {
@@ -1952,11 +2057,22 @@ GENERAL BACKMATTER HEADS
 --------------------------------------------------
 */
 
+.BMHeadbmh,
+.BMTitlebmt,
+.BMSubheadbmsh,
+.BMHeadALTabmh {
+  text-align: center;
+  }
 *[class^="BMHead"],
 *[class^="BMTitle"],
 *[class^="BMSubhead"],
 *[class^="BMHeadALT"] {
   text-align: center;
+  }
+.BMHeadALTabmh,
+.BMTextALTabmtx,
+.BMTextALTNo-Indentabmtx1 {
+  font-family: Helvetica,Arial,sans-serif;
   }
 *[class^="BMHeadALT"],
 *[class^="BMTextALT"],
@@ -1970,9 +2086,19 @@ APPENDICES
 --------------------------------------------------
 */
 
+.AppendixHeadaph,
+.AppendixSubheadapsh {
+  text-align: center;
+  }
 *[class^="AppendixHead"],
 *[class^="AppendixSubhead"] {
   text-align: center;
+  }
+.AppendixSourceNoteapsn,
+.AppendixFootnoteapfn {
+  font-size: .75em;
+  text-indent: 0;
+  margin: 1em 0;
   }
 *[class^="AppendixSourceNote"],
 *[class^="AppendixFootnote"] {
@@ -2010,11 +2136,27 @@ GLOSSARY and DICTIONARY-STYLE ENTRIES
 --------------------------------------------------
 */
 
+.Exampleexa,
+.Example-Versevexa,
+.Exampleegeg,
+.Exampleindialogformexad {
+  font-style: italic;
+  }
 *[class^="Example"],
 *[class^="Example-Verse"],
 *[class^="Exampleeg"],
 *[class^="Exampleindialogform"] {
   font-style: italic;
+  }
+.GlossaryTextgltx,
+.Entryen,
+.Definitiondef,
+.DefinitionSourcedefs,
+.Exampleexa,
+.Referencesee,
+.Exampleegeg,
+.Exampleindialogformexad {
+  text-indent: 0;
   }
 *[class^="GlossaryText"],
 *[class^="Entry"],
@@ -2025,6 +2167,9 @@ GLOSSARY and DICTIONARY-STYLE ENTRIES
 *[class^="Exampleeg"],
 *[class^="Exampleindialogform"] {
   text-indent: 0;
+  }
+.DefinitionSourcedefs {
+  margin: 1em 0;
   }
 *[class^="DefinitionSource"] {
   margin: 1em 0;
