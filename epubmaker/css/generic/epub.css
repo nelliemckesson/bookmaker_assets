@@ -282,11 +282,11 @@ sub,
   text-transform: uppercase;
 }
 *[class*="spanrun-incomputertypecomp"] {
-  font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt; }
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
 .spanrun-incomputertypecomp {
-  font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt; }
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
 
 /*
 --------------------------------------------------
