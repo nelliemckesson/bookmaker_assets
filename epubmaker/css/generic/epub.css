@@ -89,7 +89,7 @@ body {
   color: #000;
   background-color: #fff;
   }
-p+p, 
+p+p,
 p.Text-Standardtx {
   text-indent: 1.5em;
   }
@@ -120,12 +120,12 @@ em {
   font-style: italic;
 }
 
-strong { 
+strong {
  font-size: inherit;
  font-weight: bold;
  }
 
-span, a { 
+span, a {
  font-size: inherit;
  }
 
@@ -218,7 +218,7 @@ text-decoration: none;
 *[class^="spansmcapbold"],
 *[class^="spansmcapital"],
 *[class^="spansmcapboldital"] {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -226,7 +226,7 @@ text-decoration: none;
 .spansmcapboldscbold,
 .spansmcapitalscital,
 .spansmcapbolditalscbi {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -281,6 +281,12 @@ sub,
 .chapopener {
   text-transform: uppercase;
 }
+*[class*="spanrun-incomputertypecomp"] {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+.spanrun-incomputertypecomp {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
 
 /*
 --------------------------------------------------
@@ -692,7 +698,7 @@ H6
 
 h6 {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -709,7 +715,7 @@ h6 {
 *[class^="ChartSubhead"],
 *[class^="FigureSubhead"] {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -830,7 +836,7 @@ DEDICATION PAGE
 --------------------------------------------------
 */
 
-.Dedicationded, 
+.Dedicationded,
 .DedicationAuthordedau {
   text-indent: 0;
   text-align: center;
@@ -935,7 +941,7 @@ blockquote[data-type="epigraph"] {
   text-align: right;
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -955,7 +961,7 @@ blockquote[data-type="epigraph"] {
   text-align: right;
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -1072,7 +1078,7 @@ CHAPTER OPENERS
 */
 
 .ChapAuthorca,
-.Dateline-Chapterdl, 
+.Dateline-Chapterdl,
 .ChapOrnamentcorn,
 .ChapOrnamentALTcorn2 {
   text-align: center;
@@ -1147,7 +1153,7 @@ TEXT
   }
 
 .Text-StandardALTatx + .Text-StandardALTatx,
-.Text-StandardALTatx + .Text-StdNo-IndentALTatx1, 
+.Text-StandardALTatx + .Text-StdNo-IndentALTatx1,
 .Text-StdNo-IndentALTatx1 + .Text-StandardALTatx,
 .Text-StdNo-IndentALTatx1 + .Text-StdNo-IndentALTatx1 {
   margin-top: 0;
@@ -1258,7 +1264,7 @@ SPACE BREAKS
   font-size: 1.125em;
   }
 
-.SpaceBreakwithOrnamentorn, 
+.SpaceBreakwithOrnamentorn,
 .SpaceBreakwithALTOrnamentorn2 {
   display: block;
   font-size: 1.125em;
@@ -1862,7 +1868,7 @@ h1 + .Illustrationholderill {
 *[class^="IllustrationSource"] {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -1871,7 +1877,7 @@ h1 + .Illustrationholderill {
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -2113,8 +2119,8 @@ BOB ADS
 --------------------------------------------------
 */
 
-.BOBAdTitlebobt, 
-.BOBAdSubtitlebobst, 
+.BOBAdTitlebobt,
+.BOBAdSubtitlebobst,
 .BOBAdLevel-1Subheadbobh1,
 .BOBAdLevel-2Subheadbobh2,
 .BOBAdLevel-3Subheadbobh3,
