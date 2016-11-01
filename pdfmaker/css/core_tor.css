@@ -1356,10 +1356,6 @@ sub {
 *[class*="spanstrikethroughcharactersstr"] {
   text-decoration: line-through; }
 
-*[class*="spanrun-incomputertypecomp"] {
-  font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt; }
-
 .nobreak {
   page-break-before: avoid; }
 
