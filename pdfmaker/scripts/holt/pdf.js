@@ -74,7 +74,7 @@ function addRunningElements() {
         var sectionHead = section.getElementsByClassName('PartNumberpn')[0].textContent;
       };
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
-        sectionHead = "Chapter " + sectionHead;
+        sectionHead = "Part " + sectionHead;
       };
       var textnode = document.createTextNode(" ");
       var runHeadLeft = document.createElement("div");
