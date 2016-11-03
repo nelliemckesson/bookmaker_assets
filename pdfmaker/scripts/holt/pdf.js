@@ -34,12 +34,13 @@ function addRunningElements() {
     var section = allParas[q].parentNode;
     var i = 0;
     var sectionHead = " ";
-    while (section.tagName != "SECTION" && section.tagName != "NAV" && i < 10) {
+    while (section.tagName != "SECTION" && section.tagName != "NAV" && section.tagName != "DIV" && i < 10) {
       var section = section.parentNode;
       i++;
     };
 
     var sectionType = section.getAttribute('data-type');
+    console.log(sectionType);
     if (sectionType == "preface" || sectionType == "toc" || sectionType == 'appendix') {
       if (section.getElementsByTagName('h1')[0] != null) {
         var sectionHead = section.getElementsByTagName('h1')[0].textContent;
@@ -47,8 +48,8 @@ function addRunningElements() {
       var runHeadLeft = document.createElement("div");
       runHeadLeft.setAttribute("class", "runheadleft");
       runHeadLeft.textContent=sectionHead;
-      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);      
-    };  
+      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+    };
 
     if (sectionType == "chapter") {
       if (section.getElementsByClassName('ChapTitlect')[0] != null) {
@@ -63,8 +64,24 @@ function addRunningElements() {
       var runHeadLeft = document.createElement("div");
       runHeadLeft.setAttribute("class", "runheadleft");
       runHeadLeft.appendChild(textnode);
-      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);  
-    };  
+      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+    };
+
+    if (sectionType == "part") {
+      if (section.getElementsByClassName('PartTitlept')[0] != null) {
+        var sectionHead = section.getElementsByClassName('PartTitlept')[0].textContent;
+      } else if (section.getElementsByClassName('PartNumberpn')[0] != null) {
+        var sectionHead = section.getElementsByClassName('PartNumberpn')[0].textContent;
+      };
+      if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
+        sectionHead = "Chapter " + sectionHead;
+      };
+      var textnode = document.createTextNode(" ");
+      var runHeadLeft = document.createElement("div");
+      runHeadLeft.setAttribute("class", "runheadleft");
+      runHeadLeft.appendChild(textnode);
+      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+    };
 
     var runHeadRight = document.createElement("div");
     runHeadRight.setAttribute("class", "runheadright");
