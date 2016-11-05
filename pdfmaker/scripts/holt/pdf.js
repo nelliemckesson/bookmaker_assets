@@ -40,7 +40,6 @@ function addRunningElements() {
     };
 
     var sectionType = section.getAttribute('data-type');
-    console.log(sectionType);
     if (sectionType == "preface" || sectionType == "toc" || sectionType == 'appendix') {
       if (section.getElementsByTagName('h1')[0] != null) {
         var sectionHead = section.getElementsByTagName('h1')[0].textContent;

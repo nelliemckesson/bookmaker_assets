@@ -514,13 +514,13 @@ section[data-type="dedication"] {
 .texttoc {
   display: none; }
 
-nav[data-type="toc"] {
+nav[data-type="toc"], section.texttoc {
   padding-left: 24pt;
   padding-right: 24pt;
   page-break-before: right;
   page-break-after: always; }
 
-nav[data-type="toc"] h1 {
+nav[data-type="toc"] h1, section.texttoc h1 {
   font-weight: normal;
   font-size: 15pt;
   line-height: 19pt;
@@ -531,24 +531,36 @@ nav[data-type="toc"] h1 {
 nav[data-type="toc"] ol {
   margin-left: 0; }
 
-nav[data-type="toc"] li {
+nav[data-type="toc"] li, section.texttoc p {
   font-size: 11.2pt;
   line-height: 15pt;
   margin-bottom: 6pt;
   margin-left: 0;
   list-style-type: none; }
 
+section.texttoc p {
+  margin-top: 0;
+  text-indent: 0; }
+
 nav[data-type="toc"] li.PartNumberpn ~ li,
-nav[data-type="toc"] li.PartTitlept ~ li {
-  margin-bottom: 0; }
+nav[data-type="toc"] li.PartTitlept ~ li,
+section.texttoc p.PartTitlept ~ p,
+section.texttoc p.PartNumberpn ~ p {
+  margin-bottom: 0;
+  margin-top: 0; }
 
 nav[data-type="toc"] li.PartNumberpn ~ li.PartNumberpn,
 nav[data-type="toc"] li.PartTitlept ~ li.PartTitlept,
 nav[data-type="toc"] li.PartNumberpn ~ li.PartTitlept,
-nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn {
+nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn,
+section.texttoc p.PartNumberpn ~ p.PartNumberpn,
+section.texttoc p.PartTitlept ~ p.PartTitlept,
+section.texttoc p.PartNumberpn ~ p.PartTitlept,
+section.texttoc p.PartTitlept ~ p.PartNumberpn {
   margin-bottom: 8.44pt; }
 
-nav[data-type="toc"] li.PartNumberpn + li.PartTitlept {
+nav[data-type="toc"] li.PartNumberpn + li.PartTitlept,
+section.texttoc p.PartNumberpn + p.PartTitlept {
   margin-top: -8.44pt; }
 
 nav[data-type="toc"] a {
@@ -556,15 +568,17 @@ nav[data-type="toc"] a {
   color: cmyk(0%, 0%, 0%, 100%); }
 
 nav[data-type="toc"] li a:after {
-  content: target-counter(attr(href), page);
-  float: right; }
+  content: leader(space) target-counter(attr(href), page);
+  padding-left: 15pt }
 
 nav[data-type="toc"] li.FMHeadfmh a:after {
-  content: target-counter(attr(href), page, lower-roman);
-  float: right; }
+  content: leader(space) target-counter(attr(href), page, lower-roman);
+  padding-left: 15pt}
 
 nav[data-type="toc"] li.PartNumberpn,
-nav[data-type="toc"] li.PartTitlept {
+nav[data-type="toc"] li.PartTitlept,
+section.texttoc p.PartTitlept,
+section.texttoc p.PartNumberpn {
   margin-bottom: 8.44pt;
   margin-top: 22.5pt;
   vertical-align: top;
@@ -578,6 +592,14 @@ nav[data-type="toc"] li.PartNumberpn a:after,
 nav[data-type="toc"] li.PartTitlept a:after {
   content: normal;
   display: inline; }
+
+section.texttoc p.TOCAuthorcau, section.texttoc p.TOCChapterSubtitleccst {
+  margin-left: 30pt;
+  margin-top: -6pt; }
+
+section.texttoc p.TOCLevel-1ChapterHeadch1 {
+  font-size: 15pt;
+  line-height: 19pt; }
 
 section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
