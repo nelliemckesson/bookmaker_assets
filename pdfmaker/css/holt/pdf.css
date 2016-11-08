@@ -570,11 +570,11 @@ nav[data-type="toc"] a {
 
 nav[data-type="toc"] li a:after {
   content: leader(space) target-counter(attr(href), page);
-  padding-left: 15pt }
+  padding-left: 15pt; }
 
 nav[data-type="toc"] li.FMHeadfmh a:after {
   content: leader(space) target-counter(attr(href), page, lower-roman);
-  padding-left: 15pt}
+  padding-left: 15pt; }
 
 nav[data-type="toc"] li.PartNumberpn,
 nav[data-type="toc"] li.PartTitlept,
