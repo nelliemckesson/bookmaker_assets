@@ -19,7 +19,7 @@
   font-family: "MinionPro";
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldIt.otf");
   font-style: italic;
-  font-weight: 600; } 
+  font-weight: 600; }
 @font-face {
   font-family: "MinionPro-Display";
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldDisp.otf");
@@ -29,12 +29,12 @@
   font-family: "SourceCodePro";
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/SourceCodePro-Medium.otf");
   font-style: normal;
-  font-weight: normal; }  
+  font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
-  font-weight: normal; }  
+  font-weight: normal; }
 
 @page {
   size: 6.125in 9.25in;
@@ -58,7 +58,7 @@
   margin-right: 63pt; }
 @page :right {
   margin-left: 63pt;
-  margin-right: 63pt; }    
+  margin-right: 63pt; }
 
 @page chapter:left {
   @top-left {
@@ -68,8 +68,8 @@
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
-    text-align: left; } }    
+    margin: 0;
+    text-align: left; } }
 @page chapter:right {
   @top-right {
     content: flow(runheadright);
@@ -78,8 +78,8 @@
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
-    text-align: right; } }    
+    margin: 0;
+    text-align: right; } }
 @page chapter:first {
   @top-right {
   content: normal; }
@@ -91,21 +91,36 @@
   @top-left {
   content: normal; } }
 
-@page fullbleed {
+@page part:left {
+  @top-left {
+    content: flow(runheadleft);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: left; } }
+@page part:right {
+  @top-right {
+    content: flow(runheadright);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: right; } }
+@page part:first {
   @top-right {
   content: normal; }
   @top-left {
   content: normal; } }
-@page fullbleed:first {
+@page part:blank {
   @top-right {
   content: normal; }
   @top-left {
   content: normal; } }
-@page fullbleed:blank {
-  @top-right {
-  content: normal; }
-  @top-left {
-  content: normal; } }  
 
 @page front:left {
   @top-left {
@@ -115,7 +130,7 @@
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
+    margin: 0;
     text-align: left; } }
 @page front:right {
   @top-right {
@@ -125,7 +140,7 @@
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
+    margin: 0;
     text-align: right; } }
 @page front:first {
   @top-right {
@@ -138,25 +153,56 @@
   @top-left {
   content: normal; } }
 
+  @page toc:left {
+    @top-left {
+      content: counter(page, lower-roman) " • Contents";
+      font-family: "MinionPro";
+      font-style: italic;
+      font-size: 9pt;
+      vertical-align: top;
+      padding: 35pt 0 0 0;
+      margin: 0;
+      text-align: left; } }
+  @page toc:right {
+    @top-right {
+      content: "Contents • " counter(page, lower-roman);
+      font-family: "MinionPro";
+      font-style: italic;
+      font-size: 9pt;
+      vertical-align: top;
+      padding: 35pt 0 0 0;
+      margin: 0;
+      text-align: right; } }
+  @page toc:first {
+    @top-right {
+    content: normal; }
+    @top-left {
+    content: normal; } }
+  @page toc:blank {
+    @top-right {
+    content: normal; }
+    @top-left {
+    content: normal; } }
+
 @page back:left {
-  @top-left {     
-    content: flow(runheadleft);   
+  @top-left {
+    content: flow(runheadleft);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
+    margin: 0;
     text-align: left; } }
 @page back:right {
   @top-right {
-    content: flow(runheadright);    
+    content: flow(runheadright);
     font-family: "MinionPro";
     font-style: italic;
     font-size: 9pt;
     vertical-align: top;
     padding: 35pt 0 0 0;
-    margin: 0; 
+    margin: 0;
     text-align: right; } }
 @page back:first {
   @top-right {
@@ -206,7 +252,7 @@ div.runheadright {
   text-align: right;
   padding: 0;
   margin: 0;
-  text-indent: 0; }  
+  text-indent: 0; }
 div.runheadleft {
   flow: static(runheadleft);
   font-family: "MinionPro";
@@ -215,29 +261,28 @@ div.runheadleft {
   text-align: left;
   padding: 0;
   margin: 0;
-  text-indent: 0; }  
+  text-indent: 0; }
 
-section[data-type="preface"] p + div.runheadright:after,
-nav[data-type="toc"] p + div.runheadright:after {
+section[data-type="preface"] p + div.runheadright:after {
 content: " • " counter(page, lower-roman); }
 
-section[data-type="preface"] p + div.runheadright + div.runheadleft:before,
-nav[data-type="toc"] p + div.runheadright + div.runheadleft:before {
+section[data-type="preface"] p + div.runheadright + div.runheadleft:before {
 content: counter(page, lower-roman) " • "; }
 
-section[data-type="chapter"] p + div.runheadright:after, 
+section[data-type="chapter"] p + div.runheadright:after,
+div[data-type="part"] p + div.runheadright:after,
 section[data-type="appendix"] p + div.runheadright:after {
 content: " • " counter(page); }
 
-section[data-type="chapter"] p + div.runheadright + div.runheadleft:before {
+section[data-type="chapter"] p + div.runheadright + div.runheadleft:before,
+div[data-type="part"] p + div.runheadright + div.runheadleft:before {
 content: counter(page) " • " string(title); }
 
 section[data-type="appendix"] p + div.runheadright + div.runheadleft:before {
 content: counter(page) " • "; }
 
-
-p:first-of-type, 
-p[class^="SpaceBreak"] + p, 
+p:first-of-type,
+p[class^="SpaceBreak"] + p,
 p[class*="No-Indent"] {
   text-indent: 0; }
 
@@ -274,13 +319,17 @@ section[data-type="dedication"],
 section[data-type="preface"].adcard {
   page-break-before: always; }
 
-section[data-type="preface"]:not(.adcard), nav[data-type="toc"] {
-  page: front; 
+section[data-type="preface"]:not(.adcard){
+  page: front;
+  prince-page-group: start; }
+
+nav[data-type="toc"] {
+  page: toc;
   prince-page-group: start; }
 
 section[data-type="preface"] h1,
 nav[data-type="toc"] h1 {
-  string-set: section content(); }  
+  string-set: section content(); }
 
 *[class*="FrontSalesTitlefst"] {
   font-size: 15pt;
@@ -345,6 +394,7 @@ section[data-type="preface"] [class*="AdCardMainHeadacmh"] {
   margin-top: 8pt; }
 
 section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  content: " ";
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/logo.jpg");
   background-size: auto 0.5in;
   height: 0.55in;
@@ -357,7 +407,7 @@ section[data-type="titlepage"] > h1 {
   padding-right: 39pt;
   font-weight: normal;
   font-size: 26pt;
-  hyphens: none; 
+  hyphens: none;
   line-height: 32pt;
   text-align: center;
   margin-bottom: 0;
@@ -367,7 +417,7 @@ section[data-type="titlepage"] *[class*="Titlepage"] {
   text-indent: 0;}
 
 section[data-type="titlepage"] > h1:first-child {
-  margin-top: 70pt; }                 
+  margin-top: 70pt; }
 
 *[class*="TitlepageBookSubtitlestit"] + h1,
 *[class*="TitlepageSeriesTitleser"] + h1 {
@@ -387,14 +437,14 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
   font-weight: normal;
   font-size: 14pt;
   line-height: 19pt;
-  text-align: center;   
+  text-align: center;
   hyphens: none; }
 
 *[class*="TitlepageBookSubtitlestit"]:first-child,
 *[class*="TitlepageSeriesTitleser"]:first-child {
   margin-top: 4.75pt; }
 
-*[class="TitlepageBookTitletit"] + *[class*="TitlepageBookSubtitlestit"], 
+*[class="TitlepageBookTitletit"] + *[class*="TitlepageBookSubtitlestit"],
 *[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
   padding-top: 14pt;
   margin-top: 11pt;
@@ -435,7 +485,7 @@ section[data-type="copyright-page"] p:first-of-type {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
   background-position: center top;
   background-size: 25pt auto;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   padding-top: 45pt; }
 
 section[data-type="copyright-page"] p {
@@ -459,19 +509,19 @@ section[data-type="dedication"] p:not([class*="Epigraph"]) {
   text-indent: 0; }
 
 section[data-type="dedication"] {
-  margin-top: 74pt; }  
+  margin-top: 74pt; }
 
 /*TOC*/
 .texttoc {
   display: none; }
 
-nav[data-type="toc"] {
+nav[data-type="toc"], section.texttoc {
   padding-left: 24pt;
   padding-right: 24pt;
   page-break-before: right;
   page-break-after: always; }
 
-nav[data-type="toc"] h1 {
+nav[data-type="toc"] h1, section.texttoc h1 {
   font-weight: normal;
   font-size: 15pt;
   line-height: 19pt;
@@ -482,24 +532,36 @@ nav[data-type="toc"] h1 {
 nav[data-type="toc"] ol {
   margin-left: 0; }
 
-nav[data-type="toc"] li {
+nav[data-type="toc"] li, section.texttoc p {
   font-size: 11.2pt;
   line-height: 15pt;
   margin-bottom: 6pt;
   margin-left: 0;
   list-style-type: none; }
 
+section.texttoc p {
+  margin-top: 0;
+  text-indent: 0; }
+
 nav[data-type="toc"] li.PartNumberpn ~ li,
-nav[data-type="toc"] li.PartTitlept ~ li {
-  margin-bottom: 0; }
+nav[data-type="toc"] li.PartTitlept ~ li,
+section.texttoc p.PartTitlept ~ p,
+section.texttoc p.PartNumberpn ~ p {
+  margin-bottom: 0;
+  margin-top: 0; }
 
 nav[data-type="toc"] li.PartNumberpn ~ li.PartNumberpn,
 nav[data-type="toc"] li.PartTitlept ~ li.PartTitlept,
 nav[data-type="toc"] li.PartNumberpn ~ li.PartTitlept,
-nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn {
+nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn,
+section.texttoc p.PartNumberpn ~ p.PartNumberpn,
+section.texttoc p.PartTitlept ~ p.PartTitlept,
+section.texttoc p.PartNumberpn ~ p.PartTitlept,
+section.texttoc p.PartTitlept ~ p.PartNumberpn {
   margin-bottom: 8.44pt; }
 
-nav[data-type="toc"] li.PartNumberpn + li.PartTitlept {
+nav[data-type="toc"] li.PartNumberpn + li.PartTitlept,
+section.texttoc p.PartNumberpn + p.PartTitlept {
   margin-top: -8.44pt; }
 
 nav[data-type="toc"] a {
@@ -507,15 +569,17 @@ nav[data-type="toc"] a {
   color: cmyk(0%, 0%, 0%, 100%); }
 
 nav[data-type="toc"] li a:after {
-  content: target-counter(attr(href), page);
-  float: right; }
+  content: leader(space) target-counter(attr(href), page);
+  padding-left: 15pt; }
 
 nav[data-type="toc"] li.FMHeadfmh a:after {
-  content: target-counter(attr(href), page, lower-roman);
-  float: right; }  
+  content: leader(space) target-counter(attr(href), page, lower-roman);
+  padding-left: 15pt; }
 
 nav[data-type="toc"] li.PartNumberpn,
-nav[data-type="toc"] li.PartTitlept {
+nav[data-type="toc"] li.PartTitlept,
+section.texttoc p.PartTitlept,
+section.texttoc p.PartNumberpn {
   margin-bottom: 8.44pt;
   margin-top: 22.5pt;
   vertical-align: top;
@@ -530,6 +594,14 @@ nav[data-type="toc"] li.PartTitlept a:after {
   content: normal;
   display: inline; }
 
+section.texttoc p.TOCAuthorcau, section.texttoc p.TOCChapterSubtitleccst {
+  margin-left: 30pt;
+  margin-top: -6pt; }
+
+section.texttoc p.TOCLevel-1ChapterHeadch1 {
+  font-size: 15pt;
+  line-height: 19pt; }
+
 section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
 h1[class*="BMHeadbmh"] {
@@ -541,7 +613,7 @@ h1[class*="BMHeadbmh"] {
   padding: 0;
   text-align: center; }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"],
+section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="BMSubheadbmsh"],
 *[class*="ChapSubtitlecst"], section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
   text-indent: 0;
   font-size: 13pt;
@@ -550,7 +622,7 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"],
   hyphens:none;
   text-align: center;
   margin-bottom: 13pt;
-  page-break-after: avoid; 
+  page-break-after: avoid;
   margin-top: 0;
   padding-top: 0;
   padding-left: 53pt;
@@ -559,7 +631,7 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"],
 section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
   line-height: 18pt;
   margin-top: 68pt;
-  margin-bottom: 18pt; }    
+  margin-bottom: 18pt; }
 
 p[class*="AboutAuthorText"] {
   padding: 0 24pt 0 24pt;
@@ -576,7 +648,7 @@ section h1.AboutAuthorTextHeadatah + figure + p, section.abouttheauthor h1 + fig
   margin-top: 22pt; }
 
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type {
-  margin-top: -125pt; } 
+  margin-top: -125pt; }
 
 section[data-type="chapter"] {
   page: chapter;
@@ -587,30 +659,30 @@ section[data-type="chapter"] {
 section[data-type="chapter"] ~ section[data-type="chapter"] {
    counter-reset: none }
 
-h1[class*="ChapTitle"]:first-child, 
+h1[class*="ChapTitle"]:first-child,
 h1[class*="ChapNumber"]:first-child {
-  margin-top: 70pt; 
+  margin-top: 70pt;
   padding-bottom: 0;
-  margin-bottom: 0; }  
+  margin-bottom: 0; }
 
 h1[class*="ChapTitle"]:not(:first-child) {
-  margin-top: 0; }   
+  margin-top: 0; }
 
-section[data-type="preface"] + section[data-type="chapter"], 
-section[data-type="foreword"] + section[data-type="chapter"], 
-section[data-type="titlepage"] + section[data-type="chapter"], 
-section[data-type="halftitlepage"] + section[data-type="chapter"], 
-section[data-type="copyright-page"] + section[data-type="chapter"], 
+section[data-type="preface"] + section[data-type="chapter"],
+section[data-type="foreword"] + section[data-type="chapter"],
+section[data-type="titlepage"] + section[data-type="chapter"],
+section[data-type="halftitlepage"] + section[data-type="chapter"],
+section[data-type="copyright-page"] + section[data-type="chapter"],
 section[data-type="dedication"] + section[data-type="chapter"],
 nav[data-type="toc"] + section[data-type="chapter"] {
   counter-reset: page 1 footnote;
   page-break-before: right; }
 
-section[data-type="preface"] + div[data-type="part"], 
-section[data-type="foreword"] + div[data-type="part"], 
-section[data-type="titlepage"] + div[data-type="part"], 
-section[data-type="halftitlepage"] + div[data-type="part"], 
-section[data-type="copyright-page"] + div[data-type="part"], 
+section[data-type="preface"] + div[data-type="part"],
+section[data-type="foreword"] + div[data-type="part"],
+section[data-type="titlepage"] + div[data-type="part"],
+section[data-type="halftitlepage"] + div[data-type="part"],
+section[data-type="copyright-page"] + div[data-type="part"],
 section[data-type="dedication"] + div[data-type="part"],
 nav[data-type="toc"] + div[data-type="part"] {
   counter-reset: page 1; }
@@ -628,7 +700,7 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"] {
   text-indent: 0; }
 
 section[data-type="chapter"] h1[class*="ChapTitleNonprintingctnp"] {
-  counter-increment: chapternumber; 
+  counter-increment: chapternumber;
   string-set: section content(); }
 
 /*chapter title!*/
@@ -640,7 +712,7 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   padding-left: 39pt;
   padding-right: 39pt;
   margin-bottom: 9pt;
-  counter-increment: chapternumber; 
+  counter-increment: chapternumber;
   string-set: section content(); }
 
 h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
@@ -667,14 +739,14 @@ section[data-type="appendix"] {
   prince-page-group: start; }
 
 section[data-type="appendix"] h1[class*="BMHead"] {
-  string-set: section content(); }  
+  string-set: section content(); }
 
 section[data-type="appendix"]:first-of-type {
   page-break-before: right; }
 
 *[class*="BibliographyTextbibtx"] {
   text-indent: -18pt;
-  margin-left: 18pt; 
+  margin-left: 18pt;
   font-size: 9pt;
   line-height: 11pt; }
 
@@ -690,29 +762,31 @@ section[data-type="appendix"]:first-of-type {
 *[class*="Head-Level-2h2"] {
   text-indent: 0;
   font-style: italic;
-  font-weight: 600; 
+  font-weight: 600;
   margin-top: 10pt;
   margin-bottom: 5pt;
   page-break-after: avoid; }
 
-*[class*="Head-Level-3h3"], *[class*="BMSubheadbmsh"] {
+*[class*="Head-Level-3h3"] {
   font-weight: 600;
   text-indent: 0;
   font-size: 9pt;
   font-style: normal;
   margin-top: 9;
   margin-bottom: 2pt;
-  line-height: 11pt; 
+  line-height: 11pt;
   page-break-after: avoid; }
 
 div[data-type="part"] {
+  page: part;
   page-break-before: right;
   margin-top: 75pt;
-  text-align: center;  
-  font-weight: normal;  
+  text-align: center;
+  font-weight: normal;
   padding-left: 39pt;
-  padding-right: 39pt;  
-  counter-reset: footnote; }
+  padding-right: 39pt;
+  counter-reset: footnote;
+  prince-page-group: start; }
 
 div[data-type="part"] h1[class*="PartNumberpn"] {
   font-size: 11.2pt;
@@ -721,11 +795,11 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
   margin-bottom: 13pt;
   text-transform: capitalize;
   font-variant: small-caps;
-  font-variant: prince-opentype(smcp, onum); 
+  font-variant: prince-opentype(smcp, onum);
   background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
   background-size: 45.75pt auto;
   background-position: bottom;
-  background-repeat: no-repeat; } 
+  background-repeat: no-repeat; }
 
 div[data-type="part"] h1[class*="PartTitlept"] {
   font-size: 18pt;
@@ -736,7 +810,7 @@ div[data-type="part"] h1[class*="PartTitlept"] {
 div[data-type="part"] *[class*="PartNumberSubtitlepst"] {
   font-size: 13pt;
   line-height: 17pt;
-  margin-top: 0; } 
+  margin-top: 0; }
 
 div[data-type="part"] h1[class*="PartNumberpn"] + div[class*="runheadright"] + div[class*="runheadleft"] + h1[class*="PartTitlept"] {
   margin-top: 0; }
@@ -781,7 +855,7 @@ section[data-type="dedication"] blockquote[data-type="epigraph"],
 section[data-type="chapter"] blockquote[data-type="epigraph"]:not(:first-child),
 div[data-type="part"] > blockquote[data-type="epigraph"]:not(:first-child),
 section[data-type="preface"] > blockquote[data-type="epigraph"]:not(:first-child) {
-  margin-top: 30pt; }  
+  margin-top: 30pt; }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"],
 div[data-type="part"] > blockquote[data-type="epigraph"],
@@ -800,7 +874,7 @@ p[class*="Epigraph"] {
   text-indent: 0; }
 
 p[class*="Epigraph-verse"], p.EpigraphinText-versetepiv {
-  margin-left: 12pt; 
+  margin-left: 12pt;
   text-indent: -12pt; }
 
 p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
@@ -808,7 +882,6 @@ p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
   font-size: 10.5pt;
   line-height: 13pt;
   text-align: right;
-  padding-left: 20%;
   margin: 4pt;
   widows: 2;
   orphans: 2; }
@@ -827,11 +900,11 @@ p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
   margin-top: 15pt;
   margin-bottom: 15pt; }
 
-*[class*="ExtractHeadexth"] + p, 
+*[class*="ExtractHeadexth"] + p,
 .Extract-NoIndentext1 {
   text-indent: 0; }
 
-*[class*="Extract-VerseorPoetryextv"], 
+*[class*="Extract-VerseorPoetryextv"],
 *[class*="Extract-VerseorPoetryextv"]:first-of-type {
   font-style: italic;
   text-indent: -12pt;
@@ -942,7 +1015,7 @@ figure.fullpage {
   margin-bottom: 0;
   text-align: inside;
   text-align-last: inside;
-  margin-inside: -72pt; 
+  margin-inside: -72pt;
   margin-outside: -72pt;  /*std margin + bleed*/
   overflow: visible;
   height: 7.5in; }
@@ -1017,7 +1090,7 @@ p.SpaceBreak,
 p.SpaceBreak-1-Linels1 {
   background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
   background-size: 60pt auto; }
-*/  
+*/
 
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
@@ -1068,7 +1141,7 @@ span[data-type="footnote"] {
   font-size: 8.5pt;
   line-height: 11pt;
   text-indent: 0;
-  float: footnote; 
+  float: footnote;
   margin-left: 0.5em;
   footnote-style-position: outside; }
 
@@ -1080,10 +1153,10 @@ span[data-type="footnote"] {
 
 p[class*="EndnoteText"] {
     font-size: 9pt;
-    line-height: 11pt; 
+    line-height: 11pt;
     text-indent: -18pt;
     padding-left: 18pt;
-    footnote-style-position: inside; 
+    footnote-style-position: inside;
     counter-increment: endnotes; }
 
 *[class*="endnotetext"] p:first-of-type:before {
