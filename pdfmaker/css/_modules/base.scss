@@ -1111,6 +1111,13 @@ p[class*="ExtractSource"] {
   orphans: 2;
 }
 
+p[class*="Extract-Noteextn"] {
+	text-indent: none;
+	text-align: center;
+	margin: $gridheight 16pt;
+	hyphens: none;
+}
+
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   font-style: italic;
 

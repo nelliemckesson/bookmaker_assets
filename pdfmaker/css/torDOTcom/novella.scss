@@ -68,7 +68,7 @@ $htmargintop: ($gridheight * 1);
 
 $ctmargintop: 11pt;
 $ctmarginbottom: 61pt;
-$comargintop: ($gridheight * 4); 
+$comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
 $prmargintop: 16pt;
@@ -89,6 +89,8 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
 @import "../_modules/font_sourcecodepro.scss";
 @import "../_modules/font_timesnewroman.scss";
 @import "../_modules/font_noto.scss";
+@import "../_modules/font_berrangerhanditc.scss";
+@import "../_modules/font_feltpencom.scss";
 
 @import "../_modules/base.scss";
 
@@ -119,3 +121,15 @@ figure.fullpage {
 
 img[src*="fullpage"] {;
   margin-top: -1.65in; }
+
+span.spanaltfont1span1 {
+	font-family: FeltpenCom-Medium;
+	font-size: 12.75pt;
+	line-height: $gridheight;
+	letter-spacing: .02em; }
+
+span.spanaltfont2span2 {
+	font-family: BerrangerHandITCStd;
+	font-size: 11pt;
+	line-height: $gridheight;
+	letter-spacing: 0; }
