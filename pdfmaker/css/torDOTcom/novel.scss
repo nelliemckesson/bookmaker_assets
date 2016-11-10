@@ -47,6 +47,7 @@ $sizecode: $smaller;
 $sizepoetry: 10.5pt;
 $sizeextract: 10.5pt;
 $sizeextracthead: $normal;
+
 $sizedateline: $small;
 $sizeepigraph: $small;
 $sizerunfoot: 9pt;
@@ -56,6 +57,8 @@ $sizefootnote: 9pt;
 $sizecaption: $smaller;
 $sizefigsrc: 7pt;
 $sizesuperscript: 6pt;
+$sizehwritingprint: $gridheight * .8;
+$sizehwritingnormal: $gridheight * .69;
 
 $hanging: -5pt;
 
@@ -144,17 +147,5 @@ figure.fullpage {
   margin-inside: -0.81in;
   margin-outside: -0.69in; }
 
-img[src*="fullpage"] {;
+img[src*="fullpage"] {
   margin-top: -1.4in; }
-
-span.spanaltfont1span1 {
-  	font-family: FeltpenCom-Medium;
-  	font-size: 12.5pt;
-  	line-height: $gridheight;
-  	letter-spacing: .02em; }
-
-span.spanaltfont2span2 {
-  	font-family: BerrangerHandITCStd;
-  	font-size: 10.75pt;
-  	line-height: $gridheight;
-  	letter-spacing: 0; }

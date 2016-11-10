@@ -112,6 +112,16 @@
 @font-face {
   font-family: "Noto";
   src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
+@font-face {
+  font-family: "BerrangerHandITCStd";
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/BerrangerHandITCStd.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "FeltpenCom-Medium";
+  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/FeltpenCom-Medium.ttf");
+  font-style: normal;
+  font-weight: normal; }
 @page {
   size: 5in 8in;
   margin-top: 52pt;
@@ -1009,6 +1019,23 @@ p[class*="ExtractSource"] {
   font-weight: 600;
   widows: 2;
   orphans: 2; }
+
+p[class*="Extract-Noteextn"] {
+  text-indent: none;
+  text-align: center;
+  margin: 16pt;
+  hyphens: none; }
+
+span.spanaltfont1span1 {
+  font-family: FeltpenCom-Medium;
+  font-size: 12.8pt;
+  line-height: 16pt;
+  letter-spacing: .02em; }
+
+span.spanaltfont2span2 {
+  font-family: BerrangerHandITCStd;
+  font-size: 11.04pt;
+  line-height: 16pt; }
 
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   font-style: italic; }

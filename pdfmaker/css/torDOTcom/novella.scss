@@ -56,6 +56,8 @@ $sizefootnote: 9pt;
 $sizecaption: $smaller;
 $sizefigsrc: 7pt;
 $sizesuperscript: 6pt;
+$sizehwritingprint: $gridheight * .8;
+$sizehwritingnormal: $gridheight * .69;
 
 $hanging: -5pt;
 
@@ -121,15 +123,3 @@ figure.fullpage {
 
 img[src*="fullpage"] {;
   margin-top: -1.65in; }
-
-span.spanaltfont1span1 {
-	font-family: FeltpenCom-Medium;
-	font-size: 12.75pt;
-	line-height: $gridheight;
-	letter-spacing: .02em; }
-
-span.spanaltfont2span2 {
-	font-family: BerrangerHandITCStd;
-	font-size: 11pt;
-	line-height: $gridheight;
-	letter-spacing: 0; }
