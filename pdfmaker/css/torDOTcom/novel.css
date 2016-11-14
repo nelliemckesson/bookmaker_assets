@@ -1021,19 +1021,16 @@ p[class*="ExtractSource"] {
 p[class*="Extract-Noteextn"] {
   text-indent: none;
   text-align: center;
-  margin: 15.5pt;
   hyphens: none; }
 
 span.spanaltfont1span1 {
   font-family: FeltpenCom-Medium;
-  font-size: 12.4pt;
-  line-height: 15.5pt;
+  font-size: 12.5pt;
   letter-spacing: .02em; }
 
 span.spanaltfont2span2 {
   font-family: BerrangerHandITCStd;
-  font-size: 10.695pt;
-  line-height: 15.5pt; }
+  font-size: 10.75pt; }
 
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   font-style: italic; }
