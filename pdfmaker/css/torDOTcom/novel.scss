@@ -23,7 +23,7 @@ $insidemargin: 50pt;
 $textindent: 12pt;
 
 $sizetitle: 25pt;
-$sizesubtitle: $bigger; 
+$sizesubtitle: $bigger;
 $sizeau: $bigger;
 $sizetitlepagetext: $small;
 $sizefst: $bigger;
@@ -47,6 +47,7 @@ $sizecode: $smaller;
 $sizepoetry: 10.5pt;
 $sizeextract: 10.5pt;
 $sizeextracthead: $normal;
+
 $sizedateline: $small;
 $sizeepigraph: $small;
 $sizerunfoot: 9pt;
@@ -56,6 +57,8 @@ $sizefootnote: 9pt;
 $sizecaption: $smaller;
 $sizefigsrc: 7pt;
 $sizesuperscript: 6pt;
+$sizehwritingprint: 12.5pt;
+$sizehwritingnormal: 10.75pt;
 
 $hanging: -5pt;
 
@@ -68,7 +71,7 @@ $htmargintop: ($gridheight * 4);
 
 $ctmargintop: 0pt;
 $ctmarginbottom: 5pt;
-$comargintop: ($gridheight * 4); 
+$comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
 $prmargintop: ($gridheight * 2);
@@ -89,6 +92,8 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
 @import "../_modules/font_sourcecodepro.scss";
 @import "../_modules/font_timesnewroman.scss";
 @import "../_modules/font_noto.scss";
+@import "../_modules/font_berrangerhanditc.scss";
+@import "../_modules/font_feltpencom.scss";
 
 @import "../_modules/base.scss";
 
@@ -119,20 +124,20 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
   margin-bottom: 31pt;
 }
 
-div.runheadleft { 
+div.runheadleft {
   font-variant: prince-opentype(onum);
 }
 
-div.runheadright { 
+div.runheadright {
   font-variant: prince-opentype(onum);
 }
 
-div.runheadleft::before { 
+div.runheadleft::before {
   content: counter(page)" • ";
   font-style: normal;
 }
 
-div.runheadright::after { 
+div.runheadright::after {
   content: " • "counter(page);
   font-style: normal;
 }
@@ -142,5 +147,5 @@ figure.fullpage {
   margin-inside: -0.81in;
   margin-outside: -0.69in; }
 
-img[src*="fullpage"] {;
+img[src*="fullpage"] {
   margin-top: -1.4in; }

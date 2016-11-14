@@ -194,12 +194,16 @@ text-decoration: none;
 
 *[class^="spanitaliccharacters"],
 *[class^="spansmcapital"],
-*[class^="spansmcapboldital"] {
+*[class^="spansmcapboldital"],
+*[class^="spanaltfont1span1"],
+*[class^="spanaltfont2span2"] {
   font-style: italic;
   }
 .spanitaliccharactersital,
 .spansmcapitalscital,
-.spansmcapbolditalscbi {
+.spansmcapbolditalscbi,
+.spanaltfont1span1,
+.spanaltfont2span2 {
   font-style: italic;
   }
 *[class^="spanboldfacecharacters"],

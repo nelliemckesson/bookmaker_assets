@@ -19,8 +19,7 @@ To add a new global style:
 1. Add your new style either in the same location as the existing rules for that element, or in a new line in the file if no other rules exist.
 1. If any of your new rules include measurements or sizes, be sure to base them on the variables, rather than hardcoding them. If no appropriate variable exists, you may add one. However, note that you'll need to add it to both torDOTcom/novella.scss and torDOTcom/novel.scss.
 1. Generate the new CSS files. You'll need to generate 3 files:
-  * bookmaker_assets$ cd pdfmaker
-  * pdfmaker$ cd torDOTcom
+  * bookmaker_assets$ cd pdfmaker/css/torDOTcom
   * torDOTcom$ sass novella.scss pdf.css
   * torDOTcom$ sass novel.scss novel.css
   * torDOTcom$ sass novella.scss core_tor.css
