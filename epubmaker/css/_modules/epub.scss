@@ -1,0 +1,143 @@
+@import "variables.scss";
+/*
+--------------------------------------------------
+RESET
+--------------------------------------------------
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+@font-face {
+  font-family: "noto";
+  src: url('NotoSansSymbols-Regular.ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body {
+  line-height: 1em;
+  }
+ol, ul {
+  list-style: none;
+  }
+blockquote, q {
+  quotes: none;
+  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+
+/*
+--------------------------------------------------
+BASE STYLES
+--------------------------------------------------
+*/
+
+body {
+  font-size: medium;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 2em;
+  font-family: Georgia,"Times New Roman",Times,serif,"noto",arial,Verdana,sans-serif;
+  color: #000;
+  background-color: #fff;
+  }
+p+p, 
+p.Text-Standardtx {
+  text-indent: 1.5em;
+  }
+blockquote {
+  margin: 1em 1.5em;
+  font-style: italic;
+  }
+aside,
+.box {
+  padding: 1.5em;
+  border: 2px solid #ccc;
+  margin: 1em 0;
+  }
+.box {
+  background: #eee;
+  }
+img {
+  max-width: 100%;
+  max-height: 100%;
+  }
+pre {
+  margin: 1em 0;
+  white-space: pre-wrap;
+  }
+
+em {
+  font-size: inherit;
+  font-style: italic;
+}
+
+strong { 
+ font-size: inherit;
+ font-weight: bold;
+}
+
+span, a { 
+ font-size: inherit;
+}
+
+a {
+text-decoration: none;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+h1+h2, h1+h3, h1+h4, h1+h5, h1+h6,
+h2+h3, h2+h4, h2+h5, h2+h6,
+h3+h4, h3+h5, h3+h6,
+h4+h5, h4+h6,
+h5+h6 {
+  margin-top: 0;
+}
+
+/* classes that get added by bookmaker */
+
+.chapopener {
+  text-transform: uppercase;
+}
+
+ /* STYLE-SPECIFIC DEFINITIONS WILL BE INSERTED BELOW */

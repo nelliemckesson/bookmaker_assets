@@ -1,0 +1,12 @@
+#{$BOBAdLevel-2Subheadbobh2} {
+  text-align: center;
+  text-indent: 0;
+}
+
+#{$BOBAdLevel-2Subheadbobh2_oldersiblings} {
+
+  & > #{$BOBAdLevel-2Subheadbobh2} {
+    margin-top: 0;
+  }
+
+}

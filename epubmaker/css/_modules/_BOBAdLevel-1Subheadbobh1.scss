@@ -1,0 +1,15 @@
+#{$BOBAdLevel-1Subheadbobh1} {
+  text-align: center;
+  text-indent: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+#{$BOBAdLevel-1Subheadbobh1_oldersiblings} {
+
+  & > #{$BOBAdLevel-1Subheadbobh1} {
+    margin-top: 0;
+  }
+
+}
