@@ -1145,6 +1145,10 @@ figure {
   text-align: center;
   float: top unless-fit; }
 
+figure.customimage {
+  margin-bottom: 15.5pt;
+  float: none; }
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;

@@ -1268,6 +1268,11 @@ figure {
   float: top unless-fit;
 }
 
+figure.customimage {
+  margin-bottom: $gridheight;
+  float: none;
+}
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;
