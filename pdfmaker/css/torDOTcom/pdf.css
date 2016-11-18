@@ -1409,7 +1409,11 @@ p.BookmakerPageBreakbr,
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
 
-/*@import "../_modules/gridlines.scss";*/
+@page {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
+  background-position: top left;
+  background-size: auto 16pt;
+  background-repeat: repeat-y; }
 @page part {
   @top-center {
     vertical-align: bottom; } }
