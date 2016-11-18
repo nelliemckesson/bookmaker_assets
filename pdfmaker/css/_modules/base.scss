@@ -1269,11 +1269,6 @@ figure {
 }
 
 figure.customimage {
-  margin-bottom: $gridheight;
-  float: none;
-}
-
-figure.customimage {
   padding: ($gridheight * 0.5) 0;
   margin-top: $gridheight;
   margin-bottom: ($gridheight * 0.625);

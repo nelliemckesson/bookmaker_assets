@@ -1146,10 +1146,6 @@ figure {
   float: top unless-fit; }
 
 figure.customimage {
-  margin-bottom: 15.5pt;
-  float: none; }
-
-figure.customimage {
   padding: 7.75pt 0;
   margin-top: 15.5pt;
   margin-bottom: 9.6875pt;
