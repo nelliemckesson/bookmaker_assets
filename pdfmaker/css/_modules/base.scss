@@ -1273,6 +1273,16 @@ figure.customimage {
   float: none;
 }
 
+figure.customimage {
+  padding: ($gridheight * 0.5) 0;
+  margin-top: $gridheight;
+  margin-bottom: ($gridheight * 0.625);
+  float: none; }
+
+figure.customimage img {
+  padding: 0;
+  margin: 0; }
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;

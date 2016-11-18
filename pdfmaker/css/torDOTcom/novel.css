@@ -1149,6 +1149,16 @@ figure.customimage {
   margin-bottom: 15.5pt;
   float: none; }
 
+figure.customimage {
+  padding: 7.75pt 0;
+  margin-top: 15.5pt;
+  margin-bottom: 9.6875pt;
+  float: none; }
+
+figure.customimage img {
+  padding: 0;
+  margin: 0; }
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;

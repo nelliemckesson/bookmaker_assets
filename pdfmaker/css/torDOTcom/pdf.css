@@ -1151,6 +1151,16 @@ figure.customimage {
   margin-bottom: 16pt;
   float: none; }
 
+figure.customimage {
+  padding: 8pt 0;
+  margin-top: 16pt;
+  margin-bottom: 10pt;
+  float: none; }
+
+figure.customimage img {
+  padding: 0;
+  margin: 0; }
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;
@@ -1409,11 +1419,7 @@ p.BookmakerPageBreakbr,
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
 
-@page {
-  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/grid.jpg");
-  background-position: top left;
-  background-size: auto 16pt;
-  background-repeat: repeat-y; }
+/*@import "../_modules/gridlines.scss";*/
 @page part {
   @top-center {
     vertical-align: bottom; } }
