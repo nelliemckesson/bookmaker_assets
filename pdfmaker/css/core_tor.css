@@ -1147,6 +1147,16 @@ figure {
   text-align: center;
   float: top unless-fit; }
 
+figure.customimage {
+  padding: 8pt 0;
+  margin-top: 16pt;
+  margin-bottom: 10pt;
+  float: none; }
+
+figure.customimage img {
+  padding: 0;
+  margin: 0; }
+
 figure.fullpage {
   float: top unless-fit;
   box-sizing: border-box;
@@ -1275,6 +1285,10 @@ p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blo
 p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote {
   margin-top: 0pt; }
+
+p.customimage {
+  background-image: none;
+  height: auto; }
 
 p.PageBreakpb {
   display: none; }
