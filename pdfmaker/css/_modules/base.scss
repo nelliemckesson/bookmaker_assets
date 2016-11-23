@@ -754,10 +754,10 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   }
 }
 
-/*section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
 section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
-  margin-top: -45pt;
-}*/
+  margin-top: $gridheight * -2;
+}
 
 section[data-type="chapter"] {
   page: chapter;

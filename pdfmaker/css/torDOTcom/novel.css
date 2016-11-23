@@ -720,10 +720,10 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   .FMAuthorNamefmau em {
     font-style: normal; }
 
-/*section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
 section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
-  margin-top: -45pt;
-}*/
+  margin-top: -31pt; }
+
 section[data-type="chapter"] {
   page: chapter;
   page-break-before: always;
