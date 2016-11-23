@@ -929,8 +929,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
 }
 
 *[class*="Text-ComputerTypecom"],
-*[class*="Text-ComputerTypeNo-Indentcom1"],
-.Extract-Emailextem {
+*[class*="Text-ComputerTypeNo-Indentcom1"] {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: $sizecode;
 }
@@ -949,6 +948,13 @@ pre.poetry p, pre.poetry p:first-of-type {
 p[class*="Extract"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: $sizeextract;
+}
+
+p.Extract-Emailextem,
+p.Extract-EmailHeadingemh,
+p.Extract-Telegramtel {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: $sizecode;
 }
 
 blockquote {
@@ -1142,6 +1148,13 @@ p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   }
 }
 
+p.LetterExtHeadnotehn {
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase;
+}
+
 p.LetterExtSalutationlsa {
   font-style: italic;
   text-indent: 0;
@@ -1192,10 +1205,15 @@ p[class*="Dateline"] {
   text-indent: 0;
   font-size: $sizedateline;
   font-weight: 600;
+  font-style: italic;
   text-transform: uppercase;
   margin-top: $gridheight * 3;
   margin-bottom: $gridheight;
   text-align: left;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
@@ -1203,11 +1221,11 @@ p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[clas
 }
 
 p.LetterExtDatelineldl {
-  font-weight: 600;
+  font-weight: normal;
   font-size: $sizedateline;
   text-indent: 0;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   margin-top: $gridheight;
   margin-bottom: $gridheight;
   hyphens: none;

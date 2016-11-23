@@ -1352,8 +1352,6 @@ EXTRACTS
 .Extract-Noteextn,
 .Extract-NoteHeadextnh,
 .Extract-Headlineexthl,
-.Extract-Emailextem,
-.Extract-EmailHeadingemh,
 .Extract-Websiteextws,
 .Extract-SongLyricextsl,
 .Extract-BusinessCardextbc,
@@ -1389,8 +1387,6 @@ EXTRACTS
 .Extract-Noteextn em,
 .Extract-NoteHeadextnh em,
 .Extract-Headlineexthl em,
-.Extract-Emailextem em,
-.Extract-EmailHeadingemh em,
 .Extract-Websiteextws em,
 .Extract-SongLyricextsl em,
 .Extract-BusinessCardextbc em,
@@ -1419,6 +1415,8 @@ EXTRACTS
   letter-spacing: .075em;
   }
 
+.Extract-Emailextem,
+.Extract-EmailHeadingemh,
 .Extract-Telegramtel {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   text-transform: uppercase;
@@ -1443,10 +1441,14 @@ LETTERS
 .LetterExtHeadnotehn {
   text-transform: uppercase;
   letter-spacing: .075em;
+  text-align: center;
+  text-indent: 0;
   }
 *[class^="LetterExtHeadnote"] {
   text-transform: uppercase;
   letter-spacing: .075em;
+  text-align: center;
+  text-indent: 0;
   }
 .LetterExtHeadnotehn+p,
 .LetterExtAddressladd,
@@ -1466,9 +1468,11 @@ LETTERS
   }
 .LetterExtDatelineldl {
   margin: 1em 0;
+  text-indent: 0;
   }
 *[class^="LetterExtDateline"] {
   margin: 1em 0;
+  text-indent: 0;
   }
 p+.LetterExtSalutationlsa,
 .LetterExtClosinglcl,

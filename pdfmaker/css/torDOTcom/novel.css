@@ -868,8 +868,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
   font-size: 9.75pt; }
 
 *[class*="Text-ComputerTypecom"],
-*[class*="Text-ComputerTypeNo-Indentcom1"],
-.Extract-Emailextem {
+*[class*="Text-ComputerTypeNo-Indentcom1"] {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: 8.5pt; }
 
@@ -885,6 +884,12 @@ pre.poetry p, pre.poetry p:first-of-type {
 p[class*="Extract"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 10.5pt; }
+
+p.Extract-Emailextem,
+p.Extract-EmailHeadingemh,
+p.Extract-Telegramtel {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
 
 blockquote {
   margin-left: 15.5pt;
@@ -1046,6 +1051,12 @@ p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   p.LetterExtBodyTextltx em, p.LetterExtBodyTextNo-Indentltx1 em {
     font-style: normal; }
 
+p.LetterExtHeadnotehn {
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase; }
+
 p.LetterExtSalutationlsa {
   font-style: italic;
   text-indent: 0;
@@ -1085,20 +1096,23 @@ p[class*="Dateline"] {
   text-indent: 0;
   font-size: 10pt;
   font-weight: 600;
+  font-style: italic;
   text-transform: uppercase;
   margin-top: 46.5pt;
   margin-bottom: 15.5pt;
   text-align: left; }
+  p[class*="Dateline"] em {
+    font-style: normal; }
 
 p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
   margin-top: -15.5pt; }
 
 p.LetterExtDatelineldl {
-  font-weight: 600;
+  font-weight: normal;
   font-size: 10pt;
   text-indent: 0;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
   hyphens: none; }
