@@ -1419,11 +1419,13 @@ EXTRACTS
 .Extract-EmailHeadingemh,
 .Extract-Telegramtel {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
-  text-transform: uppercase;
   }
 
 *[class^="Extract-Telegram"] {
-  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  text-transform: uppercase;
+  }
+
+.Extract-Telegramtel {
   text-transform: uppercase;
   }
 
