@@ -474,6 +474,7 @@ h1, .Head-Level-1h1 {
 .TitlepageBookTitletit,
 .PartTitlept,
 .ChapTitlect,
+.ChapTitleALTact,
 .VolumeTitlevolt,
 .CollectionBookTitlebkt {
   text-align: center;
@@ -488,6 +489,7 @@ h1, .Head-Level-1h1 {
 
 .PartTitlept,
 .ChapTitlect,
+.ChapTitleALTact,
 .VolumeTitlevolt,
 .CollectionBookTitlebkt {
   margin-bottom: 3.00em;
@@ -1029,6 +1031,13 @@ OTHER FRONTMATTER
   text-indent: 0;
   margin: 1em 0;
   }
+.FMTitlefmt,
+.FMAuthorNamefmau,
+.FMAuthorSignatureausig,
+.FMDramatisPersonaefmdp {
+  text-indent: 0;
+  margin: 1em 0;
+  }
 *[class^="FMHead"],
 *[class^="FMTitle"],
 *[class^="FMSubhead"],
@@ -1036,15 +1045,34 @@ OTHER FRONTMATTER
 *[class^="FMHeadALT"] {
   text-align: center;
   }
+.FMHeadfmh,
+.FMTitlefmt,
+.FMSubheadfmsh,
+.FMAuthorNamefmau,
+.FMHeadALTafmh {
+  text-align: center;
+  }
 *[class^="FMHeadALT"],
 *[class^="FMTextALT"],
 *[class^="FMTextNo-IndentALT"] {
   font-family: Helvetica,Arial,sans-serif;
   }
+.FMHeadALTafmh,
+.FMTextALTafmtx,
+.FMTextNo-IndentALTafmtx1 {
+  font-family: Helvetica,Arial,sans-serif;
+  }
 *[class^="FMAuthorSignature"] {
   font-style: italic;
   }
+.FMAuthorSignatureausig {
+  font-style: italic;
+  }
 *[class^="FMDramatisPersonae"] {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+.FMDramatisPersonaefmdp {
   text-transform: uppercase;
   letter-spacing: .075em;
   }
@@ -1205,7 +1233,8 @@ SPACE BREAKS
 .PageBreakpb,
 .SpaceBreak-1-Linels1,
 .SpaceBreak-2-Linels2,
-.SpaceBreak-3-Linels3 {
+.SpaceBreak-3-Linels3,
+.SpaceBreak-Internalint {
   text-indent: 0;
   text-align: center;
   }
@@ -1219,7 +1248,8 @@ SPACE BREAKS
 *[class^="PageBreak"],
 *[class^="SpaceBreak-1-Line"],
 *[class^="SpaceBreak-2-Line"],
-*[class^="SpaceBreak-3-Line"] {
+*[class^="SpaceBreak-3-Line"],
+*[class^="SpaceBreak-Internalint"] {
   text-indent: 0;
   text-align: center;
   }
@@ -1227,7 +1257,8 @@ SPACE BREAKS
 *[class^="SectionBreak"],
 *[class^="SpaceBreakwithOrnament"],
 *[class^="SpaceBreakwithALTOrnament"],
-*[class^="SpaceBreak-1-Line"] {
+*[class^="SpaceBreak-1-Line"],
+*[class^="SpaceBreak-Internalint"] {
   margin: 1em 0;
   }
 
@@ -1235,7 +1266,8 @@ SPACE BREAKS
 .SectionBreaksbr,
 .SpaceBreakwithOrnamentorn,
 .SpaceBreakwithALTOrnamentorn2,
-.SpaceBreak-1-Linels1 {
+.SpaceBreak-1-Linels1,
+.SpaceBreak-Internalint {
   margin: 1em 0 2em 0;
   }
 

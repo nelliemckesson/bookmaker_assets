@@ -637,7 +637,8 @@ nav[data-type="toc"] li.BMHeadbmh {
   font-weight: normal;
   text-align: left; }
 
-nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh {
+nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh,
+nav[data-type="toc"] li.ChapTitleALTact + li.BMHeadbmh {
   margin-top: 15.5pt; }
 
 nav[data-type="toc"] li.PartNumberpn ~ li,
@@ -705,7 +706,8 @@ h1[class*="AboutAuthorTextHeadatah"] {
   padding: 0;
   text-align: center; }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"] {
+section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"],
+.FMAuthorNamefmau {
   text-indent: 0;
   font-size: 14pt;
   line-height: 15.5pt;
@@ -714,10 +716,12 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   text-align: center;
   margin-bottom: 29.0625pt;
   page-break-after: avoid; }
-  section[data-type="preface"] *[class*="FMSubheadfmsh"] em, *[class*="ChapSubtitlecst"] em, *[class*="BMSubheadbmsh"] em {
+  section[data-type="preface"] *[class*="FMSubheadfmsh"] em, *[class*="ChapSubtitlecst"] em, *[class*="BMSubheadbmsh"] em,
+  .FMAuthorNamefmau em {
     font-style: normal; }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
   margin-top: -45pt; }
 
 section[data-type="chapter"] {
@@ -753,7 +757,8 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"] + p,
 h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: 77.5pt; }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] {
+section[data-type="chapter"] h1[class*="ChapTitlect"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   font-size: 16pt;
   line-height: 15.5pt;
   font-weight: normal;
@@ -763,7 +768,8 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   counter-increment: chapternumber;
   padding: 0; }
 
-h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
   display: block;
   font-size: 11.75pt;
@@ -774,7 +780,8 @@ h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   margin-bottom: 15.5pt;
   text-indent: 0; }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] + p {
+section[data-type="chapter"] h1[class*="ChapTitlect"] + p,
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
   margin-top: 62pt; }
 
 [class*="Nonprinting"] {
@@ -861,7 +868,8 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
   font-size: 9.75pt; }
 
 *[class*="Text-ComputerTypecom"],
-*[class*="Text-ComputerTypeNo-Indentcom1"] {
+*[class*="Text-ComputerTypeNo-Indentcom1"],
+.Extract-Emailextem {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: 8.5pt; }
 
@@ -934,7 +942,8 @@ blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
 blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
   margin-top: -46.5pt; }
 
-h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
+h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"],
+h1[class*="ChapTitleALTact"] + blockquote[data-type="epigraph"] {
   margin-top: 31pt; }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
@@ -1215,11 +1224,13 @@ p[class*="Extract-NoIndent"] {
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-2-Linels2,
-p.SpaceBreak-3-Linels3 {
+p.SpaceBreak-3-Linels3,
+p.SpaceBreak-Internalint {
   text-indent: 0; }
 
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2,
@@ -1239,7 +1250,8 @@ p.SpaceBreakwithALTOrnamentorn2 {
   height: 15.5pt; }
 
 p.SpaceBreak,
-p.SpaceBreak-1-Linels1 {
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint {
   background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
   background-size: 60pt auto; }
 

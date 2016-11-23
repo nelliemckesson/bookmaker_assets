@@ -655,7 +655,8 @@ nav[data-type="toc"] li.BMHeadbmh {
   text-align: left;
 }
 
-nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh {
+nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh,
+nav[data-type="toc"] li.ChapTitleALTact + li.BMHeadbmh {
   margin-top: $gridheight;
 }
 
@@ -737,7 +738,8 @@ h1[class*="AboutAuthorTextHeadatah"] {
   text-align: center;
 }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"] {
+section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"],
+.FMAuthorNamefmau {
   text-indent: 0;
   font-size: $sizechapsubtitle;
   line-height: $gridheight;
@@ -752,7 +754,8 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   }
 }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
   margin-top: -45pt;
 }
 
@@ -794,7 +797,8 @@ h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: $gridheight * 5;
 }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] {
+section[data-type="chapter"] h1[class*="ChapTitlect"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   font-size: $sizechaptitle;
   line-height: $gridheight;
   font-weight: normal;
@@ -805,7 +809,8 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   padding: 0;
 }
 
-h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
   display: block;
   font-size: $sizechapnum;
@@ -817,7 +822,8 @@ h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   text-indent: 0;
 }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] + p {
+section[data-type="chapter"] h1[class*="ChapTitlect"] + p,
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
   margin-top: $comargintop;
 }
 
@@ -923,7 +929,8 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
 }
 
 *[class*="Text-ComputerTypecom"],
-*[class*="Text-ComputerTypeNo-Indentcom1"] {
+*[class*="Text-ComputerTypeNo-Indentcom1"],
+.Extract-Emailextem {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: $sizecode;
 }
@@ -1011,7 +1018,8 @@ blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.ru
   margin-top: ($cemarginbottom * -1);
 }
 
-h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
+h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"],
+h1[class*="ChapTitleALTact"] + blockquote[data-type="epigraph"] {
   margin-top: $cemargintop;
 }
 
@@ -1346,12 +1354,14 @@ p[class*="Extract-NoIndent"] {
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-2-Linels2,
-p.SpaceBreak-3-Linels3 {
+p.SpaceBreak-3-Linels3,
+p.SpaceBreak-Internalint {
   text-indent: 0;
 }
 
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2,
@@ -1372,7 +1382,8 @@ p.SpaceBreakwithALTOrnamentorn2 {
 }
 
 p.SpaceBreak,
-p.SpaceBreak-1-Linels1 {
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint {
   background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
   background-size: 60pt auto;
 }
