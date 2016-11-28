@@ -655,7 +655,8 @@ nav[data-type="toc"] li.BMHeadbmh {
   text-align: left;
 }
 
-nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh {
+nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh,
+nav[data-type="toc"] li.ChapTitleALTact + li.BMHeadbmh {
   margin-top: $gridheight;
 }
 
@@ -737,14 +738,15 @@ h1[class*="AboutAuthorTextHeadatah"] {
   text-align: center;
 }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"] {
+section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecst"], *[class*="BMSubheadbmsh"],
+.FMAuthorNamefmau {
   text-indent: 0;
   font-size: $sizechapsubtitle;
   line-height: $gridheight;
   font-style: italic;
   margin-top: $gridheight * 2;
   text-align: center;
-  margin-bottom: $gridheight * 1.875;
+  margin-bottom: $gridheight * 2;
   page-break-after: avoid;
 
   em {
@@ -752,8 +754,9 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="ChapSubtitlecs
   }
 }
 
-section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type {
-  margin-top: -45pt;
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="ChapSubtitlecst"]:first-of-type, *[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
+  margin-top: $gridheight * -2;
 }
 
 section[data-type="chapter"] {
@@ -794,7 +797,8 @@ h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: $gridheight * 5;
 }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] {
+section[data-type="chapter"] h1[class*="ChapTitlect"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   font-size: $sizechaptitle;
   line-height: $gridheight;
   font-weight: normal;
@@ -805,7 +809,8 @@ section[data-type="chapter"] h1[class*="ChapTitlect"] {
   padding: 0;
 }
 
-h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
   display: block;
   font-size: $sizechapnum;
@@ -817,7 +822,8 @@ h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
   text-indent: 0;
 }
 
-section[data-type="chapter"] h1[class*="ChapTitlect"] + p {
+section[data-type="chapter"] h1[class*="ChapTitlect"] + p,
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
   margin-top: $comargintop;
 }
 
@@ -944,6 +950,13 @@ p[class*="Extract"] {
   font-size: $sizeextract;
 }
 
+p.Extract-Emailextem,
+p.Extract-EmailHeadingemh,
+p.Extract-Telegramtel {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: $sizecode;
+}
+
 blockquote {
   margin-left: $gridheight;
   margin-right: $gridheight;
@@ -1011,7 +1024,8 @@ blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.ru
   margin-top: ($cemarginbottom * -1);
 }
 
-h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"] {
+h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"],
+h1[class*="ChapTitleALTact"] + blockquote[data-type="epigraph"] {
   margin-top: $cemargintop;
 }
 
@@ -1134,6 +1148,13 @@ p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
   }
 }
 
+p.LetterExtHeadnotehn {
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase;
+}
+
 p.LetterExtSalutationlsa {
   font-style: italic;
   text-indent: 0;
@@ -1184,10 +1205,15 @@ p[class*="Dateline"] {
   text-indent: 0;
   font-size: $sizedateline;
   font-weight: 600;
+  font-style: italic;
   text-transform: uppercase;
   margin-top: $gridheight * 3;
   margin-bottom: $gridheight;
   text-align: left;
+
+  em {
+    font-style: normal;
+  }
 }
 
 p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
@@ -1195,11 +1221,11 @@ p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[clas
 }
 
 p.LetterExtDatelineldl {
-  font-weight: 600;
+  font-weight: normal;
   font-size: $sizedateline;
   text-indent: 0;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   margin-top: $gridheight;
   margin-bottom: $gridheight;
   hyphens: none;
@@ -1346,12 +1372,14 @@ p[class*="Extract-NoIndent"] {
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-2-Linels2,
-p.SpaceBreak-3-Linels3 {
+p.SpaceBreak-3-Linels3,
+p.SpaceBreak-Internalint {
   text-indent: 0;
 }
 
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2,
@@ -1372,7 +1400,8 @@ p.SpaceBreakwithALTOrnamentorn2 {
 }
 
 p.SpaceBreak,
-p.SpaceBreak-1-Linels1 {
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint {
   background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
   background-size: 60pt auto;
 }
