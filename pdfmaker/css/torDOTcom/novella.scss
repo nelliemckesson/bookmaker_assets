@@ -56,6 +56,8 @@ $sizefootnote: 9pt;
 $sizecaption: $smaller;
 $sizefigsrc: 7pt;
 $sizesuperscript: 6pt;
+$sizehwritingprint: 12.75pt;
+$sizehwritingnormal: 11pt;
 
 $hanging: -5pt;
 
@@ -68,7 +70,7 @@ $htmargintop: ($gridheight * 1);
 
 $ctmargintop: 11pt;
 $ctmarginbottom: 61pt;
-$comargintop: ($gridheight * 4); 
+$comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
 $prmargintop: 16pt;
@@ -89,6 +91,8 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
 @import "../_modules/font_sourcecodepro.scss";
 @import "../_modules/font_timesnewroman.scss";
 @import "../_modules/font_noto.scss";
+@import "../_modules/font_berrangerhanditc.scss";
+@import "../_modules/font_feltpencom.scss";
 
 @import "../_modules/base.scss";
 
@@ -117,5 +121,5 @@ figure.fullpage {
   margin-inside: -1in;
   margin-outside: -0.75in; }
 
-img[src*="fullpage"] {;
+img[src*="fullpage"] {
   margin-top: -1.65in; }

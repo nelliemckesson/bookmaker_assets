@@ -89,7 +89,7 @@ body {
   color: #000;
   background-color: #fff;
   }
-p+p, 
+p+p,
 p.Text-Standardtx {
   text-indent: 1.5em;
   }
@@ -120,12 +120,12 @@ em {
   font-style: italic;
 }
 
-strong { 
+strong {
  font-size: inherit;
  font-weight: bold;
  }
 
-span, a { 
+span, a {
  font-size: inherit;
  }
 
@@ -194,12 +194,16 @@ text-decoration: none;
 
 *[class^="spanitaliccharacters"],
 *[class^="spansmcapital"],
-*[class^="spansmcapboldital"] {
+*[class^="spansmcapboldital"],
+*[class^="spanaltfont1span1"],
+*[class^="spanaltfont2span2"] {
   font-style: italic;
   }
 .spanitaliccharactersital,
 .spansmcapitalscital,
-.spansmcapbolditalscbi {
+.spansmcapbolditalscbi,
+.spanaltfont1span1,
+.spanaltfont2span2 {
   font-style: italic;
   }
 *[class^="spanboldfacecharacters"],
@@ -218,7 +222,7 @@ text-decoration: none;
 *[class^="spansmcapbold"],
 *[class^="spansmcapital"],
 *[class^="spansmcapboldital"] {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -226,7 +230,7 @@ text-decoration: none;
 .spansmcapboldscbold,
 .spansmcapitalscital,
 .spansmcapbolditalscbi {
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
@@ -281,6 +285,12 @@ sub,
 .chapopener {
   text-transform: uppercase;
 }
+*[class*="spanrun-incomputertypecomp"] {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
+.spanrun-incomputertypecomp {
+  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  }
 
 /*
 --------------------------------------------------
@@ -464,6 +474,7 @@ h1, .Head-Level-1h1 {
 .TitlepageBookTitletit,
 .PartTitlept,
 .ChapTitlect,
+.ChapTitleALTact,
 .VolumeTitlevolt,
 .CollectionBookTitlebkt {
   text-align: center;
@@ -478,6 +489,7 @@ h1, .Head-Level-1h1 {
 
 .PartTitlept,
 .ChapTitlect,
+.ChapTitleALTact,
 .VolumeTitlevolt,
 .CollectionBookTitlebkt {
   margin-bottom: 3.00em;
@@ -692,7 +704,7 @@ H6
 
 h6 {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -709,7 +721,7 @@ h6 {
 *[class^="ChartSubhead"],
 *[class^="FigureSubhead"] {
   text-indent: 0;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
@@ -830,7 +842,7 @@ DEDICATION PAGE
 --------------------------------------------------
 */
 
-.Dedicationded, 
+.Dedicationded,
 .DedicationAuthordedau {
   text-indent: 0;
   text-align: center;
@@ -935,7 +947,7 @@ blockquote[data-type="epigraph"] {
   text-align: right;
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -955,7 +967,7 @@ blockquote[data-type="epigraph"] {
   text-align: right;
   text-indent: 0;
   font-style: normal;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin-bottom: 1em;
@@ -1019,6 +1031,13 @@ OTHER FRONTMATTER
   text-indent: 0;
   margin: 1em 0;
   }
+.FMTitlefmt,
+.FMAuthorNamefmau,
+.FMAuthorSignatureausig,
+.FMDramatisPersonaefmdp {
+  text-indent: 0;
+  margin: 1em 0;
+  }
 *[class^="FMHead"],
 *[class^="FMTitle"],
 *[class^="FMSubhead"],
@@ -1026,15 +1045,34 @@ OTHER FRONTMATTER
 *[class^="FMHeadALT"] {
   text-align: center;
   }
+.FMHeadfmh,
+.FMTitlefmt,
+.FMSubheadfmsh,
+.FMAuthorNamefmau,
+.FMHeadALTafmh {
+  text-align: center;
+  }
 *[class^="FMHeadALT"],
 *[class^="FMTextALT"],
 *[class^="FMTextNo-IndentALT"] {
   font-family: Helvetica,Arial,sans-serif;
   }
+.FMHeadALTafmh,
+.FMTextALTafmtx,
+.FMTextNo-IndentALTafmtx1 {
+  font-family: Helvetica,Arial,sans-serif;
+  }
 *[class^="FMAuthorSignature"] {
   font-style: italic;
   }
+.FMAuthorSignatureausig {
+  font-style: italic;
+  }
 *[class^="FMDramatisPersonae"] {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  }
+.FMDramatisPersonaefmdp {
   text-transform: uppercase;
   letter-spacing: .075em;
   }
@@ -1072,7 +1110,7 @@ CHAPTER OPENERS
 */
 
 .ChapAuthorca,
-.Dateline-Chapterdl, 
+.Dateline-Chapterdl,
 .ChapOrnamentcorn,
 .ChapOrnamentALTcorn2 {
   text-align: center;
@@ -1147,7 +1185,7 @@ TEXT
   }
 
 .Text-StandardALTatx + .Text-StandardALTatx,
-.Text-StandardALTatx + .Text-StdNo-IndentALTatx1, 
+.Text-StandardALTatx + .Text-StdNo-IndentALTatx1,
 .Text-StdNo-IndentALTatx1 + .Text-StandardALTatx,
 .Text-StdNo-IndentALTatx1 + .Text-StdNo-IndentALTatx1 {
   margin-top: 0;
@@ -1195,7 +1233,8 @@ SPACE BREAKS
 .PageBreakpb,
 .SpaceBreak-1-Linels1,
 .SpaceBreak-2-Linels2,
-.SpaceBreak-3-Linels3 {
+.SpaceBreak-3-Linels3,
+.SpaceBreak-Internalint {
   text-indent: 0;
   text-align: center;
   }
@@ -1209,7 +1248,8 @@ SPACE BREAKS
 *[class^="PageBreak"],
 *[class^="SpaceBreak-1-Line"],
 *[class^="SpaceBreak-2-Line"],
-*[class^="SpaceBreak-3-Line"] {
+*[class^="SpaceBreak-3-Line"],
+*[class^="SpaceBreak-Internalint"] {
   text-indent: 0;
   text-align: center;
   }
@@ -1217,7 +1257,8 @@ SPACE BREAKS
 *[class^="SectionBreak"],
 *[class^="SpaceBreakwithOrnament"],
 *[class^="SpaceBreakwithALTOrnament"],
-*[class^="SpaceBreak-1-Line"] {
+*[class^="SpaceBreak-1-Line"],
+*[class^="SpaceBreak-Internalint"] {
   margin: 1em 0;
   }
 
@@ -1225,7 +1266,8 @@ SPACE BREAKS
 .SectionBreaksbr,
 .SpaceBreakwithOrnamentorn,
 .SpaceBreakwithALTOrnamentorn2,
-.SpaceBreak-1-Linels1 {
+.SpaceBreak-1-Linels1,
+.SpaceBreak-Internalint {
   margin: 1em 0 2em 0;
   }
 
@@ -1258,7 +1300,7 @@ SPACE BREAKS
   font-size: 1.125em;
   }
 
-.SpaceBreakwithOrnamentorn, 
+.SpaceBreakwithOrnamentorn,
 .SpaceBreakwithALTOrnamentorn2 {
   display: block;
   font-size: 1.125em;
@@ -1310,8 +1352,6 @@ EXTRACTS
 .Extract-Noteextn,
 .Extract-NoteHeadextnh,
 .Extract-Headlineexthl,
-.Extract-Emailextem,
-.Extract-EmailHeadingemh,
 .Extract-Websiteextws,
 .Extract-SongLyricextsl,
 .Extract-BusinessCardextbc,
@@ -1347,8 +1387,6 @@ EXTRACTS
 .Extract-Noteextn em,
 .Extract-NoteHeadextnh em,
 .Extract-Headlineexthl em,
-.Extract-Emailextem em,
-.Extract-EmailHeadingemh em,
 .Extract-Websiteextws em,
 .Extract-SongLyricextsl em,
 .Extract-BusinessCardextbc em,
@@ -1377,13 +1415,17 @@ EXTRACTS
   letter-spacing: .075em;
   }
 
+.Extract-Emailextem,
+.Extract-EmailHeadingemh,
 .Extract-Telegramtel {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
-  text-transform: uppercase;
   }
 
 *[class^="Extract-Telegram"] {
-  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
+  text-transform: uppercase;
+  }
+
+.Extract-Telegramtel {
   text-transform: uppercase;
   }
 
@@ -1401,10 +1443,14 @@ LETTERS
 .LetterExtHeadnotehn {
   text-transform: uppercase;
   letter-spacing: .075em;
+  text-align: center;
+  text-indent: 0;
   }
 *[class^="LetterExtHeadnote"] {
   text-transform: uppercase;
   letter-spacing: .075em;
+  text-align: center;
+  text-indent: 0;
   }
 .LetterExtHeadnotehn+p,
 .LetterExtAddressladd,
@@ -1424,9 +1470,11 @@ LETTERS
   }
 .LetterExtDatelineldl {
   margin: 1em 0;
+  text-indent: 0;
   }
 *[class^="LetterExtDateline"] {
   margin: 1em 0;
+  text-indent: 0;
   }
 p+.LetterExtSalutationlsa,
 .LetterExtClosinglcl,
@@ -1862,7 +1910,7 @@ h1 + .Illustrationholderill {
 *[class^="IllustrationSource"] {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -1871,7 +1919,7 @@ h1 + .Illustrationholderill {
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
-  font-size: .75em; 
+  font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 0;
@@ -2113,8 +2161,8 @@ BOB ADS
 --------------------------------------------------
 */
 
-.BOBAdTitlebobt, 
-.BOBAdSubtitlebobst, 
+.BOBAdTitlebobt,
+.BOBAdSubtitlebobst,
 .BOBAdLevel-1Subheadbobh1,
 .BOBAdLevel-2Subheadbobh2,
 .BOBAdLevel-3Subheadbobh3,
