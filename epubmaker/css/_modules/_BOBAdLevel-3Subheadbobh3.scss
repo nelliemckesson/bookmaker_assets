@@ -1,2 +1,14 @@
-$BOBAdLevel-3Subheadbobh3 {
+/* --------- BOBAdLevel-3Subheadbobh3 --------- */
+
+#{$BOBAdLevel-3Subheadbobh3} {
+  text-align: center;
+  text-indent: 0;
+}
+
+#{$BOBAdLevel-3Subheadbobh3_oldersiblings} {
+
+  & > #{$BOBAdLevel-3Subheadbobh3} {
+    margin-top: 0;
+  }
+
 }
