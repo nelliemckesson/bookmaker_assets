@@ -1,2 +1,19 @@
-$BoxHead-Level-5bh5 {
+/* --------- BoxHead-Level-5bh5 --------- */
+
+#{$BoxHead-Level-5bh5} {
+  text-indent: 0;
+  font-style: italic;
+  margin: 1em 0 0 0;
+}
+
+#{$BoxHead-Level-5bh5}:first-child {
+  margin-top: 0;
+}
+
+#{$BoxHead-Level-5bh5_oldersiblings} {
+
+  & > #{$BoxHead-Level-5bh5} {
+    margin-top: 0;
+  }
+
 }

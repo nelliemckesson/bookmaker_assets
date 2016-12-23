@@ -1,2 +1,20 @@
-$BoxHead-Level-4bh4 {
+/* --------- BoxHead-Level-4bh4 --------- */
+
+#{$BoxHead-Level-4bh4} {
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  margin: 1em 0 0 0;
+}
+
+#{$BoxHead-Level-4bh4}:first-child {
+  margin-top: 0;
+}
+
+#{$BoxHead-Level-4bh4_oldersiblings} {
+
+  & > #{$BoxHead-Level-4bh4} {
+    margin-top: 0;
+  }
+
 }

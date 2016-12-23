@@ -1,2 +1,14 @@
-$BoxExtract-Versebextv {
+/* --------- BoxExtract-Versebextv --------- */
+
+#{$BoxExtract-Versebextv} {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+blockquote {
+
+  #{$BoxExtract-Versebextv}:first-child {
+    margin-left: 1.5em;
+  }
+
 }

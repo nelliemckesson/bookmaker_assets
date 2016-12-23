@@ -1,2 +1,15 @@
-$BoxHeadbh {
+/* --------- BoxHeadbh --------- */
+
+#{$BoxHeadbh} {
+  text-indent: 0;
+  font-style: italic;
+  margin: 1em 0 0 0;
+  font-size: 1em;
+  background: #ccc;
+  text-align: center;
+  padding: .5em 0;
+}
+
+#{$BoxHeadbh}:first-child {
+  margin-top: 0;
 }

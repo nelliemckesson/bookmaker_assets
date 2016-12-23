@@ -1,2 +1,20 @@
-$BoxHead-Level-1bh1 {
+/* --------- BoxHead-Level-1bh1 --------- */
+
+#{$BoxHead-Level-1bh1} {
+  text-indent: 0;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin: .66666666666667em 0;
+}
+
+#{$BoxHead-Level-1bh1}:first-child {
+  margin-top: 0;
+}
+
+#{$BoxHead-Level-1bh1_oldersiblings} {
+
+  & > #{$BoxHead-Level-1bh1} {
+    margin-top: 0;
+  }
+
 }

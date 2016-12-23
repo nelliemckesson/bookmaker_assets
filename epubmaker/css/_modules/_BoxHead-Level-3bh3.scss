@@ -1,2 +1,19 @@
-$BoxHead-Level-3bh3 {
+/* --------- BoxHead-Level-3bh3 --------- */
+
+#{$BoxHead-Level-3bh3} {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1em 0 0 0;
+}
+
+#{$BoxHead-Level-3bh3}:first-child {
+  margin-top: 0;
+}
+
+#{$BoxHead-Level-3bh3_oldersiblings} {
+
+  & > #{$BoxHead-Level-3bh3} {
+    margin-top: 0;
+  }
+
 }

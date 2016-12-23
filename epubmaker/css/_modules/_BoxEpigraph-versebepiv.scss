@@ -1,2 +1,15 @@
-$BoxEpigraph-versebepiv {
+/* --------- BoxEpigraph-versebepiv --------- */
+
+#{$BoxEpigraph-versebepiv} {
+  font-style: italic;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+blockquote {
+
+  #{$BoxEpigraph-versebepiv}:first-child {
+    margin-left: 1.5em;
+  }
+
 }

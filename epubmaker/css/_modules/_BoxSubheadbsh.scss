@@ -1,2 +1,20 @@
-$BoxSubheadbsh {
+/* --------- BoxSubheadbsh --------- */
+
+#{$BoxSubheadbsh} {
+  text-indent: 0;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 1em 0 1em 0;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  padding: .5em 0;
+}
+
+#{$BoxHeadbh} {
+
+  & > #{$BoxSubheadbsh} {
+    margin-top: 0;
+  }
+
 }
