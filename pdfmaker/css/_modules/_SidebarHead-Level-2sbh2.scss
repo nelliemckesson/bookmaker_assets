@@ -1,0 +1,18 @@
+.SidebarHead-Level-2sbh2  {
+  page-break-after: avoid;
+  font-size: $sizeextracthead;
+  line-height: $gridheight;
+  font-weight: bold;
+  fon-style: italic;
+  text-align: center;
+  margin-top: $gridheight;
+  margin-bottom: $gridheight;
+}
+
+.SidebarHead-Level-2sbh2 + p {
+  text-indent: 0;
+}
+
+.SidebarHead-Level-2sbh2 + .SidebarHead-Level-1sbh1 {
+  margin-bottom: 0;
+}

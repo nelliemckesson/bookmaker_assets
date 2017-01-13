@@ -898,6 +898,114 @@ blockquote {
 blockquote p:first-child {
   text-indent: 0; }
 
+/* ---------------- SCREENPLAY EXTRACT */
+.ScreenplayHeadsph {
+  text-align: center;
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplaySubheadspsh {
+  text-align: center;
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayDramatisPersonaedp {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayDramatisPersonaedp + div.runfoot + div.runheadright + div.runheadleft + .ScreenplayDramatisPersonaedp {
+  text-indent: 12pt; }
+
+.ScreenplayTextNo-Indentsptx1 {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayTextsptx {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+p.ScreenplayExtractsp {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+/* ---------------- SIDEBARS */
+p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + aside {
+  margin-top: 0pt; }
+
+aside {
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  margin-left: 15.5pt;
+  margin-right: 15.5pt;
+  page-break-inside: auto; }
+
+aside p:first-child {
+  text-indent: 0; }
+
+aside > *:first-child {
+  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%); }
+
+aside::after {
+  display: block;
+  content: " ";
+  font-size: 11.75pt;
+  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%);
+  line-height: 15.5pt;
+  margin-bottom: 15.5pt;
+  min-height: 15.5pt; }
+
+.SidebarHead-Level-1sbh1 {
+  page-break-after: avoid;
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+.SidebarHead-Level-1sbh1 + p {
+  text-indent: 0; }
+
+.SidebarHead-Level-2sbh2 {
+  page-break-after: avoid;
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  fon-style: italic;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+.SidebarHead-Level-2sbh2 + p {
+  text-indent: 0; }
+
+.SidebarHead-Level-2sbh2 + .SidebarHead-Level-1sbh1 {
+  margin-bottom: 0; }
+
+.SidebarTextsbtx {
+  font-size: 10.5pt; }
+
+.SidebarText-NoIndentsbtx1 {
+  font-size: 10.5pt;
+  text-indent: 0; }
+
+.SidebarListBulletsbbl {
+  font-size: 10.5pt; }
+
+/* ---------------- DEDICATION */
 section[data-type="dedication"] p:first-child {
   margin-top: 15.5pt; }
 
@@ -1117,7 +1225,7 @@ p.LetterExtDatelineldl {
   margin-bottom: 15.5pt;
   hyphens: none; }
 
-/* LISTS */
+/* --------------- LISTS */
 ul {
   padding-left: 0;
   margin: 15.5pt 0 15.5pt 1em; }
@@ -1134,7 +1242,13 @@ ul li {
   margin-left: 0;
   padding-left: 0.3em; }
 
-/* FIGURES*/
+h1 + ul, h1 + ol {
+  padding-top: 3pt; }
+
+.ChapterContentscc {
+  font-size: 10.5pt; }
+
+/* --------------- FIGURES*/
 *[class*="IllustrationSourceis"] {
   font-family: "MinionPro", serif, "Noto";
   font-size: 7pt;
