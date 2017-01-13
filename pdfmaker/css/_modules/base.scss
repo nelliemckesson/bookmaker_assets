@@ -966,6 +966,62 @@ blockquote p:first-child {
   text-indent: 0;
 }
 
+/* ---------------- SCREENPLAY EXTRACT */
+
+@import "_ScreenplayHeadsph.scss";
+@import "_ScreenplaySubheadspsh.scss";
+@import "_ScreenplayDramatisPersonaedp.scss";
+@import "_ScreenplayTextNo-Indentsptx1.scss";
+@import "_ScreenplayTextsptx.scss";
+@import "_ScreenplayExtractsp.scss";
+
+/* ---------------- SIDEBARS */
+
+p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + aside {
+  margin-top: 0pt;
+}
+
+aside {
+  margin-top: $gridheight;
+  margin-bottom: $gridheight;
+  margin-left: $gridheight;
+  margin-right: $gridheight;
+  page-break-inside: auto;
+}
+
+aside p:first-child {
+  text-indent: 0;
+}
+
+aside > *:first-child {
+  border-top: 0.5pt solid cmyk(0%,0%,0%,100%);
+}
+
+aside::after {
+  display: block;
+  content: " ";
+  font-size: $normal;
+  border-top: 0.5pt solid cmyk(0%,0%,0%,100%);
+  line-height: $gridheight;
+  margin-bottom: $gridheight;
+  min-height: $gridheight;
+}
+
+@import "_SidebarHead-Level-1sbh1.scss";
+@import "_SidebarHead-Level-2sbh2.scss";
+@import "_SidebarTextsbtx.scss";
+@import "_SidebarTextNo-Indentsbtx1.scss";
+@import "_SidebarListBulletsbbl.scss";
+
+/* ---------------- DEDICATION */
+
 section[data-type="dedication"] p:first-child {
   margin-top: $gridheight;
 }
@@ -1231,7 +1287,7 @@ p.LetterExtDatelineldl {
   hyphens: none;
 }
 
-/* LISTS */
+/* --------------- LISTS */
 
 ul {
   padding-left: 0;
@@ -1253,7 +1309,13 @@ ul li {
   padding-left: 0.3em;
 }
 
-/* FIGURES*/
+h1 + ul, h1 + ol {
+  padding-top: 3pt; 
+}
+
+@import "_ChapterContentscc.scss";
+
+/* --------------- FIGURES*/
 
 *[class*="IllustrationSourceis"] {
   font-family: "MinionPro", serif, "Noto";
