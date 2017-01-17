@@ -1536,9 +1536,6 @@ sub {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: 8.5pt; }
 
-.nobreak {
-  page-break-before: avoid; }
-
 *[class*="bookmakerkeeptogetherkt"] {
   white-space: pre;
   page-break-inside: avoid; }
@@ -1552,6 +1549,21 @@ p.BookmakerPageBreakbr,
 
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
+
+.nobreak {
+  page-break-before: avoid; }
+
+.left {
+  text-align: left;
+  text-indent: 0; }
+
+.center {
+  text-align: center;
+  text-indent: 0; }
+
+.right {
+  text-align: right;
+  text-indent: 0; }
 
 /*@import "../_modules/gridlines.scss";*/
 @page part {
