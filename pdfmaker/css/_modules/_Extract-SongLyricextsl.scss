@@ -1,0 +1,10 @@
+.Extract-SongLyricextsl {
+  font-style: italic;
+  text-indent: -$textindent;
+  margin-left: $gridheight;
+  text-align: left;
+
+  em {
+    font-style: normal;
+  }
+}
