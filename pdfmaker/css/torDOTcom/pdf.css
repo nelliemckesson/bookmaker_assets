@@ -1125,6 +1125,9 @@ p.Extract-Inscriptionins {
   .Extract-SongLyricextsl em {
     font-style: normal; }
 
+.Extract-SongLyricextsl:first-child {
+  text-indent: -12pt; }
+
 .NoteLevel-1Subheadn1 {
   text-indent: 0;
   font-size: 14pt;
