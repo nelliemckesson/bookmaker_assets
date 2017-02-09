@@ -1141,6 +1141,13 @@ p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + 
   margin-top: $gridheight * 2;
 }
 
+/* ---------------- EXTRACTS */
+
+@import "_Extract-Inscriptionins.scss";
+@import "_Extract-SongLyricextsl.scss";
+@import "_NoteLevel-1Subheadn1.scss";
+@import "_NoteLevel-2Subheadn2.scss";
+
 *[class*="ExtractHeadexth"] {
   page-break-after: avoid;
 }
@@ -1310,7 +1317,7 @@ ul li {
 }
 
 h1 + ul, h1 + ol {
-  padding-top: 3pt; 
+  padding-top: 3pt;
 }
 
 @import "_ChapterContentscc.scss";

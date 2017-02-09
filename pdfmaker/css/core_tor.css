@@ -1110,6 +1110,46 @@ p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + 
 p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-non-verse"] {
   margin-top: 32pt; }
 
+/* ---------------- EXTRACTS */
+p.Extract-Inscriptionins {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-size: 10.5pt;
+  font-style: italic;
+  text-align: center; }
+
+.Extract-SongLyricextsl {
+  font-style: italic;
+  text-indent: -12pt;
+  margin-left: 16pt;
+  text-align: left; }
+  .Extract-SongLyricextsl em {
+    font-style: normal; }
+
+.Extract-SongLyricextsl:first-child {
+  text-indent: -12pt; }
+
+.NoteLevel-1Subheadn1 {
+  text-indent: 0;
+  font-size: 14pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 32pt;
+  margin-bottom: 16pt;
+  page-break-after: avoid; }
+  .NoteLevel-1Subheadn1 em {
+    font-style: normal; }
+
+.NoteLevel-2Subheadn2 {
+  text-indent: 0;
+  font-size: 12pt;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 32pt;
+  margin-bottom: 16pt;
+  page-break-after: avoid; }
+
 *[class*="ExtractHeadexth"] {
   page-break-after: avoid; }
 
