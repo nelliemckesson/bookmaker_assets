@@ -2321,6 +2321,10 @@ h1.ChapTitleNonprintingctnp {
   display: none;
 }
 
+*[data-displayheader="no"] {
+  display: none;
+}
+
 *[class*="Nonprinting"] {
   display: none;
 }
