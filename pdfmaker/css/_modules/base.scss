@@ -1528,9 +1528,8 @@ p.customimage {
   height: auto;
 }
 
-p.PageBreakpb {
-  display: none;
-}
+/* page break */
+@import "_PageBreakpb.scss";
 
 /* footnotes */
 

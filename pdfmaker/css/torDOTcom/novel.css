@@ -1468,8 +1468,12 @@ p.customimage {
   background-image: none;
   height: auto; }
 
-p.PageBreakpb {
+/* page break */
+.PageBreakpb {
   display: none; }
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  page-break-before: always; }
 
 /* footnotes */
 span[data-type="footnote"],

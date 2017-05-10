@@ -1,0 +1,7 @@
+.PageBreakpb  {
+  display: none;
+}
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  page-break-before: always;
+}
