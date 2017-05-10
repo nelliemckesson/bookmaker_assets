@@ -1,0 +1,14 @@
+.PageBreakpb  {
+  // page-break-after: always;
+  display: none;
+}
+
+p.PageBreakpb + * {
+  /*page-break-before: always;*/
+  border: 5px solid red;
+}
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  /*page-break-before: always;*/
+  border: 5px solid green;
+}
