@@ -322,46 +322,179 @@ h2+h3, h2+h4, h2+h5, h2+h6,
 h3+h4, h3+h5, h3+h6,
 h4+h5, h4+h6,
 h5+h6,
-*[class*="Head-Level-"]+*[class*="Head-Level-"],
-*[class*="FMLevel-"]+*[class*="FMLevel-"],
-*[class*="PoemLevel-"]+*[class*="PoemLevel-"],
-*[class^="RecipeHead"]+*[class^="RecipeSubhead"],
-*[class*="RecipeLevel-"]+*[class*="RecipeLevel-"],
-*[class^="Sub-RecipeHead"]+*[class^="Sub-RecipeSubhead"],
-*[class*="Sub-RecipeLevel-"]+*[class*="Sub-RecipeLevel-"],
-*[class^="BoxHead"]:first-child,
-*[class^="BoxHead-Level-1"]:first-child,
-*[class^="BoxHead-Level-2"]:first-child,
-*[class^="BoxHead-Level-3"]:first-child,
-*[class^="BoxHead-Level-4"]:first-child,
-*[class^="BoxHead-Level-5"]:first-child,
-*[class^="SidebarHead"]:first-child,
-*[class^="SidebarHead-Level-1"]:first-child,
-*[class^="SidebarHead-Level-2"]:first-child,
-*[class^="SidebarHead-Level-3"]:first-child,
-*[class^="SidebarHead-Level-4"]:first-child,
-*[class^="SidebarHead-Level-5"]:first-child,
-*[class^="BoxHead"]+*[class^="BoxSubhead"],
-*[class^="BoxHead"]+*[class*="BoxHead-Level-"],
-*[class*="BoxHead-Level-"]+*[class*="BoxHead-Level-"],
-*[class^="SidebarHead"]+*[class^="SidebarSubhead"],
-*[class^="SidebarHead"]+*[class*="SidebarHead-Level-"],
-*[class*="SidebarHead-Level-"]+*[class*="SidebarHead-Level-"],
-*[class^="TableNumber"]+*[class^="TableHead"],
-*[class^="ChartNumber"]+*[class^="ChartHead"],
-*[class^="ChartHead"]:first-child,
-*[class^="ChartHead"]+*[class^="ChartSubhead"],
-*[class^="ChartHead"]+*[class*="ChartLevel-"],
-*[class*="ChartLevel-"]+*[class*="ChartLevel-"],
-*[class^="TableHead"]+*[class^="TableSubhead"],
-*[class^="FigureNumber"]+*[class^="FigureHead"],
-*[class^="FigureHead"]+*[class^="FigureSubhead"],
-*[class^="FigureHead"]+*[class*="FigureLevel-"],
-*[class*="FigureLevel-"]+*[class*="FigureLevel-"],
-*[class*="AppendixLevel-"]+*[class*="AppendixLevel-"],
-*[class*="NoteLevel-"]+*[class*="NoteLevel-"],
-*[class*="BiblioLevel-"]+*[class*="BiblioLevel-"],
-*[class*="BOBAdLevel-"]+*[class*="BOBAdLevel-"] {
+.Head-Level-1h1+.Head-Level-2h2,
+.Head-Level-1h1+.Head-Level-3h3,
+.Head-Level-1h1+.Head-Level-4h4,
+.Head-Level-1h1+.Head-Level-5h5,
+.Head-Level-2h2+.Head-Level-3h3,
+.Head-Level-2h2+.Head-Level-4h4,
+.Head-Level-2h2+.Head-Level-5h5,
+.Head-Level-3h3+.Head-Level-4h4,
+.Head-Level-3h3+.Head-Level-5h5,
+.Head-Level-4h4+.Head-Level-5h5,
+.FMLevel-1Subheadfmh1+.FMLevel-2Subheadfmh2,
+.FMLevel-1Subheadfmh1+.FMLevel-3Subheadfmh3,
+.FMLevel-1Subheadfmh1+.FMLevel-4Subheadfmh4,
+.FMLevel-1Subheadfmh1+.FMLevel-5Subheadfmh5,
+.FMLevel-2Subheadfmh2+.FMLevel-3Subheadfmh3,
+.FMLevel-2Subheadfmh2+.FMLevel-4Subheadfmh4,
+.FMLevel-2Subheadfmh2+.FMLevel-5Subheadfmh5,
+.FMLevel-3Subheadfmh3+.FMLevel-4Subheadfmh4,
+.FMLevel-3Subheadfmh3+.FMLevel-5Subheadfmh5,
+.FMLevel-4Subheadfmh4+.FMLevel-5Subheadfmh5,
+.PoemLevel-1Subheadvh1+.PoemLevel-2Subheadvh2,
+.PoemLevel-1Subheadvh1+.PoemLevel-3Subheadvh3,
+.PoemLevel-1Subheadvh1+.PoemLevel-4Subheadvh4,
+.PoemLevel-1Subheadvh1+.PoemLevel-5Subheadvh5,
+.PoemLevel-2Subheadvh2+.PoemLevel-3Subheadvh3,
+.PoemLevel-2Subheadvh2+.PoemLevel-4Subheadvh4,
+.PoemLevel-2Subheadvh2+.PoemLevel-5Subheadvh5,
+.PoemLevel-3Subheadvh3+.PoemLevel-4Subheadvh4,
+.PoemLevel-3Subheadvh3+.PoemLevel-5Subheadvh5,
+.PoemLevel-4Subheadvh4+.PoemLevel-5Subheadvh5,
+.RecipeHeadrh+.RecipeSubheadrsh,
+.RecipeLevel-1Subheadrh1+.RecipeLevel-2Subheadrh2,
+.RecipeLevel-1Subheadrh1+.RecipeLevel-3Subheadrh3,
+.RecipeLevel-1Subheadrh1+.RecipeLevel-4Subheadrh4,
+.RecipeLevel-1Subheadrh1+.RecipeLevel-5Subheadrh5,
+.RecipeLevel-2Subheadrh2+.RecipeLevel-3Subheadrh3,
+.RecipeLevel-2Subheadrh2+.RecipeLevel-4Subheadrh4,
+.RecipeLevel-2Subheadrh2+.RecipeLevel-5Subheadrh5,
+.RecipeLevel-3Subheadrh3+.RecipeLevel-4Subheadrh4,
+.RecipeLevel-3Subheadrh3+.RecipeLevel-5Subheadrh5,
+.RecipeLevel-4Subheadrh4+.RecipeLevel-5Subheadrh5,
+.Sub-RecipeHeadsrh+.Sub-RecipeSubheadsrsh,
+.Sub-RecipeLevel-1Subheadsrsh1+.Sub-RecipeLevel-2Subheadsrsh2,
+.Sub-RecipeLevel-1Subheadsrsh1+.Sub-RecipeLevel-3Subheadsrsh3,
+.Sub-RecipeLevel-1Subheadsrsh1+.Sub-RecipeLevel-4Subheadsrsh4,
+.Sub-RecipeLevel-1Subheadsrsh1+.Sub-RecipeLevel-5Subheadsrsh5,
+.Sub-RecipeLevel-2Subheadsrsh2+.Sub-RecipeLevel-3Subheadsrsh3,
+.Sub-RecipeLevel-2Subheadsrsh2+.Sub-RecipeLevel-4Subheadsrsh4,
+.Sub-RecipeLevel-2Subheadsrsh2+.Sub-RecipeLevel-5Subheadsrsh5,
+.Sub-RecipeLevel-3Subheadsrsh3+.Sub-RecipeLevel-4Subheadsrsh4,
+.Sub-RecipeLevel-3Subheadsrsh3+.Sub-RecipeLevel-5Subheadsrsh5,
+.Sub-RecipeLevel-4Subheadsrsh4+.Sub-RecipeLevel-5Subheadsrsh5,
+.BoxHeadbh:first-child,
+.BoxHead-Level-1bh1:first-child,
+.BoxHead-Level-2bh2:first-child,
+.BoxHead-Level-3bh3:first-child,
+.BoxHead-Level-4bh4:first-child,
+.BoxHead-Level-5bh5:first-child,
+.SidebarHeadsbh:first-child,
+.SidebarHead-Level-1sbh1:first-child,
+.SidebarHead-Level-2sbh2:first-child,
+.SidebarHead-Level-3sbh3:first-child,
+.SidebarHead-Level-4sbh4:first-child,
+.SidebarHead-Level-5sbh5:first-child,
+.BoxHeadbh+.BoxSubheadbsh,
+.BoxHeadbh+.BoxHead-Level-1bh1,
+.BoxHeadbh+.BoxHead-Level-2bh2,
+.BoxHeadbh+.BoxHead-Level-3bh3,
+.BoxHeadbh+.BoxHead-Level-4bh4,
+.BoxHeadbh+.BoxHead-Level-5bh5,
+.BoxHead-Level-1bh1+.BoxHead-Level-2bh2,
+.BoxHead-Level-1bh1+.BoxHead-Level-3bh3,
+.BoxHead-Level-1bh1+.BoxHead-Level-4bh4,
+.BoxHead-Level-1bh1+.BoxHead-Level-5bh5,
+.BoxHead-Level-2bh2+.BoxHead-Level-3bh3,
+.BoxHead-Level-2bh2+.BoxHead-Level-4bh4,
+.BoxHead-Level-2bh2+.BoxHead-Level-5bh5,
+.BoxHead-Level-3bh3+.BoxHead-Level-4bh4,
+.BoxHead-Level-3bh3+.BoxHead-Level-5bh5,
+.BoxHead-Level-4bh4+.BoxHead-Level-5bh5,
+.SidebarHeadsbh+.SidebarSubheadsbsh,
+.SidebarHeadsbh+.SidebarHead-Level-1sbh1,
+.SidebarHeadsbh+.SidebarHead-Level-2sbh2,
+.SidebarHeadsbh+.SidebarHead-Level-3sbh3,
+.SidebarHeadsbh+.SidebarHead-Level-4sbh4,
+.SidebarHeadsbh+.SidebarHead-Level-5sbh5,
+.SidebarHead-Level-1sbh1+.SidebarHead-Level-2sbh2,
+.SidebarHead-Level-1sbh1+.SidebarHead-Level-3sbh3,
+.SidebarHead-Level-1sbh1+.SidebarHead-Level-4sbh4,
+.SidebarHead-Level-1sbh1+.SidebarHead-Level-5sbh5,
+.SidebarHead-Level-2sbh2+.SidebarHead-Level-3sbh3,
+.SidebarHead-Level-2sbh2+.SidebarHead-Level-4sbh4,
+.SidebarHead-Level-2sbh2+.SidebarHead-Level-5sbh5,
+.SidebarHead-Level-3sbh3+.SidebarHead-Level-4sbh4,
+.SidebarHead-Level-3sbh3+.SidebarHead-Level-5sbh5,
+.SidebarHead-Level-4sbh4+.SidebarHead-Level-5sbh5,
+.TableNumbertn+.TableHeadth,
+.ChartNumbercrn+.ChartHeadcrh,
+.ChartHeadcrh:first-child,
+.ChartHeadcrh+.ChartSubheadcrsh,
+.ChartHeadcrh+.ChartLevel-1Subheadcrh1,
+.ChartHeadcrh+.ChartLevel-2Subheadcrh2,
+.ChartHeadcrh+.ChartLevel-3Subheadcrh3,
+.ChartHeadcrh+.ChartLevel-4Subheadcrh4,
+.ChartHeadcrh+.ChartLevel-5Subheadcrh5,
+.ChartLevel-1Subheadcrh1+.ChartLevel-2Subheadcrh2,
+.ChartLevel-1Subheadcrh1+.ChartLevel-3Subheadcrh3,
+.ChartLevel-1Subheadcrh1+.ChartLevel-4Subheadcrh4,
+.ChartLevel-1Subheadcrh1+.ChartLevel-5Subheadcrh5,
+.ChartLevel-2Subheadcrh2+.ChartLevel-3Subheadcrh3,
+.ChartLevel-2Subheadcrh2+.ChartLevel-4Subheadcrh4,
+.ChartLevel-2Subheadcrh2+.ChartLevel-5Subheadcrh5,
+.ChartLevel-3Subheadcrh3+.ChartLevel-4Subheadcrh4,
+.ChartLevel-3Subheadcrh3+.ChartLevel-5Subheadcrh5,
+.ChartLevel-4Subheadcrh4+.ChartLevel-5Subheadcrh5,
+.TableHeadth+.TableSubheadtsh,
+.FigureNumberfgn+.FigureHeadfgh,
+.FigureHeadfgh+.FigureSubheadfgsh,
+.FigureHeadfgh+.FigureLevel-1Subheadfgh1,
+.FigureHeadfgh+.FigureLevel-2Subheadfgh2,
+.FigureHeadfgh+.FigureLevel-3Subheadfgh3,
+.FigureHeadfgh+.FigureLevel-4Subheadfgh4,
+.FigureHeadfgh+.FigureLevel-5Subheadfgh5,
+.FigureLevel-1Subheadfgh1+.FigureLevel-2Subheadfgh2,
+.FigureLevel-1Subheadfgh1+.FigureLevel-3Subheadfgh3,
+.FigureLevel-1Subheadfgh1+.FigureLevel-4Subheadfgh4,
+.FigureLevel-1Subheadfgh1+.FigureLevel-5Subheadfgh5,
+.FigureLevel-2Subheadfgh2+.FigureLevel-3Subheadfgh3,
+.FigureLevel-2Subheadfgh2+.FigureLevel-4Subheadfgh4,
+.FigureLevel-2Subheadfgh2+.FigureLevel-5Subheadfgh5,
+.FigureLevel-3Subheadfgh3+.FigureLevel-4Subheadfgh4,
+.FigureLevel-3Subheadfgh3+.FigureLevel-5Subheadfgh5,
+.FigureLevel-4Subheadfgh4+.FigureLevel-5Subheadfgh5,
+.AppendixLevel-1Subheadaph1+.AppendixLevel-2Subheadaph2,
+.AppendixLevel-1Subheadaph1+.AppendixLevel-3Subheadaph3,
+.AppendixLevel-1Subheadaph1+.AppendixLevel-4Subheadaph4,
+.AppendixLevel-1Subheadaph1+.AppendixLevel-5Subheadaph5,
+.AppendixLevel-2Subheadaph2+.AppendixLevel-3Subheadaph3,
+.AppendixLevel-2Subheadaph2+.AppendixLevel-4Subheadaph4,
+.AppendixLevel-2Subheadaph2+.AppendixLevel-5Subheadaph5,
+.AppendixLevel-3Subheadaph3+.AppendixLevel-4Subheadaph4,
+.AppendixLevel-3Subheadaph3+.AppendixLevel-5Subheadaph5,
+.AppendixLevel-4Subheadaph4+.AppendixLevel-5Subheadaph5,
+.NoteLevel-1Subheadn1+.NoteLevel-2Subheadn2,
+.NoteLevel-1Subheadn1+.NoteLevel-3Subheadn3,
+.NoteLevel-1Subheadn1+.NoteLevel-4Subheadn4,
+.NoteLevel-1Subheadn1+.NoteLevel-5Subheadn5,
+.NoteLevel-2Subheadn2+.NoteLevel-3Subheadn3,
+.NoteLevel-2Subheadn2+.NoteLevel-4Subheadn4,
+.NoteLevel-2Subheadn2+.NoteLevel-5Subheadn5,
+.NoteLevel-3Subheadn3+.NoteLevel-4Subheadn4,
+.NoteLevel-3Subheadn3+.NoteLevel-5Subheadn5,
+.NoteLevel-4Subheadn4+.NoteLevel-5Subheadn5,
+.BiblioLevel-1Subheadb1+.BiblioLevel-2Subheadb2,
+.BiblioLevel-1Subheadb1+.BiblioLevel-3Subheadb3,
+.BiblioLevel-1Subheadb1+.BiblioLevel-4Subheadb4,
+.BiblioLevel-1Subheadb1+.BiblioLevel-5Subheadb5,
+.BiblioLevel-2Subheadb2+.BiblioLevel-3Subheadb3,
+.BiblioLevel-2Subheadb2+.BiblioLevel-4Subheadb4,
+.BiblioLevel-2Subheadb2+.BiblioLevel-5Subheadb5,
+.BiblioLevel-3Subheadb3+.BiblioLevel-4Subheadb4,
+.BiblioLevel-3Subheadb3+.BiblioLevel-5Subheadb5,
+.BiblioLevel-4Subheadb4+.BiblioLevel-5Subheadb5,
+.BOBAdLevel-1Subheadbobh1+.BOBAdLevel-2Subheadbobh2,
+.BOBAdLevel-1Subheadbobh1+.BOBAdLevel-3Subheadbobh3,
+.BOBAdLevel-1Subheadbobh1+.BOBAdLevel-4Subheadbobh4,
+.BOBAdLevel-1Subheadbobh1+.BOBAdLevel-5Subheadbobh5,
+.BOBAdLevel-2Subheadbobh2+.BOBAdLevel-3Subheadbobh3,
+.BOBAdLevel-2Subheadbobh2+.BOBAdLevel-4Subheadbobh4,
+.BOBAdLevel-2Subheadbobh2+.BOBAdLevel-5Subheadbobh5,
+.BOBAdLevel-3Subheadbobh3+.BOBAdLevel-4Subheadbobh4,
+.BOBAdLevel-3Subheadbobh3+.BOBAdLevel-5Subheadbobh5,
+.BOBAdLevel-4Subheadbobh4+.BOBAdLevel-5Subheadbobh5 {
   margin-top: 0;
   }
 
@@ -378,61 +511,53 @@ h1, .Head-Level-1h1 {
   margin: .66666666666667em 0;
   }
 
-*[class*="Level-1Subhead"],
-*[class^="FrontSalesTitle"],
-*[class^="AdCardMainHead"],
-*[class^="HalftitleBookTitle"],
-*[class^="TitlepageBookTitle"],
-*[class^="TOCFrontmatterHead"],
-*[class^="TOCPartTitle"],
-*[class^="TOCChapterTitle"],
-*[class^="TOCLevel-1ChapterHead"],
-*[class^="FMHead"],
-*[class^="FMTitle"],
-*[class^="FMHeadALT"],
-*[class^="PartNumber"],
-*[class^="PartTitle"],
-*[class^="ChapNumber"],
-*[class^="ChapTitle"],
-*[class^="VolumeNumber"],
-*[class^="VolumeTitle"],
-*[class^="CollectionBookNumber"],
-*[class^="CollectionBookTitle"],
-*[class^="Head-Level-1"],
-*[class^="BoxHead-Level-1"],
-*[class^="SidebarHead-Level-1"],
-*[class^="TableNumber"],
-*[class^="ChartNumber"],
-*[class^="FigureNumber"],
-*[class^="BMHead"],
-*[class^="BMTitle"],
-*[class^="BMHeadALT"],
-*[class^="AppendixHead"],
-*[class^="BOBAdTitle"] {
+.AppendixLevel-1Subheadaph1,
+.BiblioLevel-1Subheadb1,
+.BOBAdLevel-1Subheadbobh1,
+.BoxHead-Level-1bh1,
+.ChartLevel-1Subheadcrh1,
+.FigureLevel-1Subheadfgh1,
+.FMLevel-1Subheadfmh1,
+.NoteLevel-1Subheadn1,
+.PoemLevel-1Subheadvh1,
+.RecipeLevel-1Subheadrh1,
+.SidebarHead-Level-1sbh1,
+.Sub-RecipeLevel-1Subheadsrsh1,
+.TOCLevel-1ChapterHeadch1,
+.FrontSalesTitlefst,
+.AdCardMainHeadacmh,
+.HalftitleBookTitlehtit,
+.TitlepageBookTitletit,
+.TOCFrontmatterHeadcfmh,
+.TOCPartTitlecpt,
+.TOCChapterTitlecct,
+.FMHeadfmh,
+.FMTitlefmt,
+.FMHeadALTafmh,
+.PartNumberpn,
+.PartTitlept,
+.ChapNumbercn,
+.ChapTitlect,
+.ChapTitleALTact,
+.VolumeNumbervoln,
+.VolumeTitlevolt,
+.CollectionBookNumberbkn,
+.CollectionBookTitlebkt,
+.Head-Level-1h1,
+.BoxHead-Level-1bh1,
+.TableNumbertn,
+.ChartNumbercrn,
+.FigureNumberfgn,
+.BMHeadbmh,
+.BMTitlebmt,
+.BMHeadALTabmh,
+.AppendixHeadaph,
+.BOBAdTitlebobt {
   text-indent: 0;
   font-size: 1.5em;
   line-height: 1.25em;
   margin: .66666666666667em 0;
   }
-*[class^="TOCFrontmatterHead"],
-*[class^="TOCBackmatterHead"],
-*[class^="TOCPartNumber"],
-*[class^="TOCChapterNumber"],
-*[class^="PartNumber"],
-*[class^="ChapNumber"],
-*[class^="VolumeNumber"],
-*[class^="CollectionBookNumber"],
-*[class^="TableNumber"],
-*[class^="ChartNumber"],
-*[class^="FigureNumber"] {
-  font-size: 1em;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  padding: .5em;
-  margin-top: 0;
-  }
-
 .TOCFrontmatterHeadcfmh,
 .TOCBackmatterHeadcbmh,
 .TOCPartNumbercpn,
@@ -451,40 +576,13 @@ h1, .Head-Level-1h1 {
   padding: .5em;
   margin-top: 0;
   }
-*[class^="TOCPartNumber"],
-*[class^="TOCFrontmatterHead"],
-*[class^="TOCBackmatterHead"],
-*[class^="PartNumber"],
-*[class^="VolumeNumber"],
-*[class^="CollectionBookNumber"] {
-  /*background: #999;*/
-  }
-*[class^="TOCChapterNumber"],
-*[class^="ChapNumber"],
-*[class^="TableNumber"],
-*[class^="ChartNumber"],
-*[class^="FigureNumber"] {
-  /*background: #eee;*/
-/*  margin-top: 3em; */
-  }
-*[class^="TableNumber"],
-*[class^="ChartNumber"],
-*[class^="FigureNumber"] {
+.TableNumbertn,
+.ChartNumbercrn,
+.FigureNumberfgn {
   color: #999;
   margin-top: 1em;
   margin-bottom: 0;
   }
-*[class^="FrontSalesTitle"],
-*[class^="AdCardMainHead"],
-*[class^="HalftitleBookTitle"],
-*[class^="TitlepageBookTitle"],
-*[class^="PartTitle"],
-*[class^="ChapTitle"],
-*[class^="VolumeTitle"],
-*[class^="CollectionBookTitle"] {
-  text-align: center;
-  }
-
 .FrontSalesTitlefst,
 .AdCardMainHeadacmh,
 .HalftitleBookTitlehtit,
@@ -496,14 +594,6 @@ h1, .Head-Level-1h1 {
 .CollectionBookTitlebkt {
   text-align: center;
   }
-
-*[class^="PartTitle"],
-*[class^="ChapTitle"],
-*[class^="VolumeTitle"],
-*[class^="CollectionBookTitle"] {
-  margin-bottom: 3.00em;
-  }
-
 .PartTitlept,
 .ChapTitlect,
 .ChapTitleALTact,
@@ -518,38 +608,32 @@ H2
 --------------------------
 */
 
-h2 {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
+h2,
+.AppendixLevel-2Subheadaph2,
+.BiblioLevel-2Subheadb2,
+.BOBAdLevel-2Subheadbobh2,
+.BoxHead-Level-2bh2,
+.ChartLevel-2Subheadcrh2,
+.FigureLevel-2Subheadfgh2,
+.FMLevel-2Subheadfmh2,
+.NoteLevel-2Subheadn2,
+.PoemLevel-2Subheadvh2,
+.RecipeLevel-2Subheadrh2,
+.Sub-RecipeLevel-2Subheadsrsh2,
+.FrontSalesSubtitlefsst,
+.AdCardSubheadacsh,
+.TitlepageBookSubtitlestit,
+.BOBAdSubtitlebobst,
+.FMSubheadfmsh,
+.TOCChapterSubtitleccst,
+.Head-Level-2h2,
+.BoxHead-Level-2bh2,
+.SidebarHead-Level-2sbh2,
+.BMSubheadbmsh,
+.AppendixSubheadapsh,
+.IndexInternalSubheadih1,
 .PartSubtitlepst,
 .ChapSubtitlecst {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
-*[class*="Level-2Subhead"],
-*[class^="FrontSalesSubtitle"],
-*[class^="AdCardSubhead"],
-*[class^="TitlepageBookSubtitle"],
-*[class^="FMSubhead"],
-*[class^="TOCChapterSubtitle"],
-*[class^="PartSubtitle"],
-*[class^="ChapSubtitle"],
-*[class^="Head-Level-2"],
-*[class^="BoxHead-Level-2"],
-*[class^="SidebarHead-Level-2"],
-*[class^="BMSubhead"],
-*[class^="AppendixSubhead"],
-*[class^="IndexInternalSubhead"],
-*[class^="BOBAdSubtitle"] {
   text-indent: 0;
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -561,47 +645,9 @@ h2 {
 .AdCardSubheadacsh,
 .TitlepageBookSubtitlestit,
 .PartSubtitlepst,
-.ChapSubtitlecst,
-.BOBAdSubtitlebobst {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
-*[class^="FrontSalesSubtitle"],
-*[class^="AdCardSubhead"],
-*[class^="TitlepageBookSubtitle"],
-*[class^="PartSubtitle"],
-*[class^="ChapSubtitle"] {
-  text-align: center;
-  margin-bottom: 1em;
-  }
-
-.FrontSalesSubtitlefsst,
-.AdCardSubheadacsh,
-.TitlepageBookSubtitlestit,
-.PartSubtitlepst,
 .ChapSubtitlecst {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  font-weight: bold;
-  margin: 1em 0 1em 0;
-  text-align: center;
-  }
-
-.PartSubtitlepst,
-.ChapSubtitlecst {
-  text-align: center;
   margin-bottom: 1em;
-  }
-
-*[class^="PartSubtitle"],
-*[class^="ChapSubtitle"] {
   text-align: center;
-  margin-bottom: 1.00em;
   }
 
 .PartSubtitlepst:after,
@@ -616,31 +662,30 @@ H3
 --------------------------
 */
 
-h3 {
-  text-indent: 0;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
-*[class*="Level-3Subhead"],
-*[class^="FrontSalesQuoteHead"],
-*[class^="PartContentsMainHead"],
-*[class^="Head-Level-3"],
-*[class^="IngredientsHead"],
-*[class^="Sub-RecipeIngredientsHead"],
-*[class^="Menu"],
-*[class^="RecipeVarHead"],
-*[class^="RecipeNoteHead"],
-*[class^="Extract-NoteHead"],
-*[class^="BoxHead-Level-3"],
-*[class^="SidebarHead-Level-3"],
-*[class^="GlossaryTerm"],
-*[class^="BOBAdQuoteHead"] {
-  text-indent: 0;
-  font-weight: bold;
-  margin: 1em 0 0 0;
-  }
-
+h3,
+.AppendixLevel-3Subheadaph3,
+.BiblioLevel-3Subheadb3,
+.BOBAdLevel-3Subheadbobh3,
+.BoxHead-Level-3bh3,
+.ChartLevel-3Subheadcrh3,
+.FigureLevel-3Subheadfgh3,
+.FMLevel-3Subheadfmh3,
+.NoteLevel-3Subheadn3,
+.PoemLevel-3Subheadvh3,
+.RecipeLevel-3Subheadrh3,
+.Sub-RecipeLevel-3Subheadsrsh3,
+.FrontSalesQuoteHeadfsqh,
+.PartContentsHeadpch,
+.Head-Level-3h3,
+.IngredientsHeadrih,
+.Sub-RecipeIngredientsHeadsrih,
+.Menumenu,
+.RecipeVarHeadrvh,
+.RecipeNoteHeadrnh,
+.Extract-NoteHeadextnh,
+.BoxHead-Level-3bh3,
+.SidebarHead-Level-3sbh3,
+.GlossaryTermglt,
 .BOBAdQuoteHeadbobqh {
   text-indent: 0;
   font-weight: bold;
@@ -653,18 +698,22 @@ H4
 --------------------------
 */
 
-h4 {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  margin: 1em 0 0 0;
-  }
-
-*[class*="Level-4Subhead"],
-*[class^="PartContentsHead"],
-*[class^="Head-Level-4"],
-*[class^="BoxHead-Level-4"],
-*[class^="SidebarHead-Level-4"] {
+h4,
+.AppendixLevel-4Subheadaph4,
+.BiblioLevel-4Subheadb4,
+.BOBAdLevel-4Subheadbobh4,
+.BoxHead-Level-4bh4,
+.ChartLevel-4Subheadcrh4,
+.FigureLevel-4Subheadfgh4,
+.FMLevel-4Subheadfmh4,
+.NoteLevel-4Subheadn4,
+.PoemLevel-4Subheadvh4,
+.RecipeLevel-4Subheadrh4,
+.Sub-RecipeLevel-4Subheadsrsh4,
+.PartContentsHeadpch,
+.Head-Level-4h4,
+.BoxHead-Level-4bh4,
+.SidebarHead-Level-4sbh4 {
   text-indent: 0;
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -677,38 +726,43 @@ H5
 --------------------------
 */
 
-h5 {
+h5,
+.AppendixLevel-5Subheadaph5,
+.BiblioLevel-5Subheadb5,
+.BOBAdLevel-5Subheadbobh5,
+.BoxHead-Level-5bh5,
+.ChartLevel-5Subheadcrh5,
+.FigureLevel-5Subheadfgh5,
+.FMLevel-5Subheadfmh5,
+.NoteLevel-5Subheadn5,
+.PoemLevel-5Subheadvh5,
+.RecipeLevel-5Subheadrh5,
+.Sub-RecipeLevel-5Subheadsrsh5,
+.Head-Level-5h5,
+.ExtractHeadexth,
+.PoemTitlevt,
+.RecipeHeadrh,
+.Sub-RecipeHeadsrh,
+.BoxHeadbh,
+.SidebarHeadsbh,
+.BoxHead-Level-5bh5,
+.SidebarHead-Level-5sbh5,
+.ChartHeadcrh,
+.FigureHeadfgh,
+.TableHeadth {
   text-indent: 0;
   font-style: italic;
   margin: 1em 0 0 0;
   }
-
-*[class*="Level-5Subhead"],
-*[class^="Head-Level-5"],
-*[class^="ExtractHead"],
-*[class^="PoemTitle"],
-*[class^="RecipeHead"],
-*[class^="Sub-RecipeHead"],
-*[class^="BoxHead"],
-*[class^="BoxHead-Level-5"],
-*[class^="SidebarHead"],
-*[class^="SidebarHead-Level-5"],
-*[class^="ChartHead"],
-*[class^="FigureHead"],
-*[class^="TableHead"] {
-  text-indent: 0;
-  font-style: italic;
-  margin: 1em 0 0 0;
-  }
-*[class^="ExtractHead"],
-*[class^="PoemTitle"],
-*[class^="RecipeHead"],
-*[class^="Sub-RecipeHead"],
-*[class^="BoxHead"],
-*[class^="SidebarHead"],
-*[class^="ChartHead"],
-*[class^="TableHead"],
-*[class^="FigureHead"] {
+.ExtractHeadexth,
+.PoemTitlevt,
+.RecipeHeadrh,
+.Sub-RecipeHeadsrh,
+.BoxHeadbh,
+.SidebarHeadsbh,
+.ChartHeadcrh,
+.FigureHeadfgh,
+.TableHeadth {
   font-size: 1em;
   background: #ccc;
   }
@@ -719,38 +773,31 @@ H6
 --------------------------
 */
 
-h6 {
+h6,
+.Head-Level-6h6,
+.PoemSubtitlevst,
+.PoemNumericSubheadsvhn,
+.RecipeSubheadrsh,
+.Sub-RecipeSubheadsrsh,
+.BoxSubheadbsh,
+.SidebarSubheadsbsh,
+.TableSubheadtsh,
+.ChartSubheadcrsh,
+.FigureSubheadfgsh {
   text-indent: 0;
   font-size: .75em;
   text-transform: uppercase;
   letter-spacing: .1em;
   margin: 1em 0 0 0;
   }
-
-*[class^="Head-Level-6"],
-*[class^="PoemSubtitle"],
-*[class^="PoemNumericSubhead"],
-*[class^="RecipeSubhead"],
-*[class^="Sub-RecipeSubhead"],
-*[class^="BoxSubhead"],
-*[class^="SidebarSubhead"],
-*[class^="TableSubhead"],
-*[class^="ChartSubhead"],
-*[class^="FigureSubhead"] {
-  text-indent: 0;
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  margin: 1em 0 0 0;
-  }
-*[class^="PoemSubtitle"],
-*[class^="RecipeSubhead"],
-*[class^="Sub-RecipeSubhead"],
-*[class^="BoxSubhead"],
-*[class^="SidebarSubhead"],
-*[class^="TableSubhead"],
-*[class^="ChartSubhead"],
-*[class^="FigureSubhead"] {
+.PoemSubtitlevst,
+.RecipeSubheadrsh,
+.Sub-RecipeSubheadsrsh,
+.BoxSubheadbsh,
+.SidebarSubheadsbsh,
+.TableSubheadtsh,
+.ChartSubheadcrsh,
+.FigureSubheadfgsh {
   border-bottom: 2px solid #ccc;
   margin-bottom: 1em;
   }
@@ -761,11 +808,11 @@ FRONT SALES
 --------------------------------------------------
 */
 
-*[class^="FrontSalesText"],
-*[class^="FrontSalesTextNoIndent"] {
+.FrontSalesTextfstx,
+.FrontSalesTextNoIndentfstx1 {
   }
-*[class^="FrontSalesQuote"],
-*[class^="FrontSalesQuoteNoIndent"] {
+.FrontSalesQuotefsq,
+.FrontSalesQuoteNoIndentfsq1 {
   font-style: italic;
   }
 
@@ -774,11 +821,6 @@ FRONT SALES
 AD CARD
 --------------------------------------------------
 */
-
-*[class^="AdCardListofTitle"] {
-  text-indent: 0;
-  text-align: center;
-  }
 
 .AdCardListofTitlesacl {
   text-indent: 0;
@@ -791,21 +833,6 @@ TITLE PAGE
 --------------------------------------------------
 */
 
-*[class^="TitlepageAuthorName"],
-*[class^="TitlepageContributorName"],
-*[class^="TitlepageTranslatorName"],
-*[class^="TitlepageSeriesTitle"],
-*[class^="TitlepageReadingLine"],
-*[class^="TitlepageImprintLine"],
-*[class^="TitlepagePublisherName"],
-*[class^="TitlepageCities"],
-*[class^="TitlepageLogo"]  {
-  text-indent: 0;
-  text-align: center;
-  margin: 1em 0;
-  }
-
-/* for kindle eink */
 .TitlepageAuthorNameau,
 .TitlepageContributorNamecon,
 .TitlepageTranslatorNametran,
@@ -835,15 +862,6 @@ COPYRIGHT PAGE
 --------------------------------------------------
 */
 
-*[class^="CopyrightTextsinglespace"],
-*[class^="CopyrightTextdoublespace"] {
-  font-size: .75em;
-  text-indent: 0;
-  }
-*[class^="CopyrightTextdoublespace"] {
-  margin: 1em 0;
-  }
-
 .CopyrightTextsinglespacecrtx,
 .CopyrightTextdoublespacecrtxd {
   font-size: .75em;
@@ -868,36 +886,11 @@ DEDICATION PAGE
   font-style: italic;
   }
 
-*[class^="Dedication"],
-*[class^="DedicationAuthor"] {
-  text-indent: 0;
-  text-align: center;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  }
-.Dedicationded {
-  font-style: italic;
-}
-*[class^="Dedicationd"] {
-  font-style: italic;
-  }
 .DedicationAuthordedau {
   margin-top: 1em;
   }
-*[class^="DedicationAuthor"] {
-  margin-top: 1em;
-  }
-section[data-type="dedication"] blockquote[data-type="epigraph"] {
-  page-break-before: always;
-  margin-top: 2em;
-  }
 
-.Dedicationded + p[class*="Epigraph"],
-.DedicationAuthordedau + p[class*="Epigraph"] {
-  page-break-before: always;
-  margin-top: 2em;
-  }
-*[class^="Dedication"] + p[class*="Epigraph"] {
+section[data-type="dedication"] blockquote[data-type="epigraph"] {
   page-break-before: always;
   margin-top: 2em;
   }
@@ -910,25 +903,6 @@ EPIGRAPH PAGE (AND OTHER EPIGRAPHS)
 
 blockquote[data-type="epigraph"] {
   margin: 2em 1.5em;
-  }
-
-*[class^="Epigraph-non-verse"],
-*[class^="Epigraph-verse"],
-*[class^="FMEpigraphnon-verse"],
-*[class^="FMEpigraph-verse"],
-*[class^="PartEpigraph-non-verse"],
-*[class^="PartEpigraph-verse"],
-*[class^="ChapEpigraph-non-verse"],
-*[class^="ChapEpigraph-verse"],
-*[class^="EpigraphinText-non-verse"],
-*[class^="EpigraphinText-verse"],
-*[class^="PoemEpigraph-non-verse"],
-*[class^="PoemEpigraph-verse"],
-*[class^="BoxEpigraph-non-verse"],
-*[class^="BoxEpigraph-verse"],
-*[class^="SidebarEpigraph-non-verse"],
-*[class^="SidebarEpigraph-verse"] {
-  font-style: italic;
   }
 
 .Epigraph-non-verseepi,
@@ -948,26 +922,6 @@ blockquote[data-type="epigraph"] {
 .SidebarEpigraph-non-versesbepi,
 .SidebarEpigraph-versesbepiv {
   font-style: italic;
-  }
-
-*[class^="EpigraphSource"],
-*[class^="ExtractSource"],
-*[class^="FMEpigraphSource"],
-*[class^="PartEpigraphSource"],
-*[class^="ChapEpigraphSource"],
-*[class^="EpigraphinText-Source"],
-*[class^="PoemEpigraphSource"],
-*[class^="BoxEpigraphSource"],
-*[class^="SidebarEpigraphSource"],
-*[class^="FrontSalesQuoteSource"],
-*[class^="BOBAdQuoteSource"] {
-  text-align: right;
-  text-indent: 0;
-  font-style: normal;
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  margin-bottom: 1em;
   }
 
 .EpigraphSourceeps,
@@ -1000,38 +954,39 @@ CONTENTS PAGE
 --------------------------------------------------
 */
 
-*[class^="TOCAuthor"],
-*[class^="TOCPartNumber"],
-*[class^="TOCPartTitle"],
-*[class^="TOCChapterNumber"],
-*[class^="TOCChapterTitle"],
-*[class^="TOCChapterSubtitle"],
-*[class^="TOCLevel-1ChapterHead"],
-*[class^="TOCBackmatterHead"],
-*[class^="TOCPageNumber"] {
+.TOCAuthorcau,
+.TOCBackmatterHeadcbmh,
+.TOCChapterNumberccn,
+.TOCChapterSubtitleccst,
+.TOCChapterTitlecct,
+.TOCLevel-1ChapterHeadch1,
+.TOCPageNumbercnum,
+.TOCPartNumbercpn,
+.TOCPartTitlecpt {
   list-style: none;
   text-indent: 0;
   text-align: center;
   }
-*[class^="TOCAuthor"] {
+.TOCAuthorcau {
   font-style: italic;
   margin: 1em 0;
   }
-*[class^="TOCPartNumber"],
-*[class^="TOCChapterNumber"] {
+.TOCPageNumbercnum,
+.TOCChapterNumberccn {
   margin-left: 15%;
   margin-right: 15%;
   }
-*[class^="TOCFrontmatterHead"],
-*[class^="TOCPartTitle"],
-*[class^="TOCChapterTitle"],
-*[class^="TOCLevel-1ChapterHead"],
-*[class^="TOCBackmatterHead"],
-*[class^="TOCPartNumber"],
-*[class^="TOCChapterNumber"],
-*[class^="TOCChapterSubtitle"],
-*[class^="TOCAuthor"],
-*[class^="TOCPageNumber"] {
+
+.TOCAuthorcau
+.TOCBackmatterHeadcbmh
+.TOCChapterNumberccn
+.TOCChapterSubtitleccst
+.TOCChapterTitlecct
+.TOCFrontmatterHeadcfmh
+.TOCLevel-1ChapterHeadch1
+.TOCPageNumbercnum
+.TOCPartNumbercpn
+.TOCPartTitlecpt {
   display: none;
   }
 
@@ -1041,13 +996,6 @@ OTHER FRONTMATTER
 --------------------------------------------------
 */
 
-*[class^="FMTitle"],
-*[class^="FMAuthorName"],
-*[class^="FMAuthorSignature"],
-*[class^="FMDramatisPersonae"] {
-  text-indent: 0;
-  margin: 1em 0;
-  }
 .FMTitlefmt,
 .FMAuthorNamefmau,
 .FMAuthorSignatureausig,
@@ -1055,13 +1003,7 @@ OTHER FRONTMATTER
   text-indent: 0;
   margin: 1em 0;
   }
-*[class^="FMHead"],
-*[class^="FMTitle"],
-*[class^="FMSubhead"],
-*[class^="FMAuthorName"],
-*[class^="FMHeadALT"] {
-  text-align: center;
-  }
+
 .FMHeadfmh,
 .FMTitlefmt,
 .FMSubheadfmsh,
@@ -1069,26 +1011,17 @@ OTHER FRONTMATTER
 .FMHeadALTafmh {
   text-align: center;
   }
-*[class^="FMHeadALT"],
-*[class^="FMTextALT"],
-*[class^="FMTextNo-IndentALT"] {
-  font-family: Helvetica,Arial,sans-serif;
-  }
+
 .FMHeadALTafmh,
 .FMTextALTafmtx,
 .FMTextNo-IndentALTafmtx1 {
   font-family: Helvetica,Arial,sans-serif;
   }
-*[class^="FMAuthorSignature"] {
-  font-style: italic;
-  }
+
 .FMAuthorSignatureausig {
   font-style: italic;
   }
-*[class^="FMDramatisPersonae"] {
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  }
+
 .FMDramatisPersonaefmdp {
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -1100,23 +1033,23 @@ PART OPENERS
 --------------------------------------------------
 */
 
-*[class^="PartOrnament"],
-*[class^="PartOrnamentALT"],
-*[class^="PartContentsMainHead"],
-*[class^="PartContentsHead"] {
+.PartOrnamentporn,
+.PartOrnamentALTporn2,
+.PartContentsHeadpch,
+.PartContentsMainHeadpcmh {
   text-indent: 0;
   text-align: center;
   margin: 1em 0;
   }
-*[class^="PartOrnament"]:before,
-*[class^="PartOrnamentALT"]:before {
+.PartOrnamentporn:before,
+.PartOrnamentALTporn2:before {
   display: block;
   font-size: 1.125em;
   }
-*[class^="PartOrnament"]:before {
+.PartOrnamentporn:before {
   content: "\2766"; /* U+2766 "floral heart" */
   }
-*[class^="PartOrnamentALT"]:before {
+.PartOrnamentALTporn2:before {
   content: "\2756"; /* U+2756 "black diamond minus white" */
   }
 
@@ -1134,20 +1067,6 @@ CHAPTER OPENERS
   text-indent: 0;
   margin: 1em 0;
   }
-
-*[class^="ChapAuthor"],
-*[class^="Dateline-Chapter"],
-*[class^="ChapOrnament"],
-*[class^="ChapOrnamentALT"] {
-  text-align: center;
-  text-indent: 0;
-  margin: 1em 0;
-  }
-*[class^="ChapOrnament"]:before,
-*[class^="ChapOrnamentALT"]:before {
-  display: block;
-  font-size: 1.125em;
-  }
 .ChapOrnamentcorn:before,
 .ChapOrnamentALTcorn2:before {
   display: block;
@@ -1155,12 +1074,6 @@ CHAPTER OPENERS
   }
 .ChapOrnamentcorn:before {
   content: "\2766"; /* U+2766 "floral heart" */
-  }
-*[class^="ChapOrnament"]:before {
-  content: "\2766"; /* U+2766 "floral heart" */
-  }
-*[class^="ChapOrnamentALT"]:before {
-  content: "\2756"; /* U+2756 "black diamond minus white" */
   }
 .ChapOrnamentALTcorn2:before {
   content: "\2756"; /* U+2756 "black diamond minus white" */
@@ -1178,14 +1091,6 @@ TEXT
 --------------------------------------------------
 */
 
-*[class^="Text-ComputerType"],
-*[class^="Text-ComputerTypeNo-Indent"] {
-  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
-  }
-*[class^="Text-StandardALT"],
-*[class^="Text-StdNo-IndentALT"] {
-  font-family: Helvetica,Arial,sans-serif;
-  }
 .Text-ComputerTypecom,
 .Text-ComputerTypeNo-Indentcom1 {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
@@ -1195,12 +1100,10 @@ TEXT
   font-family: Helvetica,Arial,sans-serif;
   font-size: 0.9em;
   }
-
 .Text-StandardALTatx,
 .Text-StdNo-IndentALTatx1 {
   margin-top: 1em;
   }
-
 .Text-StandardALTatx + .Text-StandardALTatx,
 .Text-StandardALTatx + .Text-StdNo-IndentALTatx1,
 .Text-StdNo-IndentALTatx1 + .Text-StandardALTatx,
@@ -1214,9 +1117,9 @@ DISPLAY TEXT
 --------------------------------------------------
 */
 
-*[class^="InitialCap"] {
+.InitialCapic {
   }
-*[class^="DisplayPhrase"] {
+.DisplayPhrasedis {
   clear: both;
   color: #999;
   font-size: 1.125em;
@@ -1227,8 +1130,8 @@ DISPLAY TEXT
   background: #eee;
   margin: 1em 0;
   }
-*[class^="Storydateline"],
-*[class^="Storylocationline"] {
+.Storydatelinesdl,
+.Storylocationlinesloc {
   text-indent: 0;
   font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
   letter-spacing: .1em;
@@ -1256,29 +1159,6 @@ SPACE BREAKS
   text-align: center;
   }
 
-*[class^="SpaceBreak"],
-*[class^="SectionBreak"],
-*[class^="SpaceBreakwithOrnament"],
-*[class^="SpaceBreakwithALTOrnament"],
-*[class^="PartStart"],
-*[class^="PartEnd"],
-*[class^="PageBreak"],
-*[class^="SpaceBreak-1-Line"],
-*[class^="SpaceBreak-2-Line"],
-*[class^="SpaceBreak-3-Line"],
-*[class^="SpaceBreak-Internalint"] {
-  text-indent: 0;
-  text-align: center;
-  }
-*[class^="SpaceBreak"],
-*[class^="SectionBreak"],
-*[class^="SpaceBreakwithOrnament"],
-*[class^="SpaceBreakwithALTOrnament"],
-*[class^="SpaceBreak-1-Line"],
-*[class^="SpaceBreak-Internalint"] {
-  margin: 1em 0;
-  }
-
 .SpaceBreak,
 .SectionBreaksbr,
 .SpaceBreakwithOrnamentorn,
@@ -1288,33 +1168,19 @@ SPACE BREAKS
   margin: 1em 0 2em 0;
   }
 
-*[class^="SpaceBreak-2-Line"] {
-  margin: 1em 0 2em 0;
-  }
-
 .SpaceBreak-2-Linels2 {
   margin: 1em 0 2em 0;
-  }
-
-*[class^="SpaceBreak-3-Line"] {
-  margin: 1em 0 3em 0;
   }
 
 .SpaceBreak-3-Linels3 {
   margin: 1em 0 3em 0;
   }
 
-*[class^="Dateline-Text"] {
+.Dateline-Texttdl {
   text-indent: 0;
   font-variant: small-caps; /* ALTERNATE: font-size: .75em; text-transform: uppercase; */
   letter-spacing: .1em;
   margin: 1em 0;
-  }
-
-*[class^="SpaceBreakwithOrnament"],
-*[class^="SpaceBreakwithALTOrnament"] {
-  display: block;
-  font-size: 1.125em;
   }
 
 .SpaceBreakwithOrnamentorn,
@@ -1322,26 +1188,6 @@ SPACE BREAKS
   display: block;
   font-size: 1.125em;
   }
-
-/**[class^="SpaceBreakwithOrnament"] {
-  content: "\2766"; /* U+2766 "floral heart"
-  }
-
-.SpaceBreakwithOrnamentorn {
-  content: "\2766"; /* U+2766 "floral heart"
-  }
-
-*[class^="SpaceBreakwithALTOrnament"] {
-  content: "\2756"; /* U+2756 "black diamond minus white"
-  }
-
-.SpaceBreakwithALTOrnamentorn2 {
-  content: "\2756"; /* U+2756 "black diamond minus white"
-  }*/
-
-*[class^="BookmakerPageBreak"] {
-  page-break-after: always;
-}
 
 .BookmakerPageBreakbr {
   page-break-after: always;
@@ -1413,20 +1259,8 @@ EXTRACTS
   font-style: normal;
 }
 
-*[class^="Extract"],
-*[class*="Extract"] {
-  font-style: italic;
-  }
-
 .Extract-Headlineexthl,
 .Extract-EmailHeadingemh {
-  text-indent: 0;
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  }
-
-*[class^="Extract-Headline"],
-*[class^="Extract-EmailHeading"] {
   text-indent: 0;
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -1438,10 +1272,6 @@ EXTRACTS
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   }
 
-*[class^="Extract-Telegram"] {
-  text-transform: uppercase;
-  }
-
 .Extract-Telegramtel {
   text-transform: uppercase;
   }
@@ -1450,6 +1280,12 @@ EXTRACTS
 blockquote p:first-child {
   margin-left: 0;
 }
+
+/* Just in case... */
+*[class^="Extract"],
+*[class*="Extract"] {
+  font-style: italic;
+  }
 
 /*
 --------------------------------------------------
@@ -1463,12 +1299,6 @@ LETTERS
   text-align: center;
   text-indent: 0;
   }
-*[class^="LetterExtHeadnote"] {
-  text-transform: uppercase;
-  letter-spacing: .075em;
-  text-align: center;
-  text-indent: 0;
-  }
 .LetterExtHeadnotehn+p,
 .LetterExtAddressladd,
 .LetterExtSalutationlsa,
@@ -1477,19 +1307,7 @@ LETTERS
 .LetterExtPostscriptlps {
   text-indent: 0;
   }
-*[class^="LetterExtHeadnote"]+p,
-*[class^="LetterExtAddress"],
-*[class^="LetterExtSalutation"],
-*[class^="LetterExtClosing"],
-*[class^="LetterExtSignature"],
-*[class^="LetterExtPostscript"] {
-  text-indent: 0;
-  }
 .LetterExtDatelineldl {
-  margin: 1em 0;
-  text-indent: 0;
-  }
-*[class^="LetterExtDateline"] {
   margin: 1em 0;
   text-indent: 0;
   }
@@ -1499,16 +1317,7 @@ p+.LetterExtSalutationlsa,
 .LetterExtPostscriptlps {
   margin-top: 1em;
   }
-p+*[class^="LetterExtSalutation"],
-*[class^="LetterExtClosing"],
-*[class^="LetterExtSignature"],
-*[class^="LetterExtPostscript"] {
-  margin-top: 1em;
-  }
 .LetterExtClosinglcl+.LetterExtSignaturelsig {
-  margin-top: 0;
-  }
-*[class^="LetterExtClosing"]+*[class^="LetterExtSignature"] {
   margin-top: 0;
   }
 
@@ -1661,7 +1470,7 @@ list-style-type of "none".
 
 */
 
-*[class^="ListHead"] {
+.ListHeadlh {
   font-weight: bold;
   text-indent: 0;
   margin: 1em 0;
@@ -1674,24 +1483,13 @@ li,
 /*
 [class^="ListNum"],
 [class^="ListNumSubentry"],
-*/
-*[class^="ListAlpha"],
-/*
 *[class^="ListAlphaSubentry"],
 *[class^="ListBullet"],
 *[class^="ListBulletSubentry"],
 *[class^="ListUnnum"],
 *[class^="ListUnnumSubentry"],
-*/
-*[class^="NumberedParagraph"],
-*[class^="BulletedParagraph"],
-/*
 *[class^="Extract-NumList"],
 *[class^="Extract-BulletList"],
-*/
-*[class^="IngredientsList"],
-*[class^="Sub-RecipeIngredientsList"]
-/*
 *[class^="BoxListNumb"],
 *[class^="BoxListBullet"],
 *[class^="BoxListUnnum"],
@@ -1701,7 +1499,13 @@ li,
 *[class^="AppendixListNum"],
 *[class^="AppendixListUnnum"],
 *[class^="AppendixListBullet"]
-*/ {
+*/
+.ListAlphaal,
+.ListAlphaSubentryasl,
+.NumberedParagraphsnp,
+.BulletedParagraphsbp,
+.IngredientsListri,
+.Sub-RecipeIngredientsListsri {
   display: list-item;
   list-style-position: outside;
   margin-left: 1.5em;
@@ -1715,53 +1519,41 @@ ul li,
 /*
 *[class^="ListBullet"],
 *[class^="ListUnnum"],
-*/
-*[class^="BulletedParagraph"],
-/*
 *[class^="Extract-BulletList"],
-*/
-*[class^="IngredientsList"],
-*[class^="Sub-RecipeIngredientsList"]
-/*
 *[class^="BoxListBullet"],
 *[class^="BoxListUnnum"],
 *[class^="SidebarListBullet"],
 *[class^="SidebarListUnnum"],
 *[class^="AppendixListUnnum"],
-*[class^="AppendixListBullet"]
-*/ {
+*[class^="AppendixListBullet"],
+*/
+.BulletedParagraphsbp,
+.IngredientsListri,
+.Sub-RecipeIngredientsListsri {
   list-style-type: disc;
   }
 li ul li,
-*[class^="ListBulletSubentry"],
-*[class^="ListUnnumSubentry"] {
+.ListBulletSubentrybsl,
+.ListUnnumSubentryusl {
   list-style-type: square;
   }
 ol li,
 /*
 *[class^="ListNum"],
 *[class^="ListNumSubentry"],
-*/
-*[class^="ListAlpha"],
-/*
 *[class^="ListAlphaSubentry"],
-*/
-*[class^="NumberedParagraph"]
-/*
 *[class^="Extract-NumList"],
 *[class^="BoxListNum"],
 *[class^="SidebarListNum"],
-*[class^="AppendixListNum"]
-*/ {
+*[class^="AppendixListNum"],
+*/
+.ListAlphaal,
+.ListAlphaSubentryasl,
+.NumberedParagraphsnp {
 /*list-style-type: decimal;*/
   list-style-type: none;
   margin-top: 0.5em;
   }
-
-.NumberedParagraphsnp {
-  list-style-type: none;
-  margin-top: 0.5em;
-}
 
 li ol li
 /*
@@ -1781,14 +1573,14 @@ li[class^="ListAlphaSubentry"] {
   list-style-type: lower-alpha;
   }
 */
-li[class^="Checklist"],
-li[class^="ChecklistSubentry"] {
+li.Checklistck,
+li.ChecklistSubentrycksl {
   list-style-type: none;
   text-indent: 0;
   margin-left: 1.5em;
   }
-li[class^="Checklist"]:before,
-li[class^="ChecklistSubentry"]:before {
+li.Checklistck:before,
+li.ChecklistSubentrycksl:before {
   display: block;
   width: 1.5em;
   float: left;
@@ -1796,7 +1588,10 @@ li[class^="ChecklistSubentry"]:before {
   text-align: center;
   content: "\2713"; /* U+2713 "check mark" */
   }
-*[class^="ColumnHead"] {
+.ColumnHeadch,
+.FigureColumnHeadfgch,
+.TableColumnHeadtch,
+.ChartColumnHeadcrch {
   font-weight: bold;
   text-indent: 0;
   }
@@ -1815,31 +1610,13 @@ ILLUSTRATIONS
 --------------------------------------------------
 */
 
-*[class^="Illustrationholder"] {
-  margin-top: 1em;
-  text-align: center;
-  }
-
 .Illustrationholderill {
   margin-top: 1em;
   text-align: center;
   }
 
-h1 + *[class^="Illustrationholder"] {
-  background-color: transparent;
-  }
-
 h1 + .Illustrationholderill {
   background-color: transparent;
-  }
-
-*[class^="Caption"] {
-  color: #666;
-  text-indent: 0;
-  text-align: center;
-  font-size: .875em;
-  font-style: italic;
-  padding: 1em 0;
   }
 
 .Captioncap {
@@ -1851,15 +1628,6 @@ h1 + .Illustrationholderill {
   padding: 1em 0;
   }
 
-*[class^="IllustrationSource"] {
-  font-size: 0.8em;
-  text-align: center;
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  margin: 0;
-  }
-
 .IllustrationSourceis {
   font-size: 0.8em;
   text-align: center;
@@ -1869,18 +1637,9 @@ h1 + .Illustrationholderill {
   margin: 0;
   }
 
-*[class^="Illustrationholder"]+p,
-*[class^="IllustrationSource"]+p {
-  margin-top: 1em;
-  }
-
 .Illustrationholderill+p,
 .IllustrationSourceis+p {
   margin-top: 1em;
-  }
-
-*[class^="Illustrationholder"]+*[class^="IllustrationSource"] {
-  margin-top: 0;
   }
 
 .Illustrationholderill+.IllustrationSourceis {
@@ -1901,53 +1660,53 @@ RECIPES
 --------------------------------------------------
 */
 
-*[class^="Menu"],
-*[class^="ChapterContent"] {
+.Menumenu,
+.ChapterContentscc {
   }
-*[class^="RecipeHeadnote"],
-*[class^="Sub-RecipeHeadnote"] {
+.RecipeHeadnoterhn,
+.Sub-RecipeHeadnotesrhn {
   font-style: italic;
   text-indent: 0;
   }
-*[class^="RecipeTime"],
-*[class^="RecipeYield"],
-*[class^="Sub-RecipeYield"],
-*[class^="RecipeNutritionInfo"],
-*[class^="RecipeGarnish"] {
+.RecipeTimert,
+.RecipeYieldry,
+.Sub-RecipeYieldsry,
+.RecipeNutritionInforni,
+.RecipeGarnishrg {
   margin-top: 1em;
   margin-bottom: 1em;
   text-indent: 0;
   }
-*[class^="RecipeVarHead"],
-*[class^="RecipeVarText"],
-*[class^="RecipeVarTextNo-Indent"],
-*[class^="RecipeNoteHead"],
-*[class^="RecipeNoteText"],
-*[class^="RecipeNoteTextNo-Indent"] {
+.RecipeVarHeadrvh,
+.RecipeVarTextrvtx,
+.RecipeVarTextNo-Indentrvtx1,
+.RecipeNoteHeadrnh,
+.RecipeNoteTextrntx,
+.RecipeNoteTextNo-Indentrntx1 {
   font-style: italic;
   }
-*[class^="Sub-RecipeHead"],
-*[class^="Sub-RecipeSubhead"],
-*[class^="Sub-RecipeLevel-2Subhead"],
-*[class^="Sub-RecipeLevel-3Subhead"],
-*[class^="Sub-RecipeLevel-4Subhead"],
-*[class^="Sub-RecipeLevel-5Subhead"],
-*[class^="Sub-RecipeHeadnote"],
-*[class^="Sub-RecipeIngredientsHead"],
-*[class^="Sub-RecipeIngredientsList"],
-*[class^="Sub-RecipeProcedures"],
-*[class^="Sub-RecipeProceduresNoIndent"],
-*[class^="Sub-RecipeYields"] {
+.Sub-RecipeHeadsrh,
+.Sub-RecipeHeadnotesrhn,
+.Sub-RecipeIngredientsHeadsrih,
+.Sub-RecipeIngredientsListsri,
+.Sub-RecipeLevel-2Subheadsrsh2,
+.Sub-RecipeLevel-3Subheadsrsh3,
+.Sub-RecipeLevel-4Subheadsrsh4,
+.Sub-RecipeLevel-5Subheadsrsh5,
+.Sub-RecipeProceduressrp,
+.Sub-RecipeProceduresNoIndentrp1,
+.Sub-RecipeSubheadsrsh,
+.Sub-RecipeYieldsry {
   margin-left: 1.5em;
   margin-right: 1.5em;
   }
-*[class^="Sub-RecipeLevel-1Subhead"] {
+.Sub-RecipeLevel-1Subheadsrsh1 {
   margin-left: 1em;
   margin-right: 1em;
   }
-*[class^="Sub-RecipeIngredientsList"],
-*[class^="Sub-RecipeProcedures"],
-*[class^="Sub-RecipeProceduresNoIndent"] {
+.Sub-RecipeIngredientsListsri,
+.Sub-RecipeProceduressrp,
+.Sub-RecipeProceduresNoIndentrp1 {
   margin-left: 3em;
   }
 
@@ -1957,46 +1716,66 @@ BOXES AND SIDEBARS
 --------------------------------------------------
 */
 
-*[class^="TOCPartNumber"],
-*[class^="TOCChapterNumber"],
-*[class^="RecipeHead"],
-*[class^="Sub-RecipeHead"],
-*[class^="RecipeSubhead"],
-*[class^="Sub-RecipeSubhead"],
-*[class^="BoxHead"],
-*[class^="BoxSubhead"],
-*[class^="SidebarHead"],
-*[class^="ExtractHead"],
-*[class^="PoemTitle"],
-*[class^="SidebarSubhead"],
-*[class^="PoemSubtitle"],
-*[class^="TableHead"],
-*[class^="TableSubhead"],
-*[class^="ChartHead"],
-*[class^="ChartSubhead"],
-*[class^="FigureHead"],
-*[class^="FigureSubhead"] {
+.TOCPartNumbercpn,
+.TOCChapterNumberccn,
+.RecipeHeadrh,
+.Sub-RecipeHeadsrh,
+.RecipeSubheadrsh,
+.Sub-RecipeSubheadsrsh,
+.BoxHead-Level-1bh1,
+.BoxHead-Level-2bh2,
+.BoxHead-Level-3bh3,
+.BoxHead-Level-4bh4,
+.BoxHead-Level-5bh5,
+.BoxHeadbh,
+.BoxSubheadbsh,
+.SidebarHead-Level-1sbh1,
+.SidebarHead-Level-2sbh2,
+.SidebarHead-Level-3sbh3,
+.SidebarHead-Level-4sbh4,
+.SidebarHead-Level-5sbh5,
+.SidebarHeadsbh,
+.ExtractHeadexth,
+.PoemTitlevt,
+.SidebarSubheadsbsh,
+.PoemSubtitlevst,
+.TableHeadth,
+.TableSubheadtsh,
+.ChartHeadcrh,
+.ChartSubheadcrsh,
+.FigureHeadfgh,
+.FigureSubheadfgsh {
   text-align: center;
   padding: .5em 0;
   }
-*[class^="BoxHead"]+p,
-*[class^="SidebarHead"]+p,
-*[class^="ExtractHead"]+p,
-*[class^="PoemTitle"]+p {
+.BoxHead-Level-1bh1+p,
+.BoxHead-Level-2bh2+p,
+.BoxHead-Level-3bh3+p,
+.BoxHead-Level-4bh4+p,
+.BoxHead-Level-5bh5+p,
+.BoxHeadbh+p,
+.SidebarHead-Level-1sbh1+p,
+.SidebarHead-Level-2sbh2+p,
+.SidebarHead-Level-3sbh3+p,
+.SidebarHead-Level-4sbh4+p,
+.SidebarHead-Level-5sbh5+p,
+.SidebarHeadsbh+p,
+.ExtractHeadexth,+p,
+.PoemTitlevt+p {
   margin-top: 1em;
   }
-*[class^="BoxSourceNote"],
-*[class^="BoxFootnote"],
-*[class^="SidebarSourceNote"],
-*[class^="SidebarFootnote"] {
+.BoxSourceNotebsn,
+.BoxFootnotebfn,
+.SidebarSourceNotesbsn,
+.SidebarFootnotesbfn {
   font-size: .75em;
   text-indent: 0;
   margin: 1em 0;
   }
-*[class^="BoxExtract"],
-*[class^="BoxExtract-Verse"],
-*[class^="SidebarExtract"],
-*[class^="SidebarExtract-Verse"] {
+.BoxExtract-Versebextv,
+.BoxExtractbext,
+.SidebarExtract-Versesbextv,
+.SidebarExtractsbext {
   }
 
 /*
@@ -2015,30 +1794,30 @@ td {
   padding: .5em;
   border: 1px solid #ccc;
   }
-*[class^="TableColumnHead"],
-*[class^="TableSourceNote"],
-*[class^="TableFootnote"],
-*[class^="ChartColumnHead"],
-*[class^="ChartLabel"],
-*[class^="ChartSourceNote"],
-*[class^="ChartFootnote"],
-*[class^="FigureColumnHead"],
-*[class^="FigureLabel"],
-*[class^="FigureSourceNote"],
-*[class^="FigureFootnote"] {
+.TableColumnHeadtch,
+.TableSourceNotetsn,
+.TableFootnotetfn,
+.ChartColumnHeadcrch,
+.ChartLabelcrl,
+.ChartSourceNotecrxn,
+.ChartFootnotecrfn,
+.FigureColumnHeadfgch,
+.FigureLabelfgl,
+.FigureSourceNotefgsn,
+.FigureFootnotefgfn {
   text-indent: 0;
   }
-*[class^="TableColumnHead"],
-*[class^="ChartColumnHead"],
-*[class^="FigureColumnHead"] {
+.TableColumnHeadtch,
+.ChartColumnHeadcrch,
+.FigureColumnHeadfgch {
   font-weight: bold;
   }
-*[class^="TableSourceNote"],
-*[class^="TableFootnote"],
-*[class^="ChartSourceNote"],
-*[class^="ChartFootnote"],
-*[class^="FigureSourceNote"],
-*[class^="FigureFootnote"] {
+.TableSourceNotetsn,
+.TableFootnotetfn,
+.ChartSourceNotecrxn,
+.ChartFootnotecrfn,
+.FigureSourceNotefgsn,
+.FigureFootnotefgfn {
   font-size: .75em;
   margin: 1em 0;
   }
@@ -2055,20 +1834,10 @@ GENERAL BACKMATTER HEADS
 .BMHeadALTabmh {
   text-align: center;
   }
-*[class^="BMHead"],
-*[class^="BMTitle"],
-*[class^="BMSubhead"],
-*[class^="BMHeadALT"] {
-  text-align: center;
-  }
+
 .BMHeadALTabmh,
 .BMTextALTabmtx,
 .BMTextALTNo-Indentabmtx1 {
-  font-family: Helvetica,Arial,sans-serif;
-  }
-*[class^="BMHeadALT"],
-*[class^="BMTextALT"],
-*[class^="BMTextALTNo-Indent"] {
   font-family: Helvetica,Arial,sans-serif;
   }
 
@@ -2082,18 +1851,8 @@ APPENDICES
 .AppendixSubheadapsh {
   text-align: center;
   }
-*[class^="AppendixHead"],
-*[class^="AppendixSubhead"] {
-  text-align: center;
-  }
 .AppendixSourceNoteapsn,
 .AppendixFootnoteapfn {
-  font-size: .75em;
-  text-indent: 0;
-  margin: 1em 0;
-  }
-*[class^="AppendixSourceNote"],
-*[class^="AppendixFootnote"] {
   font-size: .75em;
   text-indent: 0;
   margin: 1em 0;
@@ -2134,12 +1893,6 @@ GLOSSARY and DICTIONARY-STYLE ENTRIES
 .Exampleindialogformexad {
   font-style: italic;
   }
-*[class^="Example"],
-*[class^="Example-Verse"],
-*[class^="Exampleeg"],
-*[class^="Exampleindialogform"] {
-  font-style: italic;
-  }
 .GlossaryTextgltx,
 .Entryen,
 .Definitiondef,
@@ -2150,20 +1903,7 @@ GLOSSARY and DICTIONARY-STYLE ENTRIES
 .Exampleindialogformexad {
   text-indent: 0;
   }
-*[class^="GlossaryText"],
-*[class^="Entry"],
-*[class^="Definition"],
-*[class^="DefinitionSource"],
-*[class^="Example"],
-*[class^="References"],
-*[class^="Exampleeg"],
-*[class^="Exampleindialogform"] {
-  text-indent: 0;
-  }
 .DefinitionSourcedefs {
-  margin: 1em 0;
-  }
-*[class^="DefinitionSource"] {
   margin: 1em 0;
   }
 
@@ -2173,7 +1913,7 @@ ADDRESSES
 --------------------------------------------------
 */
 
-*[class^="Address"] {
+.Addressadd {
   text-indent: 0;
   }
 
@@ -2193,8 +1933,9 @@ p[data-type="footnote"] {
   margin: 1em 0;
   }
 
-*[class^="FootnoteText"],
-*[class^="endnotetext"] {
+.FootnoteTextfn,
+.EndnoteTextntx,
+.endnotetext {
   font-size: .75em;
   text-indent: 0;
   margin: 1em 0;
@@ -2206,7 +1947,7 @@ BIBLIOGRAPHY
 --------------------------------------------------
 */
 
-*[class^="BibliographyText"] {
+.BibliographyTextbibtx {
   text-indent: 0;
   margin: 1em 0;
   }
@@ -2217,15 +1958,15 @@ INDEX
 --------------------------------------------------
 */
 
-*[class^="IndexEntry"],
-*[class^="IndexSubentry"],
-*[class^="IndexSub-subentry"] {
+.IndexEntryine,
+.IndexSubentryinse,
+.IndexSub-subentryinsse {
   text-indent: 0;
   }
-*[class^="IndexSubentry"] {
+.IndexSubentryinse {
   margin-left: 1.5em;
   }
-*[class^="IndexSub-subentry"] {
+.IndexSub-subentryinsse {
   margin-left: 3em;
   }
 
@@ -2261,15 +2002,17 @@ Nonprinting elements
 --------------------------------------------------
 */
 
-h1.ChapTitleNonprintingctnp {
-  display: none;
-}
-
-*[class*="Nonprinting"] {
+.ChapTitleNonprintingctnp,
+.BMHeadNonprintingbmhnp,
+.FMHeadNonprintingfmhnp {
   display: none;
 }
 
 .Nonprinting {
+  display: none;
+}
+
+*[class*="Nonprinting"] {
   display: none;
 }
 
