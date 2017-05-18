@@ -1611,6 +1611,9 @@ p.BookmakerPageBreakbr,
   text-align: right;
   text-indent: 0; }
 
+header {
+  display: none; }
+
 /*@import "../_modules/gridlines.scss";*/
 @page part {
   @top-center {
