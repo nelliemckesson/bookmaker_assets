@@ -1339,6 +1339,14 @@ SPACE BREAKS
   content: "\2756"; /* U+2756 "black diamond minus white"
   }*/
 
+.PageBreakpb  {
+  display: none;
+}
+
+p.PageBreakpb + * {
+  page-break-before: always;
+}
+
 *[class^="BookmakerPageBreak"] {
   page-break-after: always;
 }

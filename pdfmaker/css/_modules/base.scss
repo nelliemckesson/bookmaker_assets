@@ -1537,9 +1537,8 @@ p.customimage {
   height: auto;
 }
 
-p.PageBreakpb {
-  display: none;
-}
+/* page break */
+@import "_PageBreakpb.scss";
 
 /* footnotes */
 
@@ -1712,4 +1711,8 @@ header {
 .right {
   text-align: right;
   text-indent: 0;
+}
+
+header {
+  display: none;
 }
