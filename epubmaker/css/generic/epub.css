@@ -135,19 +135,53 @@ NO INDENT
 --------------------------
 */
 
-h1+p, *[class^="Head-Level-1"]+p,
-h2+p, *[class^="Head-Level-2"]+p,
-h3+p, *[class^="Head-Level-3"]+p,
-h4+p, *[class^="Head-Level-4"]+p,
-h5+p, *[class^="Head-Level-5"]+p,
-h6+p, *[class^="Head-Level-6"]+p,
-*[class="NoIndent"],
-*[class*="No-Indent"] {
-  text-indent: 0;
-  }
-
+h1+p, .Head-Level-1h1+p,
+h2+p, .Head-Level-2h2+p,
+h3+p, .Head-Level-3h3+p,
+h4+p, .Head-Level-4h4+p,
+h5+p, .Head-Level-5h5+p,
+h6+p, .Head-Level-6h6+p,
+.NoIndent,
+.AboutAuthorTextNo-Indentatatx1,
+.AppendixTextNo-Indentaptx1,
+.BMTextALTNo-Indentabmtx1,
+.BMTextNo-Indentbmtx1,
+.BMTextNo-IndentSpaceAfterbmtx1,
+.BMTextNo-IndentSpaceAroundbmtx1,
+.BMTextNo-IndentSpaceBeforebmtx1,
+.BOBAdQuoteNo-Indentbobq1,
+.BOBAdTextNo-Indentbobtx1,
+.BoxTextNo-Indentbtx1,
+.ChapOpeningTextNo-Indentcotx1,
+.ChapOpeningTextNo-IndentSpaceAftercotx1,
+.ChartBodyTextNo-Indentcrbtx1,
+.ColophonTextNo-Indentcoltx1,
+.ColumnTextNo-Indentcoltx1,
+.FigureBodyTextNo-Indentfgbtx1,
+.FMTextNo-Indentfmtx1,
+.FMTextNo-IndentALTafmtx1,
+.FMTextNo-IndentSpaceAfterfmtx1,
+.FMTextNo-IndentSpaceAroundfmtx1,
+.FMTextNo-IndentSpaceBeforefmtx1,
+.IllustrationCreditsTextNo-Indentilctx1,
+.LetterExtBodyTextNo-Indentltx1,
+.PartOpeningTextNo-Indentpotx1,
+.PermissionAcksTextNo-Indentpmtx1,
+.RecipeNoteTextNo-Indentrntx1,
+.RecipeVarTextNo-Indentrvtx1,
+.ScreenplayTextNo-Indentsptx1,
+.SeriesPageTextNo-Indentstx1,
+.SidebarTextNo-Indentsbtx1,
+.TableBodyTextNo-Indenttbtx1,
+.TeaserOpeningTextNo-Indenttotx1,
+.Text-ComputerTypeNo-Indentcom1,
+.Text-NarrativeNo-Indentnar1,
 .Text-StdNo-Indenttx1,
-.ChapOpeningTextNo-Indentcotx1 {
+.Text-StdNo-IndentALTatx1,
+.Text-StdNo-IndentSpaceAftertx1,
+.Text-StdNo-IndentSpaceAroundtx1,
+.Text-StdNo-IndentSpaceBeforetx1,
+.VerseRun-inTextNo-Indentvrtx1 {
   text-indent: 0;
   }
 
@@ -157,7 +191,12 @@ SPACE BEFORE
 --------------------------
 */
 
-*[class*="SpaceBefore"] {
+.BMTextNo-IndentSpaceBeforebmtx1,
+.BMTextSpaceBeforebmtx,
+.FMTextNo-IndentSpaceBeforefmtx1,
+.FMTextSpaceBeforefmtx,
+.Text-StandardSpaceBeforetx,
+.Text-StdNo-IndentSpaceBeforetx1 {
   margin-top: 1em;
   }
 
@@ -167,7 +206,12 @@ SPACE AROUND
 --------------------------
 */
 
-*[class*="SpaceAround"] {
+.BMTextNo-IndentSpaceAroundbmtx1,
+.BMTextSpaceAroundbmtx,
+.FMTextNo-IndentSpaceAroundfmtx1,
+.FMTextSpaceAroundfmtx,
+.Text-StandardSpaceAroundtx,
+.Text-StdNo-IndentSpaceAroundtx1 {
   margin-top: 1em;
   margin-bottom: 1em;
   }
@@ -178,7 +222,14 @@ SPACE AFTER
 --------------------------
 */
 
-*[class*="SpaceAfter"] {
+.BMTextNo-IndentSpaceAfterbmtx1,
+.BMTextSpaceAfterbmtx,
+.ChapOpeningTextNo-IndentSpaceAftercotx1,
+.ChapOpeningTextSpaceAftercotx,
+.FMTextNo-IndentSpaceAfterfmtx1,
+.FMTextSpaceAfterfmtx,
+.Text-StandardSpaceAftertx,
+.Text-StdNo-IndentSpaceAftertx1 {
   margin-bottom: 1em;
   }
 
@@ -191,14 +242,6 @@ INLINE ELEMENTS
 a {
 text-decoration: none;
 }
-
-*[class^="spanitaliccharacters"],
-*[class^="spansmcapital"],
-*[class^="spansmcapboldital"],
-*[class^="spanaltfont1span1"],
-*[class^="spanaltfont2span2"] {
-  font-style: italic;
-  }
 .spanitaliccharactersital,
 .spansmcapitalscital,
 .spansmcapbolditalscbi,
@@ -206,25 +249,11 @@ text-decoration: none;
 .spanaltfont2span2 {
   font-style: italic;
   }
-*[class^="spanboldfacecharacters"],
-*[class^="spanboldital"],
-*[class^="spansmcapbold"],
-*[class^="spansmcapboldital"] {
-  font-weight: bold;
-  }
 .spanboldfacecharacters,
 .spanbolditalbem,
 .spansmcapboldscbold,
 .spansmcapbolditalscbi {
   font-weight: bold;
-  }
-*[class^="spansmallcapscharacters"],
-*[class^="spansmcapbold"],
-*[class^="spansmcapital"],
-*[class^="spansmcapboldital"] {
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .08em;
   }
 .spansmallcapscharacterssc,
 .spansmcapboldscbold,
@@ -234,16 +263,8 @@ text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .08em;
   }
-*[class^="spanunderscorecharacters"] {
-  text-decoration: underline;
-  }
 .spanunderscorecharactersus {
   text-decoration: underline;
-  }
-sup,
-*[class^="spansuperscriptcharacters"] {
-  vertical-align: super;
-  font-size: smaller;
   }
 sup,
 .spansuperscriptcharacterssup {
@@ -251,31 +272,28 @@ sup,
   font-size: smaller;
   }
 sub,
-*[class^="spansubscriptcharacters"] {
-  vertical-align: sub;
-  font-size: smaller;
-  }
-sub,
 .spansuperscriptcharacterssub {
   vertical-align: sub;
   font-size: smaller;
   }
-*[class^="spankeyphrase"] {
+.spankeyphrasekp {
   }
-*[class^="spansymbols"] {
+.spansymbolssym,
+.spansymbolsboldsymb,
+.spansymbolsitalsymi {
   }
-*[class^="spanaccentcharacters"] {
+.spanaccentcharactersacc {
   }
-*[class^="spanpreservecharacters"] {
+.spanpreservecharacterspre {
   white-space: pre-wrap;
   }
-*[class^="spancross-reference"] {
+.spancross-referencexref {
   }
-*[class^="spanmaterialtocome"] {
+.spanmaterialtocometk {
   }
-*[class^="spancarryquery"] {
+.spancarryquerycq {
   }
-*[class^="DesignNote"] {
+.spandesignnotedni {
   }
 
 .spanstrikethroughcharactersstr {
@@ -285,12 +303,11 @@ sub,
 .chapopener {
   text-transform: uppercase;
 }
-*[class*="spanrun-incomputertypecomp"] {
-  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
-  }
 .spanrun-incomputertypecomp {
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   }
+
+/* 2017-05-17: TESTED up to here: OK;
 
 /*
 --------------------------------------------------
@@ -1520,21 +1537,10 @@ SCREENPLAY
   font-style: normal;
   text-indent: 0;
   }
-*[class*="Screenplay"] {
-  font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
-  font-style: normal;
-  text-indent: 0;
-  }
 .ScreenplayDramatisPersonaedp,
 .ScreenplayHeadsph,
 .ScreenplaySubheadspsh,
 .ScreenplaySpeakers {
-  text-transform: uppercase;
-  }
-*[class^="ScreenplayDramatisPersonae"],
-*[class^="ScreenplayHead"],
-*[class^="ScreenplaySubhead"],
-*[class^="ScreenplaySpeaker"] {
   text-transform: uppercase;
   }
 .ScreenplayHeadsph,
@@ -1542,16 +1548,7 @@ SCREENPLAY
   margin-top: 1em;
   margin-bottom: 1em;
   }
-*[class^="ScreenplayHead"],
-*[class^="ScreenplaySubhead"] {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  }
 .ScreenplaySpeakers {
-  text-align: center;
-  margin-top: 1em;
-  }
-*[class^="ScreenplaySpeaker"] {
   text-align: center;
   margin-top: 1em;
   }
@@ -1561,24 +1558,11 @@ SCREENPLAY
   margin-left: 3em;
   margin-right: 3em;
   }
-*[class^="ScreenplaySpeaker"],
-*[class^="ScreenplayText"],
-*[class^="ScreenplayTextNo-Indent"] {
-  margin-left: 3em;
-  margin-right: 3em;
-  }
 .ScreenplayStageDirectionsd {
   font-style: italic;
   margin: 1em 0;
   }
-*[class^="ScreenplayStageDirection"] {
-  font-style: italic;
-  margin: 1em 0;
-  }
 .ScreenplayTextsptx {
-  text-indent: 1.5em;
-  }
-*[class^="ScreenplayText"] {
   text-indent: 1.5em;
   }
 
@@ -1590,16 +1574,7 @@ POETRY
 .PoemTitlevt+.PoemSubtitlevst {
   margin-top: 0;
   }
-*[class^="PoemTitle"]+*[class^="PoemSubtitle"] {
-  margin-top: 0;
-  }
 .PoemDedicationvded {
-  font-style: italic;
-  font-variant: normal;
-  text-transform: none;
-  letter-spacing: 0;
-  }
-*[class^="PoemDedication"] {
   font-style: italic;
   font-variant: normal;
   text-transform: none;
@@ -1622,23 +1597,6 @@ POETRY
   margin-left: 1.5em;
   text-indent: -1.5em;
   }
-*[class^="VerseText"],
-*[class^="Epigraph-verse"],
-*[class^="FMEpigraph-verse"],
-*[class^="PartEpigraph-verse"],
-*[class^="ChapEpigraph-verse"],
-*[class^="Extract-VerseorPoetry"],
-*[class^="Extract-SongLyric"],
-*[class^="EpigraphinText-verse"],
-*[class^="PoemEpigraph-verse"],
-*[class^="BoxEpigraph-verse"],
-*[class^="BoxExtract-Verse"],
-*[class^="SidebarEpigraph-verse"],
-*[class^="SidebarExtract-Verse"],
-*[class^="Example-Verse"] {
-  margin-left: 1.5em;
-  text-indent: -1.5em;
-  }
 blockquote .VerseTextvtx:first-child,
 blockquote .Epigraph-verseepiv:first-child,
 blockquote .FMEpigraph-versefmepiv:first-child,
@@ -1655,28 +1613,14 @@ blockquote .SidebarExtract-Versesbextv:first-child,
 blockquote .Example-Versevexa:first-child {
   margin-left: 1.5em;
   }
-blockquote *[class*="-verse"]:first-child,
-blockquote *[class*="Verse"]:first-child,
-blockquote *[class^="Extract-SongLyric"]:first-child {
-  margin-left: 1.5em;
-}
 
 .VerseRun-inTextvrtx,
 .VerseRun-inTextNo-Indentvrtx1 {
   text-indent: 0;
   margin-left: 1.5em;
   }
-*[class^="VerseRun-inText"] {
-  text-indent: 0;
-  margin-left: 1.5em;
-  }
 .PoemDatelinevdl,
 .PoemDedicationvded {
-  text-indent: 0;
-  margin: 1em 0;
-  }
-*[class^="PoemDateline"],
-*[class^="PoemDedication"] {
   text-indent: 0;
   margin: 1em 0;
   }
