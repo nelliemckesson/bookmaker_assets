@@ -307,8 +307,6 @@ sub,
   font-family: "Courier New",monospace,Georgia,"Times New Roman",sans-serif;
   }
 
-/* 2017-05-17: TESTED up to here: OK;
-
 /*
 --------------------------------------------------
 HEADINGS
@@ -1338,6 +1336,14 @@ SPACE BREAKS
 .SpaceBreakwithALTOrnamentorn2 {
   content: "\2756"; /* U+2756 "black diamond minus white"
   }*/
+
+.PageBreakpb  {
+  display: none;
+}
+
+p.PageBreakpb + * {
+  page-break-before: always;
+}
 
 *[class^="BookmakerPageBreak"] {
   page-break-after: always;

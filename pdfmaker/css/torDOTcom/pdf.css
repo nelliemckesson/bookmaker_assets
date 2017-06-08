@@ -698,6 +698,9 @@ section.frontsales {
 
 section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
+section[data-type="bibliography"] h1,
+section[data-type="conclusion"] h1,
+section[data-type="acknowledgments"] h1,
 h1[class*="BMHeadbmh"],
 h1[class*="AboutAuthorTextHeadatah"] {
   font-size: 16pt;
@@ -789,13 +792,19 @@ section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
 [class*="Nonprinting"] {
   display: none; }
 
-section[data-type="appendix"] {
+section[data-type="appendix"],
+section[data-type="bibliography"],
+section[data-type="conclusion"],
+section[data-type="acknowledgments"] {
   page-break-before: right;
   counter-reset: footnote;
   page: chapter;
   prince-page-group: start; }
 
-section[data-type="appendix"]:first-of-type {
+section[data-type="appendix"]:first-of-type,
+section[data-type="bibliography"]:first-of-type,
+section[data-type="conclusion"]:first-of-type,
+section[data-type="acknowledgments"]:first-of-type {
   page-break-before: right; }
 
 *[class*="BibliographyTextbibtx"] {
@@ -1470,8 +1479,12 @@ p.customimage {
   background-image: none;
   height: auto; }
 
-p.PageBreakpb {
+/* page break */
+.PageBreakpb {
   display: none; }
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  page-break-before: always; }
 
 /* footnotes */
 span[data-type="footnote"],
@@ -1592,6 +1605,11 @@ p.BookmakerPageBreakbr,
 *[class*="loosen"], .bookmakerloosenbkl {
   letter-spacing: 0.2pt; }
 
+header {
+  display: none;
+  margin: 0;
+  padding: 0; }
+
 .nobreak {
   page-break-before: avoid; }
 
@@ -1606,6 +1624,9 @@ p.BookmakerPageBreakbr,
 .right {
   text-align: right;
   text-indent: 0; }
+
+header {
+  display: none; }
 
 /*@import "../_modules/gridlines.scss";*/
 @page part {
