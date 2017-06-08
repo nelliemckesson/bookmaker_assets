@@ -390,7 +390,7 @@ blockquote {
   page-break-inside: auto;
 }
 
-/* frontmatter */
+/* ---------------- FRONTMATTER */
 
 section[data-type="halftitlepage"],
 section[data-type="titlepage"],
@@ -762,6 +762,8 @@ section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
   margin-top: $gridheight * -2;
 }
 
+/* ---------------- CHAPTERS */
+
 section[data-type="chapter"] {
   page: chapter;
   page-break-before: $chapterstart;
@@ -864,6 +866,8 @@ blockquote + *[class*="ChapOpeningText"] {
   letter-spacing: 0.1pt;
 }
 
+/* ---------------- HEADINGS */
+
 *[class*="Head-Level-1h1"] {
   text-indent: 0;
   font-size: $sizeh1;
@@ -904,6 +908,8 @@ blockquote + *[class*="ChapOpeningText"] {
   }
 }
 
+/* ---------------- PARTS */
+
 div[data-type="part"] {
   page-break-before: right;
   counter-reset: footnote;
@@ -930,6 +936,10 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
 div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
   margin-top: 0;
 }
+
+@import "_PartSubtitlepst.scss";
+
+/* ---------------- TEXT */
 
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {

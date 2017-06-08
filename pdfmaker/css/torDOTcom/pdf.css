@@ -417,7 +417,7 @@ blockquote {
   margin-bottom: 16pt;
   page-break-inside: auto; }
 
-/* frontmatter */
+/* ---------------- FRONTMATTER */
 section[data-type="halftitlepage"],
 section[data-type="titlepage"],
 section[data-type="preface"],
@@ -729,6 +729,7 @@ section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type, *[class*="
 section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type {
   margin-top: -32pt; }
 
+/* ---------------- CHAPTERS */
 section[data-type="chapter"] {
   page: chapter;
   page-break-before: right;
@@ -817,6 +818,7 @@ blockquote + *[class*="ChapOpeningText"] {
   font-weight: 600;
   letter-spacing: 0.1pt; }
 
+/* ---------------- HEADINGS */
 *[class*="Head-Level-1h1"] {
   text-indent: 0;
   font-size: 14pt;
@@ -850,6 +852,7 @@ blockquote + *[class*="ChapOpeningText"] {
   *[class*="Head-Level-3h3"] em {
     font-style: normal; }
 
+/* ---------------- PARTS */
 div[data-type="part"] {
   page-break-before: right;
   counter-reset: footnote;
@@ -873,6 +876,13 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
 div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
   margin-top: 0; }
 
+.PartSubtitlepst {
+  text-indent: 0;
+  text-align: center;
+  font-size: 14pt;
+  margin-bottom: 16pt; }
+
+/* ---------------- TEXT */
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {
   font-family: "AromaNo2LTPro", sans-serif, "Noto";
