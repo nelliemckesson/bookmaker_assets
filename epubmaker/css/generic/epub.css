@@ -1743,6 +1743,10 @@ li ul li,
 *[class^="ListUnnumSubentry"] {
   list-style-type: square;
   }
+li ol li,
+*[class^="ListNumSubentry"] {
+  list-style-type: none;
+  }
 ol li,
 /*
 *[class^="ListNum"],
