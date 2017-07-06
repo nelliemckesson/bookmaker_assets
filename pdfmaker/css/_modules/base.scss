@@ -1325,6 +1325,10 @@ ul li {
   padding-left: 0.3em;
 }
 
+li.ListAlphaal {
+  list-style-type: lower-alpha;
+}
+
 h1 + ul, h1 + ol {
   padding-top: 3pt;
 }
