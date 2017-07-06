@@ -1774,7 +1774,6 @@ li ol li
 *[class^="ListNumSubentry"],
 *[class^="ListAlphaSubentry"],
 */ {
-  margin-top: 0;
   border-bottom: none;
   }
 /*
