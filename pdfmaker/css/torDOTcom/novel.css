@@ -1291,7 +1291,7 @@ ul li {
   margin-left: 0;
   padding-left: 0.3em; }
 
-li.ListAlphaal {
+li.ListAlphaal, li.ListAlphaSubentryasl {
   list-style-type: lower-alpha; }
 
 h1 + ul, h1 + ol {
