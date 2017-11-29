@@ -1679,6 +1679,11 @@ span[data-type="footnote"] > span:first-of-type {
   text-decoration: underline;
 }
 
+spansmcapunderscorescus {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
 sup, sub {
   font-size: $sizesuperscript;
     vertical-align: top;
