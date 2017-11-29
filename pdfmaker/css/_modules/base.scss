@@ -869,6 +869,8 @@ section[data-type="acknowledgments"] {
   prince-page-group: start;
 }
 
+
+
 section[data-type="appendix"]:first-of-type,
 section[data-type="afterword"]:first-of-type,
 section[data-type="glossary"]:first-of-type,
@@ -877,6 +879,10 @@ section[data-type="bibliography"]:first-of-type,
 section[data-type="conclusion"]:first-of-type,
 section[data-type="acknowledgments"]:first-of-type {
   page-break-before: right;
+}
+
+section[data-type="appendix"].bobad {
+    page-break-before: always;
 }
 
 *[class*="BibliographyTextbibtx"] {

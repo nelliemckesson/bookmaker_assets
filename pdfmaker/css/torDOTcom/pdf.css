@@ -838,6 +838,9 @@ section[data-type="conclusion"]:first-of-type,
 section[data-type="acknowledgments"]:first-of-type {
   page-break-before: right; }
 
+section[data-type="appendix"].bobad {
+  page-break-before: always; }
+
 *[class*="BibliographyTextbibtx"] {
   text-indent: 0; }
 
