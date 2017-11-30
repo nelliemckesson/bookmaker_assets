@@ -40,9 +40,20 @@ The SCSS components include a base.scss file that contains all the main definiti
 1. Move the new core_tor.css file to the main pdfmaker subfolder, overwriting the old file.
 1. Commit, push, and submit a pull request, according to the usual process.
 
+Here's a one-liner to generate and move all of the files. Starting from *bookmaker_assets* directory:
+
+```
+cd pdfmaker/css/torDOTcom/ && sass novella.scss pdf.css ; sass novel.scss novel.css ; sass novella.scss core_tor.css && mv core_tor.css ../ ; cd ../../../ ; git status
+```
+
 ### scss snippets
 As we edit or add support for new styles, we have begun pulling single styles out into 'scss snippets', where any rules pertaining to said style is in a single scss file by itself. Features that may be dynamically set based on template (such as font-size) are variable-ized, harkening back to definitions set in the scss templates. Then an 'import' for each of these scss snippets is added to the base.scss file.
 
+## epubmaker
+
+This subfolder contains files used during the EPUB conversion process. This includes: logo images, interior image placeholders, CSS templates for each imprint.
+
+### css
 These are stored in the pdfmaker/css/_modules subfolder
 
 Benefits:
