@@ -26,6 +26,13 @@ To add a new global style:
 1. Move the new core_tor.css file to the main pdfmaker subfolder, overwriting the old file.
 1. Commit, push, and submit a pull request, according to the usual process.
 
+
+Here's a one-liner to generate and move all of the scss files. Starting from *bookmaker_assets* directory:
+
+```
+cd pdfmaker/css/torDOTcom/ && sass novella.scss pdf.css ; sass novel.scss novel.css ; sass novella.scss core_tor.css && mv core_tor.css ../ ; cd ../../../ ; git status
+```
+
 ## epubmaker
 
 This subfolder contains files used during the EPUB conversion process. This includes: logo images, interior image placeholders, CSS templates for each imprint.
