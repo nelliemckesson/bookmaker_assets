@@ -6,6 +6,6 @@
     margin-left: ($textindent * 2);
     margin-bottom: ($gridheight / 2);
 }
-.Definitiondef:first-of-type {
+.Definitiondef:first-of-type, *[class*="Definitiondef"]:first-of-type {
     text-indent: ($textindent * -2);
 }

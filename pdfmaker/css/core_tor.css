@@ -1542,7 +1542,7 @@ p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
   margin-left: 24pt;
   margin-bottom: 8pt; }
 
-.Definitiondef:first-of-type {
+.Definitiondef:first-of-type, *[class*="Definitiondef"]:first-of-type {
   text-indent: -24pt; }
 
 /* footnotes */
