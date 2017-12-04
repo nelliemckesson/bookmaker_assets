@@ -1586,6 +1586,9 @@ p.customimage {
 /* page break */
 @import "_PageBreakpb.scss";
 
+/* glossary definition */
+@import "_Definitiondef.scss";
+
 /* footnotes */
 
 span[data-type="footnote"],
