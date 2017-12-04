@@ -1531,6 +1531,15 @@ p.customimage {
 p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
   page-break-before: always; }
 
+/* glossary definition */
+.Definitiondef {
+  font-size: 10.5pt;
+  line-height: 13.8510638298pt;
+  text-indent: -24pt;
+  margin: 0;
+  margin-left: 24pt;
+  margin-bottom: 7.75pt; }
+
 /* footnotes */
 span[data-type="footnote"],
 .endnotetext {
