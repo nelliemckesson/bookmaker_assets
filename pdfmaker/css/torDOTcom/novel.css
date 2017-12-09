@@ -1620,6 +1620,10 @@ span[data-type="footnote"] > span:first-of-type {
 .spanunderscorecharactersus {
   text-decoration: underline; }
 
+spansmcapunderscorescus {
+  font-variant: small-caps;
+  text-decoration: underline; }
+
 sup, sub {
   font-size: 6pt;
   vertical-align: top;
