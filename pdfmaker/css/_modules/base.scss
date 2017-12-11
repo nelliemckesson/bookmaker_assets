@@ -1489,12 +1489,6 @@ img {
   text-align: center;
 }
 
-img[src*="fullpage"] {
-  display: block;
-  width: $pagewidth + ($bleedwidth * 2);
-  height: $pageheight + ($bleedheight * 2);
-  margin-top: -1.65in; }
-
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -($gridheight * 2);
   margin-bottom: 27pt;
@@ -1504,6 +1498,14 @@ section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
 section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
   max-height: 2in;
 }
+
+img[src*="fullpage"] {
+  display: block;
+  width: $pagewidth + ($bleedwidth * 2);
+  max-width: none;
+  height: $pageheight + ($bleedheight * 2);
+  max-height: none;
+  margin-top: -1.65in; }
 
 *[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
   text-align: center;

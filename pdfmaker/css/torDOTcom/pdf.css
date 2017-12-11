@@ -1443,12 +1443,6 @@ img {
   prince-image-resolution: auto, 300dpi;
   text-align: center; }
 
-img[src*="fullpage"] {
-  display: block;
-  width: 5.25in;
-  height: 8.25in;
-  margin-top: -1.65in; }
-
 section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -32pt;
   margin-bottom: 27pt;
@@ -1456,6 +1450,14 @@ section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
 
 section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
   max-height: 2in; }
+
+img[src*="fullpage"] {
+  display: block;
+  width: 5.25in;
+  max-width: none;
+  height: 8.25in;
+  max-height: none;
+  margin-top: -1.65in; }
 
 *[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
   text-align: center;
