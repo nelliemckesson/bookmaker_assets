@@ -266,6 +266,10 @@ text-decoration: none;
 .spanunderscorecharactersus {
   text-decoration: underline;
   }
+.spanunderscorecharactersus {
+  font-style: italic;
+  text-decoration: underline;
+}
 spansmcapunderscorescus {
   font-variant: small-caps;
   text-decoration: underline;
