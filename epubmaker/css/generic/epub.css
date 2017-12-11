@@ -1772,6 +1772,8 @@ ol li,
   margin-top: 0.5em;
   }
 
+li.ListAlphaal { list-style-type: lower-alpha; }
+
 .NumberedParagraphsnp {
   list-style-type: none;
   margin-top: 0.5em;

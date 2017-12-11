@@ -1360,6 +1360,9 @@ ul li {
 h1 + ul, h1 + ol {
   padding-top: 3pt; }
 
+li.ListAlphaal {
+  list-style-type: lower-alpha; }
+
 .ChapterContentscc {
   font-size: 10.5pt; }
 
