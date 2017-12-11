@@ -294,6 +294,13 @@
   }
 }
 
+@page epigraph {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } 
+}
+
 body {
   font-family: "ArnoPro", serif, "Noto";
   counter-reset: endnotes chapternumber;
@@ -1071,38 +1078,46 @@ aside::after {
 @import "_SidebarTextNo-Indentsbtx1.scss";
 @import "_SidebarListBulletsbbl.scss";
 
-/* ---------------- DEDICATION */
+/* ---------------- DEDICATION and EPIGRAPH */
 
 section[data-type="dedication"] p:first-child {
   margin-top: $gridheight;
 }
 
 section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph,
 .Dedicationded + p[class*="Epigraph"] {
   page-break-before: always;
   margin-top: $gridheight * 2;
 }
 
-section[data-type="dedication"] blockquote[data-type="epigraph"] {
+p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"], 
+p[class*="EpigraphSource"] + p[class*="Epigraph-verse"] {
+  margin-top: $gridheight * 2;
+}
+
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph {
   margin-left: 0;
   margin-right: 0;
 }
 
 section[data-type="dedication"] p[class*="Epigraph-verse"],
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+section[data-type="preface"] p[class*="Epigraph-verse"],
+section[data-type="dedication"] p[class*="Epigraph-non-verse"],
+section[data-type="preface"] p[class*="Epigraph-non-verse"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-style: normal;
   font-size: $sizeepigraph;
   text-align: left;
   margin-left: $gridheight * 3.25;
   margin-right: $normal * 3;
-  text-indent: -$textindent;
+  text-indent: $textindent;
 }
 
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
-  margin-left: $sizenormal * 3;
-  text-indent: 0;
-}
+section[data-type="preface"] p[class*="Epigraph-non-verse"]:first-of-type,
+section[data-type="dedication"] p[class*="Epigraph-non-verse"]:first-of-type {  
+  text-indent: 0; }
 
 section[data-type="dedication"] p[class*="EpigraphSource"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
@@ -1113,6 +1128,14 @@ section[data-type="dedication"] p[class*="EpigraphSource"] {
   margin-left: $sizenormal * 3;
   margin-right: $sizenormal * 3;
 }
+
+/* FRONTMATTER EPIGRAPH */
+
+section[data-type="preface"].epigraph {
+  page: epigraph;
+  margin-left: 0;
+  margin-right: 0; }
+
 
 p[class*="EpigraphSource"] em {
   break-inside: avoid;

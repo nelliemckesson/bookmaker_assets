@@ -332,6 +332,11 @@
     content: normal; }
   @bottom-center {
     content: normal; } }
+@page epigraph {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
 body {
   font-family: "ArnoPro", serif, "Noto";
   counter-reset: endnotes chapternumber; }
@@ -1057,31 +1062,39 @@ aside::after {
 .SidebarListBulletsbbl {
   font-size: 10.5pt; }
 
-/* ---------------- DEDICATION */
+/* ---------------- DEDICATION and EPIGRAPH */
 section[data-type="dedication"] p:first-child {
   margin-top: 15.5pt; }
 
 section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph,
 .Dedicationded + p[class*="Epigraph"] {
   page-break-before: always;
   margin-top: 31pt; }
 
-section[data-type="dedication"] blockquote[data-type="epigraph"] {
+p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"],
+p[class*="EpigraphSource"] + p[class*="Epigraph-verse"] {
+  margin-top: 31pt; }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph {
   margin-left: 0;
   margin-right: 0; }
 
 section[data-type="dedication"] p[class*="Epigraph-verse"],
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+section[data-type="preface"] p[class*="Epigraph-verse"],
+section[data-type="dedication"] p[class*="Epigraph-non-verse"],
+section[data-type="preface"] p[class*="Epigraph-non-verse"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-style: normal;
   font-size: 10pt;
   text-align: left;
   margin-left: 50.375pt;
   margin-right: 35.25pt;
-  text-indent: -12pt; }
+  text-indent: 12pt; }
 
-section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
-  margin-left: 35.25pt;
+section[data-type="preface"] p[class*="Epigraph-non-verse"]:first-of-type,
+section[data-type="dedication"] p[class*="Epigraph-non-verse"]:first-of-type {
   text-indent: 0; }
 
 section[data-type="dedication"] p[class*="EpigraphSource"] {
@@ -1092,6 +1105,12 @@ section[data-type="dedication"] p[class*="EpigraphSource"] {
   text-align: right;
   margin-left: 35.25pt;
   margin-right: 35.25pt; }
+
+/* FRONTMATTER EPIGRAPH */
+section[data-type="preface"].epigraph {
+  page: epigraph;
+  margin-left: 0;
+  margin-right: 0; }
 
 p[class*="EpigraphSource"] em {
   break-inside: avoid; }
