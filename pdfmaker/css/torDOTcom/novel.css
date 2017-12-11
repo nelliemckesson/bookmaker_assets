@@ -1618,13 +1618,13 @@ span[data-type="footnote"] > span:first-of-type {
   font-weight: bold; }
 
 .spanunderscorecharactersus {
-  font-style: italic;
   text-decoration: underline; }
 
 .spanitalunderscoreius {
+  font-style: italic;
   text-decoration: underline; }
 
-spansmcapunderscorescus {
+.spansmcapunderscorescus {
   font-variant: small-caps;
   text-decoration: underline; }
 
