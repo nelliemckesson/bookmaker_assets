@@ -1717,17 +1717,17 @@ ol li,
   margin-top: 0.5em;
   }
 
-li[class*"ListNum"]
+li[class^="ListNum"]
 {
   list-style-type: decimal;
 }
-li[class*"ListUnnum"]
+li[class^="ListUnnum"]
 {
   list-style-type: none;
 }
-li[class*="ListAlpha"]
-{ 
-  list-style-type: lower-alpha; 
+li[class^="ListAlpha"]
+{
+  list-style-type: lower-alpha;
 }
 
 .NumberedParagraphsnp {
