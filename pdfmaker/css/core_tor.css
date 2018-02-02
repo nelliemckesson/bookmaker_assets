@@ -771,6 +771,7 @@ section[data-type="titlepage"] + section[data-type="chapter"],
 section[data-type="halftitlepage"] + section[data-type="chapter"],
 section[data-type="copyright-page"] + section[data-type="chapter"],
 section[data-type="dedication"] + section[data-type="chapter"],
+section[data-type="acknowledgments"] + section[data-type="chapter"],
 nav[data-type="toc"] + section[data-type="chapter"],
 div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right; }
@@ -1071,7 +1072,7 @@ section[data-type="dedication"] p:first-child {
 section[data-type="dedication"] blockquote[data-type="epigraph"],
 section[data-type="preface"].epigraph,
 .Dedicationded + p[class*="Epigraph"] {
-  page-break-before: always;
+  page-break-before: right;
   margin-top: 32pt; }
 
 p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"],
@@ -1446,20 +1447,18 @@ img {
   prince-image-resolution: auto, 300dpi;
   text-align: center; }
 
-section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
+section[data-type="appendix"].abouttheauthor h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -32pt;
   margin-bottom: 27pt;
   max-height: 2in; }
 
-section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
+section[data-type="appendix"].abouttheauthor h1 + figure img, .abouttheauthor figure img {
   max-height: 2in; }
 
 img[src*="fullpage"] {
   display: block;
   width: 5.25in;
-  max-width: none;
   height: 8.25in;
-  max-height: none;
   margin-top: -1.65in; }
 
 *[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {

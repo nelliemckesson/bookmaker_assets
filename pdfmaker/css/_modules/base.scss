@@ -298,7 +298,7 @@
   @top-center {
     content: normal; }
   @bottom-center {
-    content: normal; } 
+    content: normal; }
 }
 
 body {
@@ -804,6 +804,7 @@ section[data-type="titlepage"] + section[data-type="chapter"],
 section[data-type="halftitlepage"] + section[data-type="chapter"],
 section[data-type="copyright-page"] + section[data-type="chapter"],
 section[data-type="dedication"] + section[data-type="chapter"],
+section[data-type="acknowledgments"] + section[data-type="chapter"],
 nav[data-type="toc"] + section[data-type="chapter"],
 div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right;
@@ -1087,11 +1088,11 @@ section[data-type="dedication"] p:first-child {
 section[data-type="dedication"] blockquote[data-type="epigraph"],
 section[data-type="preface"].epigraph,
 .Dedicationded + p[class*="Epigraph"] {
-  page-break-before: always;
+  page-break-before: right;
   margin-top: $gridheight * 2;
 }
 
-p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"], 
+p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"],
 p[class*="EpigraphSource"] + p[class*="Epigraph-verse"] {
   margin-top: $gridheight * 2;
 }
@@ -1116,7 +1117,7 @@ section[data-type="preface"] p[class*="Epigraph-non-verse"] {
 }
 
 section[data-type="preface"] p[class*="Epigraph-non-verse"]:first-of-type,
-section[data-type="dedication"] p[class*="Epigraph-non-verse"]:first-of-type {  
+section[data-type="dedication"] p[class*="Epigraph-non-verse"]:first-of-type {
   text-indent: 0; }
 
 section[data-type="dedication"] p[class*="EpigraphSource"] {
@@ -1491,22 +1492,20 @@ img {
   text-align: center;
 }
 
-section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
+section[data-type="appendix"].abouttheauthor h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -($gridheight * 2);
   margin-bottom: 27pt;
   max-height: 2in;
 }
 
-section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
+section[data-type="appendix"].abouttheauthor h1 + figure img, .abouttheauthor figure img {
   max-height: 2in;
 }
 
 img[src*="fullpage"] {
   display: block;
   width: $pagewidth + ($bleedwidth * 2);
-  max-width: none;
   height: $pageheight + ($bleedheight * 2);
-  max-height: none;
   margin-top: -1.65in; }
 
 *[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
