@@ -830,6 +830,11 @@ h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: $gridheight * 5;
 }
 
+/* remove top margins from Dedication and Copyright inserted CTNP */
+section[data-type="copyright-page"] h1[class*="ChapTitleNonprintingctnp"] + *,
+section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
+  margin-top: 0; }
+
 section[data-type="chapter"] h1[class*="ChapTitlect"],
 section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   font-size: $sizechaptitle;
