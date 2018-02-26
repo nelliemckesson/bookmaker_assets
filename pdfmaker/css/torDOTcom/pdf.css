@@ -771,6 +771,7 @@ section[data-type="titlepage"] + section[data-type="chapter"],
 section[data-type="halftitlepage"] + section[data-type="chapter"],
 section[data-type="copyright-page"] + section[data-type="chapter"],
 section[data-type="dedication"] + section[data-type="chapter"],
+section[data-type="acknowledgments"] + section[data-type="chapter"],
 nav[data-type="toc"] + section[data-type="chapter"],
 div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right; }
@@ -791,6 +792,12 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"] + p,
 
 h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: 80pt; }
+
+/* remove top margins from Dedication, FM Epigraph, and Copyright inserted CTNP */
+section[data-type="preface"].epigraph h1[class*="ChapTitleNonprintingctnp"] + *,
+section[data-type="copyright-page"] h1[class*="ChapTitleNonprintingctnp"] + *,
+section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
+  margin-top: 0; }
 
 section[data-type="chapter"] h1[class*="ChapTitlect"],
 section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
@@ -1071,15 +1078,11 @@ section[data-type="dedication"] p:first-child {
 section[data-type="dedication"] blockquote[data-type="epigraph"],
 section[data-type="preface"].epigraph,
 .Dedicationded + p[class*="Epigraph"] {
-  page-break-before: always;
-  margin-top: 32pt; }
-
-p[class*="EpigraphSource"] + p[class*="Epigraph-non-verse"],
-p[class*="EpigraphSource"] + p[class*="Epigraph-verse"] {
+  page-break-before: right;
   margin-top: 32pt; }
 
 section[data-type="dedication"] blockquote[data-type="epigraph"],
-section[data-type="preface"].epigraph {
+section[data-type="preface"].epigraph blockquote[data-type="epigraph"] {
   margin-left: 0;
   margin-right: 0; }
 
@@ -1093,13 +1096,16 @@ section[data-type="preface"] p[class*="Epigraph-non-verse"] {
   text-align: left;
   margin-left: 52pt;
   margin-right: 36pt;
-  text-indent: 12pt; }
+  text-indent: -12pt; }
 
-section[data-type="preface"] p[class*="Epigraph-non-verse"]:first-of-type,
-section[data-type="dedication"] p[class*="Epigraph-non-verse"]:first-of-type {
+section[data-type="dedication"] p[class*="Epigraph-non-verse"],
+section[data-type="preface"].epigraph p[class*="Epigraph-non-verse"] {
+  /*edit 7*/
+  margin-left: 36pt;
   text-indent: 0; }
 
-section[data-type="dedication"] p[class*="EpigraphSource"] {
+section[data-type="dedication"] p[class*="EpigraphSource"],
+section[data-type="preface"] p[class*="EpigraphSource"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: 600;
   font-size: 10pt;
@@ -1142,7 +1148,7 @@ section[data-type="introduction"] > blockquote[data-type="epigraph"] p {
   font-family: "ArnoPro-SmText", "Noto";
   font-size: 10pt;
   line-height: 16pt;
-  text-align: left; }
+  /* text-align: left;  <-- messing with FM epigraph source alignment*/ }
 
 p.ChapEpigraph-versecepiv,
 p.PartEpigraph-versepepiv,
@@ -1446,20 +1452,18 @@ img {
   prince-image-resolution: auto, 300dpi;
   text-align: center; }
 
-section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
+section[data-type="appendix"].abouttheauthor h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -32pt;
   margin-bottom: 27pt;
   max-height: 2in; }
 
-section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
+section[data-type="appendix"].abouttheauthor h1 + figure img, .abouttheauthor figure img {
   max-height: 2in; }
 
 img[src*="fullpage"] {
   display: block;
   width: 5.25in;
-  max-width: none;
   height: 8.25in;
-  max-height: none;
   margin-top: -1.65in; }
 
 *[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
