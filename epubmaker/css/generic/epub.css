@@ -266,6 +266,14 @@ text-decoration: none;
 .spanunderscorecharactersus {
   text-decoration: underline;
   }
+.spanitalunderscoreius {
+  font-style: italic;
+  text-decoration: underline;
+}
+spansmcapunderscorescus {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
 sup,
 .spansuperscriptcharacterssup {
   vertical-align: super;
@@ -1677,37 +1685,11 @@ ol {
   margin: 1em 0;
   }
 li,
-/*
-[class^="ListNum"],
-[class^="ListNumSubentry"],
-*/
-*[class^="ListAlpha"],
-/*
-*[class^="ListAlphaSubentry"],
-*[class^="ListBullet"],
-*[class^="ListBulletSubentry"],
-*[class^="ListUnnum"],
-*[class^="ListUnnumSubentry"],
-*/
 *[class^="NumberedParagraph"],
 *[class^="BulletedParagraph"],
-/*
-*[class^="Extract-NumList"],
-*[class^="Extract-BulletList"],
-*/
 *[class^="IngredientsList"],
 *[class^="Sub-RecipeIngredientsList"]
-/*
-*[class^="BoxListNumb"],
-*[class^="BoxListBullet"],
-*[class^="BoxListUnnum"],
-*[class^="SidebarListNum"],
-*[class^="SidebarListBullet"],
-*[class^="SidebarListUnnum"],
-*[class^="AppendixListNum"],
-*[class^="AppendixListUnnum"],
-*[class^="AppendixListBullet"]
-*/ {
+ {
   display: list-item;
   list-style-position: outside;
   margin-left: 1.5em;
@@ -1718,51 +1700,35 @@ li ol {
   margin: 0;
   }
 ul li,
-/*
-*[class^="ListBullet"],
-*[class^="ListUnnum"],
-*/
-*[class^="BulletedParagraph"],
-/*
-*[class^="Extract-BulletList"],
-*/
 *[class^="IngredientsList"],
 *[class^="Sub-RecipeIngredientsList"]
-/*
-*[class^="BoxListBullet"],
-*[class^="BoxListUnnum"],
-*[class^="SidebarListBullet"],
-*[class^="SidebarListUnnum"],
-*[class^="AppendixListUnnum"],
-*[class^="AppendixListBullet"]
-*/ {
+ {
   list-style-type: disc;
   }
 li ul li,
-*[class^="ListBulletSubentry"],
-*[class^="ListUnnumSubentry"] {
+*[class^="ListBulletSubentry"]
+ {
   list-style-type: square;
   }
 ol li,
-/*
-*[class^="ListNum"],
-*[class^="ListNumSubentry"],
-*/
 *[class^="ListAlpha"],
-/*
-*[class^="ListAlphaSubentry"],
-*/
 *[class^="NumberedParagraph"]
-/*
-*[class^="Extract-NumList"],
-*[class^="BoxListNum"],
-*[class^="SidebarListNum"],
-*[class^="AppendixListNum"]
-*/ {
-/*list-style-type: decimal;*/
-  list-style-type: none;
+ {
   margin-top: 0.5em;
   }
+
+li[class^="ListNum"]
+{
+  list-style-type: decimal;
+}
+li[class^="ListUnnum"]
+{
+  list-style-type: none;
+}
+li[class^="ListAlpha"]
+{
+  list-style-type: lower-alpha;
+}
 
 .NumberedParagraphsnp {
   list-style-type: none;
