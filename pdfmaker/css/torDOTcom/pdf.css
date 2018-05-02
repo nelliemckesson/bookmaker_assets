@@ -137,7 +137,7 @@
   @footnotes {
     font-family: "ArnoPro-SmText", serif;
     font-size: 9pt;
-    background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+    background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
     background-position: 0 0in;
     background-size: 60pt auto;
     background-repeat: no-repeat;
@@ -544,7 +544,7 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
 section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
   font-size: 16pt;
   padding-top: 40pt;
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 60pt auto;
   background-position: top;
   background-repeat: no-repeat;
@@ -1478,23 +1478,23 @@ p.SpaceBreakwithALTOrnamentorn2 {
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-Internalint {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 60pt auto; }
 
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2 {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 60pt auto; }
 
 p.SpaceBreakOrnamentorn,
 p.SpaceBreakwithOrnamentorn {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn.jpg");
   background-size: 20.5pt auto;
   height: 16pt; }
 
 p.SpaceBreakwithALTOrnamentorn2 {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn-bull.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn-bull.jpg");
   background-size: 21.6pt auto;
   height: 16pt; }
 
