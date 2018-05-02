@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* TO COMPILE: $ sass novel.scss novel.css */
+/* GLOBAL VARIABLES */
 /* LOCAL VARIABLES */
-/*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
 @font-face {
   font-family: "ArnoPro";
   src: url("../../../../bookmakerfonts/ArnoPro-Regular.otf");

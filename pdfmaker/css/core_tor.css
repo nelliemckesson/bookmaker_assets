@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* TO COMPILE: $ sass novella.scss pdf.css */
+/* GLOBAL VARIABLES */
 /* LOCAL VARIABLES */
 /*$big2 * 1.625*/
 /* normal * o.875 */
-/*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
 @font-face {
   font-family: "ArnoPro";
   src: url("../../../../bookmakerfonts/ArnoPro-Regular.otf");
