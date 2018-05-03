@@ -1422,7 +1422,8 @@ figure.fullpage figcaption {
 img {
   max-width: 100%;
   prince-image-resolution: auto, 300dpi;
-  text-align: center; }
+  text-align: center;
+  prince-image-magic: ignore-icc-profile; }
 
 img[src*="fullpage"] {
   display: block;
