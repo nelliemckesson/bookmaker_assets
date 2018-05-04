@@ -1,6 +1,8 @@
 @charset "UTF-8";
-/* TO COMPILE: $ sass novel.scss novel.css */
+/* TO COMPILE: $ sass novella.scss pdf.css */
 /* LOCAL VARIABLES */
+/*$big2 * 1.625*/
+/* normal * o.875 */
 /*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
 @font-face {
   font-family: "ArnoPro";
@@ -146,9 +148,9 @@
 }
 @page {
   size: 5in 8in;
-  margin-top: 46.5pt;
-  margin-bottom: 40pt;
-  padding: 5pt 0 0 0;
+  margin-top: 52pt;
+  margin-bottom: 64pt;
+  padding: 18pt 0 16pt 0;
   background-position: top left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -168,12 +170,12 @@
   }
 }
 @page :left {
-  margin-left: 40pt;
-  margin-right: 50pt;
+  margin-left: 45pt;
+  margin-right: 63pt;
 }
 @page :right {
-  margin-left: 50pt;
-  margin-right: 40pt;
+  margin-left: 63pt;
+  margin-right: 45pt;
 }
 @page part {
   @top-center {
@@ -601,7 +603,7 @@ section[data-type=halftitlepage] > h1,
   font-size: 18pt;
   font-weight: normal;
   line-height: 15.5pt;
-  margin-top: 62pt;
+  margin-top: 15.5pt;
   text-align: center;
 }
 
@@ -885,7 +887,7 @@ h1[class*=AboutAuthorTextHeadatah] {
   font-size: 16pt;
   line-height: 15.5pt;
   font-weight: bold;
-  margin-top: 31pt;
+  margin-top: 15.5pt;
   margin-bottom: 46.5pt;
   padding: 0;
   text-align: center;
@@ -929,7 +931,7 @@ section[data-type=introduction] *[class*=FMAuthorNamefmau]:first-of-type {
 /* ---------------- CHAPTERS */
 section[data-type=chapter] {
   page: chapter;
-  page-break-before: always;
+  page-break-before: right;
   prince-page-group: start;
   counter-reset: footnote;
 }
@@ -979,9 +981,9 @@ section[data-type=chapter] h1[class*=ChapTitleALTact] {
   font-size: 16pt;
   line-height: 15.5pt;
   font-weight: normal;
-  margin-top: 31pt;
+  margin-top: 15.5pt;
   text-align: center;
-  margin-bottom: 5pt;
+  margin-bottom: 59.09375pt;
   counter-increment: chapternumber;
   padding: 0;
 }
@@ -1527,13 +1529,13 @@ p[class*=Extract-Noteextn] {
 
 span.spanaltfont1span1 {
   font-family: FeltpenCom-Medium;
-  font-size: 12.5pt;
+  font-size: 12.75pt;
   letter-spacing: 0.02em;
 }
 
 span.spanaltfont2span2 {
   font-family: BerrangerHandITCStd;
-  font-size: 10.75pt;
+  font-size: 11pt;
 }
 
 p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
@@ -2079,70 +2081,28 @@ header {
   background-repeat: repeat-y;
 }
 @page part {
-  @top-center {}
-  @bottom-center {
-    content: normal;
+  @top-center {
+    vertical-align: bottom;
   }
 }
 @page chapter {
-  @top-center {}
-  @bottom-center {
-    content: normal;
+  @top-center {
+    vertical-align: bottom;
   }
 }
 @page front {
-  @top-center {}
+  @top-center {
+    vertical-align: bottom;
+  }
 }
-@page copyright {
-  margin-bottom: 31pt;
-}
-div.runheadleft {
-  font-variant: prince-opentype(onum);
-}
-
-div.runheadright {
-  font-variant: prince-opentype(onum);
-}
-
-div.runheadleft::before {
-  content: counter(page) " • ";
-  font-style: normal;
-}
-
-div.runheadright::after {
-  content: " • " counter(page);
-  font-style: normal;
-}
-
 figure.fullpage {
   margin-top: 0.55in;
-  margin-inside: -0.81in;
-  margin-outside: -0.69in;
+  margin-inside: -1in;
+  margin-outside: -0.75in;
 }
 
 img[src*=fullpage] {
-  margin-top: -1.4in;
+  margin-top: -1.65in;
 }
 
-p.SpaceBreak,
-p.SpaceBreak-1-Linels1,
-p.SpaceBreak-Internalint,
-p.PartOrnamentporn,
-p.ChapOrnamentcorn,
-p.ChapOrnamentALTcorn2,
-p.SpaceBreakOrnamentorn,
-p.SpaceBreakwithOrnamentorn,
-p.SpaceBreakwithALTOrnamentorn2 {
-  margin-top: 7.75pt;
-  margin-bottom: 7.75pt;
-}
-
-section[data-type=dedication] h1[class*=ChapTitleNonprintingctnp] + * {
-  margin-top: 62pt;
-}
-
-section.adcard h1 {
-  margin-bottom: 15.5pt;
-}
-
-/*# sourceMappingURL=novel.css.map */
+/*# sourceMappingURL=novella-tighter1.css.map */

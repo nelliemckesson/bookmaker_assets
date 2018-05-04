@@ -44,8 +44,8 @@ $sizeh3: $normal;
 $sizenormal: $normal;
 $sizenormalalt: 9.75pt;
 $sizecode: $smaller;
-$sizepoetry: 10.5pt;
-$sizeextract: 10.5pt;
+$sizepoetry: $small;
+$sizeextract: $small;
 $sizeextracthead: $normal;
 
 $sizedateline: $small;
@@ -97,7 +97,7 @@ $fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfont
 
 @import "../_modules/base.scss";
 
-/*@import "../_modules/gridlines.scss";*/
+@import "../_modules/gridlines.scss";
 
 @page part {
   @top-center {
@@ -149,3 +149,23 @@ figure.fullpage {
 
 img[src*="fullpage"] {
   margin-top: -1.4in; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  margin-top: ($gridheight / 2);
+  margin-bottom: ($gridheight / 2);
+}
+
+section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
+  margin-top: $gridheight * 4; }
+
+section.adcard h1 {
+  margin-bottom: $gridheight;
+}

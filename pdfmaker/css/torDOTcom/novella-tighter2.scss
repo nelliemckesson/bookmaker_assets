@@ -4,11 +4,11 @@
 $biggest: 18pt; //sizehalftitle sizepartnum
 $bigger: 16pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle
 $big: 14pt; //sizeacmh sizechapsubtitle sizeh1
-$normal: 12pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
+$normal: 11.5pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
 $small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
 $smaller: 8.5pt; //sizecode sizecaption
 
-$gridheight: 16pt;
+$gridheight: 15.2pt;
 
 $pagewidth: 5in;
 $pageheight: 8in;
@@ -68,12 +68,12 @@ $logowidth: 0.58in;
 
 $htmargintop: ($gridheight * 1);
 
-$ctmargintop: ($gridheight * 0.6875);
-$ctmarginbottom: ($gridheight * 3.8125);
+$ctmargintop: 11pt;
+$ctmarginbottom: 61pt;
 $comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
-$prmargintop: $gridheight; //preface/frontmatter top margin
+$prmargintop: 16pt;
 
 $spacebreakheight: $gridheight;
 
