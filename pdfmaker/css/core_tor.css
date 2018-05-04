@@ -6,120 +6,120 @@
 /* normal * o.875 */
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-Bold.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Bold.otf");
   font-style: normal;
   font-weight: bold; }
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-Italic.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Italic.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-BoldItalic.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalic.otf");
   font-style: italic;
   font-weight: bold; }
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-Smbd.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Smbd.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "ArnoPro";
-  src: url("../../../../bookmakerfonts/ArnoPro-LightDisplay.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-LightDisplay.otf");
   font-style: normal;
   font-weight: 100; }
 @font-face {
   font-family: "ArnoPro-SmText";
-  src: url("../../../../bookmakerfonts/ArnoPro-SmText.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmText.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-SmText";
-  src: url("../../../../bookmakerfonts/ArnoPro-BoldItalicSmText.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalicSmText.otf");
   font-style: italic;
   font-weight: bold; }
 @font-face {
   font-family: "ArnoPro-SmText";
-  src: url("../../../../bookmakerfonts/ArnoPro-SmbdSmText.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmbdSmText.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "ArnoPro-SmText";
-  src: url("../../../../bookmakerfonts/ArnoPro-ItalicSmText.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicSmText.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-SmText";
-  src: url("../../../../bookmakerfonts/ArnoPro-BoldSmText.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSmText.otf");
   font-style: normal;
   font-weight: bold; }
 @font-face {
   font-family: "ArnoPro-Caption";
-  src: url("../../../../bookmakerfonts/ArnoPro-Caption.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Caption.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-Caption";
-  src: url("../../../../bookmakerfonts/ArnoPro-ItalicCaption.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicCaption.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-BoldSubhead";
-  src: url("../../../../bookmakerfonts/ArnoPro-BoldSubhead.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSubhead.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
-  src: url("../../../../bookmakerfonts/AromaNo2LTPro-Italic.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Italic.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
-  src: url("../../../../bookmakerfonts/AromaNo2LTPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("../../../../bookmakerfonts/MinionPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "MyriadPro";
-  src: url("../../../../bookmakerfonts/MyriadPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MyriadPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "SourceCodePro";
-  src: url("../../../../bookmakerfonts/SourceCodePro-Medium.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "SourceCodePro";
-  src: url("../../../../bookmakerfonts/SourceCodePro-Bold.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Bold.otf");
   font-style: normal;
   font-weight: bold; }
 @font-face {
   font-family: "TimesNewRomanPSMT";
-  src: url("../../../../bookmakerfonts/TimesNewRomanPSMT.ttf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/TimesNewRomanPSMT.ttf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "Noto";
-  src: url("../../../../bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
 @font-face {
   font-family: "BerrangerHandITCStd";
-  src: url("../../../../bookmakerfonts/BerrangerHandITCStd.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/BerrangerHandITCStd.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "FeltpenCom-Medium";
-  src: url("../../../../bookmakerfonts/FeltpenCom-Medium.ttf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/FeltpenCom-Medium.ttf");
   font-style: normal;
   font-weight: normal; }
 @page {

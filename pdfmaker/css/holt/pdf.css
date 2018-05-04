@@ -2,37 +2,37 @@
 /* LOCAL VARIABLES */
 @font-face {
   font-family: "MinionPro";
-  src: url("../../../../bookmakerfonts/MinionPro-It.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-It.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("../../../../bookmakerfonts/MinionPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("../../../../bookmakerfonts/MinionPro-Semibold.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Semibold.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "MinionPro";
-  src: url("../../../../bookmakerfonts/MinionPro-SemiboldIt.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldIt.otf");
   font-style: italic;
   font-weight: 600; }
 @font-face {
   font-family: "MinionPro-Display";
-  src: url("../../../../bookmakerfonts/MinionPro-SemiboldDisp.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldDisp.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "SourceCodePro";
-  src: url("../../../../bookmakerfonts/SourceCodePro-Medium.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
-  src: url("../../../../bookmakerfonts/AromaNo2LTPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 

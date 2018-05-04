@@ -2,42 +2,42 @@
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-Book.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Book.otf');
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-Bold.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Bold.otf');
 	font-style: normal;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-BookItalic.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-BookItalic.otf');
 	font-style: italic;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-BoldItalic.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-BoldItalic.otf');
 	font-style: italic;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-Medium.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Medium.otf');
 	font-style: normal;
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('../../../../bookmakerfonts/Gotham-Light.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Light.otf');
 	font-style: normal;
 	font-weight: 100;
 }
