@@ -440,6 +440,7 @@
     content: normal;
   }
 }
+
 body {
   font-family: "ArnoPro", serif, "Noto";
   counter-reset: endnotes chapternumber;
@@ -1654,6 +1655,9 @@ li.ListAlphaal {
   list-style-type: lower-alpha;
 }
 
+li.ListAlphaal {
+  list-style-type: lower-alpha; }
+
 .ChapterContentscc {
   font-size: 10pt;
 }
@@ -1992,6 +1996,14 @@ span[data-type=footnote] > span:first-of-type {
   font-variant: small-caps;
   text-decoration: underline;
 }
+
+.spanitalunderscoreius {
+  font-style: italic;
+  text-decoration: underline; }
+
+.spansmcapunderscorescus {
+  font-variant: small-caps;
+  text-decoration: underline; }
 
 sup, sub {
   font-size: 6pt;
