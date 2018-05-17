@@ -2,42 +2,42 @@
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-Book.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Book.otf');
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-Bold.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Bold.otf');
 	font-style: normal;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-BookItalic.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-BookItalic.otf');
 	font-style: italic;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-BoldItalic.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-BoldItalic.otf');
 	font-style: italic;
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-Medium.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Medium.otf');
 	font-style: normal;
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/Gotham-Light.otf');
+	src: url('S:/resources/bookmaker_scripts/bookmakerfonts/Gotham-Light.otf');
 	font-style: normal;
 	font-weight: 100;
 }
@@ -90,22 +90,22 @@ p {
 	font-size: 9pt;
 }
 
-/*div.runheadleft { 
+/*div.runheadleft {
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
 }
 
-div.runheadright { 
+div.runheadright {
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
 }
 
-div.runfoot { 
+div.runfoot {
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
 }
 
-div.runfoot span { 
+div.runfoot span {
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;
 }*/
@@ -120,7 +120,7 @@ div.runfoot span {
 	font-size: 9pt;
 }
 
-section[data-type="halftitlepage"] > h1, 
+section[data-type="halftitlepage"] > h1,
 p.HalftitleBookTitlehtit {
 	font-size: 15pt;
 	font-weight: normal;
@@ -135,7 +135,7 @@ section[data-type="titlepage"] > h1 {
 	font-size: 20pt;
 }
 
-.TitlepageBookSubtitlestit, 
+.TitlepageBookSubtitlestit,
 .TitlepageSeriesTitleser {
 	font-weight: normal;
 	font-size: 13pt;
@@ -155,7 +155,7 @@ section[data-type="copyright-page"] p {
 	font-size: 8pt;
 }
 
-section[data-type="dedication"] p[class*="Epigraph-verse"], 
+section[data-type="dedication"] p[class*="Epigraph-verse"],
 section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
 	font-family: "Gotham", sans-serif;
 	font-size: 8pt;
@@ -176,9 +176,9 @@ nav[data-type="toc"] li {
 	font-size: 9pt;
 }
 
-section[data-type="preface"] h1, 
+section[data-type="preface"] h1,
 section[data-type="appendix"] h1,
-h1.BMHeadbmh, 
+h1.BMHeadbmh,
 h1.AboutAuthorTextHeadatah {
 	font-size: 13pt;
 	font-weight: 600;
@@ -188,7 +188,7 @@ section[data-type="preface"] p.FMSubheadfmsh, p.ChapSubtitlecst, p.BMSubheadbmsh
 	font-size: 11pt;
 }
 
-section[data-type="chapter"] h1.ChapNumbercn, 
+section[data-type="chapter"] h1.ChapNumbercn,
 p.ChapNumberNonprintingcnp {
 	font-size: 9pt;
 	font-weight: 600;
@@ -203,14 +203,14 @@ h1.ChapTitlect[data-autolabel="yes"]:before {
 	font-weight: 600;
 }
 
-section[data-type="chapter"] > blockquote[data-type="epigraph"] p, 
-div[data-type="part"] > blockquote[data-type="epigraph"] p, 
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
+div[data-type="part"] > blockquote[data-type="epigraph"] p,
 section[data-type="preface"] > blockquote[data-type="epigraph"] p {
 	font-family: "Gotham", sans-serif;
 	font-size: 8pt;
 }
 
-section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphSourceceps, 
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p.ChapEpigraphSourceceps,
 div[data-type="part"] > blockquote[data-type="epigraph"] p.PartEpigraphSourcepeps,
 section[data-type="preface"] > blockquote[data-type="epigraph"] p.FMEpigraphSourcefmeps {
 	font-weight: 600;
@@ -240,7 +240,7 @@ div[data-type="part"] h1.PartNumberpn {
 	font-size: 15pt;
 }
 
-p.Text-StandardALTatx, 
+p.Text-StandardALTatx,
 p.Text-StdNo-IndentALTatx1 {
 	font-family: "ArnoPro", serif;
 	font-size: 12pt;
@@ -278,10 +278,10 @@ figcaption {
 	font-size: 10.5pt;
 }
 
-p.SpaceBreak, 
-p.SpaceBreak-1-Linels1, 
-p.PartOrnamentporn, 
-p.ChapOrnamentcorn, 
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2,
 p.SpaceBreakOrnamentorn,
 p.SpaceBreakwithOrnamentorn,
@@ -295,7 +295,7 @@ p.SpaceBreak-PrintOnlypo {
 
 /* footnotes */
 
-span[data-type="footnote"], 
+span[data-type="footnote"],
 .endnotetext {
 	font-family: "Gotham", sans-serif;
 	font-size: 7.5pt;

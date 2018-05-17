@@ -23,7 +23,7 @@
   @footnotes {
     font-family: $familyfootnote;
     font-size: $sizefootnote;
-    background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+    background-image: url("#{$ornpath}/titlepage-rule.jpg");
     background-position: 0 0in;
     background-size: 60pt auto;
     background-repeat: no-repeat;
@@ -542,7 +542,7 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
 section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
   font-size: $sizeau;
   padding-top: $gridheight * 2.5;
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+  background-image: url('#{$ornpath}/titlepage-rule.jpg');
   background-size: 60pt auto;
   background-position: top;
   background-repeat: no-repeat;
@@ -1527,26 +1527,26 @@ p.SpaceBreakwithALTOrnamentorn2 {
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-Internalint {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+  background-image: url('#{$ornpath}/titlepage-rule.jpg');
   background-size: 60pt auto;
 }
 
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2 {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+  background-image: url('#{$ornpath}/titlepage-rule.jpg');
   background-size: 60pt auto;
 }
 
 p.SpaceBreakOrnamentorn,
 p.SpaceBreakwithOrnamentorn {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
+  background-image: url('#{$ornpath}/orn.jpg');
   background-size: 20.5pt auto;
   height: $spacebreakheight;
 }
 
 p.SpaceBreakwithALTOrnamentorn2 {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn-bull.jpg');
+  background-image: url('#{$ornpath}/orn-bull.jpg');
   background-size: 21.6pt auto;
   height: $spacebreakheight;
 }
