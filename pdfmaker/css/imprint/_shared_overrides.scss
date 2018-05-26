@@ -1,0 +1,239 @@
+@page part {
+  @top-center {
+    content: normal;
+  }
+}
+
+@page chapter {
+  @top-center {
+    content: normal;
+  }
+}
+
+@page front {
+  @top-center {
+    content: normal;
+  }
+}
+
+@page chapter {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+}
+
+@page chapter:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+
+}
+
+@page chapter:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+}
+
+@page chapter:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+  @bottom-center {
+    content: normal;
+  }
+}
+
+@page chapter:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page part:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+
+}
+
+@page part:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+}
+
+@page part:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+  @bottom-center {
+    content: normal;
+  }
+}
+
+@page part:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page front:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+
+}
+
+@page front:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+}
+
+@page front:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+  @bottom-center {
+    content: normal;
+  }
+}
+
+@page front:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+section[data-type="titlepage"] > p {
+  font-family: $familytitle;
+}
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/imprint/logo.jpg");
+  margin-bottom: 0.1in;
+}
+
+*[class*="TitlepageCitiescit"], *[class*="TitlepagePublisherNamepub"], *[class*="TitlepageImprintLineimp"] {
+  text-transform: uppercase;
+}
+
+section[data-type="copyright-page"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/imprint/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 0.88in auto;
+  padding-top: 0.3in;
+  float: bottom;
+  text-align: left;
+  font-family: $familytitle;
+}
+
+section[data-type="copyright-page"] p {
+  text-align: left;
+}
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  content: " ";
+  background-image: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  content: "* * *";
+}
+
+/* extract */
+
+p[class*="Extract"] {
+  font-family: $familybodyalt;
+}
+
+blockquote {
+  margin-left: $textindent;
+  margin-right: $textindent;
+}
+
+*[class*="Extract-VerseorPoetryextv"]:first-child {
+text-indent: ($textindent * -1);
+}
+
+.ScreenplayTextsptx {
+  margin-left: $textindent;
+  text-indent: ($textindent * -1);
+}

@@ -1,0 +1,290 @@
+/* TO COMPILE: $ sass novella.scss pdf.css */
+
+/* LOCAL VARIABLES */
+$biggest: 18pt; //sizehalftitle sizepartnum DONE
+$bigger: 14pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle DONE
+$big: 14pt; //sizeacmh sizechapsubtitle sizeh1
+$normal: 14pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead DONE
+$small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
+$smaller: 9pt; //sizecode sizecaption
+
+$gridheight: 15pt; //DONE
+
+$pagewidth: 5.5in;
+$pageheight: 8.25in;
+$bleedwidth: 0.125in;
+$bleedheight: 0.125in;
+$margintop: 52pt; 
+$marginbottom: 45pt; 
+$padding: 4pt 0 15pt 0; 
+$outsidemargin: 58pt; 
+$insidemargin: 58pt; 
+
+$textindent: 0.22in;
+
+$sizetitle: 28pt;
+$sizesubtitle: 14pt; 
+$sizeau: 18pt;
+$sizetitlepagetext: 8pt;
+$sizefst: $bigger;
+$sizefsqs: $normal; /* normal * o.875 */
+$sizeacmh: $normal; 
+$sizehalftitle: $biggest;
+$sizetochead: $bigger; 
+$sizetocentry: 11pt; 
+$sizefmhead: $bigger;
+$sizepartnum: 45pt; 
+$sizeparttitle: $bigger; 
+$sizechapnum: 45pt;
+$sizechaptitle: $bigger;
+$sizechapsubtitle: $big;
+$sizeh1: $big;
+$sizeh2: $normal;
+$sizeh3: $normal;
+$sizenormal: $normal;
+$sizenormalalt: $normal;
+$sizecode: $smaller;
+$sizepoetry: $small; //sizeextract
+$sizeextract: $small;
+$sizeextracthead: $normal;
+$sizedateline: $small;
+$sizeepigraph: $small;
+$sizerunfoot: 9pt; //DONE
+$sizerunhead: 9pt; //DONE
+$sizecopyright: 9pt; //DONE
+$sizefootnote: 9pt;
+$sizecaption: $smaller;
+$sizefigsrc: 9pt;
+$sizesuperscript: 6pt;
+$sizehwritingprint: 12.75pt;
+$sizehwritingnormal: 11pt;
+
+$hanging: -5pt;
+
+$chapterstart: always;
+
+$logoheight: 0;
+$logowidth: 0;
+
+$htmargintop: ($gridheight * 9.5);
+
+$ctmargintop: ($gridheight * 5);
+$ctmarginbottom: ($gridheight * 0); 
+$comargintop: ($gridheight * 5);
+$cemargintop: ($gridheight * 2);
+$cemarginbottom: ($gridheight * 3);
+$prmargintop: ($gridheight * 5); 
+
+$spacebreakheight: $gridheight;
+
+@import "_shared_vars.scss";
+
+@import "../_modules/font_akzidenzgroteskpro.scss";
+@import "../_modules/font_garamondpro.scss";
+@import "../_modules/font_sourcecodepro.scss";
+@import "../_modules/font_timesnewroman.scss";
+@import "../_modules/font_noto.scss";
+
+@import "../_modules/base.scss";
+
+@import "../_modules/gridlines.scss";
+
+@import "_shared_overrides.scss";
+
+/* IMPRINT-specific overrides */
+
+p {
+  line-height: $gridheight * 2;
+}
+
+figure.fullpage {
+  margin-top: 0.75in;
+  margin-inside: -67pt;
+  margin-outside: -67pt; }
+
+img[src*="fullpage"] {
+  margin-top: -1.65in; }
+
+/* Frontmatter */
+
+section[data-type="halftitlepage"] > h1,
+*[class*="HalftitleBookTitlehtit"] {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: $familytitle;
+}
+
+section[data-type="titlepage"] > h1 {
+  font-weight: bold;
+  margin-top: $gridheight * 7.5;
+}
+
+section[data-type="titlepage"] > h1:first-child {
+  margin-top: $gridheight * 7.5;
+}
+
+*[class*="TitlepageSeriesTitleser"] {
+  font-weight: bold;
+  font-size: $sizetitle;
+  font-style: normal;
+}
+
+*[class*="TitlepageSeriesTitleser"]:first-child {
+  margin-top: $gridheight * 4.5;
+}
+
+*[class*="TitlepageSeriesTitleser"] + h1 {
+  margin-top: $gridheight * 4;
+}
+
+section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
+  padding-top: 0;
+  background-image: none;
+  margin-top: $gridheight * 3;
+  font-family: $familytitle;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+section[data-type="dedication"] {
+  margin-top: ($gridheight * 9);
+}
+
+/* part titles */
+
+div[data-type="part"] h1[class*="PartNumberpn"],
+div[data-type="part"] h1[class*="PartTitlept"] {
+  font-family: $familytitle;
+}
+
+div[data-type="part"] h1[class*="PartNumberpn"] {
+  font-size: $sizechapnum;
+  line-height: $gridheight * 2;
+  font-weight: bold;
+  margin-top: $prmargintop;
+  margin-bottom: $gridheight;
+  text-transform: none;
+}
+
+div[data-type="part"] h1[class*="PartTitlept"] {
+  font-size: $sizechaptitle;
+  line-height: $gridheight;
+  margin-top: $gridheight;
+  margin-bottom: $gridheight;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* Chapter titles */
+
+section[data-type="preface"] h1,
+section[data-type="foreword"] h1,
+section[data-type="introduction"] h1,
+section[data-type="appendix"] h1,
+section[data-type="afterword"] h1,
+section[data-type="glossary"] h1,
+section[data-type="index"] h1,
+section[data-type="bibliography"] h1,
+section[data-type="conclusion"] h1,
+section[data-type="acknowledgments"] h1,
+h1[class*="BMHeadbmh"],
+h1[class*="AboutAuthorTextHeadatah"],
+section[data-type="chapter"] h1[class*="ChapTitlect"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
+  font-family: $familytitle;
+  margin-top: $prmargintop - $gridheight;
+  string-set: chaptitle content();
+  text-transform: uppercase;
+  margin-bottom: $comargintop;
+  font-size: 23pt;
+  line-height: $gridheight * 2;
+  font-weight: 100;
+}
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type,
+section[data-type="foreword"] *[class*="FMSubheadfmsh"]:first-of-type,
+section[data-type="introduction"] *[class*="FMSubheadfmsh"]:first-of-type,
+*[class*="ChapSubtitlecst"]:first-of-type,
+*[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type,
+section[data-type="foreword"] *[class*="FMAuthorNamefmau"]:first-of-type,
+section[data-type="introduction"] *[class*="FMAuthorNamefmau"]:first-of-type {
+  margin-top: ($gridheight * -5) + ($gridheight * 0.5);
+  margin-bottom: $gridheight * 3.5;
+}
+
+section[data-type="chapter"].numbered h1[class*="ChapTitlect"],
+section[data-type="chapter"].numbered h1[class*="ChapTitleALTact"] {
+  font-size: $sizechapnum;
+  line-height: $sizechapnum;
+  font-weight: bold;
+  margin-top: $prmargintop - $gridheight;
+  text-transform: none;
+}
+
+section[data-type="chapter"].numbered h1[class*="ChapTitlect"] + p,
+section[data-type="chapter"].numbered h1[class*="ChapTitleALTact"] + p {
+  margin-top: $comargintop;
+}
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"],
+*[class*="ChapNumberNonprintingcnp"] {
+  line-height: $sizechapnum;
+  font-weight: bold;
+  margin-top: $gridheight;
+  margin-bottom: $gridheight;
+  text-indent: 0;
+}
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"] + p,
+*[class*="ChapNumberNonprintingcnp"] + p {
+  margin-top: $gridheight * 6;
+}
+
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
+  font-family: $familytitle;
+  font-weight: bold;
+  margin-top: $gridheight;
+  margin-bottom: $gridheight * 1.5;
+  text-transform: none;
+  padding-top: 0;
+}
+
+section[data-type="chapter"] h1[class*="ChapTitlect"][data-autolabel="yes"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"][data-autolabel="yes"] {
+  font-size: $sizechaptitle;
+  line-height: $gridheight;
+  margin-top: $prmargintop;
+  margin-bottom: $ctmarginbottom;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+section[data-type="chapter"] h1[class*="ChapTitlect"][data-autolabel="yes"] + p,
+section[data-type="chapter"] h1[class*="ChapTitleALTact"][data-autolabel="yes"] + p {
+  margin-top: $gridheight * 3.5;
+}
+
+section[data-type="chapter"] h1[class*="ChapTitlect"][data-autolabel="yes"] + p[class*="ChapSubtitlecst"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"][data-autolabel="yes"] + p[class*="ChapSubtitlecst"] {
+  margin-top: $gridheight;
+  margin-bottom: $gridheight * 1.5;
+}
+
+blockquote {
+  margin-top: $gridheight * 2;
+  margin-bottom: $gridheight * 2;
+}
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  margin-bottom: $gridheight;
+}
