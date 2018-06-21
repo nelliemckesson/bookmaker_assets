@@ -1,38 +1,38 @@
-@charset "UTF-8";
+../../../..@charset "UTF-8";
 /* LOCAL VARIABLES */
 @font-face {
   font-family: "MinionPro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-It.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-It.otf");
   font-style: italic;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-Semibold.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Semibold.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "MinionPro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldIt.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldIt.otf");
   font-style: italic;
   font-weight: 600; }
 @font-face {
   font-family: "MinionPro-Display";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/MinionPro-SemiboldDisp.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldDisp.otf");
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "SourceCodePro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/SourceCodePro-Medium.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
   font-style: normal;
   font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
-  src: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts/AromaNo2LTPro-Regular.otf");
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 
@@ -448,7 +448,7 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
 *[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
   padding-top: 14pt;
   margin-top: 11pt;
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 80.4pt auto;
   background-position: top;
   background-repeat: no-repeat; }
@@ -796,7 +796,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
   text-transform: capitalize;
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 45.75pt auto;
   background-position: bottom;
   background-repeat: no-repeat; }
@@ -1088,24 +1088,24 @@ p.SpaceBreakwithALTOrnamentorn2 {
 /*not in Meryl's nf large design
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1 {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 60pt auto; }
 */
 
 p.PartOrnamentporn,
 p.ChapOrnamentcorn,
 p.ChapOrnamentALTcorn2 {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
   background-size: 60pt auto; }
 
 p.SpaceBreakOrnamentorn,
 p.SpaceBreakwithOrnamentorn {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn.jpg");
   background-size: 20.5pt auto;
   height: 15.5pt; }
 
 p.SpaceBreakwithALTOrnamentorn2 {
-  background-image: url("http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn-bull.jpg");
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn-bull.jpg");
   background-size: 21.6pt auto;
   height: 15.5pt; }
 
