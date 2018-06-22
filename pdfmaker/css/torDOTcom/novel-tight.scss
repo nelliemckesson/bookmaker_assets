@@ -7,11 +7,11 @@
 $biggest: 18pt; //sizehalftitle sizepartnum
 $bigger: 16pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle
 $big: 14pt; //sizeacmh sizechapsubtitle sizeh1
-$normal: 11.75pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
+$normal: 11.5pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
 $small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
 $smaller: 8.5pt; //sizecode sizecaption
 
-$gridheight: 15.5pt;
+$gridheight: 15pt;
 
 $pagewidth: 5in;
 $pageheight: 8in;
@@ -45,8 +45,8 @@ $sizeh1: $big;
 $sizeh2: $normal;
 $sizeh3: $normal;
 $sizenormal: $normal;
-$sizenormalalt: 9.75pt;
-$sizecode: $smaller;
+$sizenormalalt: 9.25pt;
+$sizecode: 8pt;
 $sizepoetry: $small;
 $sizeextract: $small;
 $sizeextracthead: $normal;

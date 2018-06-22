@@ -47,8 +47,8 @@ $sizeh3: $normal;
 $sizenormal: $normal;
 $sizenormalalt: 9.75pt;
 $sizecode: $smaller;
-$sizepoetry: 10.5pt; //sizeextract
-$sizeextract: 10.5pt;
+$sizepoetry: $small; //sizeextract
+$sizeextract: $small;
 $sizeextracthead: $normal;
 $sizedateline: $small;
 $sizeepigraph: $small;
@@ -71,19 +71,18 @@ $logowidth: 0.58in;
 
 $htmargintop: ($gridheight * 1);
 
-$ctmargintop: 11pt;
-$ctmarginbottom: 61pt;
+$ctmargintop: ($gridheight * 0.6875);
+$ctmarginbottom: ($gridheight * 3.8125);
 $comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
-$prmargintop: 16pt;
+$prmargintop: $gridheight; //preface/frontmatter top margin
 
 $spacebreakheight: $gridheight;
 
 $familyrunhead: "ArnoPro-Caption", serif;
 $familybody: "ArnoPro", serif;
 $familyfootnote: "ArnoPro-SmText", serif;
-
 
 @import "../_modules/font_arnopro.scss";
 @import "../_modules/font_aroma.scss";

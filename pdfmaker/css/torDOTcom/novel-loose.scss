@@ -7,11 +7,11 @@
 $biggest: 18pt; //sizehalftitle sizepartnum
 $bigger: 16pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle
 $big: 14pt; //sizeacmh sizechapsubtitle sizeh1
-$normal: 11.75pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
+$normal: 12pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
 $small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
 $smaller: 8.5pt; //sizecode sizecaption
 
-$gridheight: 15.5pt;
+$gridheight: 16pt;
 
 $pagewidth: 5in;
 $pageheight: 8in;
@@ -168,4 +168,15 @@ section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
 
 section.adcard h1 {
   margin-bottom: $gridheight;
+}
+
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+section[data-type="chapter"] h1[class*="ChapTitlect"][data-autolabel="yes"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"][data-autolabel="yes"] {
+  margin-top: $gridheight;
 }
