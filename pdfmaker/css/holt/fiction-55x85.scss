@@ -110,7 +110,7 @@ img[src*="fullpage"] {
 
 h1 + *[class*="TitlepageBookSubtitlestit"],
 h1 + *[class*="TitlepageSeriesTitleser"] {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
+  background-image: url('#{$ornpath}/orn.jpg');
   background-size: 18.5pt auto;
   background-repeat: no-repeat;
   background-position: center top;
@@ -145,7 +145,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
   margin-top: ($gridheight * 4);
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
+  background-image: url('#{$ornpath}/orn.jpg');
   background-size: 17.5pt auto;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -155,7 +155,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] {
 
 h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
 h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/orn.jpg');
+  background-image: url('#{$ornpath}/orn.jpg');
   background-size: 21.5pt auto;
   background-repeat: no-repeat;
   background-position: center bottom;

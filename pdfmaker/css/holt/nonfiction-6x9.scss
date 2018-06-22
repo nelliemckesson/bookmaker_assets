@@ -117,7 +117,7 @@ img[src*="fullpage"] {
 
 section[data-type="titlepage"] *[class*="TitlepageBookSubtitlestit"] {
   padding-top: $gridheight;
-  background-image: url('http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerassets/titlepage-rule.jpg');
+  background-image: url('#{$ornpath}/titlepage-rule.jpg');
   background-size: 60pt auto;
   background-position: top;
   background-repeat: no-repeat;
