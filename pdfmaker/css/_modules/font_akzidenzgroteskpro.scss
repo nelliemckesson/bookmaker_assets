@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "AkzidenzGroteskPro";
+  src: url('#{$fontpath}/AkzidenzGroteskPro-Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskPro";
+  src: url('#{$fontpath}/AkzidenzGroteskPro-Bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskPro";
+  src: url('#{$fontpath}/AkzidenzGroteskPro-It.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskPro";
+  src: url('#{$fontpath}/AkzidenzGroteskPro-Light.otf');
+  font-style: normal;
+  font-weight: 100;
+}

@@ -1,3 +1,17 @@
+function addPartSpans()
+{
+  var partNums = document.getElementsByClassName("PartNumberpn");
+  for (var i = 0, n = partNums.length; i < n; i++)
+  {
+    var newSpan = document.createElement("span");
+    var allChildren = partNums[i].childNodes;
+    for (var j = 0; allChildren.length > j; j++) {
+      newSpan.appendChild(allChildren[j]);
+    };
+    partNums[i].appendChild(newSpan);
+  };
+};
+
 function getAllElementsWithAttribute(tag, attribute, value)
 {
   var matchingElements = [];
@@ -118,6 +132,7 @@ window.onload = function() {
   moveIllustrationSource();
   addRunningElements();
   fullpageFigures();
+  addPartSpans();
 };
 
 // exclude author photo

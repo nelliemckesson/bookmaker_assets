@@ -1,0 +1,309 @@
+@page part {
+  @top-center {
+    vertical-align: bottom;
+  }
+}
+
+@page chapter {
+  @top-center {
+    vertical-align: bottom;
+  }
+}
+
+@page front {
+  @top-center {
+    vertical-align: bottom;
+  }
+}
+
+@page chapter {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    @include runhead;
+    text-align: left;
+  }
+  @top-right {
+    @include runhead;
+    text-align: right;
+  }
+  @bottom-center {
+    content: normal;
+  }
+}
+
+@page chapter:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: flow(runheadleft);
+  }
+
+}
+
+@page chapter:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: flow(runheadright);
+  }
+}
+
+@page chapter:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page chapter:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page part:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: flow(runheadleft);
+  }
+
+}
+
+@page part:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: flow(runheadright);
+  }
+}
+
+@page part:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page part:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page front:left {
+  @top-center {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+
+}
+
+@page front:right {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+}
+
+@page front:first {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+@page front:blank {
+  @top-center {
+    content: normal;
+  }
+  @top-right {
+    content: normal;
+  }
+  @top-left {
+    content: normal;
+  }
+}
+
+div.runheadleft {
+  content: counter(page) "\2002\2022\2002" string(title);
+  text-align: left;
+}
+
+div.runheadright {
+  content: string(chaptitle) "\2002\2022\2002" counter(page);
+  text-align: right;
+}
+
+section[data-type="titlepage"] > h1 {
+  text-transform: none;
+  margin-top: ($gridheight * 4);
+  margin-bottom: 0;
+}
+
+section[data-type="titlepage"] > h1:first-child {
+  margin-top: ($gridheight * 4);
+}
+
+*[class*="TitlepageBookSubtitlestit"] + h1,
+*[class*="TitlepageSeriesTitleser"] + h1 {
+  margin-top: $gridheight * 1.625;
+}
+
+*[class*="TitlepageBookSubtitlestit"],
+*[class*="TitlepageSeriesTitleser"] {
+  font-style: normal;
+}
+
+section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
+  padding-top: 0;
+  background-image: none;
+  margin-top: ($gridheight * 7);
+  string-set: author content();
+}
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: none;
+}
+
+section[data-type="copyright-page"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 20pt auto;
+  padding-top: 34pt;
+  float: bottom;
+}
+
+nav[data-type="toc"] {
+  counter-reset: part-list-item 0 chapter-list-item 0;
+}
+
+nav[data-type="toc"] h1 {
+  font-weight: normal;
+  margin-top: ($gridheight * 4);
+  margin-bottom: 142pt;
+}
+
+nav[data-type="toc"] ol {
+  margin-left: 0;
+}
+
+nav[data-type="toc"] li {
+  margin-bottom: 6pt;
+  list-style-type: none;
+}
+
+nav[data-type="toc"] li.PartNumberpn {
+  display: none;
+}
+
+nav[data-type="toc"] li.PartTitlept {
+  counter-increment: part-list-item;
+  list-style-position: inside;
+  margin-bottom: 6pt;
+  margin-top: 0;
+  font-style: normal;
+}
+
+nav[data-type="toc"] li.PartTitlept::marker {
+  content: "Part " counters(part-list-item, ".", decimal) ". ";
+}
+
+nav[data-type="toc"] li.PartNumberpn + li.PartTitlept {
+  margin-top: 0;
+}
+
+nav[data-type="toc"] li.ChapTitlect,
+nav[data-type="toc"] li.ChapTitleALTact {
+  counter-increment: chapter-list-item;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+nav[data-type="toc"] li.ChapTitlect::marker,
+nav[data-type="toc"] li.ChapTitleALTact::marker {
+  content: counters(chapter-list-item, ".", decimal) ". ";
+}
+
+nav[data-type="toc"] li.FMHeadfmh {
+  list-style-type: none;
+  display: block;
+}
+
+nav[data-type="toc"] li.BMHeadbmh {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh,
+nav[data-type="toc"] li.ChapTitleALTact + li.BMHeadbmh {
+  margin-top: 0;
+}
+
+nav[data-type="toc"] li.PartNumberpn ~ li,
+nav[data-type="toc"] li.PartTitlept ~ li {
+  margin-bottom: 6pt;
+}
+
+nav[data-type="toc"] li.PartNumberpn ~ li.PartNumberpn,
+nav[data-type="toc"] li.PartTitlept ~ li.PartTitlept,
+nav[data-type="toc"] li.PartNumberpn ~ li.PartTitlept,
+nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn {
+  margin-bottom: 6pt;
+}
+
+nav[data-type="toc"] li a::before {
+  content: normal;
+}
+
+nav[data-type="toc"] li a::after {
+  content: leader(' ') target-counter(attr(href), page);
+  display: inline;
+}
+
+section[data-type="dedication"] {
+  margin-top: ($gridheight * 4);
+}
+
+section[data-type="dedication"] p {
+  font-size: 12pt;
+  font-style: italic;
+}
