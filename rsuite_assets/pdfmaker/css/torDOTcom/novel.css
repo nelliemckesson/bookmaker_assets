@@ -1,0 +1,1724 @@
+@charset "UTF-8";
+/* TO COMPILE: $ sass novel.scss novel.css */
+/* GLOBAL VARIABLES */
+/* LOCAL VARIABLES */
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Bold.otf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Italic.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalic.otf");
+  font-style: italic;
+  font-weight: bold; }
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Smbd.otf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "ArnoPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-LightDisplay.otf");
+  font-style: normal;
+  font-weight: 100; }
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmText.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalicSmText.otf");
+  font-style: italic;
+  font-weight: bold; }
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmbdSmText.otf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicSmText.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSmText.otf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: "ArnoPro-Caption";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Caption.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro-Caption";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicCaption.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "ArnoPro-BoldSubhead";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSubhead.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "AromaNo2LTPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Italic.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "AromaNo2LTPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "MyriadPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MyriadPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Bold.otf");
+  font-style: normal;
+  font-weight: bold; }
+@font-face {
+  font-family: "TimesNewRomanPSMT";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/TimesNewRomanPSMT.ttf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "Noto";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
+@font-face {
+  font-family: "BerrangerHandITCStd";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/BerrangerHandITCStd.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "FeltpenCom-Medium";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/FeltpenCom-Medium.ttf");
+  font-style: normal;
+  font-weight: normal; }
+@page {
+  size: 5in 8in;
+  margin-top: 46.5pt;
+  margin-bottom: 40pt;
+  padding: 5pt 0 0 0;
+  background-position: top left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  marks: crop;
+  prince-mark-offset: 0.125in;
+  prince-mark-length: 0in;
+  bleed: 0.125in;
+  @footnotes {
+    font-family: "ArnoPro-SmText", serif;
+    font-size: 9pt;
+    background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+    background-position: 0 0in;
+    background-size: 60pt auto;
+    background-repeat: no-repeat;
+    padding-top: 0.127in;
+    margin-top: 0.38in; } }
+@page :left {
+  margin-left: 40pt;
+  margin-right: 50pt; }
+@page :right {
+  margin-left: 50pt;
+  margin-right: 40pt; }
+@page part {
+  @top-center {
+    font-family: "ArnoPro-Caption", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 8.5pt;
+    vertical-align: top;
+    padding: 31pt 0 0 0;
+    margin: 0; }
+  @bottom-center {
+    font-family: "ArnoPro-Caption", serif;
+    font-variant: prince-opentype(onum);
+    /*content: counter(page);*/
+    content: flow(runfoot);
+    text-align: center;
+    font-size: 9pt;
+    vertical-align: top; } }
+@page part:left {
+  @top-center {
+    /*content: string(author);*/
+    content: flow(runheadleft); } }
+@page part:right {
+  @top-center {
+    /*content: string(title);*/
+    content: flow(runheadright); } }
+@page part:first {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page part:blank {
+  margin-top: 2.16in;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page chapter {
+  @top-center {
+    font-family: "ArnoPro-Caption", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 8.5pt;
+    vertical-align: top;
+    padding: 31pt 0 0 0;
+    margin: 0; }
+  @bottom-center {
+    font-family: "ArnoPro-Caption", serif;
+    font-variant: prince-opentype(onum);
+    /*content: counter(page);*/
+    content: flow(runfoot);
+    text-align: center;
+    font-size: 9pt;
+    vertical-align: top; } }
+@page chapter:left {
+  @top-center {
+    /*content: string(author);*/
+    content: flow(runheadleft); } }
+@page chapter:right {
+  @top-center {
+    /*content: string(title);*/
+    content: flow(runheadright); } }
+@page chapter:first {
+  @top-center {
+    content: normal; } }
+@page chapter:blank {
+  margin-top: 2.16in;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page front {
+  @top-center {
+    content: normal;
+    font-family: "ArnoPro-Caption", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 8.5pt;
+    vertical-align: top;
+    padding: 31pt 0 0 0;
+    margin: 0; }
+  @bottom-center {
+    content: normal;
+    font-family: "ArnoPro-Caption", serif;
+    font-variant: prince-opentype(onum);
+    content: counter(page);
+    text-align: center;
+    font-size: 9pt;
+    vertical-align: top; } }
+@page front:left {
+  @top-center {
+    content: normal;
+    font-family: "ArnoPro-Caption", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 8.5pt;
+    vertical-align: top;
+    padding: 31pt 0 0 0;
+    margin: 0; }
+  @bottom-center {
+    content: normal; } }
+@page front:right {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page front:first {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page front:blank {
+  margin-top: 2.16in;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page copyright {
+  margin-bottom: 0.25in;
+  padding-bottom: 0;
+  @top-center {
+    content: normal;
+    font-family: "ArnoPro-Caption", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 8.5pt;
+    vertical-align: top;
+    padding: 31pt 0 0 0;
+    margin: 0; }
+  @bottom-center {
+    content: normal;
+    font-family: "ArnoPro-Caption", serif;
+    font-variant: prince-opentype(onum);
+    content: counter(page);
+    text-align: center;
+    font-size: 9pt;
+    vertical-align: top; } }
+@page copyright:left {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page copyright:right {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page copyright:first {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page copyright:blank {
+  margin-top: 2.16in;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page fullbleed {
+  margin: 0;
+  padding: 0;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page fullbleed:left {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page fullbleed:right {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page fullbleed:first {
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+@page fullbleed:blank {
+  margin-top: 2.16in;
+  @top-center {
+    content: normal; }
+  @bottom-center {
+    content: normal; } }
+body {
+  font-family: "ArnoPro", serif, "Noto";
+  counter-reset: endnotes chapternumber; }
+
+section, p, div, h1, h2, h3, h4, h5, h6 {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid; }
+
+p {
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  text-indent: 12pt;
+  text-align: justify;
+  text-align-last: left;
+  margin: 0;
+  widows: 1;
+  orphans: 1;
+  hyphens: auto;
+  prince-hyphenate-after: 3;
+  prince-hyphenate-before: 2;
+  hyphenate-lines: 3; }
+
+div.runheadleft {
+  flow: static(runheadleft);
+  font-family: "ArnoPro-Caption", serif, "Noto";
+  text-align: center;
+  font-style: italic;
+  font-size: 8.5pt;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+
+div.runheadright {
+  flow: static(runheadright);
+  font-family: "ArnoPro-Caption", serif, "Noto";
+  text-align: center;
+  font-style: italic;
+  font-size: 8.5pt;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+
+div.runfoot {
+  flow: static(runfoot);
+  font-family: "ArnoPro-Caption", serif, "Noto";
+  font-variant: prince-opentype(onum);
+  text-align: center;
+  font-size: 9pt;
+  text-indent: 0;
+  padding: 0;
+  margin: 0; }
+
+div.runfoot span {
+  display: block;
+  content: counter(page);
+  font-family: "ArnoPro-Caption", serif, "Noto";
+  font-variant: prince-opentype(onum);
+  text-align: center;
+  font-size: 9pt;
+  text-indent: 0; }
+
+p:first-of-type,
+p[class^="SpaceBreak"] + p,
+p[class*="No-Indent"] {
+  text-indent: 0; }
+
+p[class*="SpaceBefore"] {
+  margin-top: 15.5pt; }
+
+p[class*="SpaceAround"] {
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+p[class*="SpaceAfter"] {
+  margin-bottom: 15.5pt; }
+
+blockquote {
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  page-break-inside: auto; }
+
+/* ---------------- FRONTMATTER */
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="preface"],
+section[data-type="foreword"],
+section[data-type="introduction"],
+section[data-type="copyright-page"],
+section.adcard {
+  page-break-after: always; }
+
+section[data-type="halftitlepage"],
+section[data-type="titlepage"] {
+  page-break-before: right; }
+
+section[data-type="preface"].adcard {
+  page-break-before: always; }
+
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="copyright-page"],
+section[data-type="dedication"],
+nav[data-type="toc"] {
+  page: front; }
+
+section[data-type="copyright-page"] {
+  page: copyright; }
+
+*[class*="FrontSalesTitlefst"] {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15.5pt; }
+
+*[class*="FrontSalesQuoteNoIndentfsq1"] {
+  text-indent: 0;
+  text-align: left; }
+
+*[class*="FrontSalesQuotefsq"],
+*[class*="FrontSalesQuotefsq"]:first-of-type {
+  text-indent: -5pt;
+  text-align: left; }
+
+*[class*="FrontSalesQuoteSourcefsqs"] {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-weight: bold;
+  font-size: 10.5pt;
+  text-align: right;
+  margin-bottom: 15.5pt; }
+
+*[class*="FrontSalesQuoteSourcefsqs"] em {
+  break-inside: avoid; }
+
+section[data-type="halftitlepage"] > h1,
+*[class*="HalftitleBookTitlehtit"] {
+  font-size: 18pt;
+  font-weight: normal;
+  line-height: 15.5pt;
+  margin-top: 62pt;
+  text-align: center; }
+
+section.adcard {
+  text-align: center; }
+
+*[class*="AdCardMainHeadacmh"] {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-size: 14pt;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  text-align: center;
+  text-indent: 0; }
+
+*[class*="AdCardSubheadacsh"] {
+  text-align: center;
+  text-indent: 0;
+  margin-top: 15.5pt; }
+
+*[class*="AdCardListofTitlesacl"] {
+  text-align: center;
+  text-indent: 0; }
+
+section[data-type="titlepage"] > h1 {
+  font-family: "ArnoPro-BoldSubhead", serif, "Noto";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25pt;
+  line-height: 28pt;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  string-set: title content(); }
+
+section[data-type="titlepage"] > h1:first-child {
+  margin-top: 23.25pt; }
+
+*[class*="TitlepageBookSubtitlestit"] + h1,
+*[class*="TitlepageSeriesTitleser"] + h1 {
+  margin-top: 25.1875pt; }
+
+h1 + *[class*="TitlepageBookSubtitlestit"],
+h1 + *[class*="TitlepageSeriesTitleser"] {
+  margin-top: 23.25pt;
+  margin-bottom: 0; }
+
+*[class*="TitlepageBookSubtitlestit"],
+*[class*="TitlepageSeriesTitleser"] {
+  font-weight: normal;
+  font-size: 16pt;
+  line-height: 23.25pt;
+  font-style: italic;
+  text-align: center; }
+  *[class*="TitlepageBookSubtitlestit"] em,
+  *[class*="TitlepageSeriesTitleser"] em {
+    font-style: normal; }
+
+*[class*="TitlepageBookSubtitlestit"]:first-child,
+*[class*="TitlepageSeriesTitleser"]:first-child {
+  margin-top: 5.8125pt; }
+
+*[class*="TitlepageTranslatorNametran"],
+*[class*="TitlepageContributorNamecon"] {
+  text-align: center; }
+
+section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
+  font-size: 16pt;
+  padding-top: 38.75pt;
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 60pt auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: 23.25pt;
+  margin-bottom: 31pt;
+  text-indent: 0;
+  text-align: center;
+  string-set: author content(); }
+
+section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
+  float: bottom;
+  text-align: center;
+  text-indent: 0; }
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  content: " ";
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/torDOTcom/logo.jpg");
+  background-position: center bottom;
+  background-size: 0.58in auto;
+  background-repeat: no-repeat;
+  display: block;
+  float: bottom;
+  width: 100%;
+  height: 0.5in;
+  text-align: center;
+  margin-bottom: 0.2in; }
+
+*[class*="TitlepageCitiescit"], *[class*="TitlepagePublisherNamepub"], *[class*="TitlepageImprintLineimp"] {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-style: normal;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 10pt;
+  line-height: 15.5pt;
+  float: bottom;
+  text-align: center;
+  text-indent: 0; }
+
+section[data-type="copyright-page"] p:first-child {
+  margin-top: 15.5pt; }
+
+section[data-type="copyright-page"] p {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-size: 10pt;
+  text-align: center;
+  text-indent: 0;
+  line-height: 14pt; }
+
+*[class*="CopyrightTextdoublespacecrtxd"] {
+  margin-bottom: 14pt; }
+
+section[data-type="dedication"] {
+  page-break-before: always;
+  page-break-after: always; }
+
+section[data-type="dedication"] p {
+  text-align: center;
+  font-style: italic;
+  text-indent: 0; }
+  section[data-type="dedication"] p em {
+    font-style: normal; }
+
+.texttoc {
+  display: none; }
+
+nav[data-type="toc"] {
+  page-break-before: right;
+  page-break-after: always; }
+
+nav[data-type="toc"] h1 {
+  font-weight: bold;
+  font-size: 16pt;
+  line-height: 15.5pt;
+  margin-top: 0;
+  text-align: center; }
+
+nav[data-type="toc"] ol {
+  margin-left: 0; }
+
+nav[data-type="toc"] li {
+  font-size: 11pt;
+  line-height: 15.5pt;
+  margin-bottom: 15.5pt;
+  margin-left: 0;
+  list-style-type: none; }
+
+nav[data-type="toc"] li.FMHeadfmh {
+  display: none; }
+
+nav[data-type="toc"] li.BMHeadbmh {
+  margin-left: 23.5pt;
+  font-weight: normal;
+  text-align: left; }
+
+nav[data-type="toc"] li.ChapTitlect + li.BMHeadbmh,
+nav[data-type="toc"] li.ChapTitleALTact + li.BMHeadbmh {
+  margin-top: 15.5pt; }
+
+nav[data-type="toc"] li.PartNumberpn ~ li,
+nav[data-type="toc"] li.PartTitlept ~ li {
+  margin-bottom: 0; }
+
+nav[data-type="toc"] li.PartNumberpn ~ li.PartNumberpn,
+nav[data-type="toc"] li.PartTitlept ~ li.PartTitlept,
+nav[data-type="toc"] li.PartNumberpn ~ li.PartTitlept,
+nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn {
+  margin-bottom: 8.7203pt; }
+
+nav[data-type="toc"] li.PartNumberpn + li.PartTitlept {
+  margin-top: -8.7203pt; }
+
+nav[data-type="toc"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+nav[data-type="toc"] li a:before {
+  content: target-counter(attr(href), page);
+  display: inline-block;
+  width: 23.5pt;
+  text-align: left; }
+
+nav[data-type="toc"] li.BMHeadbmh a:before {
+  content: normal; }
+
+nav[data-type="toc"] li.PartNumberpn,
+nav[data-type="toc"] li.PartTitlept {
+  margin-bottom: 8.7203pt;
+  margin-top: 23.5pt;
+  vertical-align: top;
+  font-style: italic; }
+
+nav[data-type="toc"] li.PartNumberpn a,
+nav[data-type="toc"] li.PartTitlept a {
+  vertical-align: top; }
+
+nav[data-type="toc"] li.PartNumberpn a:before,
+nav[data-type="toc"] li.PartTitlept a:before {
+  content: normal;
+  display: inline; }
+
+section[data-type="preface"],
+section[data-type="foreword"],
+section[data-type="introduction"] {
+  page: chapter;
+  page-break-before: right;
+  prince-page-group: start; }
+
+section.adcard {
+  page: front; }
+
+section.frontsales {
+  page: front; }
+
+section[data-type="preface"] h1,
+section[data-type="foreword"] h1,
+section[data-type="introduction"] h1,
+section[data-type="appendix"] h1,
+section[data-type="afterword"] h1,
+section[data-type="glossary"] h1,
+section[data-type="index"] h1,
+section[data-type="bibliography"] h1,
+section[data-type="conclusion"] h1,
+section[data-type="acknowledgments"] h1,
+h1[class*="BMHeadbmh"],
+h1[class*="AboutAuthorTextHeadatah"] {
+  font-size: 16pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  margin-top: 31pt;
+  margin-bottom: 46.5pt;
+  padding: 0;
+  text-align: center; }
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"],
+section[data-type="foreword"] *[class*="FMSubheadfmsh"],
+section[data-type="introduction"] *[class*="FMSubheadfmsh"],
+*[class*="ChapSubtitlecst"],
+*[class*="BMSubheadbmsh"],
+.FMAuthorNamefmau {
+  text-indent: 0;
+  font-size: 14pt;
+  line-height: 15.5pt;
+  font-style: italic;
+  margin-top: 31pt;
+  text-align: center;
+  margin-bottom: 31pt;
+  page-break-after: avoid; }
+  section[data-type="preface"] *[class*="FMSubheadfmsh"] em,
+  section[data-type="foreword"] *[class*="FMSubheadfmsh"] em,
+  section[data-type="introduction"] *[class*="FMSubheadfmsh"] em,
+  *[class*="ChapSubtitlecst"] em,
+  *[class*="BMSubheadbmsh"] em,
+  .FMAuthorNamefmau em {
+    font-style: normal; }
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type,
+section[data-type="foreword"] *[class*="FMSubheadfmsh"]:first-of-type,
+section[data-type="introduction"] *[class*="FMSubheadfmsh"]:first-of-type,
+*[class*="ChapSubtitlecst"]:first-of-type,
+*[class*="BMSubheadbmsh"]:first-of-type,
+section[data-type="preface"] *[class*="FMAuthorNamefmau"]:first-of-type,
+section[data-type="foreword"] *[class*="FMAuthorNamefmau"]:first-of-type,
+section[data-type="introduction"] *[class*="FMAuthorNamefmau"]:first-of-type {
+  margin-top: -31pt; }
+
+/* ---------------- CHAPTERS */
+section[data-type="chapter"] {
+  page: chapter;
+  page-break-before: always;
+  prince-page-group: start;
+  counter-reset: footnote; }
+
+section[data-type="preface"] + section[data-type="chapter"],
+section[data-type="foreword"] + section[data-type="chapter"],
+section[data-type="introduction"] + section[data-type="chapter"],
+section[data-type="titlepage"] + section[data-type="chapter"],
+section[data-type="halftitlepage"] + section[data-type="chapter"],
+section[data-type="copyright-page"] + section[data-type="chapter"],
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"],
+div[data-type="part"] + section[data-type="chapter"] {
+  page-break-before: right; }
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"],
+*[class*="ChapNumberNonprintingcnp"] {
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 19.375pt;
+  margin-bottom: 7pt;
+  text-indent: 0; }
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"] + p,
+*[class*="ChapNumberNonprintingcnp"] + p {
+  margin-top: 15.5pt; }
+
+h1[class*="ChapTitleNonprintingctnp"] + * {
+  margin-top: 77.5pt; }
+
+section[data-type="chapter"] h1[class*="ChapTitlect"],
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
+  font-size: 16pt;
+  line-height: 15.5pt;
+  font-weight: normal;
+  margin-top: 31pt;
+  text-align: center;
+  margin-bottom: 5pt;
+  counter-increment: chapternumber;
+  padding: 0; }
+
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
+h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
+  content: attr(data-labeltext);
+  display: block;
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  text-indent: 0; }
+
+section[data-type="chapter"] h1[class*="ChapTitlect"] + p,
+section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
+  margin-top: 62pt; }
+
+[class*="Nonprinting"] {
+  display: none; }
+
+section[data-type="appendix"],
+section[data-type="afterword"],
+section[data-type="glossary"],
+section[data-type="index"],
+section[data-type="bibliography"],
+section[data-type="conclusion"],
+section[data-type="acknowledgments"] {
+  page-break-before: right;
+  counter-reset: footnote;
+  page: chapter;
+  prince-page-group: start; }
+
+section[data-type="appendix"]:first-of-type,
+section[data-type="afterword"]:first-of-type,
+section[data-type="glossary"]:first-of-type,
+section[data-type="index"]:first-of-type,
+section[data-type="bibliography"]:first-of-type,
+section[data-type="conclusion"]:first-of-type,
+section[data-type="acknowledgments"]:first-of-type {
+  page-break-before: right; }
+
+section[data-type="appendix"].bobad {
+  page-break-before: always; }
+
+*[class*="BibliographyTextbibtx"] {
+  text-indent: 0; }
+
+blockquote + *[class*="ChapOpeningText"] {
+  /*margin-top: $gridheight * 3;*/ }
+
+*[class*="ChapOpeningText"] .chapopener {
+  font-weight: 600;
+  letter-spacing: 0.1pt; }
+
+/* ---------------- HEADINGS */
+*[class*="Head-Level-1h1"] {
+  text-indent: 0;
+  font-size: 14pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 31pt;
+  margin-bottom: 15.5pt;
+  page-break-after: avoid; }
+  *[class*="Head-Level-1h1"] em {
+    font-style: normal; }
+
+*[class*="Head-Level-2h2"] {
+  text-indent: 0;
+  font-size: 11.75pt;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 31pt;
+  margin-bottom: 15.5pt;
+  page-break-after: avoid; }
+
+*[class*="Head-Level-3h3"] {
+  text-indent: 0;
+  font-size: 11.75pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 31pt;
+  margin-bottom: 15.5pt;
+  page-break-after: avoid; }
+  *[class*="Head-Level-3h3"] em {
+    font-style: normal; }
+
+/* ---------------- PARTS */
+div[data-type="part"] {
+  page-break-before: right;
+  counter-reset: footnote;
+  page: part;
+  prince-page-group: start; }
+
+div[data-type="part"] h1 {
+  font-weight: normal;
+  font-size: 22pt;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  line-height: 28pt;
+  text-align: center;
+  margin-top: 8pt; }
+
+div[data-type="part"] h1[class*="PartNumberpn"] {
+  font-size: 18pt;
+  text-transform: lowercase;
+  font-variant: prince-opentype(smcp, onum); }
+
+div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
+  margin-top: 0; }
+
+.PartSubtitlepst {
+  text-indent: 0;
+  text-align: center;
+  font-size: 14pt;
+  margin-bottom: 15.5pt; }
+
+/* ---------------- TEXT */
+*[class*="Text-StandardALTatx"],
+*[class*="Text-StdNo-IndentALTatx1"] {
+  font-family: "AromaNo2LTPro", sans-serif, "Noto";
+  font-size: 9.75pt; }
+
+*[class*="Text-ComputerTypecom"],
+*[class*="Text-ComputerTypeNo-Indentcom1"] {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+pre.poetry {
+  font-family: "ArnoPro", serif, "Noto";
+  margin: 15.5pt 52pt 15.5pt 36pt;
+  white-space: pre-wrap; }
+
+pre.poetry p, pre.poetry p:first-of-type {
+  text-indent: -12pt;
+  font-size: 10.5pt; }
+
+p[class*="Extract"] {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-size: 10.5pt; }
+
+p.Extract-Emailextem,
+p.Extract-EmailHeadingemh,
+p.Extract-Telegramtel {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+blockquote {
+  margin-left: 15.5pt;
+  margin-right: 15.5pt; }
+
+blockquote p:first-child {
+  text-indent: 0; }
+
+/* ---------------- SCREENPLAY EXTRACT */
+.ScreenplayHeadsph {
+  text-align: center;
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplaySubheadspsh {
+  text-align: center;
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayDramatisPersonaedp {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayDramatisPersonaedp + div.runfoot + div.runheadright + div.runheadleft + .ScreenplayDramatisPersonaedp {
+  text-indent: 12pt; }
+
+.ScreenplayTextNo-Indentsptx1 {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+.ScreenplayTextsptx {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+p.ScreenplayExtractsp {
+  text-indent: 0;
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+/* ---------------- SIDEBARS */
+p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + aside {
+  margin-top: 0pt; }
+
+aside {
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  margin-left: 15.5pt;
+  margin-right: 15.5pt;
+  page-break-inside: auto; }
+
+aside p:first-child {
+  text-indent: 0; }
+
+aside > *:first-child {
+  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%); }
+
+aside::after {
+  display: block;
+  content: " ";
+  font-size: 11.75pt;
+  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%);
+  line-height: 15.5pt;
+  margin-bottom: 15.5pt;
+  min-height: 15.5pt; }
+
+.SidebarHead-Level-1sbh1 {
+  page-break-after: avoid;
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+.SidebarHead-Level-1sbh1 + p {
+  text-indent: 0; }
+
+.SidebarHead-Level-2sbh2 {
+  page-break-after: avoid;
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+.SidebarHead-Level-2sbh2 + p {
+  text-indent: 0; }
+
+.SidebarHead-Level-2sbh2 + .SidebarHead-Level-1sbh1 {
+  margin-bottom: 0; }
+
+.SidebarTextsbtx {
+  font-size: 10.5pt; }
+
+.SidebarText-NoIndentsbtx1 {
+  font-size: 10.5pt;
+  text-indent: 0; }
+
+.SidebarListBulletsbbl {
+  font-size: 10.5pt; }
+
+/* ---------------- DEDICATION */
+section[data-type="dedication"] p:first-child {
+  margin-top: 15.5pt; }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+.Dedicationded + p[class*="Epigraph"] {
+  page-break-before: always;
+  margin-top: 31pt; }
+
+section[data-type="dedication"] blockquote[data-type="epigraph"] {
+  margin-left: 0;
+  margin-right: 0; }
+
+section[data-type="dedication"] p[class*="Epigraph-verse"],
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-style: normal;
+  font-size: 10pt;
+  text-align: left;
+  margin-left: 50.375pt;
+  margin-right: 35.25pt;
+  text-indent: -12pt; }
+
+section[data-type="dedication"] p[class*="Epigraph-non-verse"] {
+  margin-left: 35.25pt;
+  text-indent: 0; }
+
+section[data-type="dedication"] p[class*="EpigraphSource"] {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-weight: 600;
+  font-size: 10pt;
+  font-style: normal;
+  text-align: right;
+  margin-left: 35.25pt;
+  margin-right: 35.25pt; }
+
+p[class*="EpigraphSource"] em {
+  break-inside: avoid; }
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"],
+div[data-type="part"] > blockquote[data-type="epigraph"],
+section[data-type="preface"] > blockquote[data-type="epigraph"],
+section[data-type="foreword"] > blockquote[data-type="epigraph"],
+section[data-type="introduction"] > blockquote[data-type="epigraph"] {
+  margin-left: 35.25pt;
+  margin-right: 35.25pt;
+  margin-bottom: 46.5pt; }
+
+blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
+blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
+  margin-top: -46.5pt; }
+
+h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"],
+h1[class*="ChapTitleALTact"] + blockquote[data-type="epigraph"] {
+  margin-top: 31pt; }
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
+div[data-type="part"] > blockquote[data-type="epigraph"] p,
+section[data-type="preface"] > blockquote[data-type="epigraph"] p,
+section[data-type="foreword"] > blockquote[data-type="epigraph"] p,
+section[data-type="introduction"] > blockquote[data-type="epigraph"] p {
+  font-family: "ArnoPro-SmText", "Noto";
+  font-size: 10pt;
+  line-height: 15.5pt;
+  text-align: left; }
+
+p.ChapEpigraph-versecepiv,
+p.PartEpigraph-versepepiv,
+p.FMEpigraph-versefmepiv {
+  margin-left: 15.5pt;
+  text-indent: -15.5pt;
+  page-break-inside: auto; }
+
+blockquote p.ChapEpigraph-versecepiv:first-child,
+blockquote p.PartEpigraph-versepepiv:first-child,
+blockquote p.FMEpigraph-versefmepiv:first-child {
+  text-indent: -15.5pt; }
+
+p.ChapEpigraph-non-versecepi,
+p.PartEpigraph-non-versepepi,
+p.FMEpigraph-non-versefmepi {
+  margin-left: 0;
+  page-break-inside: auto; }
+
+p.ChapEpigraphSourceceps,
+p.PartEpigraphSourcepeps,
+p.FMEpigraphSourcefmeps {
+  text-align: right;
+  font-weight: 600;
+  /*page-break-before: avoid;*/
+  widows: 2;
+  orphans: 2; }
+
+p.ChapEpigraphSourceceps,
+p.PartEpigraphSourcepeps,
+p.FMEpigraphSourcefmeps {
+  margin-top: 15.5pt; }
+
+*[class*="ChapEpigraphSourceceps"] em,
+*[class*="PartEpigraphSourcepeps"] em,
+*[class*="FMEpigraphSourcefmeps"] em {
+  break-inside: avoid; }
+
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-verse"],
+p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-non-verse"] {
+  margin-top: 31pt; }
+
+/* ---------------- EXTRACTS */
+p.Extract-Inscriptionins {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-size: 10.5pt;
+  font-style: italic;
+  text-align: center; }
+
+.Extract-SongLyricextsl {
+  font-style: italic;
+  text-indent: -12pt;
+  margin-left: 15.5pt;
+  text-align: left; }
+  .Extract-SongLyricextsl em {
+    font-style: normal; }
+
+.Extract-SongLyricextsl:first-child {
+  text-indent: -12pt; }
+
+.NoteLevel-1Subheadn1 {
+  text-indent: 0;
+  font-size: 14pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 31pt;
+  margin-bottom: 15.5pt;
+  page-break-after: avoid; }
+  .NoteLevel-1Subheadn1 em {
+    font-style: normal; }
+
+.NoteLevel-2Subheadn2 {
+  text-indent: 0;
+  font-size: 11.75pt;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 31pt;
+  margin-bottom: 15.5pt;
+  page-break-after: avoid; }
+
+*[class*="ExtractHeadexth"] {
+  page-break-after: avoid; }
+
+*[class*="ExtractHeadexth"], *[class*="Extract-Headlineexthl"] {
+  font-size: 11.75pt;
+  line-height: 15.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+
+*[class*="ExtractHeadexth"] + p {
+  text-indent: 0; }
+
+*[class*="Extract-VerseorPoetryextv"] {
+  font-style: italic;
+  text-indent: -12pt;
+  margin-left: 15.5pt;
+  text-align: left; }
+  *[class*="Extract-VerseorPoetryextv"] em {
+    font-style: normal; }
+
+[class*="Extract-VerseorPoetryextv"]:first-child {
+  text-indent: -12pt; }
+
+p[class*="ExtractSource"] {
+  text-align: right;
+  font-weight: 600;
+  widows: 2;
+  orphans: 2; }
+
+p[class*="Extract-Noteextn"] {
+  text-indent: none;
+  text-align: center;
+  hyphens: none; }
+
+span.spanaltfont1span1 {
+  font-family: FeltpenCom-Medium;
+  font-size: 12.5pt;
+  letter-spacing: .02em; }
+
+span.spanaltfont2span2 {
+  font-family: BerrangerHandITCStd;
+  font-size: 10.75pt; }
+
+p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
+  font-style: italic; }
+  p.LetterExtBodyTextltx em, p.LetterExtBodyTextNo-Indentltx1 em {
+    font-style: normal; }
+
+p.LetterExtHeadnotehn {
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase; }
+
+p.LetterExtSalutationlsa {
+  font-style: italic;
+  text-indent: 0;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt; }
+  p.LetterExtSalutationlsa em {
+    font-style: normal; }
+
+p.LetterExtAddressladd,
+p.LetterExtGeneralextl,
+p.LetterExtPostscriptlps {
+  font-style: italic;
+  text-indent: 0; }
+  p.LetterExtAddressladd em,
+  p.LetterExtGeneralextl em,
+  p.LetterExtPostscriptlps em {
+    font-style: normal; }
+
+p.LetterExtClosinglcl {
+  font-style: italic;
+  text-indent: 0;
+  margin-top: 15.5pt; }
+  p.LetterExtClosinglcl em {
+    font-style: normal; }
+
+p.LetterExtSignaturelsig {
+  font-style: italic;
+  text-indent: 0;
+  margin-bottom: 15.5pt; }
+  p.LetterExtSignaturelsig em {
+    font-style: normal; }
+
+p[class*="ExtractSource"] em {
+  break-inside: avoid; }
+
+p[class*="Dateline"] {
+  text-indent: 0;
+  font-size: 10pt;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 46.5pt;
+  margin-bottom: 15.5pt;
+  text-align: left; }
+  p[class*="Dateline"] em {
+    font-style: normal; }
+
+p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
+  margin-top: -15.5pt; }
+
+p.LetterExtDatelineldl {
+  font-weight: normal;
+  font-size: 10pt;
+  text-indent: 0;
+  text-transform: none;
+  text-align: left;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  hyphens: none; }
+
+/* --------------- LISTS */
+ul {
+  padding-left: 0;
+  margin: 15.5pt 0 15.5pt 1em; }
+
+ol {
+  padding-left: 0;
+  margin: 15.5pt 0 15.5pt 1.2em; }
+
+ol li {
+  margin-left: 0;
+  padding-left: 0.167em; }
+
+ul li {
+  margin-left: 0;
+  padding-left: 0.3em; }
+
+h1 + ul, h1 + ol {
+  padding-top: 3pt; }
+
+.ChapterContentscc {
+  font-size: 10.5pt; }
+
+/* --------------- FIGURES*/
+*[class*="IllustrationSourceis"] {
+  font-family: "MinionPro", serif, "Noto";
+  font-size: 7pt;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 27pt;
+  page-break-before: avoid;
+  text-indent: 0; }
+
+*[class*="IllustrationSourceis"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] {
+  font-size: 7pt;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: bottom; }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a:before {
+  content: "Page " target-counter(attr(href), page) " "; }
+
+figure {
+  page-break-inside: avoid;
+  margin-top: 27pt;
+  margin-bottom: 31pt;
+  text-align: center;
+  float: top unless-fit; }
+
+figure.customimage {
+  padding: 7.75pt 0;
+  margin-top: 15.5pt;
+  margin-bottom: 9.6875pt;
+  float: none; }
+
+figure.customimage img {
+  padding: 0;
+  margin: 0; }
+
+figure.fullpage {
+  float: top unless-fit;
+  box-sizing: border-box;
+  width: 5.25in;
+  margin-top: 0.55in;
+  margin-bottom: 0;
+  text-align: inside;
+  text-align-last: inside;
+  margin-inside: -1in;
+  margin-outside: -0.75in;
+  overflow: visible;
+  height: 5.4in; }
+
+h1 + figure {
+  min-height: 21pt;
+  margin-top: -40pt;
+  margin-bottom: 51pt;
+  vertical-align: center; }
+
+figcaption {
+  font-family: "AromaNo2LTPro", sans-serif, "Noto";
+  font-size: 8.5pt;
+  line-height: 15.5pt;
+  text-align: left; }
+
+/* suppressing, for now */
+figure.fullpage figcaption {
+  display: none; }
+
+img {
+  max-width: 100%;
+  prince-image-resolution: auto, 300dpi;
+  text-align: center;
+  prince-image-magic: ignore-icc-profile; }
+
+img[src*="fullpage"] {
+  display: block;
+  width: 5.25in;
+  height: 8.25in;
+  margin-top: -1.65in; }
+
+section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
+  margin-top: -31pt;
+  margin-bottom: 27pt;
+  max-height: 2in; }
+
+section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
+  max-height: 2in; }
+
+*[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
+  text-align: center;
+  text-indent: 0; }
+
+p[class*="SpaceAfter"] + p[class*="Extract"],
+p[class*="SpaceAround"] + p[class*="Extract"],
+p[class*="Extract-NoIndent"] {
+  text-indent: 0; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-2-Linels2,
+p.SpaceBreak-3-Linels3,
+p.SpaceBreak-Internalint {
+  text-indent: 0; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint,
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  text-indent: 0;
+  content: " ";
+  font-size: 15.5pt;
+  text-align: center;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  margin-top: 15.5pt;
+  margin-bottom: 15.5pt;
+  padding: 0pt;
+  width: 100%;
+  height: 15.5pt; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-Internalint {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 60pt auto; }
+
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2 {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 60pt auto; }
+
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn.jpg");
+  background-size: 20.5pt auto;
+  height: 15.5pt; }
+
+p.SpaceBreakwithALTOrnamentorn2 {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn-bull.jpg");
+  background-size: 21.6pt auto;
+  height: 15.5pt; }
+
+p.SpaceBreak-PrintOnlypo {
+  text-indent: 0;
+  content: " ";
+  font-size: 15.5pt;
+  height: 15.5pt; }
+
+p.SpaceBreak-2-Linels2 {
+  height: 31pt;
+  content: " "; }
+
+p.SpaceBreak-3-Linels3 {
+  height: 46.5pt;
+  content: " "; }
+
+p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote {
+  margin-top: 0pt; }
+
+p.customimage {
+  background-image: none;
+  height: auto; }
+
+/* page break */
+.PageBreakpb {
+  display: none; }
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  page-break-before: always; }
+
+/* glossary definition */
+.Definitiondef {
+  font-size: 10.5pt;
+  line-height: 13.85106pt;
+  text-indent: -24pt;
+  margin: 0;
+  margin-left: 24pt;
+  margin-bottom: 7.75pt; }
+
+.Definitiondef:first-of-type, *[class*="Definitiondef"]:first-of-type {
+  text-indent: -24pt; }
+
+/* footnotes */
+span[data-type="footnote"],
+.endnotetext {
+  font-family: "ArnoPro-SmText", serif, "Noto";
+  font-size: 9pt;
+  line-height: 11.75pt;
+  text-indent: 0;
+  margin-left: 0; }
+
+span[data-type="footnote"] {
+  float: footnote;
+  footnote-style-position: inside; }
+
+span[data-type="footnote"] > span {
+  display: block;
+  text-indent: 11.75pt; }
+
+span[data-type="footnote"] > span:first-of-type {
+  display: inline;
+  text-indent: 0; }
+
+::footnote-call {
+  content: counter(footnote,symbols("*", "†", "‡", "§")); }
+
+::footnote-marker {
+  content: counter(footnote,symbols("*", "†", "‡", "§")) " ";
+  font-family: "ArnoPro", "Noto";
+  font-weight: 600; }
+
+*[class*="endnotetext"] {
+  line-height: 15.5pt;
+  counter-increment: endnotes; }
+
+*[class*="endnotetext"] p:first-of-type:before {
+  content: counter(endnotes) " ";
+  font-family: "ArnoPro", "Noto";
+  font-weight: 600;
+  display: inline-block; }
+
+/* character styles */
+.spansmallcapscharacterssc {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase; }
+
+.spansmcapitalscital {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-style: italic;
+  text-transform: lowercase; }
+
+.spansmcapboldscbold {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-weight: bold;
+  text-transform: lowercase; }
+
+.spansmcapbolditalscbi {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: lowercase; }
+
+.spanboldfacecharactersbf {
+  font-weight: bold; }
+
+.spanitaliccharactersital {
+  font-style: italic; }
+
+.spanbolditalbem {
+  font-style: italic;
+  font-weight: bold; }
+
+.spanunderscorecharactersus {
+  text-decoration: underline; }
+
+sup, sub {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: -0.6em; }
+
+sub {
+  top: 0.1em; }
+
+*[class*="spansuperscriptcharacterssup"] {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: -0.6em; }
+
+*[class*="spansubscriptcharacterssub"] {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: 0.1em; }
+
+*[class*="spanstrikethroughcharactersstr"] {
+  text-decoration: line-through; }
+
+*[class*="spanrun-incomputertypecomp"] {
+  font-family: "SourceCodePro", monospace, "Noto";
+  font-size: 8.5pt; }
+
+*[class*="bookmakerkeeptogetherkt"] {
+  white-space: pre;
+  page-break-inside: avoid; }
+
+p.BookmakerPageBreakbr,
+.bookmakerforcepagebreakbr {
+  page-break-after: always; }
+
+*[class*="tighten"], .bookmakertightenbkt {
+  letter-spacing: -0.2pt; }
+
+*[class*="loosen"], .bookmakerloosenbkl {
+  letter-spacing: 0.2pt; }
+
+header {
+  display: none;
+  margin: 0;
+  padding: 0; }
+
+.nobreak {
+  page-break-before: avoid; }
+
+.left {
+  text-align: left;
+  text-indent: 0; }
+
+.center {
+  text-align: center;
+  text-indent: 0; }
+
+.right {
+  text-align: right;
+  text-indent: 0; }
+
+header {
+  display: none; }
+
+/*@import "../_modules/gridlines.scss";*/
+@page part {
+  @top-center {}
+  @bottom-center {
+    content: normal; } }
+@page chapter {
+  @top-center {}
+  @bottom-center {
+    content: normal; } }
+@page front {
+  @top-center {} }
+@page copyright {
+  margin-bottom: 31pt; }
+div.runheadleft {
+  font-variant: prince-opentype(onum); }
+
+div.runheadright {
+  font-variant: prince-opentype(onum); }
+
+div.runheadleft::before {
+  content: counter(page) " • ";
+  font-style: normal; }
+
+div.runheadright::after {
+  content: " • " counter(page);
+  font-style: normal; }
+
+figure.fullpage {
+  margin-top: 0.55in;
+  margin-inside: -0.81in;
+  margin-outside: -0.69in; }
+
+img[src*="fullpage"] {
+  margin-top: -1.4in; }
+
+/*# sourceMappingURL=novel.css.map */

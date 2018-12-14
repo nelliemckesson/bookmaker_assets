@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-Bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-Italic.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-BoldItalic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-Smbd.otf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url('#{$fontpath}/ArnoPro-LightDisplay.otf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url('#{$fontpath}/ArnoPro-SmText.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url('#{$fontpath}/ArnoPro-BoldItalicSmText.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url('#{$fontpath}/ArnoPro-SmbdSmText.otf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url('#{$fontpath}/ArnoPro-ItalicSmText.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro-SmText";
+  src: url('#{$fontpath}/ArnoPro-BoldSmText.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ArnoPro-Caption";
+  src: url('#{$fontpath}/ArnoPro-Caption.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro-Caption";
+  src: url('#{$fontpath}/ArnoPro-ItalicCaption.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArnoPro-BoldSubhead";
+  src: url('#{$fontpath}/ArnoPro-BoldSubhead.otf');
+  font-style: normal;
+  font-weight: normal;
+}

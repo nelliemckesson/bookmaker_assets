@@ -1,0 +1,10 @@
+@import url('../core_tor.css');
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holtbyr/logo.jpg");
+  background-size: auto 0.40in;
+  height: 0.45in;
+  background-position: center center;
+  margin-bottom: auto;
+}
+

@@ -1,0 +1,98 @@
+@import url('../core_tor.css');
+
+@page chapter {
+  @top-center {
+    font-style: normal;
+    font-size: 8pt;
+    text-transform: uppercase;
+  }
+}
+
+@page front {
+  @top-center {
+    font-style: normal;
+    font-size: 8pt;
+    text-transform: uppercase;
+  }
+  @bottom-center {
+    content: counter(page, lower-roman);
+  }
+}
+
+@page copyright {
+  @top-center {
+    font-style: normal;
+    font-size: 8pt;
+    text-transform: uppercase;
+  }
+}
+
+p {
+  font-size: 11pt;
+}
+
+div.runheadleft { 
+  font-style: normal;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+div.runheadright { 
+  font-style: normal;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+section[data-type="dedication"] {
+  page-break-before: right;
+}
+
+section[data-type="titlepage"] > h1 {
+  font-family: "ArnoPro", serif;
+}
+
+section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
+  background-image: none;
+  background-size: auto auto;
+  background-position: auto;
+  background-repeat: no-repeat;
+}
+
+section[data-type="preface"] {
+  page: front;
+}
+
+section.abouttheauthor {
+  page: front;
+}
+
+section[data-type="preface"] h1, 
+section[data-type="appendix"] h1,
+h1[class*="BMHeadbmh"], 
+h1[class*="AboutAuthorTextHeadatah"] {
+  font-weight: normal;
+}
+
+section[data-type="preface"] h1[class*="FrontSalesTitlefst"] {
+  font-weight: normal;
+}
+
+section[data-type="preface"] + section[data-type="chapter"], 
+section[data-type="foreword"] + section[data-type="chapter"], 
+section[data-type="titlepage"] + section[data-type="chapter"], 
+section[data-type="halftitlepage"] + section[data-type="chapter"], 
+section[data-type="copyright-page"] + section[data-type="chapter"], 
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"], 
+div[data-type="part"]:first-of-type {
+  counter-reset: page 1 footnote;
+}
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"], 
+*[class*="ChapNumberNonprintingcnp"] {
+  font-weight: normal;
+}
+
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
+  font-weight: normal;
+}
