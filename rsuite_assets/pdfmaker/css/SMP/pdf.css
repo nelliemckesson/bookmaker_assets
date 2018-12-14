@@ -1,0 +1,38 @@
+@import url('../core_tor.css');
+
+@page front {
+  @bottom-center {
+    content: counter(page, lower-roman);
+  }
+}
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/SMP/logo.jpg");
+  background-size: 0.2in auto;
+  height: 0.2in;
+  margin-bottom: auto;
+}
+
+section[data-type="preface"] {
+  page: front;
+}
+
+section[data-type="preface"] + section[data-type="chapter"], 
+section[data-type="foreword"] + section[data-type="chapter"], 
+section[data-type="titlepage"] + section[data-type="chapter"], 
+section[data-type="halftitlepage"] + section[data-type="chapter"], 
+section[data-type="copyright-page"] + section[data-type="chapter"], 
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"] {
+  counter-reset: page 1 footnote;
+}
+
+section[data-type="preface"] + div[data-type="part"], 
+section[data-type="foreword"] + div[data-type="part"], 
+section[data-type="titlepage"] + div[data-type="part"], 
+section[data-type="halftitlepage"] + div[data-type="part"], 
+section[data-type="copyright-page"] + div[data-type="part"], 
+section[data-type="dedication"] + div[data-type="part"],
+nav[data-type="toc"] + div[data-type="part"] {
+  counter-reset: page 1;
+}

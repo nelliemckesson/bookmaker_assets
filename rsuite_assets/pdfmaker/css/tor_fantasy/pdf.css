@@ -1,0 +1,9 @@
+@import url('../core_tor.css');
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/tor_fantasy/logo.jpg");
+  background-size: auto 0.6in;
+  height: 0.65in;
+  background-position: center center;
+  margin-bottom: auto;
+}

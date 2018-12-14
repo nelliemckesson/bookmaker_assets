@@ -1,0 +1,13 @@
+.NoteLevel-1Subheadn1 {
+  text-indent: 0;
+  font-size: $sizeh1;
+  font-style: italic;
+  text-align: center;
+  margin-top: $gridheight * 2;
+  margin-bottom: $gridheight;
+  page-break-after: avoid;
+
+  em {
+    font-style: normal;
+  }
+}

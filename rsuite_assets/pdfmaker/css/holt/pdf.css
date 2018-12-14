@@ -1,0 +1,1245 @@
+../../../..@charset "UTF-8";
+/* LOCAL VARIABLES */
+@font-face {
+  font-family: "MinionPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-It.otf");
+  font-style: italic;
+  font-weight: normal; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Semibold.otf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "MinionPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldIt.otf");
+  font-style: italic;
+  font-weight: 600; }
+@font-face {
+  font-family: "MinionPro-Display";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-SemiboldDisp.otf");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "AromaNo2LTPro";
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@page {
+  size: 6.125in 9.25in;
+  margin-top: 45pt;
+  margin-bottom: 57pt;
+  padding: 15pt 0 0 0;
+  background-position: top left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  marks: crop;
+  prince-mark-offset: 0.125in;
+  prince-mark-length: 0in;
+  bleed: 0.125in;
+  @footnotes {
+    font-family: "MinionPro";
+    font-size: 8.5pt;
+    line-height: 11pt;
+    margin-top: 30pt; } }
+@page :left {
+  margin-left: 63pt;
+  margin-right: 63pt; }
+@page :right {
+  margin-left: 63pt;
+  margin-right: 63pt; }
+
+@page chapter:left {
+  @top-left {
+    content: flow(runheadleft);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: left; } }
+@page chapter:right {
+  @top-right {
+    content: flow(runheadright);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: right; } }
+@page chapter:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page chapter:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+
+@page part:left {
+  @top-left {
+    content: flow(runheadleft);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: left; } }
+@page part:right {
+  @top-right {
+    content: flow(runheadright);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: right; } }
+@page part:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page part:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+
+@page front:left {
+  @top-left {
+    content: flow(runheadleft);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: left; } }
+@page front:right {
+  @top-right {
+    content: flow(runheadright);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: right; } }
+@page front:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page front:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+
+  @page toc:left {
+    @top-left {
+      content: counter(page, lower-roman) " • Contents";
+      font-family: "MinionPro";
+      font-style: italic;
+      font-size: 9pt;
+      vertical-align: top;
+      padding: 35pt 0 0 0;
+      margin: 0;
+      text-align: left; } }
+  @page toc:right {
+    @top-right {
+      content: "Contents • " counter(page, lower-roman);
+      font-family: "MinionPro";
+      font-style: italic;
+      font-size: 9pt;
+      vertical-align: top;
+      padding: 35pt 0 0 0;
+      margin: 0;
+      text-align: right; } }
+  @page toc:first {
+    @top-right {
+    content: normal; }
+    @top-left {
+    content: normal; } }
+  @page toc:blank {
+    @top-right {
+    content: normal; }
+    @top-left {
+    content: normal; } }
+
+@page back:left {
+  @top-left {
+    content: flow(runheadleft);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: left; } }
+@page back:right {
+  @top-right {
+    content: flow(runheadright);
+    font-family: "MinionPro";
+    font-style: italic;
+    font-size: 9pt;
+    vertical-align: top;
+    padding: 35pt 0 0 0;
+    margin: 0;
+    text-align: right; } }
+@page back:first {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+@page back:blank {
+  @top-right {
+  content: normal; }
+  @top-left {
+  content: normal; } }
+
+body {
+  font-family: "MinionPro";
+  counter-reset: endnotes chapternumber;
+}
+
+section, p, div, h1, h2, h3, h4, h5, h6 {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}
+
+p {
+  font-size: 11.2pt;
+  line-height: 15pt;
+  text-indent: 15pt;
+  text-align: justify;
+  text-align-last: left;
+  margin: 0;
+  widows: 1;
+  orphans: 1;
+  hyphens: auto;
+  prince-hyphenate-after: 3;
+  prince-hyphenate-before: 3;
+  hyphenate-lines: 2;
+}
+
+/*run heads (in combination with holt.js)*/
+div.runheadright {
+  flow: static(runheadright);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+div.runheadleft {
+  flow: static(runheadleft);
+  font-family: "MinionPro";
+  font-style: italic;
+  font-size: 9pt;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-indent: 0; }
+
+section[data-type="preface"] p + div.runheadright:after {
+content: " • " counter(page, lower-roman); }
+
+section[data-type="preface"] p + div.runheadright + div.runheadleft:before {
+content: counter(page, lower-roman) " • "; }
+
+section[data-type="chapter"] p + div.runheadright:after,
+div[data-type="part"] p + div.runheadright:after,
+section[data-type="appendix"] p + div.runheadright:after {
+content: " • " counter(page); }
+
+section[data-type="chapter"] p + div.runheadright + div.runheadleft:before,
+div[data-type="part"] p + div.runheadright + div.runheadleft:before {
+content: counter(page) " • " string(title); }
+
+section[data-type="appendix"] p + div.runheadright + div.runheadleft:before {
+content: counter(page) " • "; }
+
+p:first-of-type,
+p[class^="SpaceBreak"] + p,
+p[class*="No-Indent"] {
+  text-indent: 0; }
+
+p[class*="SpaceBefore"] {
+  margin-top: 15pt; }
+
+p[class*="SpaceAround"] {
+  margin-top: 15pt;
+  margin-bottom: 15pt; }
+
+p[class*="SpaceAfter"] {
+  margin-bottom: 15pt; }
+
+blockquote {
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+  page-break-inside: auto; }
+
+/* frontmatter */
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="preface"],
+section[data-type="copyright-page"],
+section[data-type="dedication"],
+section.adcard {
+  page-break-after: always; }
+
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="preface"] {
+  page-break-before: right; }
+
+section[data-type="dedication"],
+section[data-type="preface"].adcard {
+  page-break-before: always; }
+
+section[data-type="preface"]:not(.adcard){
+  page: front;
+  prince-page-group: start; }
+
+nav[data-type="toc"] {
+  page: toc;
+  prince-page-group: start; }
+
+section[data-type="preface"] h1,
+nav[data-type="toc"] h1 {
+  string-set: section content(); }
+
+*[class*="FrontSalesTitlefst"] {
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15pt; }
+
+*[class*="FrontSalesQuoteNoIndentfsq1"] {
+  text-indent: 0;
+  text-align: left; }
+
+*[class*="FrontSalesQuotefsq"],
+*[class*="FrontSalesQuotefsq"]:first-of-type {
+  text-indent: -5pt;
+  text-align: left; }
+
+*[class*="FrontSalesQuoteSourcefsqs"] {
+  font-weight: bold;
+  font-size: 11pt;
+  text-align: right;
+  margin-bottom: 15pt; }
+
+*[class*="FrontSalesQuoteSourcefsqs"] em {
+  break-inside: avoid; }
+
+section[data-type="halftitlepage"] > h1,
+*[class*="HalftitleBookTitlehtit"] {
+  padding-left: 53pt;
+  padding-right: 53pt;
+  font-size: 18pt;
+  font-weight: normal;
+  line-height: 22pt;
+  margin-top: 70pt;
+  text-align: center; }
+
+section.adcard {
+  text-align: center; }
+
+section[data-type="preface"] [class*="AdCardMainHeadacmh"] {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-size: 11.2pt;
+  font-weight: normal;
+  line-height: 16pt;
+  margin-top: 70pt;
+  margin-bottom: 18pt;
+  text-align: center;
+  text-indent: 0; }
+
+*[class*="AdCardSubheadacsh"] {
+  text-align: center;
+  text-indent: 0;
+  line-height: 16pt;
+  margin-top: 18pt; }
+
+*[class*="AdCardListofTitlesacl"] {
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  line-height: 16pt;
+  margin-top: 8pt; }
+
+section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+  content: " ";
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/logo.jpg");
+  background-size: auto 0.5in;
+  height: 0.55in;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: auto; }
+
+section[data-type="titlepage"] > h1 {
+  padding-left: 39pt;
+  padding-right: 39pt;
+  font-weight: normal;
+  font-size: 26pt;
+  hyphens: none;
+  line-height: 32pt;
+  text-align: center;
+  margin-bottom: 0;
+  string-set: title content(); }
+
+section[data-type="titlepage"] *[class*="Titlepage"] {
+  text-indent: 0;}
+
+section[data-type="titlepage"] > h1:first-child {
+  margin-top: 70pt; }
+
+*[class*="TitlepageBookSubtitlestit"] + h1,
+*[class*="TitlepageSeriesTitleser"] + h1 {
+  margin-top: 20.58pt; }
+
+h1 + *[class*="TitlepageBookSubtitlestit"],
+h1 + *[class*="TitlepageSeriesTitleser"] {
+  margin-top: 19pt;
+  margin-bottom: 0; }
+
+*[class*="TitlepageBookSubtitlestit"],
+*[class*="TitlepageSeriesTitleser"] {
+  margin-top: 19pt;
+  text-indent: 0;
+  padding-left: 72.5pt;
+  padding-right: 72.5pt;
+  font-weight: normal;
+  font-size: 14pt;
+  line-height: 19pt;
+  text-align: center;
+  hyphens: none; }
+
+*[class*="TitlepageBookSubtitlestit"]:first-child,
+*[class*="TitlepageSeriesTitleser"]:first-child {
+  margin-top: 4.75pt; }
+
+*[class="TitlepageBookTitletit"] + *[class*="TitlepageBookSubtitlestit"],
+*[class="TitlepageBookTitletit"] + *[class*="TitlepageSeriesTitleser"] {
+  padding-top: 14pt;
+  margin-top: 11pt;
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 80.4pt auto;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+*[class*="TitlepageTranslatorNametran"],
+*[class*="TitlepageContributorNamecon"] {
+  text-align: center; }
+
+section[data-type="titlepage"] *[class*="TitlepageAuthorNameau"] {
+  font-size: 24pt;
+  line-height: 48pt;
+  margin-top: 108pt;
+  text-indent: 0;
+  text-align: center; }
+
+section[data-type="titlepage"] *[class*="TitlepageImprintLineimp"] {
+  float: bottom;
+  text-align: center;
+  text-indent: 0; }
+
+*[class*="TitlepageCitiescit"], *[class*="TitlepagePublisherNamepub"], *[class*="TitlepageImprintLineimp"] {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-style: normal;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 10pt;
+  line-height: 13pt;
+  float: bottom;
+  text-align: center;
+  text-indent: 0; }
+
+section[data-type="copyright-page"] p:first-of-type {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/holt/HoltLogo30K.png");
+  background-position: center top;
+  background-size: 25pt auto;
+  background-repeat: no-repeat;
+  padding-top: 45pt; }
+
+section[data-type="copyright-page"] p {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  font-size: 9pt;
+  text-align: center;
+  text-indent: 0;
+  line-height: 11.5pt;
+  hyphens: none;
+  float: bottom; }
+
+*[class*="CopyrightTextdoublespacecrtxd"] {
+  margin-bottom: 11.5pt; }
+
+section[data-type="dedication"] p:not([class*="Epigraph"]) {
+  text-align: center;
+  font-style: italic;
+  font-size: 12pt;
+  line-height: 18pt;
+  text-indent: 0; }
+
+section[data-type="dedication"] {
+  margin-top: 74pt; }
+
+/*TOC*/
+.texttoc {
+  display: none; }
+
+nav[data-type="toc"], section.texttoc {
+  padding-left: 24pt;
+  padding-right: 24pt;
+  page-break-before: right;
+  page-break-after: always; }
+
+nav[data-type="toc"] h1, section.texttoc h1 {
+  font-weight: normal;
+  font-size: 15pt;
+  line-height: 19pt;
+  margin-top: 70pt;
+  margin-bottom: 135pt;
+  text-align: center; }
+
+nav[data-type="toc"] ol {
+  margin-left: 0; }
+
+nav[data-type="toc"] li, section.texttoc p {
+  font-size: 11.2pt;
+  line-height: 15pt;
+  margin-bottom: 6pt;
+  margin-left: 0;
+  list-style-type: none; }
+
+section.texttoc p {
+  margin-top: 0;
+  text-indent: 0; }
+
+nav[data-type="toc"] li.PartNumberpn ~ li,
+nav[data-type="toc"] li.PartTitlept ~ li,
+section.texttoc p.PartTitlept ~ p,
+section.texttoc p.PartNumberpn ~ p {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+nav[data-type="toc"] li.PartNumberpn ~ li.PartNumberpn,
+nav[data-type="toc"] li.PartTitlept ~ li.PartTitlept,
+nav[data-type="toc"] li.PartNumberpn ~ li.PartTitlept,
+nav[data-type="toc"] li.PartTitlept ~ li.PartNumberpn,
+section.texttoc p.PartNumberpn ~ p.PartNumberpn,
+section.texttoc p.PartTitlept ~ p.PartTitlept,
+section.texttoc p.PartNumberpn ~ p.PartTitlept,
+section.texttoc p.PartTitlept ~ p.PartNumberpn {
+  margin-bottom: 8.44pt; }
+
+nav[data-type="toc"] li.PartNumberpn + li.PartTitlept,
+section.texttoc p.PartNumberpn + p.PartTitlept {
+  margin-top: -8.44pt; }
+
+nav[data-type="toc"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+nav[data-type="toc"] li a:after {
+  content: leader(space) target-counter(attr(href), page);
+  padding-left: 15pt; }
+
+nav[data-type="toc"] li.FMHeadfmh a:after {
+  content: leader(space) target-counter(attr(href), page, lower-roman);
+  padding-left: 15pt; }
+
+nav[data-type="toc"] li.PartNumberpn,
+nav[data-type="toc"] li.PartTitlept,
+section.texttoc p.PartTitlept,
+section.texttoc p.PartNumberpn {
+  margin-bottom: 8.44pt;
+  margin-top: 22.5pt;
+  vertical-align: top;
+  font-style: italic; }
+
+nav[data-type="toc"] li.PartNumberpn a,
+nav[data-type="toc"] li.PartTitlept a {
+  vertical-align: top; }
+
+nav[data-type="toc"] li.PartNumberpn a:after,
+nav[data-type="toc"] li.PartTitlept a:after {
+  content: normal;
+  display: inline; }
+
+section.texttoc p.TOCAuthorcau, section.texttoc p.TOCChapterSubtitleccst {
+  margin-left: 30pt;
+  margin-top: -6pt; }
+
+section.texttoc p.TOCLevel-1ChapterHeadch1 {
+  font-size: 15pt;
+  line-height: 19pt; }
+
+section[data-type="preface"] h1,
+section[data-type="appendix"] h1,
+h1[class*="BMHeadbmh"] {
+  font-size: 15pt;
+  line-height: 19pt;
+  font-weight: normal;
+  margin-top: 70pt;
+  margin-bottom: 135pt;
+  padding: 0;
+  text-align: center; }
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"], *[class*="BMSubheadbmsh"],
+*[class*="ChapSubtitlecst"], section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
+  text-indent: 0;
+  font-size: 13pt;
+  line-height: 16pt;
+  font-weight: normal;
+  hyphens:none;
+  text-align: center;
+  margin-bottom: 13pt;
+  page-break-after: avoid;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 53pt;
+  padding-right: 53pt; }
+
+section h1.AboutAuthorTextHeadatah, section.abouttheauthor h1 {
+  line-height: 18pt;
+  margin-top: 68pt;
+  margin-bottom: 18pt; }
+
+p[class*="AboutAuthorText"] {
+  padding: 0 24pt 0 24pt;
+  font-size: 10.5pt;
+  line-height: 18pt; }
+
+h1 + p[class*="AboutAuthorText"],
+figure + p[class*="AboutAuthorText"],
+p.AboutAuthorTextNo-Indentatatx1,
+p.IllustrationSourceis + p[class*="AboutAuthorText"] {
+  text-indent: 0; }
+
+section h1.AboutAuthorTextHeadatah + figure + p, section.abouttheauthor h1 + figure + p {
+  margin-top: 22pt; }
+
+section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type {
+  margin-top: -125pt; }
+
+section[data-type="chapter"] {
+  page: chapter;
+  page-break-before: always;
+  prince-page-group: start;
+  counter-reset: footnote; }
+
+section[data-type="chapter"] ~ section[data-type="chapter"] {
+   counter-reset: none }
+
+h1[class*="ChapTitle"]:first-child,
+h1[class*="ChapNumber"]:first-child {
+  margin-top: 70pt;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+h1[class*="ChapTitle"]:not(:first-child) {
+  margin-top: 0; }
+
+section[data-type="preface"] + section[data-type="chapter"],
+section[data-type="foreword"] + section[data-type="chapter"],
+section[data-type="titlepage"] + section[data-type="chapter"],
+section[data-type="halftitlepage"] + section[data-type="chapter"],
+section[data-type="copyright-page"] + section[data-type="chapter"],
+section[data-type="dedication"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"] {
+  counter-reset: page 1 footnote;
+  page-break-before: right; }
+
+section[data-type="preface"] + div[data-type="part"],
+section[data-type="foreword"] + div[data-type="part"],
+section[data-type="titlepage"] + div[data-type="part"],
+section[data-type="halftitlepage"] + div[data-type="part"],
+section[data-type="copyright-page"] + div[data-type="part"],
+section[data-type="dedication"] + div[data-type="part"],
+nav[data-type="toc"] + div[data-type="part"] {
+  counter-reset: page 1; }
+
+div[data-type="part"] + section[data-type="chapter"] {
+  page-break-before: right; }
+
+section[data-type="chapter"] h1[class*="ChapNumbercn"] {
+  font-size: 20pt;
+  padding-top: 3pt;
+  line-height: 15pt;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10pt;
+  text-indent: 0; }
+
+section[data-type="chapter"] h1[class*="ChapTitleNonprintingctnp"] {
+  counter-increment: chapternumber;
+  string-set: section content(); }
+
+/*chapter title!*/
+section[data-type="chapter"] h1[class*="ChapTitlect"] {
+  font-size: 15pt;
+  line-height: 19pt;
+  font-weight: normal;
+  text-align: center;
+  padding-left: 39pt;
+  padding-right: 39pt;
+  margin-bottom: 9pt;
+  counter-increment: chapternumber;
+  string-set: section content(); }
+
+h1[class*="ChapTitlect"][data-autolabel="yes"]:before {
+  content: attr(data-labeltext);
+  display: block;
+  padding-top: 3pt;
+  font-size: 20pt;
+  line-height: 15pt;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10pt;
+  text-indent: 0; }
+
+*[class*="Nonprinting"] {
+  display: none; }
+
+p[class*="ChapOpeningText"] {
+  margin-top: 77pt; }
+
+section[data-type="appendix"] {
+  page-break-before: right;
+  counter-reset: footnote;
+  page: back;
+  prince-page-group: start; }
+
+section[data-type="appendix"] h1[class*="BMHead"] {
+  string-set: section content(); }
+
+section[data-type="appendix"]:first-of-type {
+  page-break-before: right; }
+
+*[class*="BibliographyTextbibtx"] {
+  text-indent: -18pt;
+  margin-left: 18pt;
+  font-size: 9pt;
+  line-height: 11pt; }
+
+*[class*="Head-Level-1h1"] {
+  text-indent: 0;
+  font-family: "MinionPro-Display";
+  font-size: 12pt;
+  line-height: 15pt;
+  margin-top: 20pt;
+  margin-bottom: 14pt;
+  page-break-after: avoid; }
+
+*[class*="Head-Level-2h2"] {
+  text-indent: 0;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 10pt;
+  margin-bottom: 5pt;
+  page-break-after: avoid; }
+
+*[class*="Head-Level-3h3"] {
+  font-weight: 600;
+  text-indent: 0;
+  font-size: 9pt;
+  font-style: normal;
+  margin-top: 9;
+  margin-bottom: 2pt;
+  line-height: 11pt;
+  page-break-after: avoid; }
+
+div[data-type="part"] {
+  page: part;
+  page-break-before: right;
+  margin-top: 75pt;
+  text-align: center;
+  font-weight: normal;
+  padding-left: 39pt;
+  padding-right: 39pt;
+  counter-reset: footnote;
+  prince-page-group: start; }
+
+div[data-type="part"] h1[class*="PartNumberpn"] {
+  font-size: 11.2pt;
+  line-height: 15pt;
+  padding-bottom: 7pt;
+  margin-bottom: 13pt;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 45.75pt auto;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+div[data-type="part"] h1[class*="PartTitlept"] {
+  font-size: 18pt;
+  line-height: 22pt;
+  margin-top: 0;
+  margin-bottom: 19pt; }
+
+div[data-type="part"] *[class*="PartNumberSubtitlepst"] {
+  font-size: 13pt;
+  line-height: 17pt;
+  margin-top: 0; }
+
+div[data-type="part"] h1[class*="PartNumberpn"] + div[class*="runheadright"] + div[class*="runheadleft"] + h1[class*="PartTitlept"] {
+  margin-top: 0; }
+
+*[class*="Text-StandardALTatx"],
+*[class*="Text-StdNo-IndentALTatx1"] {
+  font-family: "AromaNo2LTPro"
+  font-size: 9.75pt; }
+
+*[class*="Text-ComputerTypecom"],
+*[class*="Text-ComputerTypeNo-Indentcom1"] {
+  font-family: "SourceCodePro", monospace;
+  font-size: 8.5pt; }
+
+pre.poetry {
+  font-family: "MinionPro", serif;
+  margin: 15pt 51pt 15pt 35pt;
+  white-space: pre-wrap; }
+
+pre.poetry p, pre.poetry p:first-of-type {
+  text-indent: -12pt;
+  font-size: 10.5pt; }
+
+p[class*="Extract"] {
+  font-size: 10.5pt; }
+
+blockquote {
+  margin-left: 27pt;
+  margin-right: 27pt; }
+
+blockquote p:first-child {
+  text-indent: 0; }
+
+/*epigraphs*/
+section[data-type="copyright"] blockquote[data-type="epigraph"],
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+.Dedicationded + p[class*="Epigraph"],
+*[class*="Copyright"] + p[class*="Epigraph"] {
+  page-break-before: right;
+  margin-top: 74pt; }    /*causing a problem if epigraph blockquote is not properly consolidated*/
+
+section[data-type="chapter"] blockquote[data-type="epigraph"]:not(:first-child),
+div[data-type="part"] > blockquote[data-type="epigraph"]:not(:first-child),
+section[data-type="preface"] > blockquote[data-type="epigraph"]:not(:first-child) {
+  margin-top: 30pt; }
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"],
+div[data-type="part"] > blockquote[data-type="epigraph"],
+section[data-type="preface"] > blockquote[data-type="epigraph"] {
+  margin-left: 30pt;
+  margin-right: 30pt;
+  margin-bottom: 45pt; }
+
+blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
+blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote[data-type="epigraph"] {
+  margin-top: -45pt; }
+
+p[class*="Epigraph"] {
+  font-style: italic;
+  text-align: left;
+  text-indent: 0; }
+
+p[class*="Epigraph-verse"], p.EpigraphinText-versetepiv {
+  margin-left: 12pt;
+  text-indent: -12pt; }
+
+p[class*="EpigraphSource"], p.EpigraphinText-Sourceteps {
+  font-style: normal;
+  font-size: 10.5pt;
+  line-height: 13pt;
+  text-align: right;
+  margin: 4pt;
+  widows: 2;
+  orphans: 2; }
+
+*[class*="EpigraphSource"] em{
+  break-inside: avoid; }
+
+/*EXTRACTS*/
+*[class*="ExtractHeadexth"] {
+  page-break-after: avoid; }
+
+*[class*="ExtractHeadexth"], *[class*="Extract-Headlineexthl"] {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15pt;
+  margin-bottom: 15pt; }
+
+*[class*="ExtractHeadexth"] + p,
+.Extract-NoIndentext1 {
+  text-indent: 0; }
+
+*[class*="Extract-VerseorPoetryextv"],
+*[class*="Extract-VerseorPoetryextv"]:first-of-type {
+  font-style: italic;
+  text-indent: -12pt;
+  margin-left: 12pt;
+  text-align: left; }
+
+p[class*="ExtractSource"] {
+  text-align: right;
+  widows: 2;
+  orphans: 2; }
+
+p.LetterExtBodyTextltx, p.LetterExtBodyTextNo-Indentltx1 {
+  font-style: italic; }
+
+p.LetterExtSalutationlsa {
+  font-style: italic;
+  text-indent: 0;
+  margin-top: 15pt;
+  margin-bottom: 15pt; }
+
+p.LetterExtAddressladd,
+p.LetterExtGeneralextl,
+p.LetterExtPostscriptlps {
+  font-style: italic;
+  text-indent: 0; }
+
+p.LetterExtClosinglcl {
+  font-style: italic;
+  text-indent: 0;
+  margin-top: 15; }
+
+p.LetterExtSignaturelsig {
+  font-style: italic;
+  text-indent: 0;
+  margin-bottom: 15; }
+
+p[class*="ExtractSource"] em {
+  break-inside: avoid; }
+
+p[class*="Dateline"] {
+  text-indent: 0;
+  font-size: 10pt;
+  text-transform: uppercase;
+  margin-top: 45pt;
+  margin-bottom: 15pt;
+  text-align: left; }
+
+p[class*="Dateline"] + div[class*="runheadright"] + div[class*="runheadleft"] + p[class*="Dateline"] {
+  margin-top: -15pt; }
+
+p.LetterExtDatelineldl {
+  font-size: 10pt;
+  text-indent: 0;
+  text-transform: none;
+  text-align: center;
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+  hyphens: none; }
+
+/* LISTS */
+ul {
+  padding-left: 0;
+  margin: 15pt 0 15pt 1.6em; }
+
+ol {
+  padding-left: 0;
+  margin: 15pt 0 15pt 1.4em; }
+
+/* FIGURES*/
+*[class*="IllustrationSourceis"] {
+  font-family: "MinionPro", serif;
+  font-size: 7pt;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 27pt;
+  page-break-before: avoid;
+  text-indent: 0; }
+
+*[class*="IllustrationSourceis"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] {
+  font-size: 7pt;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: bottom; }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a {
+  text-decoration: none;
+  color: cmyk(0%, 0%, 0%, 100%); }
+
+section[data-type="copyright-page"] *[class*="IllustrationSourceis"] a:before {
+  content: "Page " target-counter(attr(href), page) " "; }
+
+figure {
+  page-break-inside: avoid;
+  margin-top: 26pt;
+  margin-bottom: 30pt;
+  text-align: center;
+  float: top unless-fit; }
+
+figure.fullpage {
+  float: top unless-fit;
+  box-sizing: border-box;
+  width: 6.375in;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: inside;
+  text-align-last: inside;
+  margin-inside: -72pt;
+  margin-outside: -72pt;  /*std margin + bleed*/
+  overflow: visible;
+  height: 7.5in; }
+
+img {
+  max-width: 100%;
+  prince-image-resolution: auto, 300dpi;
+  text-align: center; }
+
+img[src*="fullpage"] {
+  display: block;
+  width: 6.375in;
+  height: 9.5in;
+  margin-top: -69pt; }/*bleed + padding + margin-top*/
+
+/* suppressing, for now */
+figure.fullpage figcaption {
+  display: none; }
+
+section[data-type="appendix"] h1 + figure, .abouttheauthor h1 + figure {
+  margin-top: -3pt;
+  margin-bottom: 15pt;
+  max-height: 2in; }
+
+section[data-type="appendix"] h1 + figure img, .abouttheauthor figure img {
+  max-height: 2in; }
+
+/*misc + space breaks*/
+*[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
+  text-align: center;
+  text-indent: 0; }
+
+p[class*="SpaceAfter"] + p[class*="Extract"],
+p[class*="SpaceAround"] + p[class*="Extract"],
+p[class*="Extract-NoIndent"] {
+  text-indent: 0; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1,
+p.SpaceBreak-2-Linels2,
+p.SpaceBreak-3-Linels3 {
+  text-indent: 0; }
+
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1 {
+  text-indent: 0;
+  content: " ";
+  font-size: 11.2pt;
+  text-align: center;
+  margin-top: 15pt; }
+
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2,
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn,
+p.SpaceBreakwithALTOrnamentorn2 {
+  text-indent: 0;
+  content: " ";
+  font-size: 15pt;
+  text-align: center;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  margin-top: 15pt;
+  margin-bottom: 15pt;
+  padding: 0pt;
+  width: 100%;
+  height: 15pt; }
+
+/*not in Meryl's nf large design
+p.SpaceBreak,
+p.SpaceBreak-1-Linels1 {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 60pt auto; }
+*/
+
+p.PartOrnamentporn,
+p.ChapOrnamentcorn,
+p.ChapOrnamentALTcorn2 {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
+  background-size: 60pt auto; }
+
+p.SpaceBreakOrnamentorn,
+p.SpaceBreakwithOrnamentorn {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn.jpg");
+  background-size: 20.5pt auto;
+  height: 15.5pt; }
+
+p.SpaceBreakwithALTOrnamentorn2 {
+  background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn-bull.jpg");
+  background-size: 21.6pt auto;
+  height: 15.5pt; }
+
+p.SpaceBreak-PrintOnlypo {
+  text-indent: 0;
+  content: " ";
+  font-size: 15pt;
+  height: 15pt; }
+
+p.SpaceBreak-2-Linels2 {
+  height: 30pt;
+  content: " "; }
+
+p.SpaceBreak-3-Linels3 {
+  height: 45pt;
+  content: " "; }
+
+p[class*="SpaceBreak"] + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreak + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.PartOrnamentporn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.ChapOrnamentcorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.ChapOrnamentALTcorn2 + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakOrnamentorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakwithOrnamentorn + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote,
+p.SpaceBreakwithALTOrnamentorn2 + div[class*="runheadright"] + div[class*="runheadleft"] + blockquote {
+  margin-top: 0pt; }
+
+p.PageBreakpb {
+  display: none; }
+
+/* footnotes*/
+span[data-type="footnote"] {
+  font-size: 8.5pt;
+  line-height: 11pt;
+  text-indent: 0;
+  float: footnote;
+  margin-left: 0.5em;
+  footnote-style-position: outside; }
+
+::footnote-marker {
+  content: counter(footnote,symbols("*", "†", "‡", "§")); }
+
+::footnote-call {
+  content: counter(footnote,symbols("*", "†", "‡", "§")); }
+
+p[class*="EndnoteText"] {
+    font-size: 9pt;
+    line-height: 11pt;
+    text-indent: -18pt;
+    padding-left: 18pt;
+    footnote-style-position: inside;
+    counter-increment: endnotes; }
+
+*[class*="endnotetext"] p:first-of-type:before {
+  content: counter(endnotes) " "; }
+
+/* character styles */
+.spansmallcapscharacterssc {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase; }
+
+.spansmcapitalscital {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-style: italic;
+  text-transform: lowercase; }
+
+.spansmcapboldscbold {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-weight: bold;
+  text-transform: lowercase; }
+
+.spansmcapbolditalscbi {
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: lowercase; }
+
+.spanboldfacecharactersbf {
+  font-weight: bold; }
+
+.spanitaliccharactersital {
+  font-style: italic; }
+
+.spanbolditalbem {
+  font-style: italic;
+  font-weight: bold; }
+
+.spanunderscorecharactersus {
+  text-decoration: underline; }
+
+sup, sub {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: -0.6em; }
+
+sub {
+  top: 0.1em; }
+
+*[class*="spansuperscriptcharacterssup"] {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: -0.6em; }
+
+*[class*="spansubscriptcharacterssub"] {
+  font-size: 6pt;
+  vertical-align: top;
+  position: relative;
+  top: 0.1em; }
+
+*[class*="spansymbolssym"] {
+  font-family: inherit; }
+
+*[class*="spanstrikethroughcharactersstr"] {
+  text-decoration: line-through; }
+
+.nobreak {
+  page-break-before: avoid; }
+
+*[class*="bookmakerkeeptogetherkt"] {
+  white-space: pre;
+  page-break-inside: avoid; }
+
+p.BookmakerPageBreakbr,
+.bookmakerforcepagebreakbr {
+  page-break-after: always; }
+
+*[class*="tighten"], .bookmakertightenbkt {
+  letter-spacing: -0.2pt; }
+
+*[class*="loosen"], .bookmakerloosenbkl {
+  letter-spacing: 0.2pt; }
