@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "AromaNo2LTPro";
+  src: url('#{$fontpath}/AromaNo2LTPro-Italic.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AromaNo2LTPro";
+  src: url('#{$fontpath}/AromaNo2LTPro-Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}

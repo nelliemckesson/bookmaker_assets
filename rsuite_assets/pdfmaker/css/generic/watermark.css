@@ -1,0 +1,8 @@
+@page {
+   @prince-overlay {
+      color: rgba(255,0,0,0.2);
+      content: "STAGING SERVER";
+      font-size: 50pt;
+      transform: rotate(50deg);
+   }
+}

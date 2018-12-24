@@ -1,0 +1,11 @@
+.NoteLevel-2Subheadn2 {
+  text-indent: 0;
+  font-size: $sizeh2;
+  font-variant: small-caps;
+  font-variant: prince-opentype(smcp, onum);
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: $gridheight * 2;
+  margin-bottom: $gridheight;
+  page-break-after: avoid;
+}

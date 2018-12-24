@@ -1,5 +1,8 @@
 /* TO COMPILE: $ sass novella.scss pdf.css */
 
+/* GLOBAL VARIABLES */
+@import "../_modules/vars_global.scss";
+
 /* LOCAL VARIABLES */
 $biggest: 18pt; //sizehalftitle sizepartnum
 $bigger: 16pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle
@@ -81,8 +84,6 @@ $familyrunhead: "ArnoPro-Caption", serif;
 $familybody: "ArnoPro", serif;
 $familyfootnote: "ArnoPro-SmText", serif;
 
-/*$fontpath: "/Users/nellie.mckesson/Dropbox (Macmillan Publishers)/backup/automation/tor-design-samples/Imprint_PoD_template_r4 Folder/Documentfonts";*/
-$fontpath: "http://www.macmillan.tools.vhost.zerolag.com/bookmaker/bookmakerfonts";
 
 @import "../_modules/font_arnopro.scss";
 @import "../_modules/font_aroma.scss";
