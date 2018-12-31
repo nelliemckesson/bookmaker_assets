@@ -373,6 +373,7 @@ div.runfoot span {
 }
 
 p:first-of-type,
+p[class*="-Space-Break"] + p,
 p[class^="SpaceBreak"] + p,
 p[class*="No-Indent"] {
   text-indent: 0;
@@ -720,6 +721,8 @@ nav[data-type="toc"] li.PartTitlept a:before {
   display: inline;
 }
 
+/* sections and headings */
+
 section[data-type="preface"],
 section[data-type="foreword"],
 section[data-type="introduction"] {
@@ -736,16 +739,16 @@ section.frontsales {
   page: front;
 }
 
-section[data-type="preface"] h1,
-section[data-type="foreword"] h1,
-section[data-type="introduction"] h1,
-section[data-type="appendix"] h1,
-section[data-type="afterword"] h1,
-section[data-type="glossary"] h1,
-section[data-type="index"] h1,
-section[data-type="bibliography"] h1,
-section[data-type="conclusion"] h1,
-section[data-type="acknowledgments"] h1,
+section[data-type="preface"] > h1,
+section[data-type="foreword"] > h1,
+section[data-type="introduction"] > h1,
+section[data-type="appendix"] > h1,
+section[data-type="afterword"] > h1,
+section[data-type="glossary"] > h1,
+section[data-type="index"] > h1,
+section[data-type="bibliography"] > h1,
+section[data-type="conclusion"] > h1,
+section[data-type="acknowledgments"] > h1,
 h1[class*="BMHeadbmh"],
 h1[class*="AboutAuthorTextHeadatah"] {
   font-size: $sizefmhead;
@@ -757,6 +760,17 @@ h1[class*="AboutAuthorTextHeadatah"] {
   text-align: center;
 }
 
+section[data-type="preface"] > p[class*="SubtitleSttl"],
+section[data-type="foreword"] > p[class*="SubtitleSttl"],
+section[data-type="introduction"] > p[class*="SubtitleSttl"],
+section[data-type="chapter"] > p[class*="SubtitleSttl"],
+section[data-type="appendix"] > p[class*="SubtitleSttl"],
+section[data-type="afterword"] > p[class*="SubtitleSttl"],
+section[data-type="glossary"] > p[class*="SubtitleSttl"],
+section[data-type="index"] > p[class*="SubtitleSttl"],
+section[data-type="bibliography"] > p[class*="SubtitleSttl"],
+section[data-type="conclusion"] > p[class*="SubtitleSttl"],
+section[data-type="acknowledgments"] > p[class*="SubtitleSttl"],
 section[data-type="preface"] *[class*="FMSubheadfmsh"],
 section[data-type="foreword"] *[class*="FMSubheadfmsh"],
 section[data-type="introduction"] *[class*="FMSubheadfmsh"],
@@ -777,6 +791,17 @@ section[data-type="introduction"] *[class*="FMSubheadfmsh"],
   }
 }
 
+section[data-type="preface"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="foreword"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="introduction"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="chapter"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="appendix"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="afterword"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="glossary"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="index"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="bibliography"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="conclusion"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="acknowledgments"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="preface"] *[class*="FMSubheadfmsh"]:first-of-type,
 section[data-type="foreword"] *[class*="FMSubheadfmsh"]:first-of-type,
 section[data-type="introduction"] *[class*="FMSubheadfmsh"]:first-of-type,
@@ -810,6 +835,7 @@ div[data-type="part"] + section[data-type="chapter"] {
   page-break-before: right;
 }
 
+section[data-type="chapter"] > h1[class*="NumberNum"],
 section[data-type="chapter"] h1[class*="ChapNumbercn"],
 *[class*="ChapNumberNonprintingcnp"] {
   font-size: $sizechapnum;
@@ -821,6 +847,7 @@ section[data-type="chapter"] h1[class*="ChapNumbercn"],
   text-indent: 0;
 }
 
+section[data-type="chapter"] > h1[class*="NumberNum"] + p,
 section[data-type="chapter"] h1[class*="ChapNumbercn"] + p,
 *[class*="ChapNumberNonprintingcnp"] + p {
   margin-top: $gridheight;
@@ -836,6 +863,7 @@ section[data-type="copyright-page"] h1[class*="ChapTitleNonprintingctnp"] + *,
 section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
   margin-top: 0; }
 
+section[data-type="chapter"] h1[class*="TitleTtl"],
 section[data-type="chapter"] h1[class*="ChapTitlect"],
 section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   font-size: $sizechaptitle;
@@ -848,6 +876,7 @@ section[data-type="chapter"] h1[class*="ChapTitleALTact"] {
   padding: 0;
 }
 
+h1[class*="TitleTtl"][data-autolabel="yes"]:before,
 h1[class*="ChapTitlect"][data-autolabel="yes"]:before,
 h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
@@ -861,12 +890,13 @@ h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   text-indent: 0;
 }
 
+section[data-type="chapter"] h1[class*="TitleTtl"] + p,
 section[data-type="chapter"] h1[class*="ChapTitlect"] + p,
 section[data-type="chapter"] h1[class*="ChapTitleALTact"] + p {
   margin-top: $comargintop;
 }
 
-[class*="Nonprinting"] {
+*[class*="Nonprinting"] {
   display: none;
 }
 
@@ -899,14 +929,17 @@ section[data-type="appendix"].bobad {
     page-break-before: always;
 }
 
+section[data-type="bibliography"] > p[class*="Body-TextTx"],
 *[class*="BibliographyTextbibtx"] {
   text-indent: 0;
 }
 
-blockquote + *[class*="ChapOpeningText"] {
+blockquote + *[class*="ChapOpeningText"],
+blockquote + p[class*="Body-TextTx"]:first-of-type {
   /*margin-top: $gridheight * 3;*/
 }
 
+p[class*="Body-TextTx"]:first-of-type .chapopener,
 *[class*="ChapOpeningText"] .chapopener {
   font-weight: 600;
   letter-spacing: 0.1pt;
@@ -1042,6 +1075,8 @@ blockquote p:first-child {
 
 /* ---------------- SIDEBARS */
 
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + aside,
+p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + aside,
 p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + aside,
 p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + aside,
 p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + aside,
@@ -1156,7 +1191,8 @@ section[data-type="introduction"] > blockquote[data-type="epigraph"] {
 }
 
 blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
-blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"], {
+blockquote[data-type="epigraph"] + p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"],
+blockquote[data-type="epigraph"] + p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
   margin-top: ($cemarginbottom * -1);
 }
 
@@ -1523,6 +1559,7 @@ p[class*="Extract-NoIndent"] {
   text-indent: 0;
 }
 
+p.Blank-Space-BreakBsbrk,
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-2-Linels2,
@@ -1531,6 +1568,9 @@ p.SpaceBreak-Internalint {
   text-indent: 0;
 }
 
+p.Ornamental-Space-BreakOsbrk,
+p.Blank-Space-BreakBsbrk,
+p.SeparatorSep,
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-Internalint,
@@ -1553,6 +1593,7 @@ p.SpaceBreakwithALTOrnamentorn2 {
   height: $spacebreakheight;
 }
 
+p.Blank-Space-BreakBsbrk,
 p.SpaceBreak,
 p.SpaceBreak-1-Linels1,
 p.SpaceBreak-Internalint {
@@ -1567,6 +1608,7 @@ p.ChapOrnamentALTcorn2 {
   background-size: 60pt auto;
 }
 
+p.Ornamental-Space-BreakOsbrk,
 p.SpaceBreakOrnamentorn,
 p.SpaceBreakwithOrnamentorn {
   background-image: url('#{$ornpath}/orn.jpg');
@@ -1597,6 +1639,7 @@ p.SpaceBreak-3-Linels3 {
   content: " ";
 }
 
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote,
 p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
