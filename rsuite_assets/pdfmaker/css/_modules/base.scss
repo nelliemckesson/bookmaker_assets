@@ -947,6 +947,7 @@ p[class*="Body-TextTx"]:first-of-type .chapopener,
 
 /* ---------------- HEADINGS */
 
+*[class*="A-HeadAhead"],
 *[class*="Head-Level-1h1"] {
   text-indent: 0;
   font-size: $sizeh1;
@@ -961,6 +962,7 @@ p[class*="Body-TextTx"]:first-of-type .chapopener,
   }
 }
 
+*[class*="B-HeadBhead"],
 *[class*="Head-Level-2h2"] {
   text-indent: 0;
   font-size: $sizeh2;
@@ -973,6 +975,7 @@ p[class*="Body-TextTx"]:first-of-type .chapopener,
   page-break-after: avoid;
 }
 
+*[class*="C-HeadChead"],
 *[class*="Head-Level-3h3"] {
   text-indent: 0;
   font-size: $sizeh3;
@@ -996,7 +999,7 @@ div[data-type="part"] {
   prince-page-group: start;
 }
 
-div[data-type="part"] h1 {
+div[data-type="part"] > h1 {
   font-weight: normal;
   font-size: $sizeparttitle;
   letter-spacing: 1pt;
@@ -1006,13 +1009,15 @@ div[data-type="part"] h1 {
   margin-top: 8pt;
 }
 
-div[data-type="part"] h1[class*="PartNumberpn"] {
+div[data-type="part"] > h1[class*="NumberNum"],
+div[data-type="part"] > h1[class*="PartNumberpn"] {
   font-size: $sizepartnum;
   text-transform: lowercase;
   font-variant: prince-opentype(smcp, onum);
 }
 
-div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
+div[data-type="part"] > h1[class*="NumberNum"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="TitleTtl"],
+div[data-type="part"] > h1[class*="PartNumberpn"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="PartTitlept"] {
   margin-top: 0;
 }
 
@@ -1020,27 +1025,37 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div.runfoot + div.runheadright
 
 /* ---------------- TEXT */
 
+/* NEED CLARIFICATION */
+*[class*="Body-TextTx"],
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {
   font-family: "AromaNo2LTPro", sans-serif, "Noto";
   font-size: $sizenormalalt;
 }
 
+*[class*="Computer-TextComp"],
 *[class*="Text-ComputerTypecom"],
 *[class*="Text-ComputerTypeNo-Indentcom1"] {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: $sizecode;
 }
 
+pre.verse,
 pre.poetry {
   font-family: "ArnoPro", serif, "Noto";
   margin: $gridheight 52pt $gridheight 36pt;
   white-space: pre-wrap;
 }
 
+pre.verse p, pre.verse p:first-of-type,
 pre.poetry p, pre.poetry p:first-of-type {
   text-indent: -$textindent;
   font-size: $sizepoetry;
+}
+
+/* Used to be "PoemTitle". No styles defined in previous version. */
+pre.verse p[class*="TitleTtl"] {
+
 }
 
 p[class*="Extract"] {
@@ -1128,6 +1143,7 @@ section[data-type="dedication"] p:first-child {
 
 section[data-type="dedication"] blockquote[data-type="epigraph"],
 section[data-type="preface"].epigraph,
+p[class*="DedicationDed"] + p[class*="Epigraph"],
 .Dedicationded + p[class*="Epigraph"] {
   page-break-before: right;
   margin-top: $gridheight * 2;
@@ -1139,6 +1155,10 @@ section[data-type="preface"].epigraph blockquote[data-type="epigraph"] {
   margin-right: 0;
 }
 
+section[data-type="dedication"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="preface"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="dedication"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="preface"] p[class*="Epigraph-Non-VerseEpi"],
 section[data-type="dedication"] p[class*="Epigraph-verse"],
 section[data-type="preface"] p[class*="Epigraph-verse"],
 section[data-type="dedication"] p[class*="Epigraph-non-verse"],
@@ -1152,11 +1172,15 @@ section[data-type="preface"] p[class*="Epigraph-non-verse"] {
   text-indent: -$textindent;
 }
 
+section[data-type="dedication"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="preface"].epigraph p[class*="Epigraph-Non-VerseEpi"],
 section[data-type="dedication"] p[class*="Epigraph-non-verse"],
 section[data-type="preface"].epigraph p[class*="Epigraph-non-verse"]  { /*edit 7*/
   margin-left: 36pt;
   text-indent: 0; }
 
+section[data-type="dedication"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="preface"] p[class*="Epigraph-SourceEpisrc"],
 section[data-type="dedication"] p[class*="EpigraphSource"],
 section[data-type="preface"] p[class*="EpigraphSource"]  {
   font-family: "ArnoPro-SmText", serif, "Noto";
@@ -1175,7 +1199,7 @@ section[data-type="preface"].epigraph {
   margin-left: 0;
   margin-right: 0; }
 
-
+p[class*="Epigraph-SourceEpisrc"] em,
 p[class*="EpigraphSource"] em {
   break-inside: avoid;
 }
@@ -1196,6 +1220,8 @@ blockquote[data-type="epigraph"] + p[class*="-Space-Break"] + div.runfoot + div.
   margin-top: ($cemarginbottom * -1);
 }
 
+h1[class*="TitleTtl"] + blockquote[data-type="epigraph"],
+h1[class*="Main-HeadMHead"] + blockquote[data-type="epigraph"],
 h1[class*="ChapTitlect"] + blockquote[data-type="epigraph"],
 h1[class*="ChapTitleALTact"] + blockquote[data-type="epigraph"] {
   margin-top: $cemargintop;
@@ -1212,6 +1238,14 @@ section[data-type="introduction"] > blockquote[data-type="epigraph"] p {
   /* text-align: left;  <-- messing with FM epigraph source alignment*/
 }
 
+section[data-type="chapter"] p[class*="Epigraph-VerseEpiv"],
+div[data-type="part"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="chapter"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="foreword"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="introduction"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="titlepage"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="halftitlepage"] p[class*="Epigraph-VerseEpiv"],
+section[data-type="copyright-page"] p[class*="Epigraph-VerseEpiv"],
 p.ChapEpigraph-versecepiv,
 p.PartEpigraph-versepepiv,
 p.FMEpigraph-versefmepiv {
@@ -1220,12 +1254,28 @@ p.FMEpigraph-versefmepiv {
   page-break-inside: auto;
 }
 
+section[data-type="chapter"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+div[data-type="part"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="chapter"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="foreword"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="introduction"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="titlepage"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="halftitlepage"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
+section[data-type="copyright-page"] blockquote p[class*="Epigraph-VerseEpiv"]:first-child,
 blockquote p.ChapEpigraph-versecepiv:first-child,
 blockquote p.PartEpigraph-versepepiv:first-child,
 blockquote p.FMEpigraph-versefmepiv:first-child {
   text-indent: $gridheight * -1;
 }
 
+section[data-type="chapter"] p[class*="Epigraph-Non-VerseEpi"],
+div[data-type="part"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="chapter"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="foreword"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="introduction"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="titlepage"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="halftitlepage"] p[class*="Epigraph-Non-VerseEpi"],
+section[data-type="copyright-page"] p[class*="Epigraph-Non-VerseEpi"],
 p.ChapEpigraph-non-versecepi,
 p.PartEpigraph-non-versepepi,
 p.FMEpigraph-non-versefmepi {
@@ -1233,6 +1283,14 @@ p.FMEpigraph-non-versefmepi {
   page-break-inside: auto;
 }
 
+section[data-type="chapter"] p[class*="Epigraph-SourceEpisrc"],
+div[data-type="part"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="chapter"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="foreword"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="introduction"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="titlepage"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="halftitlepage"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="copyright-page"] p[class*="Epigraph-SourceEpisrc"],
 p.ChapEpigraphSourceceps,
 p.PartEpigraphSourcepeps,
 p.FMEpigraphSourcefmeps {
@@ -1241,24 +1299,21 @@ p.FMEpigraphSourcefmeps {
   /*page-break-before: avoid;*/
   widows: 2;
   orphans: 2;
+  margin-top: $gridheight; 
+
+  em {
+    break-inside: avoid;
+  }
 }
 
-p.ChapEpigraphSourceceps,
-p.PartEpigraphSourcepeps,
-p.FMEpigraphSourcefmeps {
-  margin-top: $gridheight; }
-
-*[class*="ChapEpigraphSourceceps"] em,
-*[class*="PartEpigraphSourcepeps"] em,
-*[class*="FMEpigraphSourcefmeps"] em {
-  break-inside: avoid;
-}
-
+p[class*="Epigraph-SourceEpisrc"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-VerseEpiv"],
+p[class*="Epigraph-SourceEpisrc"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-Non-VerseEpi"],
 p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-verse"],
 p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Epigraph-non-verse"] {
   margin-top: $gridheight * 2;
 }
 
+/* RSUITE UPDATES: paused here */
 /* ---------------- EXTRACTS */
 
 @import "_Extract-Inscriptionins.scss";
@@ -1295,7 +1350,7 @@ p[class*="EpigraphSource"] + div.runfoot + div.runheadright + div.runheadleft + 
   }
 }
 
-[class*="Extract-VerseorPoetryextv"]:first-child {
+*[class*="Extract-VerseorPoetryextv"]:first-child {
 text-indent: -12pt;
 }
 

@@ -1,3 +1,4 @@
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"],
 .SidebarHead-Level-2sbh2  {
   page-break-after: avoid;
   font-size: $sizeextracthead;
@@ -9,10 +10,12 @@
   margin-bottom: $gridheight;
 }
 
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + p,
 .SidebarHead-Level-2sbh2 + p {
   text-indent: 0;
 }
 
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + p[class*="A-HeadAhead"],
 .SidebarHead-Level-2sbh2 + .SidebarHead-Level-1sbh1 {
   margin-bottom: 0;
 }
