@@ -1684,32 +1684,17 @@ img[src*="fullpage"] {
 /* Space Breaks */
 
 p[class*="SpaceAfter"] + p[class*="Extract"],
-p[class*="SpaceAround"] + p[class*="Extract"],
-p[class*="Extract-NoIndent"] {
+p[class*="SpaceAround"] + p[class*="Extract"] {
   text-indent: 0;
 }
 
-p.Blank-Space-BreakBsbrk,
-p.SpaceBreak,
-p.SpaceBreak-1-Linels1,
-p.SpaceBreak-2-Linels2,
-p.SpaceBreak-3-Linels3,
-p.SpaceBreak-Internalint {
+p.Blank-Space-BreakBsbrk {
   text-indent: 0;
 }
 
 p.Ornamental-Space-BreakOsbrk,
 p.Blank-Space-BreakBsbrk,
-p.SeparatorSep,
-p.SpaceBreak,
-p.SpaceBreak-1-Linels1,
-p.SpaceBreak-Internalint,
-p.PartOrnamentporn,
-p.ChapOrnamentcorn,
-p.ChapOrnamentALTcorn2,
-p.SpaceBreakOrnamentorn,
-p.SpaceBreakwithOrnamentorn,
-p.SpaceBreakwithALTOrnamentorn2 {
+p.SeparatorSep {
   text-indent: 0;
   content: " ";
   font-size: $gridheight;
@@ -1724,28 +1709,23 @@ p.SpaceBreakwithALTOrnamentorn2 {
 }
 
 p.Blank-Space-BreakBsbrk,
-p.SpaceBreak,
-p.SpaceBreak-1-Linels1,
-p.SpaceBreak-Internalint {
+p.SeparatorSep {
   background-image: url('#{$ornpath}/titlepage-rule.jpg');
   background-size: 60pt auto;
 }
 
-p.PartOrnamentporn,
-p.ChapOrnamentcorn,
-p.ChapOrnamentALTcorn2 {
-  background-image: url('#{$ornpath}/titlepage-rule.jpg');
-  background-size: 60pt auto;
-}
-
-p.Ornamental-Space-BreakOsbrk,
-p.SpaceBreakOrnamentorn,
-p.SpaceBreakwithOrnamentorn {
+p.Ornamental-Space-BreakOsbrk {
   background-image: url('#{$ornpath}/orn.jpg');
   background-size: 20.5pt auto;
   height: $spacebreakheight;
 }
 
+div[data-type="part"] > p.Ornamental-Space-BreakOsbrk {
+  background-image: url('#{$ornpath}/titlepage-rule.jpg');
+  background-size: 60pt auto;
+}
+
+/* need clarification */
 p.SpaceBreakwithALTOrnamentorn2 {
   background-image: url('#{$ornpath}/orn-bull.jpg');
   background-size: 21.6pt auto;
@@ -1758,26 +1738,9 @@ p.SpaceBreak-PrintOnlypo {
   font-size: $gridheight;
   height: $gridheight;
 }
+/* end note */
 
-p.SpaceBreak-2-Linels2 {
-  height: $gridheight * 2;
-  content: " ";
-}
-
-p.SpaceBreak-3-Linels3 {
-  height: $gridheight * 3;
-  content: " ";
-}
-
-p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p[class*="SpaceBreak"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreak + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.PartOrnamentporn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.ChapOrnamentcorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.ChapOrnamentALTcorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakwithOrnamentorn + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p.SpaceBreakwithALTOrnamentorn2 + div.runfoot + div.runheadright + div.runheadleft + blockquote {
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote {
   margin-top: 0pt;
 }
 
@@ -1787,10 +1750,29 @@ p.customimage {
 }
 
 /* page break */
-@import "_PageBreakpb.scss";
+.PageBreakpb  {
+  display: none;
+}
+
+p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
+  page-break-before: always;
+}
 
 /* glossary definition */
-@import "_Definitiondef.scss";
+/* need clarification */
+.Definitiondef {
+  font-size: $sizeextract;
+  line-height: ($gridheight * ($sizeextract / $sizenormal));
+  text-indent: ($textindent * -2);
+  margin: 0;
+  margin-left: ($textindent * 2);
+  margin-bottom: ($gridheight / 2);
+}
+
+.Definitiondef:first-of-type, *[class*="Definitiondef"]:first-of-type {
+  text-indent: ($textindent * -2);
+}
+/* end note */
 
 /* footnotes */
 
@@ -1840,106 +1822,76 @@ span[data-type="footnote"] > span:first-of-type {
 
 /* character styles */
 
-.spansmallcapscharacterssc {
+span[class^="smallcaps"] {
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
   text-transform: lowercase;
 }
 
-.spansmcapitalscital {
-  font-variant: small-caps;
-  font-variant: prince-opentype(smcp, onum);
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-.spansmcapboldscbold {
-  font-variant: small-caps;
-  font-variant: prince-opentype(smcp, onum);
-  font-weight: bold;
-  text-transform: lowercase;
-}
-
-.spansmcapbolditalscbi {
-  font-variant: small-caps;
-  font-variant: prince-opentype(smcp, onum);
-  font-weight: bold;
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-.spanboldfacecharactersbf {
-  font-weight: bold;
-}
-
-.spanitaliccharactersital {
+.smallcaps-italsci {
   font-style: italic;
 }
 
-.spanbolditalbem {
+.smallcaps-boldscb {
+  font-weight: bold;
+}
+
+.smallcaps-bold-italscbi {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.boldb {
+  font-weight: bold;
+}
+
+.itali {
+  font-style: italic;
+}
+
+.bold-italbi {
   font-style: italic;
   font-weight: bold;
 }
 
-.spanunderscorecharactersus {
+.underlineu {
   text-decoration: underline;
 }
 
-.spanitalunderscoreius {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.spansmcapunderscorescus {
-  font-variant: small-caps;
-  text-decoration: underline;
-}
-
-sup, sub {
+.supersup,
+.subsub {
   font-size: $sizesuperscript;
     vertical-align: top;
     position: relative;
     top: -0.6em;
 }
 
-sub { top: 0.1em; }
+.subsub { 
+  top: 0.1em; 
+  font-size: $sizesuperscript;
+  vertical-align: top;
+  position: relative;
+}
 
-*[class*="spansuperscriptcharacterssup"] {
+.supersup {
   font-size: $sizesuperscript;
   vertical-align: top;
     position: relative;
     top: -0.6em;
 }
 
-*[class*="spansubscriptcharacterssub"] {
-  font-size: $sizesuperscript;
-  vertical-align: top;
-    position: relative;
-    top: 0.1em;
-}
+*[class*="symbolssym"] {}
 
-*[class*="spansymbolssym"] {
-}
+*[class*="symbolssym"] {}
 
-*[class*="spanaccentcharactersacc"] {}
-
-*[class*="spanstrikethroughcharactersstr"] {
-  text-decoration: line-through;
-}
-
-*[class*="spanrun-incomputertypecomp"] {
+*[class*="cs-computerccom"] {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: $sizecode;
 }
 
-*[class*="bookmakerkeeptogetherkt"] {
+*[class*="bookmaker-keep-togetherbkt"] {
   white-space: pre;
   page-break-inside: avoid;
-}
-
-p.BookmakerPageBreakbr,
-.bookmakerforcepagebreakbr {
-  page-break-after: always;
 }
 
 *[class*="tighten"], .bookmakertightenbkt {
