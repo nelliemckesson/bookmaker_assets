@@ -1158,6 +1158,7 @@ aside[data-type="sidebar"] > p[class*="A-HeadAhead"] {
   font-size: $sizeextracthead;
   line-height: $gridheight;
   font-weight: bold;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
   margin-top: $gridheight;
@@ -1191,8 +1192,9 @@ aside[data-type="sidebar"] p[class*="Body-TextTx"] {
   font-size: $sizeextract;
 }
 
-aside[data-type="sidebar"] > p[class*="TitleTtl"] + p[class*="Body-TextTx"] {
-  font-size: $sizeextract;
+aside[data-type="sidebar"] > p[class*="TitleTtl"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+aside[data-type="sidebar"] > p[class*="A-HeadAhead"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
   text-indent: 0;
 }
 
@@ -1460,6 +1462,11 @@ pre.verse {
   line-height: $gridheight;
 }
 
+pre.verse p[class*="TitleTtl"] {
+  margin-left: -$textindent;
+  text-indent: 0;
+}
+
 pre.verse p[class*="Verse1Vrs1"],
 pre.verse p[class*="Verse1Vrs1"]:first-of-type {
   font-size: $sizepoetry;
@@ -1513,7 +1520,7 @@ span.spanaltfont2span2 {
   	font-family: BerrangerHandITCStd;
   	font-size: $sizehwritingnormal; }
 
-blockquote[data-type="letter"] p[class*="Body-TextTx"]{
+blockquote[data-type="letter"] p[class*="Body-TextTx"] {
   font-style: italic;
 
   em {
@@ -1523,6 +1530,10 @@ blockquote[data-type="letter"] p[class*="Body-TextTx"]{
   span.itali {
     font-style: normal;
   }
+}
+
+blockquote[data-type="letter"] p[class*="SalutationSal"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
+  text-indent: 0;
 }
 
 blockquote[data-type="letter"] p[class*="HeadnoteHdnt"] {
@@ -1547,7 +1558,7 @@ blockquote[data-type="letter"] p[class*="SalutationSal"] {
   }
 }
 
-blockquote[data-type="letter"] p[class*="AddressAdd"]
+blockquote[data-type="letter"] p[class*="AddressAdd"],
 blockquote[data-type="letter"] p[class*="PostscriptPst"] {
   font-style: italic;
   text-indent: 0;
@@ -1628,7 +1639,19 @@ blockquote[data-type="letter"] p[class*="DatelineDate"] {
   hyphens: none;
 }
 
+blockquote[data-type="recipe"] {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* --------------- LISTS */
+
+blockquote[data-type="recipe"] p[class^="TitleTtl"],
+p[class^="List-Head"] {
+  padding: 0;
+  margin: $gridheight 0 0 0;
+  text-indent: 0;
+}
 
 ul {
   padding-left: 0;
@@ -1656,6 +1679,23 @@ h1 + ul, h1 + ol {
 
 li[class^="Alpha-Level-"] { 
   list-style-type: lower-alpha; 
+}
+
+blockquote[data-type="recipe"] ol,
+blockquote[data-type="recipe"] ul {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+blockquote[data-type="recipe"] li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+blockquote[data-type="recipe"] ol li p {
+  text-indent: $textindent;
 }
 
 /* need clarification */
