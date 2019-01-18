@@ -398,9 +398,12 @@ p[class*="SpaceAfter"] {
 }
 
 blockquote {
-  margin-top: $gridheight;
-  margin-bottom: $gridheight;
+  margin: $gridheight;
   page-break-inside: auto;
+}
+
+blockquote p:first-child {
+  text-indent: 0;
 }
 
 /* ---------------- FRONTMATTER */
@@ -1059,22 +1062,6 @@ div[data-type="part"] > p[class*="SubtitleSttl"] {
   font-size: $sizecode;
 }
 
-pre.verse {
-  font-family: "ArnoPro", serif, "Noto";
-  margin: $gridheight 52pt $gridheight 36pt;
-  white-space: pre-wrap;
-}
-
-pre.verse p, 
-pre.verse p:first-of-type {
-  text-indent: -$textindent;
-  font-size: $sizepoetry;
-}
-
-pre.verse p[class*="TitleTtl"] {
-
-}
-
 p[class*="Extract"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: $sizeextract;
@@ -1086,15 +1073,6 @@ pre.computer p.Body-TextTx {
   font-size: $sizecode;
 }
 /* end note */
-
-blockquote {
-  margin-left: $gridheight;
-  margin-right: $gridheight;
-}
-
-blockquote p:first-child {
-  text-indent: 0;
-}
 
 /* ---------------- SCREENPLAY EXTRACT */
 
@@ -1240,7 +1218,8 @@ section[data-type="preface"].epigraph blockquote[data-type="epigraph"] {
   margin-right: 0;
 }
 
-section[data-type="preface"].epigraph p[class^="Body-TextTx"] + blockquote[data-type="epigraph"] {
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] + blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
   margin-top: 0;
 }
 
@@ -1265,7 +1244,8 @@ section[data-type="preface"].epigraph p[class^="Body-TextTx"] { /*edit 7*/
   text-indent: 0; }
 
 section[data-type="dedication"] p[class^="Epigraph-Source"],
-section[data-type="preface"] p[class^="Epigraph-Source"] {
+section[data-type="preface"] p[class^="Epigraph-Source"],
+p[class^="SourceSrc"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: 600;
   font-size: $sizeepigraph;
@@ -1282,9 +1262,11 @@ section[data-type="preface"].epigraph {
   margin-left: 0;
   margin-right: 0; }
 
-p[class^="Epigraph-Source"] em,
-p[class^="Epigraph-Source"] span.itali {
-  break-inside: avoid;
+p[class^="Epigraph-Source"],
+p[class^="SourceSrc"] {
+  em, span.itali {
+    break-inside: avoid;
+  }
 }
 
 section[data-type="chapter"] > blockquote[data-type="epigraph"],
@@ -1468,10 +1450,22 @@ blockquote.looseextract > *[class*="Main-HeadMHead"] + p {
   text-indent: 0;
 }
 
-pre.verse p {
+pre.verse {
+  font-family: "ArnoPro", serif, "Noto";
+  margin: 0 52pt 0 36pt;
+  white-space: pre-wrap;
+  padding: 0;
+  page-break-inside: auto;
+}
+
+pre.verse p[class*="Verse1Vrs1"],
+pre.verse p[class*="Verse1Vrs1"]:first-of-type {
+  font-size: $sizepoetry;
   font-style: italic;
   text-indent: -$textindent;
-  margin-left: $gridheight;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: left;
 
   em {
@@ -1483,8 +1477,13 @@ pre.verse p {
   }
 }
 
-pre.verse p:first-child {
-text-indent: -12pt;
+pre.verse div.runfoot + div.runheadright + div.runheadleft + p[class*="Verse1Vrs1"],
+pre.verse div.runfoot + div.runheadright + div.runheadleft + p.SeparatorSep {
+  margin-top: $gridheight * -1;
+}
+
+pre.verse p[class*="TitleTtl"] {
+
 }
 
 /* need clarification */
