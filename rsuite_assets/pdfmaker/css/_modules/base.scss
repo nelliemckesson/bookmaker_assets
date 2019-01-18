@@ -332,7 +332,9 @@ p {
 h1 + p,
 h1 + div.runfoot + div.runheadright + div.runheadleft + p,
 p[class*="Author1Au1"] + p[class*="Body-TextTx"],
-p[class*="Author1Au1"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
+p[class*="Author1Au1"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+p[class*="SubtitleSttl"] + p[class*="Body-TextTx"],
+p[class*="SubtitleSttl"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
   text-indent: 0;
 }
 
@@ -832,7 +834,6 @@ section[data-type="introduction"] > p[class*="Author1Au1"] {
 section[data-type="preface"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="foreword"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="introduction"] > p[class*="SubtitleSttl"]:first-of-type,
-section[data-type="chapter"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="appendix"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="afterword"] > p[class*="SubtitleSttl"]:first-of-type,
 section[data-type="glossary"] > p[class*="SubtitleSttl"]:first-of-type,
@@ -1456,6 +1457,7 @@ pre.verse {
   white-space: pre-wrap;
   padding: 0;
   page-break-inside: auto;
+  line-height: $gridheight;
 }
 
 pre.verse p[class*="Verse1Vrs1"],
@@ -1467,6 +1469,7 @@ pre.verse p[class*="Verse1Vrs1"]:first-of-type {
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
+  line-height: $gridheight;
 
   em {
     font-style: normal;
@@ -1837,7 +1840,8 @@ p.SeparatorSep {
 }
 /* end note */
 
-p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote {
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + pre.verse {
   margin-top: 0pt;
 }
 
@@ -1915,6 +1919,26 @@ span[data-type="footnote"] > span:first-of-type {
   font-family: "ArnoPro", "Noto";
     font-weight: 600;
     display: inline-block;
+}
+
+/* chapter starts */
+
+section > header + p,
+section > header + blockquote,
+section > header + pre.verse,
+section > header + aside,
+section > header + div,
+div > header + p,
+div > header + blockquote,
+div > header + pre.verse,
+div > header + aside,
+div > header + div {
+  margin-top: $gridheight * 5;
+}
+
+section > header + pre.verse,
+div > header + pre.verse {
+  margin-top: $gridheight * 4;
 }
 
 /* character styles */
