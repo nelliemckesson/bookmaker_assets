@@ -15,7 +15,7 @@ function getAllElementsWithAttribute(tag, attribute, value)
 
 function moveIllustrationSource()
 {
-var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']
+var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']");
 var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
 for (var j = 0; illoSources.length > j; j++) {
 	var figID = illoSources[j].parentNode.getAttribute('id');
