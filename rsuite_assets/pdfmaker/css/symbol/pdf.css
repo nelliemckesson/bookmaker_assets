@@ -1,6 +1,6 @@
 @import url('../core_tor.css');
 
-section[data-type="titlepage"] *[class*="TitlepageLogologo"] {
+section[data-type="titlepage"] *[class*="Logo-PlacementLogo"] {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/symbol/logo.jpg");
   background-size: auto 0.4in;
   height: 0.42in;
