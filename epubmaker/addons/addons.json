@@ -7,7 +7,7 @@
 				"name": "titlepage",
 				"sequence": "1",
 				"order": "after"
-			},			
+			},
 			{
 				"name": "cover",
 				"sequence": "1",
@@ -27,7 +27,7 @@
 				"name": "titlepage",
 				"sequence": "1",
 				"order": "after"
-			},			
+			},
 			{
 				"name": "cover",
 				"sequence": "1",
@@ -52,7 +52,7 @@
 				"name": "titlepage",
 				"sequence": "1",
 				"order": "after"
-			},			
+			},
 			{
 				"name": "cover",
 				"sequence": "1",
@@ -77,7 +77,7 @@
 				"name": "titlepage",
 				"sequence": "1",
 				"order": "after"
-			},			
+			},
 			{
 				"name": "cover",
 				"sequence": "1",
@@ -178,6 +178,14 @@
 		{
 			"name": "SMP_firstpass",
 			"addons": "drmnotice.html"
+		},
+		{
+			"name": "bookmaker_test",
+			"addons": "drmnotice.html,mini_toc_plus_newsletter.html,newsletter.html"
+		},
+		{
+			"name": "bookmakerstg_test",
+			"addons": "drmnotice.html,mini_toc_plus_newsletter.html,newsletter.html"
 		}
 	]
 }
