@@ -1093,7 +1093,7 @@ blockquote + p[class*=Body-TextTx]:first-of-type {
   /*margin-top: $gridheight * 3;*/
 }
 
-p[class*=Body-TextTx]:first-of-type .chapopener {
+p[class*=Body-TextTx] .chapopener {
   font-weight: 600;
   letter-spacing: 0.1pt;
 }
@@ -1654,11 +1654,10 @@ pre.verse p[class*=Verse1Vrs1]:first-of-type span.itali {
   font-style: normal;
 }
 
-pre.verse div.runfoot + div.runheadright + div.runheadleft + p[class*=Verse1Vrs1],
+/*pre.verse div.runfoot + div.runheadright + div.runheadleft + p[class*="Verse1Vrs1"],
 pre.verse div.runfoot + div.runheadright + div.runheadleft + p.SeparatorSep {
-  margin-top: -15.5pt;
-}
-
+  margin-top: $gridheight * -1;
+}*/
 /* need clarification */
 p[class*=ExtractSource] {
   text-align: right;
@@ -1802,7 +1801,12 @@ blockquote[data-type=recipe] {
 /* --------------- LISTS */
 p[class^=List-Head] {
   padding: 0;
-  margin: 0;
+  margin: 15.5pt 0 0 0;
+}
+
+p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + p[class^=List-Head],
+p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class^=List-Head] {
+  margin-top: 0;
 }
 
 blockquote[data-type=recipe] p[class^=TitleTtl],
