@@ -6,144 +6,120 @@
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Regular.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Bold.otf");
   font-style: normal;
-  font-weight: bold;
-}
+  font-weight: bold; }
 @font-face {
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Italic.otf");
   font-style: italic;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalic.otf");
   font-style: italic;
-  font-weight: bold;
-}
+  font-weight: bold; }
 @font-face {
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Smbd.otf");
   font-style: normal;
-  font-weight: 600;
-}
+  font-weight: 600; }
 @font-face {
   font-family: "ArnoPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-LightDisplay.otf");
   font-style: normal;
-  font-weight: 100;
-}
+  font-weight: 100; }
 @font-face {
   font-family: "ArnoPro-SmText";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmText.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-SmText";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldItalicSmText.otf");
   font-style: italic;
-  font-weight: bold;
-}
+  font-weight: bold; }
 @font-face {
   font-family: "ArnoPro-SmText";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-SmbdSmText.otf");
   font-style: normal;
-  font-weight: 600;
-}
+  font-weight: 600; }
 @font-face {
   font-family: "ArnoPro-SmText";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicSmText.otf");
   font-style: italic;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-SmText";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSmText.otf");
   font-style: normal;
-  font-weight: bold;
-}
+  font-weight: bold; }
 @font-face {
   font-family: "ArnoPro-Caption";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-Caption.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-Caption";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-ItalicCaption.otf");
   font-style: italic;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "ArnoPro-BoldSubhead";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/ArnoPro-BoldSubhead.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Italic.otf");
   font-style: italic;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "AromaNo2LTPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/AromaNo2LTPro-Regular.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "MinionPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MinionPro-Regular.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "MyriadPro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/MyriadPro-Regular.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "SourceCodePro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Medium.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "SourceCodePro";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/SourceCodePro-Bold.otf");
   font-style: normal;
-  font-weight: bold;
-}
+  font-weight: bold; }
 @font-face {
   font-family: "TimesNewRomanPSMT";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/TimesNewRomanPSMT.ttf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "Noto";
-  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/NotoSansSymbols-Regular.ttf");
-}
+  src: url("S:/resources/bookmaker_scripts/bookmakerfonts/NotoSansSymbols-Regular.ttf"); }
 @font-face {
   font-family: "BerrangerHandITCStd";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/BerrangerHandITCStd.otf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @font-face {
   font-family: "FeltpenCom-Medium";
   src: url("S:/resources/bookmaker_scripts/bookmakerfonts/FeltpenCom-Medium.ttf");
   font-style: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
 @page {
   size: 5in 8in;
   margin-top: 46.5pt;
@@ -164,17 +140,13 @@
     background-size: 60pt auto;
     background-repeat: no-repeat;
     padding-top: 0.127in;
-    margin-top: 0.38in;
-  }
-}
+    margin-top: 0.38in; } }
 @page :left {
   margin-left: 40pt;
-  margin-right: 50pt;
-}
+  margin-right: 50pt; }
 @page :right {
   margin-left: 50pt;
-  margin-right: 40pt;
-}
+  margin-right: 40pt; }
 @page part {
   @top-center {
     font-family: "ArnoPro-Caption", serif;
@@ -183,8 +155,7 @@
     font-size: 8.5pt;
     vertical-align: top;
     padding: 31pt 0 0 0;
-    margin: 0;
-  }
+    margin: 0; }
   @bottom-center {
     font-family: "ArnoPro-Caption", serif;
     font-variant: prince-opentype(onum);
@@ -192,38 +163,26 @@
     content: flow(runfoot);
     text-align: center;
     font-size: 9pt;
-    vertical-align: top;
-  }
-}
+    vertical-align: top; } }
 @page part:left {
   @top-center {
     /*content: string(author);*/
-    content: flow(runheadleft);
-  }
-}
+    content: flow(runheadleft); } }
 @page part:right {
   @top-center {
     /*content: string(title);*/
-    content: flow(runheadright);
-  }
-}
+    content: flow(runheadright); } }
 @page part:first {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page part:blank {
   margin-top: 2.16in;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page chapter {
   @top-center {
     font-family: "ArnoPro-Caption", serif;
@@ -232,8 +191,7 @@
     font-size: 8.5pt;
     vertical-align: top;
     padding: 31pt 0 0 0;
-    margin: 0;
-  }
+    margin: 0; }
   @bottom-center {
     font-family: "ArnoPro-Caption", serif;
     font-variant: prince-opentype(onum);
@@ -241,35 +199,24 @@
     content: flow(runfoot);
     text-align: center;
     font-size: 9pt;
-    vertical-align: top;
-  }
-}
+    vertical-align: top; } }
 @page chapter:left {
   @top-center {
     /*content: string(author);*/
-    content: flow(runheadleft);
-  }
-}
+    content: flow(runheadleft); } }
 @page chapter:right {
   @top-center {
     /*content: string(title);*/
-    content: flow(runheadright);
-  }
-}
+    content: flow(runheadright); } }
 @page chapter:first {
   @top-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page chapter:blank {
   margin-top: 2.16in;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page front {
   @top-center {
     content: normal;
@@ -279,8 +226,7 @@
     font-size: 8.5pt;
     vertical-align: top;
     padding: 31pt 0 0 0;
-    margin: 0;
-  }
+    margin: 0; }
   @bottom-center {
     content: normal;
     font-family: "ArnoPro-Caption", serif;
@@ -288,9 +234,7 @@
     content: counter(page);
     text-align: center;
     font-size: 9pt;
-    vertical-align: top;
-  }
-}
+    vertical-align: top; } }
 @page front:left {
   @top-center {
     content: normal;
@@ -300,37 +244,25 @@
     font-size: 8.5pt;
     vertical-align: top;
     padding: 31pt 0 0 0;
-    margin: 0;
-  }
+    margin: 0; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page front:right {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page front:first {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page front:blank {
   margin-top: 2.16in;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page copyright {
   margin-bottom: 0.25in;
   padding-bottom: 0;
@@ -342,8 +274,7 @@
     font-size: 8.5pt;
     vertical-align: top;
     padding: 31pt 0 0 0;
-    margin: 0;
-  }
+    margin: 0; }
   @bottom-center {
     content: normal;
     font-family: "ArnoPro-Caption", serif;
@@ -351,105 +282,70 @@
     content: counter(page);
     text-align: center;
     font-size: 9pt;
-    vertical-align: top;
-  }
-}
+    vertical-align: top; } }
 @page copyright:left {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page copyright:right {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page copyright:first {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page copyright:blank {
   margin-top: 2.16in;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page fullbleed {
   margin: 0;
   padding: 0;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page fullbleed:left {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page fullbleed:right {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page fullbleed:first {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page fullbleed:blank {
   margin-top: 2.16in;
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page epigraph {
   @top-center {
-    content: normal;
-  }
+    content: normal; }
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 body {
   font-family: "ArnoPro", serif, "Noto";
-  counter-reset: endnotes chapternumber;
-}
+  counter-reset: endnotes chapternumber; }
 
 section, p, div, h1, h2, h3, h4, h5, h6 {
-  display: block;
-}
+  display: block; }
 
 h1, h2, h3, h4, h5, h6 {
-  page-break-after: avoid;
-}
+  page-break-after: avoid; }
 
 p {
   font-size: 11.75pt;
@@ -463,17 +359,15 @@ p {
   hyphens: auto;
   prince-hyphenate-after: 3;
   prince-hyphenate-before: 2;
-  hyphenate-lines: 3;
-}
+  hyphenate-lines: 3; }
 
 h1 + p,
 h1 + div.runfoot + div.runheadright + div.runheadleft + p,
-p[class*=Author1Au1] + p[class*=Body-TextTx],
-p[class*=Author1Au1] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx],
-p[class*=SubtitleSttl] + p[class*=Body-TextTx],
-p[class*=SubtitleSttl] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx] {
-  text-indent: 0;
-}
+p[class*="Author1Au1"] + p[class*="Body-TextTx"],
+p[class*="Author1Au1"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+p[class*="SubtitleSttl"] + p[class*="Body-TextTx"],
+p[class*="SubtitleSttl"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
+  text-indent: 0; }
 
 div.runheadleft {
   flow: static(runheadleft);
@@ -483,8 +377,7 @@ div.runheadleft {
   font-size: 8.5pt;
   padding: 0;
   margin: 0;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 div.runheadright {
   flow: static(runheadright);
@@ -494,8 +387,7 @@ div.runheadright {
   font-size: 8.5pt;
   padding: 0;
   margin: 0;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 div.runfoot {
   flow: static(runfoot);
@@ -505,8 +397,7 @@ div.runfoot {
   font-size: 9pt;
   text-indent: 0;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 div.runfoot span {
   display: block;
@@ -515,110 +406,91 @@ div.runfoot span {
   font-variant: prince-opentype(onum);
   text-align: center;
   font-size: 9pt;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 p:first-of-type,
-p[class*=-Space-Break] + p {
-  text-indent: 0;
-}
+p[class*="-Space-Break"] + p {
+  text-indent: 0; }
 
-p[class*=SpaceBefore] {
+p[class*="SpaceBefore"] {
+  margin-top: 15.5pt; }
+
+p[class*="SpaceAround"] {
   margin-top: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-p[class*=SpaceAround] {
-  margin-top: 15.5pt;
-  margin-bottom: 15.5pt;
-}
-
-p[class*=SpaceAfter] {
-  margin-bottom: 15.5pt;
-}
+p[class*="SpaceAfter"] {
+  margin-bottom: 15.5pt; }
 
 blockquote {
   margin: 15.5pt;
-  page-break-inside: auto;
-}
+  page-break-inside: auto; }
 
 blockquote p:first-child {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 /* ---------------- FRONTMATTER */
-section[data-type=halftitlepage],
-section[data-type=titlepage],
-section[data-type=preface],
-section[data-type=foreword],
-section[data-type=introduction],
-section[data-type=copyright-page],
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="preface"],
+section[data-type="foreword"],
+section[data-type="introduction"],
+section[data-type="copyright-page"],
 section.adcard {
-  page-break-after: always;
-}
+  page-break-after: always; }
 
-section[data-type=halftitlepage],
-section[data-type=titlepage] {
-  page-break-before: right;
-}
+section[data-type="halftitlepage"],
+section[data-type="titlepage"] {
+  page-break-before: right; }
 
-section[data-type=preface].adcard {
-  page-break-before: always;
-}
+section[data-type="preface"].adcard {
+  page-break-before: always; }
 
-section[data-type=halftitlepage],
-section[data-type=titlepage],
-section[data-type=copyright-page],
-section[data-type=dedication],
-nav[data-type=toc] {
-  page: front;
-}
+section[data-type="halftitlepage"],
+section[data-type="titlepage"],
+section[data-type="copyright-page"],
+section[data-type="dedication"],
+nav[data-type="toc"] {
+  page: front; }
 
-section[data-type=copyright-page] {
-  page: copyright;
-}
+section[data-type="copyright-page"] {
+  page: copyright; }
 
-*[class*=FrontSalesTitlefst] {
+*[class*="FrontSalesTitlefst"] {
   font-size: 16pt;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-*[class*=FrontSalesQuoteNoIndentfsq1] {
+*[class*="FrontSalesQuoteNoIndentfsq1"] {
   text-indent: 0;
-  text-align: left;
-}
+  text-align: left; }
 
-*[class*=FrontSalesQuotefsq],
-*[class*=FrontSalesQuotefsq]:first-of-type {
+*[class*="FrontSalesQuotefsq"],
+*[class*="FrontSalesQuotefsq"]:first-of-type {
   text-indent: -5pt;
-  text-align: left;
-}
+  text-align: left; }
 
-*[class*=FrontSalesQuoteSourcefsqs] {
+*[class*="FrontSalesQuoteSourcefsqs"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: bold;
   font-size: 10.5pt;
   text-align: right;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-*[class*=FrontSalesQuoteSourcefsqs] em,
-*[class*=FrontSalesQuoteSourcefsqs] span.itali {
-  break-inside: avoid;
-}
+*[class*="FrontSalesQuoteSourcefsqs"] em,
+*[class*="FrontSalesQuoteSourcefsqs"] span.itali {
+  break-inside: avoid; }
 
-section[data-type=halftitlepage] > h1 {
+section[data-type="halftitlepage"] > h1 {
   font-size: 18pt;
   font-weight: normal;
   line-height: 15.5pt;
   margin-top: 62pt;
-  text-align: center;
-}
+  text-align: center; }
 
 section.adcard {
-  text-align: center;
-}
+  text-align: center; }
 
 section.adcard > h1 {
   text-transform: lowercase;
@@ -628,41 +500,35 @@ section.adcard > h1 {
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section.adcard > p[class*=SubtitleSttl],
-section.adcard > p[class*=List-HeadLhead] {
+section.adcard > p[class*="SubtitleSttl"],
+section.adcard > p[class*="List-HeadLhead"] {
   text-align: center;
   text-indent: 0;
   margin-top: 15.5pt;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
-section.adcard > p.SeparatorSep + p[class*=SubtitleSttl],
-section.adcard > p.SeparatorSep + p[class*=List-HeadLhead],
-section.adcard > p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class*=SubtitleSttl],
-section.adcard > p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class*=List-HeadLhead] {
-  margin-top: 0;
-}
+section.adcard > p.SeparatorSep + p[class*="SubtitleSttl"],
+section.adcard > p.SeparatorSep + p[class*="List-HeadLhead"],
+section.adcard > p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class*="SubtitleSttl"],
+section.adcard > p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class*="List-HeadLhead"] {
+  margin-top: 0; }
 
 section.adcard ul {
   margin: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 section.adcard li {
   list-style-type: none;
   margin-left: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 section.adcard ul li p {
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=titlepage] > h1 {
+section[data-type="titlepage"] > h1 {
   font-family: "ArnoPro-BoldSubhead", serif, "Noto";
   font-weight: normal;
   font-style: normal;
@@ -671,50 +537,41 @@ section[data-type=titlepage] > h1 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0;
-  string-set: title content();
-}
+  string-set: title content(); }
 
-section[data-type=titlepage] > h1:first-child {
+section[data-type="titlepage"] > h1:first-child {
+  margin-top: 23.25pt; }
+
+section[data-type="titlepage"] p + h1 {
+  margin-top: 25.1875pt; }
+
+section[data-type="titlepage"] h1 + p {
   margin-top: 23.25pt;
-}
+  margin-bottom: 0; }
 
-section[data-type=titlepage] p + h1 {
-  margin-top: 25.1875pt;
-}
-
-section[data-type=titlepage] h1 + p {
-  margin-top: 23.25pt;
-  margin-bottom: 0;
-}
-
-section[data-type=titlepage] p[class*=SubtitleSttl],
-section[data-type=titlepage] p[class*=TitlepageSeriesTitleser] {
+section[data-type="titlepage"] p[class*="SubtitleSttl"],
+section[data-type="titlepage"] p[class*="TitlepageSeriesTitleser"] {
   font-weight: normal;
   font-size: 16pt;
   line-height: 23.25pt;
   font-style: italic;
-  text-align: center;
-}
-section[data-type=titlepage] p[class*=SubtitleSttl] em,
-section[data-type=titlepage] p[class*=TitlepageSeriesTitleser] em {
-  font-style: normal;
-}
-section[data-type=titlepage] p[class*=SubtitleSttl] span.itali,
-section[data-type=titlepage] p[class*=TitlepageSeriesTitleser] span.itali {
-  font-style: normal;
-}
+  text-align: center; }
+  section[data-type="titlepage"] p[class*="SubtitleSttl"] em,
+  section[data-type="titlepage"] p[class*="TitlepageSeriesTitleser"] em {
+    font-style: normal; }
+  section[data-type="titlepage"] p[class*="SubtitleSttl"] span.itali,
+  section[data-type="titlepage"] p[class*="TitlepageSeriesTitleser"] span.itali {
+    font-style: normal; }
 
-section[data-type=titlepage] p[class*=SubtitleSttl]:first-child,
-section[data-type=titlepage] p[class*=TitlepageSeriesTitleser]:first-child {
-  margin-top: 5.8125pt;
-}
+section[data-type="titlepage"] p[class*="SubtitleSttl"]:first-child,
+section[data-type="titlepage"] p[class*="TitlepageSeriesTitleser"]:first-child {
+  margin-top: 5.8125pt; }
 
-section[data-type=titlepage] p[class*=TitlepageTranslatorNametran],
-section[data-type=titlepage] p[class*=TitlepageContributorNamecon] {
-  text-align: center;
-}
+section[data-type="titlepage"] p[class*="TitlepageTranslatorNametran"],
+section[data-type="titlepage"] p[class*="TitlepageContributorNamecon"] {
+  text-align: center; }
 
-section[data-type=titlepage] p[class*=Author1Au1] {
+section[data-type="titlepage"] p[class*="Author1Au1"] {
   font-size: 16pt;
   padding-top: 38.75pt;
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
@@ -725,16 +582,14 @@ section[data-type=titlepage] p[class*=Author1Au1] {
   margin-bottom: 31pt;
   text-indent: 0;
   text-align: center;
-  string-set: author content();
-}
+  string-set: author content(); }
 
-section[data-type=titlepage] *[class*=ImprintImp] {
+section[data-type="titlepage"] *[class*="ImprintImp"] {
   float: bottom;
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=titlepage] *[class*=Logo-PlacementLogo] {
+section[data-type="titlepage"] *[class*="Logo-PlacementLogo"] {
   content: " ";
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/torDOTcom/logo.jpg");
   background-position: center bottom;
@@ -745,12 +600,11 @@ section[data-type=titlepage] *[class*=Logo-PlacementLogo] {
   width: 100%;
   height: 0.5in;
   text-align: center;
-  margin-bottom: 0.2in;
-}
+  margin-bottom: 0.2in; }
 
-section[data-type=titlepage] *[class*=CitiesCit],
-section[data-type=titlepage] *[class*=TitlepagePublisherNamepub],
-section[data-type=titlepage] *[class*=ImprintImp] {
+section[data-type="titlepage"] *[class*="CitiesCit"],
+section[data-type="titlepage"] *[class*="TitlepagePublisherNamepub"],
+section[data-type="titlepage"] *[class*="ImprintImp"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
@@ -761,171 +615,145 @@ section[data-type=titlepage] *[class*=ImprintImp] {
   line-height: 15.5pt;
   float: bottom;
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=copyright-page] p:first-child {
-  margin-top: 15.5pt;
-}
+section[data-type="copyright-page"] p:first-child {
+  margin-top: 15.5pt; }
 
-section[data-type=copyright-page] p {
+section[data-type="copyright-page"] p {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 10pt;
   text-align: center;
   text-indent: 0;
-  line-height: 14pt;
-}
+  line-height: 14pt; }
 
 /* This style no longer exists in RSuite styles. Leaving in, just in case. */
 /**[class*="CopyrightTextdoublespacecrtxd"] {
   margin-bottom: $sizecopyright * 1.4;
 }*/
-section[data-type=dedication] {
+section[data-type="dedication"] {
   page-break-before: always;
-  page-break-after: always;
-}
+  page-break-after: always; }
 
-section[data-type=dedication] p {
+section[data-type="dedication"] p {
   text-align: center;
   font-style: italic;
-  text-indent: 0;
-}
-section[data-type=dedication] p em {
-  font-style: normal;
-}
-section[data-type=dedication] p span.itali {
-  font-style: normal;
-}
+  text-indent: 0; }
+  section[data-type="dedication"] p em {
+    font-style: normal; }
+  section[data-type="dedication"] p span.itali {
+    font-style: normal; }
 
 .texttoc {
-  display: none;
-}
+  display: none; }
 
-nav[data-type=toc] {
+nav[data-type="toc"] {
   page-break-before: right;
-  page-break-after: always;
-}
+  page-break-after: always; }
 
-nav[data-type=toc] h1 {
+nav[data-type="toc"] h1 {
   font-weight: bold;
   font-size: 16pt;
   line-height: 15.5pt;
   margin-top: 0;
-  text-align: center;
-}
+  text-align: center; }
 
-nav[data-type=toc] ol {
-  margin-left: 0;
-}
+nav[data-type="toc"] ol {
+  margin-left: 0; }
 
-nav[data-type=toc] li {
+nav[data-type="toc"] li {
   font-size: 11pt;
   line-height: 15.5pt;
   margin-bottom: 15.5pt;
   margin-left: 0;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
-nav[data-type=toc] li.TOC-FrontmatterTocfm {
-  display: none;
-}
+nav[data-type="toc"] li.TOC-FrontmatterTocfm {
+  display: none; }
 
-nav[data-type=toc] li.TOC-BackmatterTocbm {
+nav[data-type="toc"] li.TOC-BackmatterTocbm {
   margin-left: 23.5pt;
   font-weight: normal;
-  text-align: left;
-}
+  text-align: left; }
 
-nav[data-type=toc] li.TOC-ChapterTocch + li.TOC-BackmatterTocbm {
-  margin-top: 15.5pt;
-}
+nav[data-type="toc"] li.TOC-ChapterTocch + li.TOC-BackmatterTocbm {
+  margin-top: 15.5pt; }
 
-nav[data-type=toc] li.TOC-PartTocpt ~ li {
-  margin-bottom: 0;
-}
+nav[data-type="toc"] li.TOC-PartTocpt ~ li {
+  margin-bottom: 0; }
 
-nav[data-type=toc] a {
+nav[data-type="toc"] a {
   text-decoration: none;
-  color: cmyk(0%, 0%, 0%, 100%);
-}
+  color: cmyk(0%, 0%, 0%, 100%); }
 
-nav[data-type=toc] li a:before {
+nav[data-type="toc"] li a:before {
   content: target-counter(attr(href), page);
   display: inline-block;
   width: 23.5pt;
-  text-align: left;
-}
+  text-align: left; }
 
-nav[data-type=toc] li.TOC-BackmatterTocbm a:before {
-  content: normal;
-}
+nav[data-type="toc"] li.TOC-BackmatterTocbm a:before {
+  content: normal; }
 
-nav[data-type=toc] li.TOC-PartTocpt {
+nav[data-type="toc"] li.TOC-PartTocpt {
   margin-bottom: 8.7203pt;
   margin-top: 23.5pt;
   vertical-align: top;
-  font-style: italic;
-}
+  font-style: italic; }
 
-nav[data-type=toc] li.TOC-PartTocpt a {
-  vertical-align: top;
-}
+nav[data-type="toc"] li.TOC-PartTocpt a {
+  vertical-align: top; }
 
-nav[data-type=toc] li.TOC-PartTocpt a:before {
+nav[data-type="toc"] li.TOC-PartTocpt a:before {
   content: normal;
-  display: inline;
-}
+  display: inline; }
 
 /* sections and headings */
-section[data-type=preface],
-section[data-type=foreword],
-section[data-type=introduction] {
+section[data-type="preface"],
+section[data-type="foreword"],
+section[data-type="introduction"] {
   page: chapter;
   page-break-before: right;
-  prince-page-group: start;
-}
+  prince-page-group: start; }
 
 section.adcard {
-  page: front;
-}
+  page: front; }
 
 section.frontsales {
-  page: front;
-}
+  page: front; }
 
-section[data-type=preface] > h1,
-section[data-type=foreword] > h1,
-section[data-type=introduction] > h1,
-section[data-type=appendix] > h1,
-section[data-type=afterword] > h1,
-section[data-type=glossary] > h1,
-section[data-type=index] > h1,
-section[data-type=bibliography] > h1,
-section[data-type=conclusion] > h1,
-section[data-type=acknowledgments] > h1 {
+section[data-type="preface"] > h1,
+section[data-type="foreword"] > h1,
+section[data-type="introduction"] > h1,
+section[data-type="appendix"] > h1,
+section[data-type="afterword"] > h1,
+section[data-type="glossary"] > h1,
+section[data-type="index"] > h1,
+section[data-type="bibliography"] > h1,
+section[data-type="conclusion"] > h1,
+section[data-type="acknowledgments"] > h1 {
   font-size: 16pt;
   line-height: 15.5pt;
   font-weight: bold;
   margin-top: 31pt;
   margin-bottom: 46.5pt;
   padding: 0;
-  text-align: center;
-}
+  text-align: center; }
 
-section[data-type=preface] > p[class*=SubtitleSttl],
-section[data-type=foreword] > p[class*=SubtitleSttl],
-section[data-type=introduction] > p[class*=SubtitleSttl],
-section[data-type=chapter] > p[class*=SubtitleSttl],
-section[data-type=appendix] > p[class*=SubtitleSttl],
-section[data-type=afterword] > p[class*=SubtitleSttl],
-section[data-type=glossary] > p[class*=SubtitleSttl],
-section[data-type=index] > p[class*=SubtitleSttl],
-section[data-type=bibliography] > p[class*=SubtitleSttl],
-section[data-type=conclusion] > p[class*=SubtitleSttl],
-section[data-type=acknowledgments] > p[class*=SubtitleSttl],
-section[data-type=preface] > p[class*=Author1Au1],
-section[data-type=foreword] > p[class*=Author1Au1],
-section[data-type=introduction] > p[class*=Author1Au1] {
+section[data-type="preface"] > p[class*="SubtitleSttl"],
+section[data-type="foreword"] > p[class*="SubtitleSttl"],
+section[data-type="introduction"] > p[class*="SubtitleSttl"],
+section[data-type="chapter"] > p[class*="SubtitleSttl"],
+section[data-type="appendix"] > p[class*="SubtitleSttl"],
+section[data-type="afterword"] > p[class*="SubtitleSttl"],
+section[data-type="glossary"] > p[class*="SubtitleSttl"],
+section[data-type="index"] > p[class*="SubtitleSttl"],
+section[data-type="bibliography"] > p[class*="SubtitleSttl"],
+section[data-type="conclusion"] > p[class*="SubtitleSttl"],
+section[data-type="acknowledgments"] > p[class*="SubtitleSttl"],
+section[data-type="preface"] > p[class*="Author1Au1"],
+section[data-type="foreword"] > p[class*="Author1Au1"],
+section[data-type="introduction"] > p[class*="Author1Au1"] {
   text-indent: 0;
   font-size: 14pt;
   line-height: 15.5pt;
@@ -933,100 +761,91 @@ section[data-type=introduction] > p[class*=Author1Au1] {
   margin-top: 31pt;
   text-align: center;
   margin-bottom: 31pt;
-  page-break-after: avoid;
-}
-section[data-type=preface] > p[class*=SubtitleSttl] em,
-section[data-type=foreword] > p[class*=SubtitleSttl] em,
-section[data-type=introduction] > p[class*=SubtitleSttl] em,
-section[data-type=chapter] > p[class*=SubtitleSttl] em,
-section[data-type=appendix] > p[class*=SubtitleSttl] em,
-section[data-type=afterword] > p[class*=SubtitleSttl] em,
-section[data-type=glossary] > p[class*=SubtitleSttl] em,
-section[data-type=index] > p[class*=SubtitleSttl] em,
-section[data-type=bibliography] > p[class*=SubtitleSttl] em,
-section[data-type=conclusion] > p[class*=SubtitleSttl] em,
-section[data-type=acknowledgments] > p[class*=SubtitleSttl] em,
-section[data-type=preface] > p[class*=Author1Au1] em,
-section[data-type=foreword] > p[class*=Author1Au1] em,
-section[data-type=introduction] > p[class*=Author1Au1] em {
-  font-style: normal;
-}
-section[data-type=preface] > p[class*=SubtitleSttl] span.itali,
-section[data-type=foreword] > p[class*=SubtitleSttl] span.itali,
-section[data-type=introduction] > p[class*=SubtitleSttl] span.itali,
-section[data-type=chapter] > p[class*=SubtitleSttl] span.itali,
-section[data-type=appendix] > p[class*=SubtitleSttl] span.itali,
-section[data-type=afterword] > p[class*=SubtitleSttl] span.itali,
-section[data-type=glossary] > p[class*=SubtitleSttl] span.itali,
-section[data-type=index] > p[class*=SubtitleSttl] span.itali,
-section[data-type=bibliography] > p[class*=SubtitleSttl] span.itali,
-section[data-type=conclusion] > p[class*=SubtitleSttl] span.itali,
-section[data-type=acknowledgments] > p[class*=SubtitleSttl] span.itali,
-section[data-type=preface] > p[class*=Author1Au1] span.itali,
-section[data-type=foreword] > p[class*=Author1Au1] span.itali,
-section[data-type=introduction] > p[class*=Author1Au1] span.itali {
-  font-style: normal;
-}
+  page-break-after: avoid; }
+  section[data-type="preface"] > p[class*="SubtitleSttl"] em,
+  section[data-type="foreword"] > p[class*="SubtitleSttl"] em,
+  section[data-type="introduction"] > p[class*="SubtitleSttl"] em,
+  section[data-type="chapter"] > p[class*="SubtitleSttl"] em,
+  section[data-type="appendix"] > p[class*="SubtitleSttl"] em,
+  section[data-type="afterword"] > p[class*="SubtitleSttl"] em,
+  section[data-type="glossary"] > p[class*="SubtitleSttl"] em,
+  section[data-type="index"] > p[class*="SubtitleSttl"] em,
+  section[data-type="bibliography"] > p[class*="SubtitleSttl"] em,
+  section[data-type="conclusion"] > p[class*="SubtitleSttl"] em,
+  section[data-type="acknowledgments"] > p[class*="SubtitleSttl"] em,
+  section[data-type="preface"] > p[class*="Author1Au1"] em,
+  section[data-type="foreword"] > p[class*="Author1Au1"] em,
+  section[data-type="introduction"] > p[class*="Author1Au1"] em {
+    font-style: normal; }
+  section[data-type="preface"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="foreword"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="introduction"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="chapter"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="appendix"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="afterword"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="glossary"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="index"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="bibliography"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="conclusion"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="acknowledgments"] > p[class*="SubtitleSttl"] span.itali,
+  section[data-type="preface"] > p[class*="Author1Au1"] span.itali,
+  section[data-type="foreword"] > p[class*="Author1Au1"] span.itali,
+  section[data-type="introduction"] > p[class*="Author1Au1"] span.itali {
+    font-style: normal; }
 
-section[data-type=preface] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=foreword] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=introduction] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=appendix] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=afterword] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=glossary] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=index] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=bibliography] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=conclusion] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=acknowledgments] > p[class*=SubtitleSttl]:first-of-type,
-section[data-type=preface] > p[class*=Author1Au1]:first-of-type,
-section[data-type=foreword] > p[class*=Author1Au1]:first-of-type,
-section[data-type=introduction] > p[class*=Author1Au1]:first-of-type {
-  margin-top: -31pt;
-}
+section[data-type="preface"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="foreword"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="introduction"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="appendix"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="afterword"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="glossary"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="index"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="bibliography"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="conclusion"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="acknowledgments"] > p[class*="SubtitleSttl"]:first-of-type,
+section[data-type="preface"] > p[class*="Author1Au1"]:first-of-type,
+section[data-type="foreword"] > p[class*="Author1Au1"]:first-of-type,
+section[data-type="introduction"] > p[class*="Author1Au1"]:first-of-type {
+  margin-top: -31pt; }
 
 /* ---------------- CHAPTERS */
-section[data-type=chapter] {
+section[data-type="chapter"] {
   page: chapter;
   page-break-before: always;
   prince-page-group: start;
-  counter-reset: footnote;
-}
+  counter-reset: footnote; }
 
-section[data-type=preface] + section[data-type=chapter],
-section[data-type=foreword] + section[data-type=chapter],
-section[data-type=introduction] + section[data-type=chapter],
-section[data-type=titlepage] + section[data-type=chapter],
-section[data-type=halftitlepage] + section[data-type=chapter],
-section[data-type=copyright-page] + section[data-type=chapter],
-section[data-type=dedication] + section[data-type=chapter],
-section[data-type=acknowledgments] + section[data-type=chapter],
-nav[data-type=toc] + section[data-type=chapter],
-div[data-type=part] + section[data-type=chapter] {
-  page-break-before: right;
-}
+section[data-type="preface"] + section[data-type="chapter"],
+section[data-type="foreword"] + section[data-type="chapter"],
+section[data-type="introduction"] + section[data-type="chapter"],
+section[data-type="titlepage"] + section[data-type="chapter"],
+section[data-type="halftitlepage"] + section[data-type="chapter"],
+section[data-type="copyright-page"] + section[data-type="chapter"],
+section[data-type="dedication"] + section[data-type="chapter"],
+section[data-type="acknowledgments"] + section[data-type="chapter"],
+nav[data-type="toc"] + section[data-type="chapter"],
+div[data-type="part"] + section[data-type="chapter"] {
+  page-break-before: right; }
 
-section[data-type=chapter] > h1[class*=NumberNum] {
+section[data-type="chapter"] > h1[class*="NumberNum"] {
   font-size: 11.75pt;
   line-height: 15.5pt;
   font-weight: 600;
   text-align: center;
   margin-top: 19.375pt;
   margin-bottom: 7pt;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=chapter] > h1[class*=NumberNum] + p {
-  margin-top: 15.5pt;
-}
+section[data-type="chapter"] > h1[class*="NumberNum"] + p {
+  margin-top: 15.5pt; }
 
 /* remove top margins from Dedication, FM Epigraph, and Copyright inserted CTNP */
-section[data-type=preface].epigraph h1[class*=ChapTitleNonprintingctnp] + *,
-section[data-type=copyright-page] h1[class*=ChapTitleNonprintingctnp] + *,
-section[data-type=dedication] h1[class*=ChapTitleNonprintingctnp] + * {
-  margin-top: 0;
-}
+section[data-type="preface"].epigraph h1[class*="ChapTitleNonprintingctnp"] + *,
+section[data-type="copyright-page"] h1[class*="ChapTitleNonprintingctnp"] + *,
+section[data-type="dedication"] h1[class*="ChapTitleNonprintingctnp"] + * {
+  margin-top: 0; }
 
-section[data-type=chapter] h1[class*=TitleTtl] {
+section[data-type="chapter"] h1[class*="TitleTtl"] {
   font-size: 16pt;
   line-height: 15.5pt;
   font-weight: normal;
@@ -1034,10 +853,9 @@ section[data-type=chapter] h1[class*=TitleTtl] {
   text-align: center;
   margin-bottom: 5pt;
   counter-increment: chapternumber;
-  padding: 0;
-}
+  padding: 0; }
 
-h1[class*=TitleTtl][data-autolabel=yes]:before {
+h1[class*="TitleTtl"][data-autolabel="yes"]:before {
   content: attr(data-labeltext);
   display: block;
   font-size: 11.75pt;
@@ -1046,76 +864,64 @@ h1[class*=TitleTtl][data-autolabel=yes]:before {
   text-align: center;
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=chapter] h1[class*=TitleTtl] + p {
-  margin-top: 62pt;
-}
+section[data-type="chapter"] h1[class*="TitleTtl"] + p {
+  margin-top: 62pt; }
 
-*[class*=Nonprinting] {
-  display: none;
-}
+*[class*="Nonprinting"] {
+  display: none; }
 
-section[data-type=appendix],
-section[data-type=afterword],
-section[data-type=glossary],
-section[data-type=index],
-section[data-type=bibliography],
-section[data-type=conclusion],
-section[data-type=acknowledgments] {
+section[data-type="appendix"],
+section[data-type="afterword"],
+section[data-type="glossary"],
+section[data-type="index"],
+section[data-type="bibliography"],
+section[data-type="conclusion"],
+section[data-type="acknowledgments"] {
   page-break-before: right;
   counter-reset: footnote;
   page: chapter;
-  prince-page-group: start;
-}
+  prince-page-group: start; }
 
-section[data-type=appendix]:first-of-type,
-section[data-type=afterword]:first-of-type,
-section[data-type=glossary]:first-of-type,
-section[data-type=index]:first-of-type,
-section[data-type=bibliography]:first-of-type,
-section[data-type=conclusion]:first-of-type,
-section[data-type=acknowledgments]:first-of-type {
-  page-break-before: right;
-}
+section[data-type="appendix"]:first-of-type,
+section[data-type="afterword"]:first-of-type,
+section[data-type="glossary"]:first-of-type,
+section[data-type="index"]:first-of-type,
+section[data-type="bibliography"]:first-of-type,
+section[data-type="conclusion"]:first-of-type,
+section[data-type="acknowledgments"]:first-of-type {
+  page-break-before: right; }
 
-section[data-type=appendix].bobad {
-  page-break-before: always;
-}
+section[data-type="appendix"].bobad {
+  page-break-before: always; }
 
-section[data-type=bibliography] > p[class*=Body-TextTx],
-p[class*=Reference-EntryRef] {
-  text-indent: 0;
-}
+section[data-type="bibliography"] > p[class*="Body-TextTx"],
+p[class*="Reference-EntryRef"] {
+  text-indent: 0; }
 
-blockquote + p[class*=Body-TextTx]:first-of-type {
-  /*margin-top: $gridheight * 3;*/
-}
+blockquote + p[class*="Body-TextTx"]:first-of-type {
+  /*margin-top: $gridheight * 3;*/ }
 
-p[class*=Body-TextTx] .chapopener {
+p[class*="Body-TextTx"] .chapopener {
   font-weight: 600;
-  letter-spacing: 0.1pt;
-}
+  letter-spacing: 0.1pt; }
 
 /* ---------------- HEADINGS */
-*[class*=A-HeadAhead] {
+*[class*="A-HeadAhead"] {
   text-indent: 0;
   font-size: 14pt;
   font-style: italic;
   text-align: center;
   margin-top: 31pt;
   margin-bottom: 15.5pt;
-  page-break-after: avoid;
-}
-*[class*=A-HeadAhead] em {
-  font-style: normal;
-}
-*[class*=A-HeadAhead] span.itali {
-  font-style: normal;
-}
+  page-break-after: avoid; }
+  *[class*="A-HeadAhead"] em {
+    font-style: normal; }
+  *[class*="A-HeadAhead"] span.itali {
+    font-style: normal; }
 
-*[class*=B-HeadBhead] {
+*[class*="B-HeadBhead"] {
   text-indent: 0;
   font-size: 11.75pt;
   font-variant: small-caps;
@@ -1124,118 +930,104 @@ p[class*=Body-TextTx] .chapopener {
   text-align: center;
   margin-top: 31pt;
   margin-bottom: 15.5pt;
-  page-break-after: avoid;
-}
+  page-break-after: avoid; }
 
-*[class*=C-HeadChead] {
+*[class*="C-HeadChead"] {
   text-indent: 0;
   font-size: 11.75pt;
   font-style: italic;
   text-align: center;
   margin-top: 31pt;
   margin-bottom: 15.5pt;
-  page-break-after: avoid;
-}
-*[class*=C-HeadChead] em {
-  font-style: normal;
-}
-*[class*=C-HeadChead] span.itali {
-  font-style: normal;
-}
+  page-break-after: avoid; }
+  *[class*="C-HeadChead"] em {
+    font-style: normal; }
+  *[class*="C-HeadChead"] span.itali {
+    font-style: normal; }
 
-*[class*=A-HeadAhead] + p,
-*[class*=B-HeadBhead] + p,
-*[class*=C-HeadChead] + p,
-*[class*=A-HeadAhead] + div.runfoot + div.runheadright + div.runheadleft + p,
-*[class*=B-HeadBhead] + div.runfoot + div.runheadright + div.runheadleft + p,
-*[class*=C-HeadChead] + div.runfoot + div.runheadright + div.runheadleft + p {
-  text-indent: 0;
-}
+*[class*="A-HeadAhead"] + p,
+*[class*="B-HeadBhead"] + p,
+*[class*="C-HeadChead"] + p,
+*[class*="A-HeadAhead"] + div.runfoot + div.runheadright + div.runheadleft + p,
+*[class*="B-HeadBhead"] + div.runfoot + div.runheadright + div.runheadleft + p,
+*[class*="C-HeadChead"] + div.runfoot + div.runheadright + div.runheadleft + p {
+  text-indent: 0; }
 
-*[class=Main-HeadMHead] + *[class*=A-HeadAhead],
-*[class=Main-HeadMHead] + div.runfoot + div.runheadright + div.runheadleft + *[class*=A-HeadAhead] {
+*[class="Main-HeadMHead"] + *[class*="A-HeadAhead"],
+*[class="Main-HeadMHead"] + div.runfoot + div.runheadright + div.runheadleft + *[class*="A-HeadAhead"] {
   margin-top: -31pt;
-  margin-bottom: 31pt;
-}
+  margin-bottom: 31pt; }
 
-section[data-type=appendix].notes *[class*=A-HeadAhead] {
-  margin-bottom: 31pt;
-}
+section[data-type="appendix"].notes *[class*="A-HeadAhead"] {
+  margin-bottom: 31pt; }
 
 /* ---------------- PARTS */
-div[data-type=part] {
+div[data-type="part"] {
   page-break-before: right;
   counter-reset: footnote;
   page: part;
-  prince-page-group: start;
-}
+  prince-page-group: start; }
 
-div[data-type=part] > h1 {
+div[data-type="part"] > h1 {
   font-weight: normal;
   font-size: 22pt;
   letter-spacing: 1pt;
   text-transform: uppercase;
   line-height: 28pt;
   text-align: center;
-  margin-top: 8pt;
-}
+  margin-top: 8pt; }
 
-div[data-type=part] > h1[class*=NumberNum] {
+div[data-type="part"] > h1[class*="NumberNum"] {
   font-size: 18pt;
   text-transform: lowercase;
-  font-variant: prince-opentype(smcp, onum);
-}
+  font-variant: prince-opentype(smcp, onum); }
 
-div[data-type=part] > h1[class*=NumberNum] + div.runfoot + div.runheadright + div.runheadleft + h1[class*=TitleTtl] {
-  margin-top: 0;
-}
+div[data-type="part"] > h1[class*="NumberNum"] + div.runfoot + div.runheadright + div.runheadleft + h1[class*="TitleTtl"] {
+  margin-top: 0; }
 
-div[data-type=part] > p[class*=SubtitleSttl] {
+div[data-type="part"] > p[class*="SubtitleSttl"] {
   text-indent: 0;
   text-align: center;
   font-size: 14pt;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
 /* ---------------- TEXT */
 /* NEED CLARIFICATION */
-*[class*=Text-StandardALTatx],
-*[class*=Text-StdNo-IndentALTatx1] {
+*[class*="Text-StandardALTatx"],
+*[class*="Text-StdNo-IndentALTatx1"] {
   font-family: "AromaNo2LTPro", sans-serif, "Noto";
-  font-size: 9.75pt;
-}
+  font-size: 9.75pt; }
 
 /* end note */
-*[class*=Computer-TextComp] {
+*[class*="Computer-TextComp"] {
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
-p[class*=Extract] {
+p[class*="Extract"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
-  font-size: 10.5pt;
-}
+  font-size: 10.5pt; }
 
-pre.computer {
+div.computer {
   white-space: normal;
   margin: 15.5pt;
-  page-break-inside: auto;
-}
+  page-break-inside: auto; }
 
-pre.computer p:first-child,
+div.computer p:first-child,
+div.computer pre:first-child,
 p.Design-NoteDn + div.runfoot + div.runheadright + div.runheadleft + p {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-pre.computer p.Body-TextTx {
+div.computer p.Body-TextTx,
+div.computer pre.Body-TextTx {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: 8.5pt;
   white-space: normal;
-}
+  line-height: 15.5pt;
+  text-align: justify;
+  text-align-last: left; }
 
-section[data-type=appendix].abouttheauthor p[class*=Body-TextTx]:first-of-type {
-  text-indent: 0;
-}
+section[data-type="appendix"].abouttheauthor p[class*="Body-TextTx"]:first-of-type {
+  text-indent: 0; }
 
 /* ---------------- SCREENPLAY EXTRACT */
 /* need clarification */
@@ -1243,65 +1035,54 @@ section[data-type=appendix].abouttheauthor p[class*=Body-TextTx]:first-of-type {
   text-align: center;
   text-indent: 0;
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 .ScreenplaySubheadspsh {
   text-align: center;
   text-indent: 0;
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 .ScreenplayDramatisPersonaedp {
   text-indent: 0;
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 .ScreenplayDramatisPersonaedp + div.runfoot + div.runheadright + div.runheadleft + .ScreenplayDramatisPersonaedp {
-  text-indent: 12pt;
-}
+  text-indent: 12pt; }
 
 .ScreenplayTextNo-Indentsptx1 {
   text-indent: 0;
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 .ScreenplayTextsptx {
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 p.ScreenplayExtractsp {
   text-indent: 0;
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
 /* end note */
 /* ---------------- SIDEBARS */
-p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + aside,
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + aside,
 p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + aside {
-  margin-top: 0pt;
-}
+  margin-top: 0pt; }
 
 aside {
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
   margin-left: 15.5pt;
   margin-right: 15.5pt;
-  page-break-inside: auto;
-}
+  page-break-inside: auto; }
 
 aside p:first-child {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 aside > *:first-child {
-  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%);
-}
+  border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%); }
 
 aside::after {
   display: block;
@@ -1310,10 +1091,9 @@ aside::after {
   border-top: 0.5pt solid cmyk(0%, 0%, 0%, 100%);
   line-height: 15.5pt;
   margin-bottom: 15.5pt;
-  min-height: 15.5pt;
-}
+  min-height: 15.5pt; }
 
-aside[data-type=sidebar] > p[class*=A-HeadAhead] {
+aside[data-type="sidebar"] > p[class*="A-HeadAhead"] {
   page-break-after: avoid;
   font-size: 11.75pt;
   line-height: 15.5pt;
@@ -1322,14 +1102,12 @@ aside[data-type=sidebar] > p[class*=A-HeadAhead] {
   text-transform: uppercase;
   text-align: center;
   margin-top: 15.5pt;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-aside[data-type=sidebar] > p[class*=A-HeadAhead] + p {
-  text-indent: 0;
-}
+aside[data-type="sidebar"] > p[class*="A-HeadAhead"] + p {
+  text-indent: 0; }
 
-aside[data-type=sidebar] > p[class*=B-HeadBhead] {
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] {
   page-break-after: avoid;
   font-size: 11.75pt;
   line-height: 15.5pt;
@@ -1337,210 +1115,184 @@ aside[data-type=sidebar] > p[class*=B-HeadBhead] {
   font-style: italic;
   text-align: center;
   margin-top: 15.5pt;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-aside[data-type=sidebar] > p[class*=B-HeadBhead] + p {
-  text-indent: 0;
-}
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + p {
+  text-indent: 0; }
 
-aside[data-type=sidebar] > p[class*=B-HeadBhead] + p[class*=A-HeadAhead] {
-  margin-bottom: 0;
-}
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + p[class*="A-HeadAhead"] {
+  margin-bottom: 0; }
 
-aside[data-type=sidebar] p[class*=Body-TextTx] {
-  font-size: 10.5pt;
-}
+aside[data-type="sidebar"] p[class*="Body-TextTx"] {
+  font-size: 10.5pt; }
 
-aside[data-type=sidebar] > p[class*=TitleTtl] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx],
-aside[data-type=sidebar] > p[class*=A-HeadAhead] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx],
-aside[data-type=sidebar] > p[class*=B-HeadBhead] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx] {
-  text-indent: 0;
-}
+aside[data-type="sidebar"] > p[class*="TitleTtl"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+aside[data-type="sidebar"] > p[class*="A-HeadAhead"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"],
+aside[data-type="sidebar"] > p[class*="B-HeadBhead"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
+  text-indent: 0; }
 
-aside[data-type=sidebar] *[class*=Bullet-Level-1-ListBl1] {
-  font-size: 10.5pt;
-}
+aside[data-type="sidebar"] *[class*="Bullet-Level-1-ListBl1"] {
+  font-size: 10.5pt; }
 
 /* ---------------- DEDICATION and EPIGRAPH */
-section[data-type=dedication] p:first-child {
-  margin-top: 15.5pt;
-}
+section[data-type="dedication"] p:first-child {
+  margin-top: 15.5pt; }
 
-section[data-type=dedication] blockquote[data-type=epigraph],
-section[data-type=preface].epigraph,
-p[class*=DedicationDed] + p[class*=Epigraph] {
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph,
+p[class*="DedicationDed"] + p[class*="Epigraph"] {
   page-break-before: right;
-  margin-top: 31pt;
-}
+  margin-top: 31pt; }
 
-section[data-type=dedication] blockquote[data-type=epigraph],
-section[data-type=preface].epigraph blockquote[data-type=epigraph] {
+section[data-type="dedication"] blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph blockquote[data-type="epigraph"] {
   margin-left: 0;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
-section[data-type=preface].epigraph p[class^=Body-TextTx] + blockquote[data-type=epigraph],
-section[data-type=preface].epigraph p[class^=Body-TextTx] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type=epigraph] {
-  margin-top: 0;
-}
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] + blockquote[data-type="epigraph"],
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
+  margin-top: 0; }
 
-section[data-type=dedication] p[class^=Epigraph-Verse],
-section[data-type=preface] p[class^=Epigraph-Verse],
-section[data-type=dedication] p[class^=Epigraph-Non-Verse],
-section[data-type=preface] p[class^=Epigraph-Non-Verse],
-section[data-type=preface].epigraph p[class^=Body-TextTx] {
+section[data-type="dedication"] p[class^="Epigraph-Verse"],
+section[data-type="preface"] p[class^="Epigraph-Verse"],
+section[data-type="dedication"] p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"] p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-style: normal;
   font-size: 10pt;
   text-align: left;
   margin-left: 50.375pt;
   margin-right: 35.25pt;
-  text-indent: -12pt;
-}
+  text-indent: -12pt; }
 
-section[data-type=dedication] p[class^=Epigraph-Non-Verse],
-section[data-type=preface].epigraph p[class^=Epigraph-Non-Verse],
-section[data-type=preface].epigraph p[class^=Body-TextTx] {
+section[data-type="dedication"] p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"].epigraph p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] {
   /*edit 7*/
   margin-left: 36pt;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-section[data-type=dedication] p[class^=Epigraph-Source],
-section[data-type=preface] p[class^=Epigraph-Source],
-p[class^=SourceSrc] {
+section[data-type="dedication"] p[class^="Epigraph-Source"],
+section[data-type="preface"] p[class^="Epigraph-Source"],
+p[class^="SourceSrc"] {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-weight: 600;
   font-size: 10pt;
   font-style: normal;
   text-align: right;
   margin-left: 35.25pt;
-  margin-right: 35.25pt;
-}
+  margin-right: 35.25pt; }
 
 /* FRONTMATTER EPIGRAPH */
-section[data-type=preface].epigraph {
+section[data-type="preface"].epigraph {
   page: epigraph;
   margin-left: 0;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
-p[class^=Epigraph-Source] em, p[class^=Epigraph-Source] span.itali,
-p[class^=SourceSrc] em,
-p[class^=SourceSrc] span.itali {
-  break-inside: avoid;
-}
+p[class^="Epigraph-Source"] em, p[class^="Epigraph-Source"] span.itali,
+p[class^="SourceSrc"] em,
+p[class^="SourceSrc"] span.itali {
+  break-inside: avoid; }
 
-section[data-type=chapter] > blockquote[data-type=epigraph],
-div[data-type=part] > blockquote[data-type=epigraph],
-section[data-type=preface] > blockquote[data-type=epigraph],
-section[data-type=foreword] > blockquote[data-type=epigraph],
-section[data-type=introduction] > blockquote[data-type=epigraph] {
+section[data-type="chapter"] > blockquote[data-type="epigraph"],
+div[data-type="part"] > blockquote[data-type="epigraph"],
+section[data-type="preface"] > blockquote[data-type="epigraph"],
+section[data-type="foreword"] > blockquote[data-type="epigraph"],
+section[data-type="introduction"] > blockquote[data-type="epigraph"] {
   margin-left: 35.25pt;
   margin-right: 35.25pt;
-  margin-bottom: 46.5pt;
-}
+  margin-bottom: 46.5pt; }
 
-blockquote[data-type=epigraph] + blockquote[data-type=epigraph],
-blockquote[data-type=epigraph] + p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type=epigraph] {
-  margin-top: -46.5pt;
-}
+blockquote[data-type="epigraph"] + blockquote[data-type="epigraph"],
+blockquote[data-type="epigraph"] + p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote[data-type="epigraph"] {
+  margin-top: -46.5pt; }
 
-h1[class*=TitleTtl] + blockquote[data-type=epigraph],
-h1[class*=Main-HeadMHead] + blockquote[data-type=epigraph] {
-  margin-top: 31pt;
-}
+h1[class*="TitleTtl"] + blockquote[data-type="epigraph"],
+h1[class*="Main-HeadMHead"] + blockquote[data-type="epigraph"] {
+  margin-top: 31pt; }
 
-section[data-type=chapter] > blockquote[data-type=epigraph] p,
-div[data-type=part] > blockquote[data-type=epigraph] p,
-section[data-type=preface] > blockquote[data-type=epigraph] p,
-section[data-type=foreword] > blockquote[data-type=epigraph] p,
-section[data-type=introduction] > blockquote[data-type=epigraph] p {
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
+div[data-type="part"] > blockquote[data-type="epigraph"] p,
+section[data-type="preface"] > blockquote[data-type="epigraph"] p,
+section[data-type="foreword"] > blockquote[data-type="epigraph"] p,
+section[data-type="introduction"] > blockquote[data-type="epigraph"] p {
   font-family: "ArnoPro-SmText", "Noto";
   font-size: 10pt;
   line-height: 15.5pt;
-  /* text-align: left;  <-- messing with FM epigraph source alignment*/
-}
+  /* text-align: left;  <-- messing with FM epigraph source alignment*/ }
 
-section[data-type=chapter] p[class^=Epigraph-Verse],
-div[data-type=part] p[class^=Epigraph-Verse],
-section[data-type=chapter] p[class^=Epigraph-Verse],
-section[data-type=foreword] p[class^=Epigraph-Verse],
-section[data-type=introduction] p[class^=Epigraph-Verse],
-section[data-type=titlepage] p[class^=Epigraph-Verse],
-section[data-type=halftitlepage] p[class^=Epigraph-Verse],
-section[data-type=copyright-page] p[class^=Epigraph-Verse] {
+section[data-type="chapter"] p[class^="Epigraph-Verse"],
+div[data-type="part"] p[class^="Epigraph-Verse"],
+section[data-type="chapter"] p[class^="Epigraph-Verse"],
+section[data-type="foreword"] p[class^="Epigraph-Verse"],
+section[data-type="introduction"] p[class^="Epigraph-Verse"],
+section[data-type="titlepage"] p[class^="Epigraph-Verse"],
+section[data-type="halftitlepage"] p[class^="Epigraph-Verse"],
+section[data-type="copyright-page"] p[class^="Epigraph-Verse"] {
   margin-left: 15.5pt;
   text-indent: -15.5pt;
-  page-break-inside: auto;
-}
+  page-break-inside: auto; }
 
-section[data-type=chapter] blockquote p[class^=Epigraph-Verse]:first-child,
-div[data-type=part] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=chapter] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=foreword] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=introduction] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=titlepage] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=halftitlepage] blockquote p[class^=Epigraph-Verse]:first-child,
-section[data-type=copyright-page] blockquote p[class^=Epigraph-Verse]:first-child {
-  text-indent: -15.5pt;
-}
+section[data-type="chapter"] blockquote p[class^="Epigraph-Verse"]:first-child,
+div[data-type="part"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="chapter"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="foreword"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="introduction"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="titlepage"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="halftitlepage"] blockquote p[class^="Epigraph-Verse"]:first-child,
+section[data-type="copyright-page"] blockquote p[class^="Epigraph-Verse"]:first-child {
+  text-indent: -15.5pt; }
 
-section[data-type=chapter] p[class^=Epigraph-Non-Verse],
-div[data-type=part] p[class^=Epigraph-Non-Verse],
-section[data-type=chapter] p[class^=Epigraph-Non-Verse],
-section[data-type=foreword] p[class^=Epigraph-Non-Verse],
-section[data-type=introduction] p[class^=Epigraph-Non-Verse],
-section[data-type=titlepage] p[class^=Epigraph-Non-Verse],
-section[data-type=halftitlepage] p[class^=Epigraph-Non-Verse],
-section[data-type=copyright-page] p[class^=Epigraph-Non-Verse] {
+section[data-type="chapter"] p[class^="Epigraph-Non-Verse"],
+div[data-type="part"] p[class^="Epigraph-Non-Verse"],
+section[data-type="chapter"] p[class^="Epigraph-Non-Verse"],
+section[data-type="foreword"] p[class^="Epigraph-Non-Verse"],
+section[data-type="introduction"] p[class^="Epigraph-Non-Verse"],
+section[data-type="titlepage"] p[class^="Epigraph-Non-Verse"],
+section[data-type="halftitlepage"] p[class^="Epigraph-Non-Verse"],
+section[data-type="copyright-page"] p[class^="Epigraph-Non-Verse"] {
   margin-left: 0;
-  page-break-inside: auto;
-}
+  page-break-inside: auto; }
 
-section[data-type=chapter] p[class^=Epigraph-Source],
-div[data-type=part] p[class^=Epigraph-Source],
-section[data-type=chapter] p[class^=Epigraph-Source],
-section[data-type=foreword] p[class^=Epigraph-Source],
-section[data-type=introduction] p[class^=Epigraph-Source],
-section[data-type=titlepage] p[class^=Epigraph-Source],
-section[data-type=halftitlepage] p[class^=Epigraph-Source],
-section[data-type=copyright-page] p[class^=Epigraph-Source] {
+section[data-type="chapter"] p[class^="Epigraph-Source"],
+div[data-type="part"] p[class^="Epigraph-Source"],
+section[data-type="chapter"] p[class^="Epigraph-Source"],
+section[data-type="foreword"] p[class^="Epigraph-Source"],
+section[data-type="introduction"] p[class^="Epigraph-Source"],
+section[data-type="titlepage"] p[class^="Epigraph-Source"],
+section[data-type="halftitlepage"] p[class^="Epigraph-Source"],
+section[data-type="copyright-page"] p[class^="Epigraph-Source"] {
   text-align: right;
   font-weight: 600;
   /*page-break-before: avoid;*/
   widows: 2;
   orphans: 2;
-  margin-top: 15.5pt;
-}
-section[data-type=chapter] p[class^=Epigraph-Source] em,
-div[data-type=part] p[class^=Epigraph-Source] em,
-section[data-type=chapter] p[class^=Epigraph-Source] em,
-section[data-type=foreword] p[class^=Epigraph-Source] em,
-section[data-type=introduction] p[class^=Epigraph-Source] em,
-section[data-type=titlepage] p[class^=Epigraph-Source] em,
-section[data-type=halftitlepage] p[class^=Epigraph-Source] em,
-section[data-type=copyright-page] p[class^=Epigraph-Source] em {
-  break-inside: avoid;
-}
-section[data-type=chapter] p[class^=Epigraph-Source] span.itali,
-div[data-type=part] p[class^=Epigraph-Source] span.itali,
-section[data-type=chapter] p[class^=Epigraph-Source] span.itali,
-section[data-type=foreword] p[class^=Epigraph-Source] span.itali,
-section[data-type=introduction] p[class^=Epigraph-Source] span.itali,
-section[data-type=titlepage] p[class^=Epigraph-Source] span.itali,
-section[data-type=halftitlepage] p[class^=Epigraph-Source] span.itali,
-section[data-type=copyright-page] p[class^=Epigraph-Source] span.itali {
-  break-inside: avoid;
-}
+  margin-top: 15.5pt; }
+  section[data-type="chapter"] p[class^="Epigraph-Source"] em,
+  div[data-type="part"] p[class^="Epigraph-Source"] em,
+  section[data-type="chapter"] p[class^="Epigraph-Source"] em,
+  section[data-type="foreword"] p[class^="Epigraph-Source"] em,
+  section[data-type="introduction"] p[class^="Epigraph-Source"] em,
+  section[data-type="titlepage"] p[class^="Epigraph-Source"] em,
+  section[data-type="halftitlepage"] p[class^="Epigraph-Source"] em,
+  section[data-type="copyright-page"] p[class^="Epigraph-Source"] em {
+    break-inside: avoid; }
+  section[data-type="chapter"] p[class^="Epigraph-Source"] span.itali,
+  div[data-type="part"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="chapter"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="foreword"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="introduction"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="titlepage"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="halftitlepage"] p[class^="Epigraph-Source"] span.itali,
+  section[data-type="copyright-page"] p[class^="Epigraph-Source"] span.itali {
+    break-inside: avoid; }
 
-p[class^=Epigraph-Source] + div.runfoot + div.runheadright + div.runheadleft + p[class^=Epigraph-Verse],
-p[class^=Epigraph-Source] + div.runfoot + div.runheadright + div.runheadleft + p[class^=Epigraph-Non-Verse],
-p[class^=Epigraph-Source] + p[class^=Epigraph-Verse],
-p[class^=Epigraph-Source] + p[class^=Epigraph-Non-Verse] {
-  margin-top: 31pt;
-}
+p[class^="Epigraph-Source"] + div.runfoot + div.runheadright + div.runheadleft + p[class^="Epigraph-Verse"],
+p[class^="Epigraph-Source"] + div.runfoot + div.runheadright + div.runheadleft + p[class^="Epigraph-Non-Verse"],
+p[class^="Epigraph-Source"] + p[class^="Epigraph-Verse"],
+p[class^="Epigraph-Source"] + p[class^="Epigraph-Non-Verse"] {
+  margin-top: 31pt; }
 
 /* RSUITE UPDATES: paused here */
 /* ---------------- EXTRACTS */
@@ -1549,44 +1301,36 @@ p.Extract-Inscriptionins {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 10.5pt;
   font-style: italic;
-  text-align: center;
-}
+  text-align: center; }
 
 .Extract-SongLyricextsl {
   font-style: italic;
   text-indent: -12pt;
   margin-left: 15.5pt;
-  text-align: left;
-}
-.Extract-SongLyricextsl em {
-  font-style: normal;
-}
-.Extract-SongLyricextsl span.itali {
-  font-style: normal;
-}
+  text-align: left; }
+  .Extract-SongLyricextsl em {
+    font-style: normal; }
+  .Extract-SongLyricextsl span.itali {
+    font-style: normal; }
 
 .Extract-SongLyricextsl:first-child {
-  text-indent: -12pt;
-}
+  text-indent: -12pt; }
 
 /* end note */
-div[data-type=note] > p[class*=A-HeadAhead] {
+div[data-type="note"] > p[class*="A-HeadAhead"] {
   text-indent: 0;
   font-size: 14pt;
   font-style: italic;
   text-align: center;
   margin-top: 31pt;
   margin-bottom: 15.5pt;
-  page-break-after: avoid;
-}
-div[data-type=note] > p[class*=A-HeadAhead] em {
-  font-style: normal;
-}
-div[data-type=note] > p[class*=A-HeadAhead] span.itali {
-  font-style: normal;
-}
+  page-break-after: avoid; }
+  div[data-type="note"] > p[class*="A-HeadAhead"] em {
+    font-style: normal; }
+  div[data-type="note"] > p[class*="A-HeadAhead"] span.itali {
+    font-style: normal; }
 
-div[data-type=note] > p[class*=B-HeadBhead] {
+div[data-type="note"] > p[class*="B-HeadBhead"] {
   text-indent: 0;
   font-size: 11.75pt;
   font-variant: small-caps;
@@ -1595,47 +1339,46 @@ div[data-type=note] > p[class*=B-HeadBhead] {
   text-align: center;
   margin-top: 31pt;
   margin-bottom: 15.5pt;
-  page-break-after: avoid;
-}
+  page-break-after: avoid; }
 
-blockquote.looseextract > *[class*=TitleTtl],
-blockquote.looseextract > *[class*=Main-HeadMHead] {
-  page-break-after: avoid;
-}
+blockquote.looseextract > *[class*="TitleTtl"],
+blockquote.looseextract > *[class*="Main-HeadMHead"] {
+  page-break-after: avoid; }
 
-blockquote.looseextract > *[class*=TitleTtl],
-blockquote.looseextract > *[class*=Main-HeadMHead],
-*[class*=HeadlineHdline] {
+blockquote.looseextract > *[class*="TitleTtl"],
+blockquote.looseextract > *[class*="Main-HeadMHead"],
+*[class*="HeadlineHdline"] {
   font-size: 11.75pt;
   line-height: 15.5pt;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin-top: 15.5pt;
-  margin-bottom: 15.5pt;
-}
+  margin-bottom: 15.5pt; }
 
-blockquote.looseextract > *[class*=TitleTtl] + p,
-blockquote.looseextract > *[class*=Main-HeadMHead] + p {
-  text-indent: 0;
-}
+blockquote.looseextract > *[class*="TitleTtl"] + p,
+blockquote.looseextract > *[class*="Main-HeadMHead"] + p {
+  text-indent: 0; }
 
-pre.verse {
+div.verse {
   font-family: "ArnoPro", serif, "Noto";
-  margin: 0 52pt 0 36pt;
+  margin: 15.5pt 52pt 15.5pt 36pt;
   white-space: pre-wrap;
   padding: 0;
   page-break-inside: auto;
-  line-height: 15.5pt;
-}
+  line-height: 15.5pt; }
 
-pre.verse p[class*=TitleTtl] {
+div.verse p[class*="TitleTtl"],
+div.verse pre[class*="TitleTtl"] {
+  font-family: "ArnoPro", serif, "Noto";
   margin-left: -12pt;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-pre.verse p[class*=Verse1Vrs1],
-pre.verse p[class*=Verse1Vrs1]:first-of-type {
+div.verse p[class*="Verse1Vrs1"],
+div.verse p[class*="Verse1Vrs1"]:first-of-type,
+div.verse pre[class*="Verse1Vrs1"],
+div.verse pre[class*="Verse1Vrs1"]:first-of-type {
+  font-family: "ArnoPro", serif, "Noto";
   font-size: 10.5pt;
   font-style: italic;
   text-indent: -12pt;
@@ -1643,125 +1386,104 @@ pre.verse p[class*=Verse1Vrs1]:first-of-type {
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
-  line-height: 15.5pt;
-}
-pre.verse p[class*=Verse1Vrs1] em,
-pre.verse p[class*=Verse1Vrs1]:first-of-type em {
-  font-style: normal;
-}
-pre.verse p[class*=Verse1Vrs1] span.itali,
-pre.verse p[class*=Verse1Vrs1]:first-of-type span.itali {
-  font-style: normal;
-}
+  line-height: 15.5pt; }
+  div.verse p[class*="Verse1Vrs1"] em,
+  div.verse p[class*="Verse1Vrs1"]:first-of-type em,
+  div.verse pre[class*="Verse1Vrs1"] em,
+  div.verse pre[class*="Verse1Vrs1"]:first-of-type em {
+    font-style: normal; }
+  div.verse p[class*="Verse1Vrs1"] span.itali,
+  div.verse p[class*="Verse1Vrs1"]:first-of-type span.itali,
+  div.verse pre[class*="Verse1Vrs1"] span.itali,
+  div.verse pre[class*="Verse1Vrs1"]:first-of-type span.itali {
+    font-style: normal; }
 
 /*pre.verse div.runfoot + div.runheadright + div.runheadleft + p[class*="Verse1Vrs1"],
 pre.verse div.runfoot + div.runheadright + div.runheadleft + p.SeparatorSep {
   margin-top: $gridheight * -1;
 }*/
 /* need clarification */
-p[class*=ExtractSource] {
+p[class*="ExtractSource"] {
   text-align: right;
   font-weight: 600;
   widows: 2;
-  orphans: 2;
-}
+  orphans: 2; }
 
-p[class*=Extract-Noteextn] {
+p[class*="Extract-Noteextn"] {
   text-indent: none;
   text-align: center;
-  hyphens: none;
-}
+  hyphens: none; }
 
 /* end note */
 span.spanaltfont1span1 {
   font-family: FeltpenCom-Medium;
   font-size: 12.5pt;
-  letter-spacing: 0.02em;
-}
+  letter-spacing: .02em; }
 
 span.spanaltfont2span2 {
   font-family: BerrangerHandITCStd;
-  font-size: 10.75pt;
-}
+  font-size: 10.75pt; }
 
-blockquote[data-type=letter] p[class*=Body-TextTx] {
-  font-style: italic;
-}
-blockquote[data-type=letter] p[class*=Body-TextTx] em {
-  font-style: normal;
-}
-blockquote[data-type=letter] p[class*=Body-TextTx] span.itali {
-  font-style: normal;
-}
+blockquote[data-type="letter"] p[class*="Body-TextTx"] {
+  font-style: italic; }
+  blockquote[data-type="letter"] p[class*="Body-TextTx"] em {
+    font-style: normal; }
+  blockquote[data-type="letter"] p[class*="Body-TextTx"] span.itali {
+    font-style: normal; }
 
-blockquote[data-type=letter] p[class*=SalutationSal] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Body-TextTx] {
-  text-indent: 0;
-}
+blockquote[data-type="letter"] p[class*="SalutationSal"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Body-TextTx"] {
+  text-indent: 0; }
 
-blockquote[data-type=letter] p[class*=HeadnoteHdnt] {
+blockquote[data-type="letter"] p[class*="HeadnoteHdnt"] {
   font-weight: bold;
   text-align: center;
   text-indent: 0;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
-blockquote[data-type=letter] p[class*=SalutationSal] {
+blockquote[data-type="letter"] p[class*="SalutationSal"] {
   font-style: italic;
   text-indent: 0;
   margin-top: 15.5pt;
-  margin-bottom: 15.5pt;
-}
-blockquote[data-type=letter] p[class*=SalutationSal] em {
-  font-style: normal;
-}
-blockquote[data-type=letter] p[class*=SalutationSal] span.itali {
-  font-style: normal;
-}
+  margin-bottom: 15.5pt; }
+  blockquote[data-type="letter"] p[class*="SalutationSal"] em {
+    font-style: normal; }
+  blockquote[data-type="letter"] p[class*="SalutationSal"] span.itali {
+    font-style: normal; }
 
-blockquote[data-type=letter] p[class*=AddressAdd],
-blockquote[data-type=letter] p[class*=PostscriptPst] {
+blockquote[data-type="letter"] p[class*="AddressAdd"],
+blockquote[data-type="letter"] p[class*="PostscriptPst"] {
+  font-style: italic;
+  text-indent: 0; }
+  blockquote[data-type="letter"] p[class*="AddressAdd"] em,
+  blockquote[data-type="letter"] p[class*="PostscriptPst"] em {
+    font-style: normal; }
+  blockquote[data-type="letter"] p[class*="AddressAdd"] span.itali,
+  blockquote[data-type="letter"] p[class*="PostscriptPst"] span.itali {
+    font-style: normal; }
+
+blockquote[data-type="letter"] p[class*="ClosingClos"] {
   font-style: italic;
   text-indent: 0;
-}
-blockquote[data-type=letter] p[class*=AddressAdd] em,
-blockquote[data-type=letter] p[class*=PostscriptPst] em {
-  font-style: normal;
-}
-blockquote[data-type=letter] p[class*=AddressAdd] span.itali,
-blockquote[data-type=letter] p[class*=PostscriptPst] span.itali {
-  font-style: normal;
-}
+  margin-top: 15.5pt; }
+  blockquote[data-type="letter"] p[class*="ClosingClos"] em {
+    font-style: normal; }
+  blockquote[data-type="letter"] p[class*="ClosingClos"] span.itali {
+    font-style: normal; }
 
-blockquote[data-type=letter] p[class*=ClosingClos] {
+blockquote[data-type="letter"] p[class*="SignatureSig"] {
   font-style: italic;
   text-indent: 0;
-  margin-top: 15.5pt;
-}
-blockquote[data-type=letter] p[class*=ClosingClos] em {
-  font-style: normal;
-}
-blockquote[data-type=letter] p[class*=ClosingClos] span.itali {
-  font-style: normal;
-}
+  margin-bottom: 15.5pt; }
+  blockquote[data-type="letter"] p[class*="SignatureSig"] em {
+    font-style: normal; }
+  blockquote[data-type="letter"] p[class*="SignatureSig"] span.itali {
+    font-style: normal; }
 
-blockquote[data-type=letter] p[class*=SignatureSig] {
-  font-style: italic;
-  text-indent: 0;
-  margin-bottom: 15.5pt;
-}
-blockquote[data-type=letter] p[class*=SignatureSig] em {
-  font-style: normal;
-}
-blockquote[data-type=letter] p[class*=SignatureSig] span.itali {
-  font-style: normal;
-}
+p[class*="ExtractSource"] em,
+p[class*="ExtractSource"] span.itali {
+  break-inside: avoid; }
 
-p[class*=ExtractSource] em,
-p[class*=ExtractSource] span.itali {
-  break-inside: avoid;
-}
-
-p[class*=Dateline] {
+p[class*="Dateline"] {
   text-indent: 0;
   font-size: 10pt;
   font-weight: 600;
@@ -1769,20 +1491,16 @@ p[class*=Dateline] {
   text-transform: uppercase;
   margin-top: 46.5pt;
   margin-bottom: 15.5pt;
-  text-align: left;
-}
-p[class*=Dateline] em {
-  font-style: normal;
-}
-p[class*=Dateline] span.itali {
-  font-style: normal;
-}
+  text-align: left; }
+  p[class*="Dateline"] em {
+    font-style: normal; }
+  p[class*="Dateline"] span.itali {
+    font-style: normal; }
 
-p[class*=Dateline] + div.runfoot + div.runheadright + div.runheadleft + p[class*=Dateline] {
-  margin-top: -15.5pt;
-}
+p[class*="Dateline"] + div.runfoot + div.runheadright + div.runheadleft + p[class*="Dateline"] {
+  margin-top: -15.5pt; }
 
-blockquote[data-type=letter] p[class*=DatelineDate] {
+blockquote[data-type="letter"] p[class*="DatelineDate"] {
   font-weight: normal;
   font-size: 10pt;
   text-indent: 0;
@@ -1790,138 +1508,114 @@ blockquote[data-type=letter] p[class*=DatelineDate] {
   text-align: left;
   margin-top: 15.5pt;
   margin-bottom: 15.5pt;
-  hyphens: none;
-}
+  hyphens: none; }
 
-blockquote[data-type=recipe] {
+blockquote[data-type="recipe"] {
   margin-left: 0;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 /* --------------- LISTS */
-p[class^=List-Head] {
+p[class^="List-Head"] {
+  padding: 0;
+  margin: 15.5pt 0 0 0; }
+
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + p[class^="List-Head"],
+p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class^="List-Head"] {
+  margin-top: 0; }
+
+blockquote[data-type="recipe"] p[class^="TitleTtl"],
+blockquote[data-type="recipe"] p[class^="List-Head"] {
   padding: 0;
   margin: 15.5pt 0 0 0;
-}
-
-p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + p[class^=List-Head],
-p.SeparatorSep + div.runfoot + div.runheadright + div.runheadleft + p[class^=List-Head] {
-  margin-top: 0;
-}
-
-blockquote[data-type=recipe] p[class^=TitleTtl],
-blockquote[data-type=recipe] p[class^=List-Head] {
-  padding: 0;
-  margin: 15.5pt 0 0 0;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 ul {
   padding-left: 0;
-  margin: 15.5pt 0 15.5pt 1em;
-}
+  margin: 15.5pt 0 15.5pt 1em; }
 
 ol {
   padding-left: 0;
-  margin: 15.5pt 0 15.5pt 1.2em;
-}
+  margin: 15.5pt 0 15.5pt 1.2em; }
 
 ol li {
   margin-left: 0;
-  padding-left: 0.167em;
-}
+  padding-left: 0.167em; }
 
 ul li {
   margin-left: 0;
-  padding-left: 0.3em;
-}
+  padding-left: 0.3em; }
 
 li p {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 h1 + ul, h1 + ol {
-  padding-top: 3pt;
-}
+  padding-top: 3pt; }
 
-li[class^=Alpha-Level-] {
-  list-style-type: lower-alpha;
-}
+li[class^="Alpha-Level-"] {
+  list-style-type: lower-alpha; }
 
-blockquote[data-type=recipe] ol,
-blockquote[data-type=recipe] ul {
+blockquote[data-type="recipe"] ol,
+blockquote[data-type="recipe"] ul {
   margin-top: 0;
   margin-left: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
-blockquote[data-type=recipe] li {
+blockquote[data-type="recipe"] li {
   list-style-type: none;
   margin-left: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
-blockquote[data-type=recipe] ol li p {
-  text-indent: 12pt;
-}
+blockquote[data-type="recipe"] ol li p {
+  text-indent: 12pt; }
 
 /* need clarification */
 .ChapterContentscc {
-  font-size: 10.5pt;
-}
+  font-size: 10.5pt; }
 
 /* end note */
 /* --------------- FIGURES*/
-figure p[class*=Credit-LineCrd] {
+figure p[class*="Credit-LineCrd"] {
   font-family: "MinionPro", serif, "Noto";
   font-size: 7pt;
   text-align: center;
   margin-top: 0;
   margin-bottom: 27pt;
   page-break-before: avoid;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
-figure p[class*=Credit-LineCrd] a {
+figure p[class*="Credit-LineCrd"] a {
   text-decoration: none;
-  color: cmyk(0%, 0%, 0%, 100%);
-}
+  color: cmyk(0%, 0%, 0%, 100%); }
 
-section[data-type=copyright-page] p[class*=Credit-LineCrd] {
+section[data-type="copyright-page"] p[class*="Credit-LineCrd"] {
   font-size: 7pt;
   margin-top: 0;
   margin-bottom: 0;
-  float: bottom;
-}
+  float: bottom; }
 
-section[data-type=copyright-page] p[class*=Credit-LineCrd] a {
+section[data-type="copyright-page"] p[class*="Credit-LineCrd"] a {
   text-decoration: none;
-  color: cmyk(0%, 0%, 0%, 100%);
-}
+  color: cmyk(0%, 0%, 0%, 100%); }
 
-section[data-type=copyright-page] p[class*=Credit-LineCrd] a:before {
-  content: "Page " target-counter(attr(href), page) " ";
-}
+section[data-type="copyright-page"] p[class*="Credit-LineCrd"] a:before {
+  content: "Page " target-counter(attr(href), page) " "; }
 
 figure {
   page-break-inside: avoid;
   margin-top: 27pt;
   margin-bottom: 31pt;
   text-align: center;
-  float: top unless-fit;
-}
+  float: top unless-fit; }
 
 figure.customimage {
   padding: 7.75pt 0;
   margin-top: 15.5pt;
   margin-bottom: 9.6875pt;
-  float: none;
-}
+  float: none; }
 
 figure.customimage img {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 figure.fullpage {
   float: top unless-fit;
@@ -1934,68 +1628,57 @@ figure.fullpage {
   margin-inside: -1in;
   margin-outside: -0.75in;
   overflow: visible;
-  height: 5.4in;
-}
+  height: 5.4in; }
 
 h1 + figure {
   min-height: 21pt;
   margin-top: -40pt;
   margin-bottom: 51pt;
-  vertical-align: center;
-}
+  vertical-align: center; }
 
 figcaption {
   font-family: "AromaNo2LTPro", sans-serif, "Noto";
   font-size: 8.5pt;
   line-height: 15.5pt;
-  text-align: left;
-}
+  text-align: left; }
 
 /* suppressing, for now */
 figure.fullpage figcaption {
-  display: none;
-}
+  display: none; }
 
 img {
   max-width: 100%;
   prince-image-resolution: auto, 300dpi;
   text-align: center;
-  prince-image-magic: ignore-icc-profile;
-}
+  prince-image-magic: ignore-icc-profile; }
 
-section[data-type=appendix].abouttheauthor h1 + figure, .abouttheauthor h1 + figure {
+section[data-type="appendix"].abouttheauthor h1 + figure, .abouttheauthor h1 + figure {
   margin-top: -31pt;
   margin-bottom: 27pt;
-  max-height: 2in;
-}
+  max-height: 2in; }
 
-section[data-type=appendix].abouttheauthor h1 + figure img, .abouttheauthor figure img {
-  max-height: 2in;
-}
+section[data-type="appendix"].abouttheauthor h1 + figure img, .abouttheauthor figure img {
+  max-height: 2in; }
 
-img[src*=fullpage] {
+img[src*="fullpage"] {
   display: block;
   width: 5.25in;
   height: 8.25in;
-  margin-top: -1.65in;
-}
+  margin-top: -1.65in; }
 
 /* need clarification */
-*[class*=TeaserOpeningTexttotx], *[class*=TeaserOpeningTextNo-Indenttotx1] {
+*[class*="TeaserOpeningTexttotx"], *[class*="TeaserOpeningTextNo-Indenttotx1"] {
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 /* end note */
 /* Space Breaks */
-p[class*=SpaceAfter] + p[class*=Extract],
-p[class*=SpaceAround] + p[class*=Extract] {
-  text-indent: 0;
-}
+p[class*="SpaceAfter"] + p[class*="Extract"],
+p[class*="SpaceAround"] + p[class*="Extract"] {
+  text-indent: 0; }
 
 p.Blank-Space-BreakBsbrk {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 p.Ornamental-Space-BreakOsbrk,
 p.Blank-Space-BreakBsbrk {
@@ -2009,69 +1692,57 @@ p.Blank-Space-BreakBsbrk {
   margin-bottom: 15.5pt;
   padding: 0pt;
   width: 100%;
-  height: 15.5pt;
-}
+  height: 15.5pt; }
 
 p.Blank-Space-BreakBsbrk {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
-  background-size: 60pt auto;
-}
+  background-size: 60pt auto; }
 
 p.Ornamental-Space-BreakOsbrk {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn.jpg");
   background-size: 20.5pt auto;
-  height: 15.5pt;
-}
+  height: 15.5pt; }
 
-div[data-type=part] > p.Ornamental-Space-BreakOsbrk {
+div[data-type="part"] > p.Ornamental-Space-BreakOsbrk {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/titlepage-rule.jpg");
-  background-size: 60pt auto;
-}
+  background-size: 60pt auto; }
 
 /* need clarification */
 p.SpaceBreakwithALTOrnamentorn2 {
   background-image: url("https://raw.githubusercontent.com/macmillanpublishers/bookmaker_assets/master/pdfmaker/images/generic/orn-bull.jpg");
   background-size: 21.6pt auto;
-  height: 15.5pt;
-}
+  height: 15.5pt; }
 
 p.SpaceBreak-PrintOnlypo,
 p.SeparatorSep {
   text-indent: 0;
   content: " ";
   font-size: 15.5pt;
-  height: 15.5pt;
-}
+  height: 15.5pt; }
 
 p.SeparatorSep {
   margin-top: 0;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 /* end note */
-p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p[class*=-Space-Break] + div.runfoot + div.runheadright + div.runheadleft + pre.verse {
-  margin-top: 0pt;
-}
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + div.verse {
+  margin-top: 0pt; }
 
 p.Blank-Space-BreakBsbrk + div.runfoot + div.runheadright + div.runheadleft + p,
 p.Ornamental-Space-BreakOsbrk + div.runfoot + div.runheadright + div.runheadleft + p {
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 p.customimage {
   background-image: none;
-  height: auto;
-}
+  height: auto; }
 
 /* page break */
 .PageBreakpb {
-  display: none;
-}
+  display: none; }
 
 p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
-  page-break-before: always;
-}
+  page-break-before: always; }
 
 /* glossary definition */
 /* need clarification */
@@ -2081,248 +1752,201 @@ p.PageBreakpb + div.runfoot + div.runheadright + div.runheadleft + * {
   text-indent: -24pt;
   margin: 0;
   margin-left: 24pt;
-  margin-bottom: 7.75pt;
-}
+  margin-bottom: 7.75pt; }
 
-.Definitiondef:first-of-type, *[class*=Definitiondef]:first-of-type {
-  text-indent: -24pt;
-}
+.Definitiondef:first-of-type, *[class*="Definitiondef"]:first-of-type {
+  text-indent: -24pt; }
 
 /* end note */
 /* footnotes */
-span[data-type=footnote],
+span[data-type="footnote"],
 .endnotetext {
   font-family: "ArnoPro-SmText", serif, "Noto";
   font-size: 9pt;
   line-height: 11.75pt;
   text-indent: 0;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
-span[data-type=footnote] {
+span[data-type="footnote"] {
   float: footnote;
-  footnote-style-position: inside;
-}
+  footnote-style-position: inside; }
 
-span[data-type=footnote] > span {
+span[data-type="footnote"] > span {
   display: block;
-  text-indent: 11.75pt;
-}
+  text-indent: 11.75pt; }
 
-span[data-type=footnote] > span:first-of-type {
+span[data-type="footnote"] > span:first-of-type {
   display: inline;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 ::footnote-call {
-  content: counter(footnote, symbols("*", "†", "‡", "§"));
-}
+  content: counter(footnote,symbols("*", "†", "‡", "§")); }
 
 ::footnote-marker {
-  content: counter(footnote, symbols("*", "†", "‡", "§")) " ";
+  content: counter(footnote,symbols("*", "†", "‡", "§")) " ";
   font-family: "ArnoPro", "Noto";
-  font-weight: 600;
-}
+  font-weight: 600; }
 
-*[class*=endnotetext] {
+*[class*="endnotetext"] {
   line-height: 15.5pt;
-  counter-increment: endnotes;
-}
+  counter-increment: endnotes; }
 
-*[class*=endnotetext] p:first-of-type:before {
+*[class*="endnotetext"] p:first-of-type:before {
   content: counter(endnotes) " ";
   font-family: "ArnoPro", "Noto";
   font-weight: 600;
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* chapter starts */
 section > header + p,
 section > header + blockquote,
-section > header + pre.verse,
+section > header + div.verse,
 section > header + aside,
 section > header + div,
 div > header + p,
 div > header + blockquote,
-div > header + pre.verse,
+div > header + div.verse,
 div > header + aside,
 div > header + div {
-  margin-top: 77.5pt;
-}
+  margin-top: 77.5pt; }
 
-section > header + pre.verse,
-div > header + pre.verse {
-  margin-top: 62pt;
-}
+section > header + div.verse,
+div > header + div.verse {
+  margin-top: 62pt; }
 
-section[data-type=dedication] > header + p,
-section[data-type=dedication] > header + blockquote,
-section[data-type=dedication] > header + pre.verse,
-section[data-type=dedication] > header + aside,
-section[data-type=dedication] > header + div {
-  margin-top: 0;
-}
+section[data-type="dedication"] > header + p,
+section[data-type="dedication"] > header + blockquote,
+section[data-type="dedication"] > header + div.verse,
+section[data-type="dedication"] > header + aside,
+section[data-type="dedication"] > header + div {
+  margin-top: 0; }
 
-section[data-type=preface].epigraph > header + p,
-section[data-type=preface].epigraph > header + blockquote,
-section[data-type=preface].epigraph > header + pre.verse,
-section[data-type=preface].epigraph > header + aside,
-section[data-type=preface].epigraph > header + div {
-  margin-top: 15.5pt;
-}
+section[data-type="preface"].epigraph > header + p,
+section[data-type="preface"].epigraph > header + blockquote,
+section[data-type="preface"].epigraph > header + div.verse,
+section[data-type="preface"].epigraph > header + aside,
+section[data-type="preface"].epigraph > header + div {
+  margin-top: 15.5pt; }
 
 /* character styles */
-span[class^=smallcaps] {
+span[class^="smallcaps"] {
   font-variant: small-caps;
   font-variant: prince-opentype(smcp, onum);
-  text-transform: lowercase;
-}
+  text-transform: lowercase; }
 
 .smallcaps-italsci {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .smallcaps-boldscb {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .smallcaps-bold-italscbi {
   font-weight: bold;
-  font-style: italic;
-}
+  font-style: italic; }
 
 .boldb {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .itali {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .bold-italbi {
   font-style: italic;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .underlineu {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .supersup,
 .subsub {
   font-size: 6pt;
   vertical-align: top;
   position: relative;
-  top: -0.6em;
-}
+  top: -0.6em; }
 
 .subsub {
   top: 0.1em;
   font-size: 6pt;
   vertical-align: top;
-  position: relative;
-}
+  position: relative; }
 
 .supersup {
   font-size: 6pt;
   vertical-align: top;
   position: relative;
-  top: -0.6em;
-}
+  top: -0.6em; }
 
-*[class*=cs-computerccom] {
+*[class*="cs-computerccom"] {
   font-family: "SourceCodePro", monospace, "Noto";
-  font-size: 8.5pt;
-}
+  font-size: 8.5pt; }
 
-*[class*=cs-design-notecdn],
+*[class*="cs-design-notecdn"],
 p.Design-NoteDn {
-  display: none;
-}
+  display: none; }
 
-*[class*=bookmaker-keep-togetherbkt] {
+*[class*="bookmaker-keep-togetherbkt"] {
   white-space: pre;
-  page-break-inside: avoid;
-}
+  page-break-inside: avoid; }
 
-*[class*=tighten], .bookmakertightenbkt {
-  letter-spacing: -0.2pt;
-}
+*[class*="tighten"], .bookmakertightenbkt {
+  letter-spacing: -0.2pt; }
 
-*[class*=loosen], .bookmakerloosenbkl {
-  letter-spacing: 0.2pt;
-}
+*[class*="loosen"], .bookmakerloosenbkl {
+  letter-spacing: 0.2pt; }
 
 header {
   display: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .nobreak {
-  page-break-before: avoid;
-}
+  page-break-before: avoid; }
 
 .left {
   text-align: left;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 .center {
   text-align: center;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 .right {
   text-align: right;
-  text-indent: 0;
-}
+  text-indent: 0; }
 
 /*@import "../_modules/gridlines.scss";*/
 @page part {
   @top-center {}
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page chapter {
   @top-center {}
   @bottom-center {
-    content: normal;
-  }
-}
+    content: normal; } }
 @page front {
-  @top-center {}
-}
+  @top-center {} }
 @page copyright {
-  margin-bottom: 31pt;
-}
+  margin-bottom: 31pt; }
 div.runheadleft {
-  font-variant: prince-opentype(onum);
-}
+  font-variant: prince-opentype(onum); }
 
 div.runheadright {
-  font-variant: prince-opentype(onum);
-}
+  font-variant: prince-opentype(onum); }
 
 div.runheadleft::before {
   content: counter(page) " • ";
-  font-style: normal;
-}
+  font-style: normal; }
 
 div.runheadright::after {
   content: " • " counter(page);
-  font-style: normal;
-}
+  font-style: normal; }
 
 figure.fullpage {
   margin-top: 0.55in;
   margin-inside: -0.81in;
-  margin-outside: -0.69in;
-}
+  margin-outside: -0.69in; }
 
-img[src*=fullpage] {
-  margin-top: -1.4in;
-}
+img[src*="fullpage"] {
+  margin-top: -1.4in; }
 
 /*# sourceMappingURL=novel.css.map */

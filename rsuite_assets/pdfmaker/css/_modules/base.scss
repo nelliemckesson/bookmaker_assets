@@ -1070,21 +1070,26 @@ p[class*="Extract"] {
   font-size: $sizeextract;
 }
 
-pre.computer {
+div.computer {
   white-space: normal;
   margin: $gridheight;
   page-break-inside: auto;
 }
 
-pre.computer p:first-child,
+div.computer p:first-child,
+div.computer pre:first-child,
 p.Design-NoteDn + div.runfoot + div.runheadright + div.runheadleft + p {
   text-indent: 0;
 }
 
-pre.computer p.Body-TextTx {
+div.computer p.Body-TextTx,
+div.computer pre.Body-TextTx {
   font-family: "SourceCodePro", monospace, "Noto";
   font-size: $sizecode;
   white-space: normal;
+  line-height: $gridheight;
+  text-align: justify;
+  text-align-last: left;
 }
 
 section[data-type="appendix"].abouttheauthor p[class*="Body-TextTx"]:first-of-type {
@@ -1469,22 +1474,27 @@ blockquote.looseextract > *[class*="Main-HeadMHead"] + p {
   text-indent: 0;
 }
 
-pre.verse {
+div.verse {
   font-family: "ArnoPro", serif, "Noto";
-  margin: 0 52pt 0 36pt;
+  margin: $gridheight 52pt $gridheight 36pt;
   white-space: pre-wrap;
   padding: 0;
   page-break-inside: auto;
   line-height: $gridheight;
 }
 
-pre.verse p[class*="TitleTtl"] {
+div.verse p[class*="TitleTtl"],
+div.verse pre[class*="TitleTtl"] {
+  font-family: "ArnoPro", serif, "Noto";
   margin-left: -$textindent;
   text-indent: 0;
 }
 
-pre.verse p[class*="Verse1Vrs1"],
-pre.verse p[class*="Verse1Vrs1"]:first-of-type {
+div.verse p[class*="Verse1Vrs1"],
+div.verse p[class*="Verse1Vrs1"]:first-of-type,
+div.verse pre[class*="Verse1Vrs1"],
+div.verse pre[class*="Verse1Vrs1"]:first-of-type {
+  font-family: "ArnoPro", serif, "Noto";
   font-size: $sizepoetry;
   font-style: italic;
   text-indent: -$textindent;
@@ -1508,7 +1518,8 @@ pre.verse div.runfoot + div.runheadright + div.runheadleft + p.SeparatorSep {
   margin-top: $gridheight * -1;
 }*/
 
-pre.verse p[class*="TitleTtl"] {
+div.verse p[class*="TitleTtl"],
+div.verse pre[class*="TitleTtl"] {
 
 }
 
@@ -1911,7 +1922,7 @@ p.SeparatorSep {
 /* end note */
 
 p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + blockquote,
-p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + pre.verse {
+p[class*="-Space-Break"] + div.runfoot + div.runheadright + div.runheadleft + div.verse {
   margin-top: 0pt;
 }
 
@@ -2000,25 +2011,25 @@ span[data-type="footnote"] > span:first-of-type {
 
 section > header + p,
 section > header + blockquote,
-section > header + pre.verse,
+section > header + div.verse,
 section > header + aside,
 section > header + div,
 div > header + p,
 div > header + blockquote,
-div > header + pre.verse,
+div > header + div.verse,
 div > header + aside,
 div > header + div {
   margin-top: $gridheight * 5;
 }
 
-section > header + pre.verse,
-div > header + pre.verse {
+section > header + div.verse,
+div > header + div.verse {
   margin-top: $gridheight * 4;
 }
 
 section[data-type="dedication"] > header + p,
 section[data-type="dedication"] > header + blockquote,
-section[data-type="dedication"] > header + pre.verse,
+section[data-type="dedication"] > header + div.verse,
 section[data-type="dedication"] > header + aside,
 section[data-type="dedication"] > header + div {
   margin-top: 0;
@@ -2026,7 +2037,7 @@ section[data-type="dedication"] > header + div {
 
 section[data-type="preface"].epigraph > header + p,
 section[data-type="preface"].epigraph > header + blockquote,
-section[data-type="preface"].epigraph > header + pre.verse,
+section[data-type="preface"].epigraph > header + div.verse,
 section[data-type="preface"].epigraph > header + aside,
 section[data-type="preface"].epigraph > header + div {
   margin-top: $gridheight;
