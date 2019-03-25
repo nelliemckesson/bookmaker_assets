@@ -247,7 +247,7 @@ H1
 --------------------------
 */
 
-h1, 
+h1,
 .A-HeadAhead,
 .TitleTtl,
 .Main-HeadMHead {
@@ -449,8 +449,8 @@ section.adcard li p {
   margin-top: 0;
 }
 
-section.adcard ol, 
-section.adcard li, 
+section.adcard ol,
+section.adcard li,
 section.adcard p {
   text-indent: 0;
   text-align: center;
@@ -562,37 +562,38 @@ nav[data-type="toc"] li p {
   text-indent: 0;
   }
 
-nav[data-type="toc"] li[data-type="titlepage"],
-nav[data-type="toc"] li[data-type="dedication"],
-nav[data-type="toc"] li[data-type="preface"],
-nav[data-type="toc"] li[data-type="acknowledgments"],
-nav[data-type="toc"] li[data-type="foreword"],
-nav[data-type="toc"] li[data-type="introduction"],
-nav[data-type="toc"] li[data-type="appendix"],
-nav[data-type="toc"] li[data-type="bibliography"],
-nav[data-type="toc"] li[data-type="appendix"],
-nav[data-type="toc"] li[data-type="toc"],
-nav[data-type="toc"] li[data-type="copyright-page"] {
-  font-size: 0.8em;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  padding: .5em;
-  margin-top: 0;
+  nav[data-type="toc"] li[data-type="titlepage"],
+  nav[data-type="toc"] li[data-type="dedication"],
+  nav[data-type="toc"] li[data-type="preface"],
+  nav[data-type="toc"] li[data-type="acknowledgments"],
+  nav[data-type="toc"] li[data-type="foreword"],
+  nav[data-type="toc"] li[data-type="introduction"],
+  nav[data-type="toc"] li[data-type="appendix"],
+  nav[data-type="toc"] li[data-type="bibliography"],
+  nav[data-type="toc"] li[data-type="appendix"],
+  nav[data-type="toc"] li[data-type="toc"],
+  nav[data-type="toc"] li[data-type="copyright-page"] {
+   font-size: 0.8em;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: .2em; */
+    /* padding: .15em 0; */
+    font-style: italic;
+    /* margin-top: 0; */
   }
 
-nav[data-type="toc"] li[data-type="part"] {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
+  nav[data-type="toc"] li[data-type="part"] {
+   /* font-size: 1.2em; */
+    margin-bottom: 1em;
+  }
 
-nav[data-type="toc"] li[data-type="part"] > a {
-  text-decoration: underline;
-}
+  nav[data-type="toc"] li[data-type="part"] > a {
+    text-decoration: underline;
+  }
 
-nav[data-type="toc"] li[data-type="chapter"] {
-  font-size: 0.85em;
-}
+  nav[data-type="toc"] li[data-type="chapter"] {
+    font-size: 0.85em;
+  }
 
 /*
 --------------------------------------------------
@@ -664,10 +665,10 @@ div.chapter > p.SpaceBreakwithALTOrnamentorn2:before {
   font-size: 1.125em;
   }
 /*div.chapter > p.Ornamental-Space-BreakOsbrk:before {
-  content: "\2766"; 
+  content: "\2766";
   }
 div.chapter > p.SpaceBreakwithALTOrnamentorn2:before {
-  content: "\2756"; 
+  content: "\2756";
   }*/
 .TeaserOpeningTexttotx, .TeaserOpeningTextNo-Indenttotx1 {
   text-align: center;
@@ -922,6 +923,7 @@ div.verse pre,
 .Extract-SongLyricextsl {
   margin-left: 1.5em;
   text-indent: -1.5em;
+  font-style: italic;
   }
 div.verse .Verse1Vrs1:first-child,
 .Epigraph-VerseEpiv:first-child {
@@ -1008,6 +1010,10 @@ li ul li,
 li.Unnum-Level-2-ListUl2
  {
   list-style-type: square;
+  }
+li.Unnum-Level-1-ListUl1
+ {
+  list-style-type: none;
   }
 ol li,
 li.Alpha-Level-1-ListAl1,
@@ -1458,6 +1464,9 @@ Misc
 Nonprinting elements
 --------------------------------------------------
 */
+‌h1.ChapTitleNonprintingctnp {
+display: none;
+}
 
 .Nonprinting {
   display: none;
