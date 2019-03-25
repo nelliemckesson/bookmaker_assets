@@ -562,38 +562,38 @@ nav[data-type="toc"] li p {
   text-indent: 0;
   }
 
-  nav[data-type="toc"] li[data-type="titlepage"],
-  nav[data-type="toc"] li[data-type="dedication"],
-  nav[data-type="toc"] li[data-type="preface"],
-  nav[data-type="toc"] li[data-type="acknowledgments"],
-  nav[data-type="toc"] li[data-type="foreword"],
-  nav[data-type="toc"] li[data-type="introduction"],
-  nav[data-type="toc"] li[data-type="appendix"],
-  nav[data-type="toc"] li[data-type="bibliography"],
-  nav[data-type="toc"] li[data-type="appendix"],
-  nav[data-type="toc"] li[data-type="toc"],
-  nav[data-type="toc"] li[data-type="copyright-page"] {
-   font-size: 0.8em;
-    /* text-align: center; */
-    /* text-transform: uppercase; */
-    /* letter-spacing: .2em; */
-    /* padding: .15em 0; */
-    font-style: italic;
-    /* margin-top: 0; */
-  }
+nav[data-type="toc"] li[data-type="titlepage"],
+nav[data-type="toc"] li[data-type="dedication"],
+nav[data-type="toc"] li[data-type="preface"],
+nav[data-type="toc"] li[data-type="acknowledgments"],
+nav[data-type="toc"] li[data-type="foreword"],
+nav[data-type="toc"] li[data-type="introduction"],
+nav[data-type="toc"] li[data-type="appendix"],
+nav[data-type="toc"] li[data-type="bibliography"],
+nav[data-type="toc"] li[data-type="appendix"],
+nav[data-type="toc"] li[data-type="toc"],
+nav[data-type="toc"] li[data-type="copyright-page"] {
+ font-size: 0.8em;
+  /* text-align: center; */
+  /* text-transform: uppercase; */
+  /* letter-spacing: .2em; */
+  /* padding: .15em 0; */
+  font-style: italic;
+  /* margin-top: 0; */
+}
 
-  nav[data-type="toc"] li[data-type="part"] {
-   /* font-size: 1.2em; */
-    margin-bottom: 1em;
-  }
+nav[data-type="toc"] li[data-type="part"] {
+ /* font-size: 1.2em; */
+  margin-bottom: 1em;
+}
 
-  nav[data-type="toc"] li[data-type="part"] > a {
-    text-decoration: underline;
-  }
+nav[data-type="toc"] li[data-type="part"] > a {
+  text-decoration: underline;
+}
 
-  nav[data-type="toc"] li[data-type="chapter"] {
-    font-size: 0.85em;
-  }
+nav[data-type="toc"] li[data-type="chapter"] {
+  font-size: 0.85em;
+}
 
 /*
 --------------------------------------------------
