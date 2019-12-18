@@ -1,4 +1,4 @@
-../../../..@charset "UTF-8";
+@charset "UTF-8";
 /* LOCAL VARIABLES */
 @font-face {
   font-family: "MinionPro";
@@ -817,7 +817,7 @@ div[data-type="part"] h1[class*="PartNumberpn"] + div[class*="runheadright"] + d
 
 *[class*="Text-StandardALTatx"],
 *[class*="Text-StdNo-IndentALTatx1"] {
-  font-family: "AromaNo2LTPro"
+  font-family: "AromaNo2LTPro";
   font-size: 9.75pt; }
 
 *[class*="Text-ComputerTypecom"],
