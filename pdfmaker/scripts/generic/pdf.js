@@ -15,16 +15,16 @@ function getAllElementsWithAttribute(tag, attribute, value)
 
 function moveIllustrationSource()
 {
-var illoSources = document.getElementsByClassName("IllustrationSourceis");
+var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']");
 var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
 for (var j = 0; illoSources.length > j; j++) {
-	var figID = illoSources[j].parentNode.getAttribute('id');
-	var figLink = illoSources[j].childNodes[0];
-	figLink.href = '#' + figID;
+  var figID = illoSources[j].parentNode.getAttribute('id');
+  var figLink = illoSources[j].childNodes[0];
+  figLink.href = '#' + figID;
   if (illoSources[j].parentNode.parentNode.getAttribute('class') != 'abouttheauthor') {
-	  copyright.appendChild(illoSources[j]);
+    copyright.appendChild(illoSources[j]);
   };
-	};
+  };
 };
 
 function addRunningElements() {
@@ -75,7 +75,7 @@ function fullpageFigures() {
     var textnode = document.createTextNode(" ");
     runFoot.setAttribute("class", "runfoot");
     runFoot.appendChild(textnode);
-    parentFig.setAttribute("class", "Illustrationholderill fullpage");
+    parentFig.setAttribute("class", "Image-PlacementImg fullpage");
     parentFig.insertBefore(runHeadLeft,parentFig.firstChild);
     parentFig.insertBefore(runHeadRight,parentFig.firstChild);
     parentFig.insertBefore(runFoot,parentFig.firstChild);

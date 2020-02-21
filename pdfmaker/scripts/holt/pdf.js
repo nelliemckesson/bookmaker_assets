@@ -15,7 +15,7 @@ function getAllElementsWithAttribute(tag, attribute, value)
 
 function moveIllustrationSource()
 {
-var illoSources = document.getElementsByClassName("IllustrationSourceis");
+var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']");
 var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
 for (var j = 0; illoSources.length > j; j++) {
   var figID = illoSources[j].parentNode.getAttribute('id');
@@ -51,10 +51,10 @@ function addRunningElements() {
     };
 
     if (sectionType == "chapter") {
-      if (section.getElementsByClassName('ChapTitlect')[0] != null) {
-        var sectionHead = section.getElementsByClassName('ChapTitlect')[0].textContent;
-      } else if (section.getElementsByClassName('ChapTitleNonprintingctnp')[0] != null) {
-        var sectionHead = section.getElementsByClassName('ChapTitleNonprintingctnp')[0].textContent;
+      if (section.getElementsByClassName('TitleTtl')[0] != null) {
+        var sectionHead = section.getElementsByClassName('TitleTtl')[0].textContent;
+      } else if (section.getElementsByClassName('NumberNum')[0] != null) {
+        var sectionHead = section.getElementsByClassName('NumberNum')[0].textContent;
       };
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Chapter " + sectionHead;
@@ -67,10 +67,10 @@ function addRunningElements() {
     };
 
     if (sectionType == "part") {
-      if (section.getElementsByClassName('PartTitlept')[0] != null) {
-        var sectionHead = section.getElementsByClassName('PartTitlept')[0].textContent;
-      } else if (section.getElementsByClassName('PartNumberpn')[0] != null) {
-        var sectionHead = section.getElementsByClassName('PartNumberpn')[0].textContent;
+      if (section.getElementsByClassName('TitleTtl')[0] != null) {
+        var sectionHead = section.getElementsByClassName('TitleTtl')[0].textContent;
+      } else if (section.getElementsByClassName('NumberNum')[0] != null) {
+        var sectionHead = section.getElementsByClassName('NumberNum')[0].textContent;
       };
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Part " + sectionHead;
@@ -109,7 +109,7 @@ function fullpageFigures() {
     var textnode = document.createTextNode(" ");
     runHeadRight.setAttribute("class", "runheadright");
     runHeadRight.appendChild(textnode);
-    parentFig.setAttribute("class", "Illustrationholderill fullpage");
+    parentFig.setAttribute("class", "Image-PlacementImg fullpage");
     parentFig.insertBefore(runHeadLeft,parentFig.firstChild);
     parentFig.insertBefore(runHeadRight,parentFig.firstChild);
   };
