@@ -7,7 +7,7 @@
 $biggest: 18pt; //sizehalftitle sizepartnum DONE
 $bigger: 13pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle DONE
 $big: 14pt; //sizeacmh sizechapsubtitle sizeh1
-$normal: 11pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead DONE
+$normal: 11.2pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead DONE
 $small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
 $smaller: 8.5pt; //sizecode sizecaption
 
@@ -39,7 +39,7 @@ $sizefmhead: $bigger;
 $sizepartnum: 11pt; 
 $sizeparttitle: 16pt; 
 $sizechapnum: 20pt;
-$sizechaptitle: $bigger;
+$sizechaptitle: 15pt;
 $sizechapsubtitle: $big;
 $sizeh1: $big;
 $sizeh2: $normal;
@@ -94,8 +94,8 @@ $spacebreakheight: $gridheight;
 
 @import "../_modules/base.scss";
 
-/*@import "../_modules/gridlines.scss";*/
-
+/*@import "../_modules/gridlines.scss";
+*/
 @import "_shared_overrides.scss";
 
 /* Holt-specific overrides */
@@ -108,6 +108,10 @@ figure.fullpage {
 img[src*="fullpage"] {
   margin-top: -1.65in; }
 
+section[data-type="titlepage"] > h1 {
+  font-weight: normal;
+}
+
 section[data-type="titlepage"] h1 + *[class*="SubtitleSttl"],
 h1 + *[class*="TitlepageSeriesTitleser"] {
   background-image: url('#{$ornpath}/orn.jpg');
@@ -117,6 +121,11 @@ h1 + *[class*="TitlepageSeriesTitleser"] {
   padding-top: 21.75pt;
   margin-top: 19.875pt;
   margin-bottom: $gridheight;
+}
+
+section[data-type="titlepage"] p[class*="Author1Au1"] {
+  background-image: none;
+  margin-top: $gridheight * 5;
 }
 
 /* TOC */
@@ -131,6 +140,16 @@ nav[data-type="toc"] h1 {
   margin-bottom: 142pt;
 }
 
+section[data-type="chapter"] > blockquote[data-type="epigraph"],
+div[data-type="part"] > blockquote[data-type="epigraph"],
+section[data-type="preface"] > blockquote[data-type="epigraph"],
+section[data-type="foreword"] > blockquote[data-type="epigraph"],
+section[data-type="introduction"] > blockquote[data-type="epigraph"], 
+blockquote[data-type="epigraph"] {
+  margin-left: 0.425in;
+  margin-right: 0.425in;
+}
+
 section[data-type="preface"].epigraph p {
   font-style: italic;
 }
@@ -141,8 +160,30 @@ section[data-type="preface"].epigraph,
   margin-top: $gridheight * 4;
 }
 
-section[data-type="dedication"] p[class*="EpigraphSource"],
-section[data-type="preface"] p[class*="EpigraphSource"],
+section[data-type="chapter"] p[class^="Epigraph-Non-Verse"],
+div[data-type="part"] p[class^="Epigraph-Non-Verse"],
+section[data-type="chapter"] p[class^="Epigraph-Non-Verse"],
+section[data-type="foreword"] p[class^="Epigraph-Non-Verse"],
+section[data-type="introduction"] p[class^="Epigraph-Non-Verse"],
+section[data-type="titlepage"] p[class^="Epigraph-Non-Verse"],
+section[data-type="halftitlepage"] p[class^="Epigraph-Non-Verse"],
+section[data-type="copyright-page"] p[class^="Epigraph-Non-Verse"] {
+  text-align: justify;
+}
+
+section[data-type="chapter"] p[class^="Epigraph-Source"],
+div[data-type="part"] p[class^="Epigraph-Source"],
+section[data-type="chapter"] p[class^="Epigraph-Source"],
+section[data-type="foreword"] p[class^="Epigraph-Source"],
+section[data-type="introduction"] p[class^="Epigraph-Source"],
+section[data-type="titlepage"] p[class^="Epigraph-Source"],
+section[data-type="halftitlepage"] p[class^="Epigraph-Source"],
+section[data-type="copyright-page"] p[class^="Epigraph-Source"] {
+  font-weight: normal;
+}
+
+section[data-type="dedication"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="preface"] p[class*="Epigraph-SourceEpisrc"],
 p[class*="EpigraphSource"] {
   font-style: normal;
   font-weight: normal;
@@ -175,18 +216,18 @@ h1[class*="ChapTitleALTact"][data-autolabel="yes"]:before {
   margin-bottom: ($gridheight * 1.25);
 }
 
-section.Section-About-AuthorSAA {
+section.abouttheauthor {
   margin-left: 24pt;
   margin-right: 24pt;
 }
 
-section.Section-About-AuthorSAA h1 {
+section.abouttheauthor h1 {
   font-size: 13pt;
   line-height: 18pt;
   margin-bottom: 30pt;
 }
 
-section.Section-About-AuthorSAA p {
+section.abouttheauthor p {
   font-size: 10.5pt;
   line-height: 18pt;
 }
