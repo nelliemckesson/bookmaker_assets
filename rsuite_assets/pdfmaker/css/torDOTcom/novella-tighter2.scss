@@ -1,4 +1,4 @@
-/* TO COMPILE: $ sass novel.scss novel.css */
+/* TO COMPILE: $ sass novella.scss pdf.css */
 
 /* GLOBAL VARIABLES */
 @import "../_modules/vars_global.scss";
@@ -7,30 +7,30 @@
 $biggest: 18pt; //sizehalftitle sizepartnum
 $bigger: 16pt; //sizefst sizesubtitle sizeau sizetochead sizefmhead sizechaptitle
 $big: 14pt; //sizeacmh sizechapsubtitle sizeh1
-$normal: 11.75pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
+$normal: 11.5pt; //sizenormal sizechapnum sizeh2 sizeh3 sizeextracthead
 $small: 10pt; //sizetitlepagetext sizecopyright sizeepigraph sizedateline
 $smaller: 8.5pt; //sizecode sizecaption
 
-$gridheight: 15.5pt;
+$gridheight: 15.2pt;
 
 $pagewidth: 5in;
 $pageheight: 8in;
 $bleedwidth: 0.125in;
 $bleedheight: 0.125in;
-$margintop: $gridheight * 3;
-$marginbottom: 40pt;
-$padding: 5pt 0 0 0;
-$outsidemargin: 40pt;
-$insidemargin: 50pt;
+$margintop: 52pt;
+$marginbottom: 64pt;
+$padding: 18pt 0 16pt 0;
+$outsidemargin: 45pt;
+$insidemargin: 63pt;
 
 $textindent: 12pt;
 
 $sizetitle: 25pt;
-$sizesubtitle: $bigger;
+$sizesubtitle: $bigger; /*$big2 * 1.625*/
 $sizeau: $bigger;
 $sizetitlepagetext: $small;
 $sizefst: $bigger;
-$sizefsqs: 10.5pt;
+$sizefsqs: 10.5pt; /* normal * o.875 */
 $sizeacmh: $big;
 $sizehalftitle: $biggest;
 $sizetochead: $bigger;
@@ -47,10 +47,9 @@ $sizeh3: $normal;
 $sizenormal: $normal;
 $sizenormalalt: 9.75pt;
 $sizecode: $smaller;
-$sizepoetry: 10.5pt;
-$sizeextract: 10.5pt;
+$sizepoetry: $small; //sizeextract
+$sizeextract: $small;
 $sizeextracthead: $normal;
-
 $sizedateline: $small;
 $sizeepigraph: $small;
 $sizerunfoot: 9pt;
@@ -60,31 +59,30 @@ $sizefootnote: 9pt;
 $sizecaption: $smaller;
 $sizefigsrc: 7pt;
 $sizesuperscript: 6pt;
-$sizehwritingprint: 12.5pt;
-$sizehwritingnormal: 10.75pt;
+$sizehwritingprint: 12.75pt;
+$sizehwritingnormal: 11pt;
 
 $hanging: -5pt;
 
-$chapterstart: always;
+$chapterstart: right;
 
 $logoheight: auto;
 $logowidth: 0.58in;
 
-$htmargintop: ($gridheight * 4);
+$htmargintop: ($gridheight * 1);
 
-$ctmargintop: 0pt;
-$ctmarginbottom: 5pt;
+$ctmargintop: 11pt;
+$ctmarginbottom: 61pt;
 $comargintop: ($gridheight * 4);
 $cemargintop: ($gridheight * 2);
 $cemarginbottom: ($gridheight * 3);
-$prmargintop: ($gridheight * 2);
+$prmargintop: 16pt;
 
 $spacebreakheight: $gridheight;
 
 $familyrunhead: "ArnoPro-Caption", serif;
 $familybody: "ArnoPro", serif;
 $familyfootnote: "ArnoPro-SmText", serif;
-
 
 @import "../_modules/font_arnopro.scss";
 @import "../_modules/font_aroma.scss";
@@ -102,51 +100,26 @@ $familyfootnote: "ArnoPro-SmText", serif;
 */
 @page part {
   @top-center {
-  }
-  @bottom-center {
-    content: normal;
+    vertical-align: bottom;
   }
 }
 
 @page chapter {
   @top-center {
-  }
-  @bottom-center {
-    content: normal;
+    vertical-align: bottom;
   }
 }
 
 @page front {
   @top-center {
+    vertical-align: bottom;
   }
-}
-
-@page copyright {
-  margin-bottom: 31pt;
-}
-
-div.runheadleft {
-  font-variant: prince-opentype(onum);
-}
-
-div.runheadright {
-  font-variant: prince-opentype(onum);
-}
-
-div.runheadleft::before {
-  content: counter(page)" • ";
-  font-style: normal;
-}
-
-div.runheadright::after {
-  content: " • "counter(page);
-  font-style: normal;
 }
 
 figure.fullpage {
   margin-top: 0.55in;
-  margin-inside: -0.81in;
-  margin-outside: -0.69in; }
+  margin-inside: -1in;
+  margin-outside: -0.75in; }
 
 img[src*="fullpage"] {
-  margin-top: -1.4in; }
+  margin-top: -1.65in; }
