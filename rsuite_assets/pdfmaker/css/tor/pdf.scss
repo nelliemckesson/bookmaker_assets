@@ -132,6 +132,131 @@ $familyfootnote: "ArnoPro-SmText", serif;
   }
 }
 
+/* adjusting fonts */
+
+@page part {
+  @bottom-center {
+    font-family: "MinionPro", serif, "Noto";
+  }
+}
+
+@page chapter {
+  @bottom-center {
+    font-family: "MinionPro", serif, "Noto";
+  }
+}
+
+@page front {
+  @bottom-center {
+    font-family: "MinionPro", serif, "Noto";
+  }
+}
+
+@page copyright {
+  @bottom-center {
+    font-family: "MinionPro", serif, "Noto";
+  }
+}
+
+body {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.runheadleft {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.runheadright {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.runfoot {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.runfoot span {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+h1[class*="TitleTtl"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+section[data-type="copyright-page"] p {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+*[class*="FrontSalesQuoteSourcefsqs"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+section[data-type="dedication"] p[class*="Epigraph-SourceEpisrc"],
+section[data-type="preface"] p[class*="Epigraph-SourceEpisrc"],
+p[class*="EpigraphSource"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+section[data-type="dedication"] p[class^="Epigraph-Verse"],
+section[data-type="preface"] p[class^="Epigraph-Verse"],
+section[data-type="dedication"] p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"] p[class^="Epigraph-Non-Verse"],
+section[data-type="preface"].epigraph p[class^="Body-TextTx"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+section[data-type="chapter"] > blockquote[data-type="epigraph"] p,
+div[data-type="part"] > blockquote[data-type="epigraph"] p,
+section[data-type="preface"] > blockquote[data-type="epigraph"] p,
+section[data-type="foreword"] > blockquote[data-type="epigraph"] p,
+section[data-type="introduction"] > blockquote[data-type="epigraph"] p {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+p[class*="Extract"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+p.Extract-Inscriptionins {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.verse {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.verse p[class*="TitleTtl"],
+div.verse pre[class*="TitleTtl"] {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+div.verse p[class*="Verse1Vrs1"],
+div.verse p[class*="Verse1Vrs1"]:first-of-type,
+div.verse pre[class*="Verse1Vrs1"],
+div.verse pre[class*="Verse1Vrs1"]:first-of-type {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+span[data-type="footnote"],
+.endnotetext {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+::footnote-marker {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+*[class*="endnotetext"] p:first-of-type:before {
+  font-family: "MinionPro", serif, "Noto";
+}
+
+section[data-type="titlepage"] p[class*="Author"],
+section[data-type="titlepage"] p[class*="SubtitleSttl"],
+section[data-type="titlepage"] p {
+  font-family: "ArnoPro", serif, "Noto";
+}
+
+/* adjusting everything else */
+
 div.runheadleft {
   font-variant: prince-opentype(onum);
 }
