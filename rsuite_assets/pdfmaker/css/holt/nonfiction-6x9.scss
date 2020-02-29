@@ -14,7 +14,7 @@ $smaller: 8.5pt; //sizecode sizecaption
 $gridheight: 15pt; 
 
 $pagewidth: 6.125in;
-$pageheight: 9.125in;
+$pageheight: 9.25in;
 $bleedwidth: 0.125in;
 $bleedheight: 0.125in;
 $margintop: 42pt; 
@@ -103,7 +103,8 @@ $spacebreakheight: $gridheight;
 figure.fullpage {
   margin-top: 0.7in;
   margin-inside: -0.93in;
-  margin-outside: -0.93in; }
+  margin-outside: -0.93in; 
+  height: 7.25in; }
 
 img[src*="fullpage"] {
   margin-top: -1.65in; }

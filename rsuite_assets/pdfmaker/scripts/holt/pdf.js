@@ -2,7 +2,7 @@ function getAllElementsWithAttribute(tag, attribute, value)
 {
   var matchingElements = [];
   var allSections = document.getElementsByTagName(tag);
-  for (var i = 0, n = allSections.length; i < n; i++)
+  for (var i = 0; i < allSections.length; i++)
   {
     if (allSections[i].getAttribute(attribute) == value)
     {
@@ -15,15 +15,15 @@ function getAllElementsWithAttribute(tag, attribute, value)
 
 function moveIllustrationSource()
 {
-var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']");
-var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
-for (var j = 0; illoSources.length > j; j++) {
-  var figID = illoSources[j].parentNode.getAttribute('id');
-  var figLink = illoSources[j].childNodes[0];
-  figLink.href = '#' + figID;
-  if (illoSources[j].parentNode.parentNode.getAttribute('class') != 'abouttheauthor') {
-    copyright.appendChild(illoSources[j]);
-  };
+  var illoSources = document.querySelectorAll("figure p[class*='Credit-LineCrd']");
+  var copyright = getAllElementsWithAttribute('section',"data-type",'copyright-page')[0];
+  for (var j = 0; illoSources.length > j; j++) {
+    var figID = illoSources[j].parentNode.getAttribute('id');
+    var figLink = illoSources[j].childNodes[0];
+    figLink.href = '#' + figID;
+    if (illoSources[j].parentNode.parentNode.getAttribute('class') != 'abouttheauthor') {
+      copyright.appendChild(illoSources[j]);
+    };
   };
 };
 
@@ -34,6 +34,12 @@ function addRunningElements() {
     var section = allParas[q].parentNode;
     var i = 0;
     var sectionHead = " ";
+
+    var runHeadLeft = document.createElement("div");
+    var runHeadLeftSpan = document.createElement("span");
+    runHeadLeft.setAttribute("class", "runheadleft");
+    var textnode = document.createTextNode("BKMKRINSERTBKTITLE");
+
     while (section.tagName != "SECTION" && section.tagName != "NAV" && section.tagName != "DIV" && i < 10) {
       var section = section.parentNode;
       i++;
@@ -44,10 +50,7 @@ function addRunningElements() {
       if (section.getElementsByTagName('h1')[0] != null) {
         var sectionHead = section.getElementsByTagName('h1')[0].textContent;
       };
-      var runHeadLeft = document.createElement("div");
-      runHeadLeft.setAttribute("class", "runheadleft");
-      runHeadLeft.textContent=sectionHead;
-      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+      textnode = document.createTextNode(sectionHead);
     };
 
     if (sectionType == "chapter") {
@@ -59,11 +62,7 @@ function addRunningElements() {
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Chapter " + sectionHead;
       };
-      var textnode = document.createTextNode(" ");
-      var runHeadLeft = document.createElement("div");
-      runHeadLeft.setAttribute("class", "runheadleft");
-      runHeadLeft.appendChild(textnode);
-      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+      textnode = document.createTextNode(" ");
     };
 
     if (sectionType == "part") {
@@ -75,16 +74,18 @@ function addRunningElements() {
       if (sectionHead.length < 4 && sectionHead.match(/^[0-9]+$/) != null) {
         sectionHead = "Part " + sectionHead;
       };
-      var textnode = document.createTextNode(" ");
-      var runHeadLeft = document.createElement("div");
-      runHeadLeft.setAttribute("class", "runheadleft");
-      runHeadLeft.appendChild(textnode);
-      thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+      textnode = document.createTextNode(" ");
     };
 
+    runHeadLeftSpan.appendChild(textnode);
+    runHeadLeft.appendChild(runHeadLeftSpan);
+    thisParent.parentNode.insertBefore(runHeadLeft, thisParent.nextSibling);
+
     var runHeadRight = document.createElement("div");
+    var runHeadRightSpan = document.createElement("span");
     runHeadRight.setAttribute("class", "runheadright");
-    runHeadRight.textContent=sectionHead;
+    runHeadRightSpan.textContent=sectionHead;
+    runHeadRight.appendChild(runHeadRightSpan);
     thisParent.parentNode.insertBefore(runHeadRight, thisParent.nextSibling);
   };
 };
@@ -100,6 +101,7 @@ function fullpageFigures() {
     };
   };
   for (var f = 0; fullpageFigs.length > f; f++) {
+    // let's also delete the runhead elements prceding the figure
     var parentFig = fullpageFigs[f].parentNode;
     var runHeadLeft = document.createElement("div");
     var textnode = document.createTextNode(" ");
@@ -109,9 +111,14 @@ function fullpageFigures() {
     var textnode = document.createTextNode(" ");
     runHeadRight.setAttribute("class", "runheadright");
     runHeadRight.appendChild(textnode);
+    var runFoot = document.createElement("div");
+    var textnode = document.createTextNode(" ");
+    runFoot.setAttribute("class", "runfoot");
+    runFoot.appendChild(textnode);
     parentFig.setAttribute("class", "Image-PlacementImg fullpage");
     parentFig.insertBefore(runHeadLeft,parentFig.firstChild);
     parentFig.insertBefore(runHeadRight,parentFig.firstChild);
+    parentFig.insertBefore(runFoot,parentFig.firstChild);
   };
 };
 window.onload = function() {

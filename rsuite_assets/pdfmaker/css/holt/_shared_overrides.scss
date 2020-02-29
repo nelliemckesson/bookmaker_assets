@@ -292,13 +292,21 @@ span[data-type="footnote"],
 /* adjusting everything else */
 
 div.runheadleft {
-  content: counter(page) "\2002\2022\2002" string(title);
+  content: normal;
   text-align: left;
 }
 
 div.runheadright {
-  content: string(chaptitle) "\2002\2022\2002" counter(page);
+  content: normal;
   text-align: right;
+}
+
+div.runheadleft span:before {
+  content: counter(page) "\2002\2022\2002";
+}
+
+div.runheadright span:after {
+  content: "\2002\2022\2002" counter(page);
 }
 
 section.adcard[data-type="preface"] > h1 {
